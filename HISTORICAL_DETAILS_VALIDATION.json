@@ -2,20 +2,52 @@
   "schema_version": 1,
   "date": "2026-10-22",
   "work_order": "historical-details-01",
-  "scope": "Catalog whole-ZIP packaging tools and unavailable-source manifest; original payload import remains blocked.",
+  "scope": "Complete original Historical Grand Archive 1.1 preservation, full dataset acceptance and isolated Engine/App service compatibility.",
   "base_commit": "5c007e16be6ab8930b3bcd4ad10ab320733102a6",
   "dependency_commits_changed": false,
-  "historical_details_payload_present": false,
-  "full_original_archive_identity_verified": false,
-  "full_dataset_acceptance_completed": false,
+  "historical_details_payload_present": true,
+  "full_original_archive_identity_verified": true,
+  "full_dataset_acceptance_completed": true,
   "catalog_packaging_tests": {
-    "command": "python -B -m unittest discover -s tools/tests -p 'test_*.py' -v",
-    "run": 30,
-    "passed": 30,
+    "command": "IRGS_CATALOG_ROOT=/workspace/IRGS-Catalog/IRGS_Catalog IRGS_HISTORICAL_ENGINE_RUNTIME=/tmp/irgs-historical-engine-snapshot IRGS_HISTORICAL_APP_SOURCE=/tmp/irgs-historical-app-snapshot python -B -m unittest discover -s tools/tests -p 'test_*.py' -v",
+    "run": 39,
+    "passed": 39,
     "failures": 0,
     "errors": 0,
     "skipped": 0,
-    "fixtures": "Synthetic temporary complete ZIP with ten collections, opaque central database bytes, book and ancillary files, spanning three 16 MiB parts."
+    "synthetic_checks": 30,
+    "actual_complete_delivery_checks": 5,
+    "actual_consumer_checks": 4,
+    "duration_seconds": 13.635,
+    "actual_checks": [
+      "Full original archive size and SHA-256 after exact reconstruction.",
+      "All real members, delivery bindings, collection row counts and explicit unbound coverage.",
+      "Actual missing, corrupt, duplicated and reordered parts fail without publishing a reconstructed file.",
+      "Committed Engine reader verifies and reads all ten real collections with source-row identity and no campaign effects.",
+      "Committed App reference service selects the Catalog release pin, reads the real source and reports corrupt/missing states; repair and retry succeeds."
+    ],
+    "consumer_source_snapshots": {
+      "engine_commit": "b3e7d760a2cf3712292b09328566cf1ed0d78c97",
+      "app_commit": "e8ef2b0e683a46fab4fe586e86afd26196ab2869",
+      "module_blobs_verified": [
+        {
+          "path": "/tmp/irgs-historical-engine-snapshot/historical_archive.py",
+          "sha": "83fce4e61e99703434893c64905ab46adfba1f71"
+        },
+        {
+          "path": "/tmp/irgs-historical-engine-snapshot/historical_parts.py",
+          "sha": "d552c33eca6414a878de59f55266d4524f8c5005"
+        },
+        {
+          "path": "/tmp/irgs-historical-app-snapshot/catalog_paths.py",
+          "sha": "2f3612f23f61f2d9ee5467fa46f7ba37116a5a11"
+        },
+        {
+          "path": "/tmp/irgs-historical-app-snapshot/historical_reference.py",
+          "sha": "2f5e240ab115a93de26efafce19bc747455042b2"
+        }
+      ]
+    }
   },
   "app_catalogue_compatibility_tests": {
     "command": "IRGS_CATALOG_ROOT=/workspace/IRGS-Catalog/IRGS_Catalog python -B -m unittest discover -s IRGS_Web/tests -p 'test_campaign_portfolio.py' -v",
@@ -30,43 +62,98 @@
     "scope": "Existing 44-preview and launch boundaries, including a temporary synthetic saved-world HTTP fixture; not Historical Details browser or multipart integration qualification."
   },
   "integrity_checks": {
-    "catalog": "passed; 44 concepts; Historical Details explicitly blocked_missing_source",
-    "component_wrapper": "passed",
+    "catalog": "passed; 140 source files; 44 concepts; Historical Details complete and verified",
+    "component_wrapper": "passed with complete payload",
     "import_by_file_path_without_catalog_sys_path": "passed",
     "campaign_data_and_original_design_diff": "unchanged against base",
     "intake_manifest_byte_preservation": "passed",
     "intake_manifest_sha256": "48abac57689a0110ba65f58a7407bd9860161bbc3f2d0185a604d11037adb304",
-    "staged_whitespace_check": "passed with core.whitespace=cr-at-eol; unchanged supplied intake manifest retains CRLF bytes"
+    "staged_whitespace_check": "passed with core.whitespace=cr-at-eol; unchanged supplied intake manifest retains CRLF bytes",
+    "intake_manifest_matches_member_in_exact_original_zip": true
   },
   "real_source_evidence": {
     "drive_original_file_id": "1PtEVtU601kapcATfm7pTEl6oIJuXo8KX",
     "metadata_name": "IRGS_Historical_Grand_Archive_v1_1.zip",
     "metadata_bytes": 533064680,
-    "payload_sha256_verified": false,
+    "payload_sha256_verified": true,
     "delivery_manifest_fetched": true,
     "delivery_manifest_declared_files": 5145,
     "delivery_manifest_declared_bytes_excluding_manifest": 2086978638,
     "declared_paths_portable": true,
     "ten_reader_collection_paths_declared": true,
-    "actual_collection_bytes_or_counts_verified": false
+    "actual_collection_bytes_or_counts_verified": true,
+    "access_blocker_resolved": "User enabled link access; direct streaming download obtained the exact original ZIP."
   },
   "contract_review": {
-    "engine_working_draft_selection_fields": "compatible schema_version/status/archive/part_size_bytes/parts and 1 MiB manifest bound",
-    "reviewed_committed_engine_app_candidate_set": false
+    "engine_committed_contract": "b3e7d760a2cf3712292b09328566cf1ed0d78c97",
+    "app_committed_service": "e8ef2b0e683a46fab4fe586e86afd26196ab2869",
+    "actual_source_byte_verified_consumer_checks_passed": true,
+    "reviewed_committed_engine_app_candidate_set": false,
+    "dependency_pointers_changed": false
   },
   "unrun_checks": [
-    "Exact original 533,064,680-byte ZIP hash verification and reassembly.",
-    "Actual full archive member/delivery bindings and actual collection row counts.",
-    "Multipart Engine/App integration and Historical Details browser checks against coordinator-reviewed commits.",
-    "Joined integration and candidate dependency pin publication."
+    "App dependency pointer update and full HTTP/interface qualification against the coordinator-reviewed three-component set.",
+    "Isolated joined candidate qualification and integration; these belong to the coordinator."
   ],
   "open_findings": [
-    "Original ZIP cannot yet be transferred: chat 32 MiB limit, authenticated Drive plugin 256 MiB limit, direct download requires Google sign-in.",
-    "Manifest declarations and synthetic fixtures are not full dataset acceptance evidence."
+    "Catalog payload acceptance is complete. Coordinator review and the App dependency update remain outstanding."
   ],
-  "missing_input": "Original ZIP at a worker-accessible streaming download URL or workspace path.",
+  "missing_input": null,
   "user_campaign_saves_read_or_migrated": false,
   "joined_or_other_component_source_modified": false,
   "qualified_candidate_pin": false,
-  "coordinator_handoff": "Report is preserved in this repository and final response; no send_message_to_thread tool is available in this chat."
+  "coordinator_handoff": "COORDINATOR_REPORT.md and this validation record; final response supplies the full pushed Catalog commit. No send_message_to_thread tool is available in this chat.",
+  "prior_tooling_commit": "ab3e127f4a0bc504158fd91617e4f76fef5a2f7d",
+  "source_archive": {
+    "name": "IRGS_Historical_Grand_Archive_v1_1.zip",
+    "bytes": 533064680,
+    "sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773"
+  },
+  "manifest": {
+    "path": "IRGS_Catalog/historical_details/manifest.json",
+    "sha256": "1543cd65b5c4b3ed6f160565b4e4bf01d09dd44a392d53c7036efcd5c0dcf21f",
+    "bytes": 10581,
+    "status": "complete",
+    "parts": 32,
+    "part_size_bytes": 16777216,
+    "last_part_bytes": 12970984
+  },
+  "coverage": {
+    "archive_bytes": "complete",
+    "members_verified": 5146,
+    "delivery_bindings_verified": 5145,
+    "unbound_members": [
+      "IRGS_Historical_Grand_Archive_v1_1/07_Verification/delivery_manifest.json"
+    ],
+    "unbound_reason": "Delivery manifest explicitly excludes its own self-reference.",
+    "reader_collections": "partial_view_of_complete_archive",
+    "collection_record_counts": {
+      "chronology": 248,
+      "figures": 715,
+      "research": 501,
+      "claims": 69,
+      "sources": 98,
+      "rights": 103,
+      "concepts": 194796,
+      "places": 42406,
+      "routes": 17193,
+      "population": 131144
+    },
+    "historical_truth_verified": false,
+    "rights_expanded": false,
+    "campaign_adoption_performed": false
+  },
+  "work_order_commit": "02db97383a8a0c785250b98585253d24f3365a9b",
+  "additional_ai_backlog": {
+    "coordinator_sources_read": [
+      "AI_PROVIDER_STRATEGY.md",
+      "AI_PROVIDER_REVIEW.md",
+      "provenance/qa/ai_provider_strategy/EVALUATION_CASES.json"
+    ],
+    "proposed_evaluation_cases": 16,
+    "model_evaluations_executed": false,
+    "catalog_content_rights_dependencies_recorded_in_plan": true,
+    "archive_sent_to_external_provider": false,
+    "provider_configuration_or_campaign_content_changed": false
+  }
 }

@@ -2,18 +2,22 @@
 
 Catalog owns preservation of the complete **Historical Grand Archive 1.1** ZIP.
 Engine owns its reference reader; App owns the Creator interface. This directory
-currently contains an unavailable-source manifest and intake evidence. It contains
-no archive payload parts and is not a completed import.
+contains the complete original ZIP as 32 ordered byte parts, a verified manifest,
+a complete member index and intake evidence.
 
 The expected original is `IRGS_Historical_Grand_Archive_v1_1.zip`, 533,064,680 bytes,
 SHA-256 `51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773`.
-That identity comes from the work order's prior local attachment check. It has
-not been reverified against the original ZIP in this worker.
+The downloaded original and exact reconstruction were both checked against that
+identity in this worker. All 5,146 archive files were read and hashed, all 5,145
+delivery bindings verified, and all ten reader collections counted. The only
+file without a delivery binding is the delivery manifest itself, explicitly
+excluded from its own source inventory.
 
 ## Import and check
 
-Use Python 3.12+ without `-O`. Once the exact original is accessible, create a new
-staging package outside the checkout:
+Use Python 3.12+ without `-O`. The completed package can be checked directly;
+the following commands also reproduce an import from the exact original into a
+new staging directory outside the checkout:
 
 ```text
 python -B IRGS_Catalog/historical_details_package.py import-archive /path/to/IRGS_Historical_Grand_Archive_v1_1.zip /tmp/historical-details-candidate
@@ -37,6 +41,18 @@ python -B tools/refresh_component_releases.py --component catalog
 python -B IRGS_Catalog/verify_catalog.py
 ```
 
+The normal test run includes the actual complete delivery as well as synthetic
+fixtures. Four optional consumer checks need explicitly selected Engine runtime
+and App source snapshots:
+
+```text
+IRGS_CATALOG_ROOT=/path/to/catalog/IRGS_Catalog IRGS_HISTORICAL_ENGINE_RUNTIME=/path/to/engine/IRGS_3_3/runtime IRGS_HISTORICAL_APP_SOURCE=/path/to/app/IRGS_Web python -B -m unittest discover -s tools/tests -p 'test_*.py' -v
+```
+
+The delivered increment passed all 39 tests with those consumers selected;
+without explicit consumer paths, those four checks report skips. See the root
+validation record for exact tested commits and source-module identities.
+
 Optional verified reconstruction writes only a new output file:
 
 ```text
@@ -51,14 +67,15 @@ preserved. Failed checks leave no completed reconstructed output.
 
 `manifest.json` is UTF-8 JSON, at most 1 MiB. Consumers pin its exact SHA-256 and
 the exact Catalog commit. Core fields match the Engine multipart reader's current
-working contract; coordinator review of committed Engine/App versions remains
-required before selecting a candidate dependency set.
+committed contract at Engine `b3e7d760a2cf3712292b09328566cf1ed0d78c97`;
+coordinator review of the exact Engine/App/Catalog set remains required before
+App selects dependency pins or joined integration occurs.
 
 | Field | Meaning |
 | --- | --- |
 | `schema_version` | Integer `1`. |
 | `id`, `display_name` | `historical-details`, `Historical Details`. |
-| `status` | `complete` only after full source verification; currently `blocked_missing_source`. |
+| `status` | Currently `complete`, after full source verification. `blocked_missing_source` remains supported for unavailable imports. |
 | `archive` | Original `name`, exact `bytes`, lowercase SHA-256 `sha256`. |
 | `part_size_bytes` | Integer `16777216`. |
 | `parts` | Ordered records containing one-based `ordinal`, relative `path`, `bytes`, `sha256`. Empty while blocked. |
@@ -86,12 +103,12 @@ the payload. No indexed subset may be labelled as the full archive. A source
 declaration or a matching checksum establishes neither historical truth nor a
 new license, campaign adoption, player knowledge or scheduled outcomes.
 
-## Current intake
+## Source intake
 
 The chat attachment exceeded the environment's 32 MiB transfer limit. The user
 then supplied a Drive folder containing extracted archive files, followed by an
 exact ZIP file link. Drive metadata confirms the expected original name and size.
-The authenticated Drive download rejects files over 256 MiB; the streaming direct
-link currently requires sign-in. An accessible streaming download is still needed.
-See [intake evidence](intake/README.md). Repacking the extracted files would create
-a different ZIP and cannot satisfy the expected original ZIP identity.
+The authenticated Drive download rejects files over 256 MiB. After the user
+enabled link access, the original was downloaded through a streaming direct
+download and verified before import. See [intake evidence](intake/README.md).
+The extracted Drive tree was not repacked or substituted for the original ZIP.

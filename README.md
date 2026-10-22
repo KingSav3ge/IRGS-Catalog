@@ -26,8 +26,9 @@ The supplied package's older defaults and Kira notes do not revoke current appro
 
 [DEVELOPMENT.md](DEVELOPMENT.md) tracks completed, active, blocked and remaining
 Catalog work. [Historical Details](IRGS_Catalog/historical_details/README.md)
-defines whole-archive preservation and verified 16 MiB parts. Packaging tools and
-synthetic checks are implemented; the original Historical Grand Archive 1.1 ZIP
-is still required. The current manifest reports `blocked_missing_source` and
-contains no payload parts. Extracted Drive intake evidence does not establish a
-completed archive import or campaign release.
+defines whole-archive preservation and verified 16 MiB parts. The complete
+Historical Grand Archive 1.1 ZIP is preserved in 32 ordered parts, with exact
+reassembly, all 5,146 files, all 5,145 delivery bindings and ten reader collection
+counts verified. The manifest reports `complete`. Engine/App compatibility
+evidence and remaining coordinator integration work are recorded separately;
+archive preservation grants no campaign release or new rights.

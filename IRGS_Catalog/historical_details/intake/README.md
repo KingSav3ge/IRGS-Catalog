@@ -16,8 +16,8 @@ path check. These are manifest declarations, not fresh verification of those
 
 No supplied instructions in these documents were executed. The source document
 does not change the user's work order, rights or campaign adoption decisions.
-Full source import, exact ZIP identity, full dataset reassembly and byte-level
-member verification remain blocked until the original ZIP is accessible.
+This intake check initially left full import and byte-level source verification
+blocked. The subsequent complete import is recorded below.
 
 ## Original ZIP identified
 
@@ -27,9 +27,19 @@ Drive metadata reports the exact original name, MIME type
 `application/x-zip-compressed` and 533,064,680 bytes. The metadata response does
 not establish the original SHA-256 or provide verified payload bytes.
 
-The authenticated raw download was refused with HTTP 413: 533,064,680 bytes
-exceeds the Drive plugin's 268,435,456-byte limit. The direct streaming download
-returned a Google sign-in page, not archive bytes. The earlier chat attachment
-also exceeded its separate 32 MiB transfer limit. A download URL accessible to
-the worker is the remaining input; no credentials, authentication pages or
-temporary signed URLs are recorded in source.
+The authenticated raw download was initially refused with HTTP 413:
+533,064,680 bytes exceeds the Drive plugin's 268,435,456-byte limit. The direct
+streaming download initially returned a Google sign-in page. The earlier chat
+attachment also exceeded its separate 32 MiB transfer limit.
+
+## Complete original retrieved and preserved
+
+After the user enabled link access, the worker streamed the original ZIP and
+verified all 533,064,680 bytes against SHA-256
+`51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773`.
+The supplied raw delivery manifest is byte-identical to the same member inside
+that exact archive. Its 5,145 declared bindings now also match the actual payload
+files; the archive has 5,146 files including the manifest itself. Complete byte
+parts and their member index preserve the database, books, source assets, rights
+and ancillary files. No credentials, authentication pages or temporary signed
+URLs are recorded in source.
