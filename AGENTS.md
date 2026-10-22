@@ -7,3 +7,7 @@ Read README.md and `IRGS_Catalog/design/campaign_catalogue/README.md`. Treat imp
 Use Python 3.12+ without -O. After intentional source edits, refresh only Catalog hashes with `python -B tools/refresh_component_releases.py --component catalog`, then run `python -B IRGS_Catalog/verify_catalog.py`. Qualify changes through the App's pinned Catalog dependency and relevant App/interface tests before joining. Refreshing hashes is not test evidence.
 
 Do not copy, migrate or inspect user campaign saves for checks. Use synthetic temporary fixtures. Keep credentials, caches, runtime logs and generated packages out of source. Do not edit dependencies or Engine/App sources from here. Keep historical evidence labelled and report checks actually executed.
+
+## Coordinator work orders
+
+The user assigns cross-component coordination and unified integration to **IRGS Enviroment**. Read `COORDINATOR_WORK_ORDER.md` before selecting the next increment. This chat pushes only its component repository. Report the exact commit and executed checks to the coordinator. Only the coordinator integrates a reviewed Engine/App/Catalog set into joined IRGS/main. Keep this component's development plan current. Work orders and plan edits alone do not complete a component deliverable.
