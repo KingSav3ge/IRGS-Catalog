@@ -12,6 +12,12 @@ python -B IRGS_Catalog/verify_catalog.py
 
 Python 3.12+ is sufficient; no packages, App, Engine, API keys or user saves are required. After intentional content edits, run `python -B tools/refresh_component_releases.py --component catalog`, verify, review and commit. Refreshing hashes establishes source identity, not campaign approval or passing App tests. Preserve supplied source documents byte for byte and add new versions separately.
 
+Catalog verification also checks campaign record IDs, types, slate and development
+statuses, explicit preview/release/readiness flags, discovery IDs and starting
+references. Duplicate IDs and release, entitlement or runtime availability claims
+in preview inputs fail even after source hashes are refreshed. Internal drafts
+remain valid source records; App owns their exclusion from public projection.
+
 The App pins this repository in its `Catalog/` submodule. Qualify a specific Catalog commit with the App and its pinned Engine before committing a dependency update. The joined `IRGS/main` keeps complete sources in `IRGS_Catalog/` and records the exact Catalog commit in `COMPONENTS.json`. See [integration instructions](https://github.com/KingSav3ge/IRGS/blob/main/COMPONENT_REPOSITORIES.md).
 
 Preview data cannot grant playable starts, entitlements, live effects or full release approval. Existing campaigns retain their actual committed world and history. Kira v0.5 working canon belongs to the Engine; catalogue descriptions cannot supersede it.

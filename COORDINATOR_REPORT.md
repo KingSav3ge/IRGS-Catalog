@@ -1,12 +1,31 @@
 # Catalog delivery — historical-details-01
 
 Owner: **IRGS Catalog**. Repository: `KingSav3ge/IRGS-Catalog/main`. This report
-travels with the full-payload delivery commit; resolve its exact SHA from Git.
+includes the full-payload delivery from
+`58ce55672bdd75076b94882bd8715a1d2a1f383a` and the following Catalog validation
+increment; resolve the latest candidate's exact SHA from Git.
 The preceding tooling-only increment is
 `ab3e127f4a0bc504158fd91617e4f76fef5a2f7d`.
 The updated work order at `02db97383a8a0c785250b98585253d24f3365a9b`
 is included; its AI content/rights dependencies are recorded as future work in
 the development plan after reading all three linked coordinator sources.
+
+## Latest Catalog follow-up — CAT-03
+
+Catalog source verification now rejects malformed editorial records even after
+their source hashes are refreshed: duplicate/invalid campaign IDs, inconsistent
+type/slate, unknown development status, release/entitlement/readiness claims and
+runtime availability fields in preview input. Discovery IDs and held starting
+references are also checked. Drafts remain valid editorial source records.
+
+Four failures were reproduced against the previous source verifier using small
+temporary fixtures. All 16 new regression tests pass. The complete fresh run
+passes **55 source/consumer tests and six App catalogue tests, zero skips**;
+Catalog verification still passes all 140 source files, 44 concepts and the
+complete archive. Only Catalog source pins changed. Campaign data, designs,
+archive bytes and manifest pin are identical to the full-payload delivery.
+See `CAMPAIGN_RECORD_VALIDATION.json` for commands and tested dependency commits.
+App pins and joined integration remain coordinator-owned work.
 
 ## Delivered source
 
@@ -36,7 +55,7 @@ two reader modules and App reference-service modules from
 `e8ef2b0e683a46fab4fe586e86afd26196ab2869` in isolated temporary snapshots.
 All four module bytes were checked against their committed Git blob identities.
 
-- **39 source/consumer tests passed, zero skips:** 30 synthetic tests, five
+- **Original archive delivery: 39 source/consumer tests passed, zero skips:** 30 synthetic tests, five
   complete-delivery checks and four actual Engine/App service checks. This
   includes exact real-data reassembly, every member/binding, missing, corrupt,
   duplicate and reordered parts, real collection reads and App repair/retry.

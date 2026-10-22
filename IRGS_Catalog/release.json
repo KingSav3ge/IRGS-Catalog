@@ -142,6 +142,6 @@
     "historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0031": "148b990b1641571f756a8f63e086d18531514f45fb279dba1e608bdcd7a284af",
     "historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0032": "f94eaedd0792cbc44d5113751fac6187c4bcd22c1f834f095753c7b09289bfd7",
     "historical_details_package.py": "fde004848caab9ea3c8e7c6ea4a1dffefab6758d0e653b49b6479fe81428f665",
-    "verify_catalog.py": "7d0cc0b156ba247e23c2d0a1dec58fa0f3aaf76541589dee22f2564fa8862b62"
+    "verify_catalog.py": "57cfef89333f147f83637969d148dbd77ab771c9cace1badceefdbb49d0e26e1"
   }
 }

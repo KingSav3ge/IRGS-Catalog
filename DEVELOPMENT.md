@@ -10,6 +10,7 @@ integration and review of the exact Engine/App/Catalog dependency set.
 | --- | --- | --- |
 | CAT-01 | Independent Catalog data and preserved original campaign designs. | `b6c1362`; component instructions and source verifier. |
 | CAT-02 | Expanded v0.5 previews for all 44 concepts, preserving prior adoption and runtime boundaries. | `c70dc16`; import reconciliation and pinned original package. |
+| CAT-03 | Validate editorial campaign records before App handoff, independently of refreshed source hashes. | `verify_catalog.py`; `tools/tests/test_campaign_records.py`; `CAMPAIGN_RECORD_VALIDATION.json`. |
 | HD-01a | Deterministic 16 MiB whole-ZIP packaging and verified reconstruction tools. | `IRGS_Catalog/historical_details_package.py`; synthetic multipart round-trip and rejection tests. |
 | HD-01b | Manifest/member-index contract and explicit unavailable state in Catalog verification. | `IRGS_Catalog/historical_details/README.md`; `verify_catalog.py`; missing-source checks. |
 | HD-01c | Inspect supplied extracted Drive folder and preserve its unchanged delivery manifest as intake evidence. | `IRGS_Catalog/historical_details/intake/`; no claim of full payload verification. |
@@ -35,6 +36,20 @@ dependency update before joined qualification.
 The campaign portfolio still marks Century, Kira and Rise **In Development** and
 41 other concepts **Planned**. These labels describe concept development; the
 Catalog does not implement their Engine mechanics or App viewer.
+
+The Catalog follow-up, `CAT-03`, closes a reproduced authoring gap:
+refreshed source hashes alone previously allowed duplicate catalogue IDs,
+unknown development statuses and release/entitlement claims to pass verification.
+Source verification now checks identity/type/slate consistency, explicit preview
+and readiness flags, discovery IDs and held starting references. It preserves
+Planned, Concept Draft and In Development as separate states; App remains the
+owner of draft filtering and runtime projection. Current campaign descriptions,
+source archives, Historical Details bytes and its manifest pin are unchanged.
+See `CAMPAIGN_RECORD_VALIDATION.json` for this follow-up's executed checks.
+
+Fresh follow-up checks passed: 55 source/consumer tests (including the 16 new
+record-validation tests), six App catalogue tests and complete Catalog integrity
+verification. All tests executed with zero skips.
 
 ## Blocked
 
