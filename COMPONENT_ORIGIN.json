@@ -1,0 +1,14 @@
+{
+  "component": "IRGS-Catalog",
+  "joined_repository": "https://github.com/KingSav3ge/IRGS.git",
+  "joined_baseline": "01a7aafad03cb489771caa0d44ecf6e433d9708f",
+  "source_paths": [
+    "IRGS_Catalog"
+  ],
+  "original_paths": [
+    "IRGS_Web/data/campaign_listings.json",
+    "IRGS_Web/data/campaign_portfolio.json",
+    "IRGS_Web/design/campaign_catalogue"
+  ],
+  "scope": "Existing catalogue data and original design source; no new campaign implementation."
+}
