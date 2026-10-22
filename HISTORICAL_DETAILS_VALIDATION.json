@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-22",
+  "work_order": "historical-details-01",
+  "scope": "Catalog whole-ZIP packaging tools and unavailable-source manifest; original payload import remains blocked.",
+  "base_commit": "5c007e16be6ab8930b3bcd4ad10ab320733102a6",
+  "dependency_commits_changed": false,
+  "historical_details_payload_present": false,
+  "full_original_archive_identity_verified": false,
+  "full_dataset_acceptance_completed": false,
+  "catalog_packaging_tests": {
+    "command": "python -B -m unittest discover -s tools/tests -p 'test_*.py' -v",
+    "run": 30,
+    "passed": 30,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "fixtures": "Synthetic temporary complete ZIP with ten collections, opaque central database bytes, book and ancillary files, spanning three 16 MiB parts."
+  },
+  "app_catalogue_compatibility_tests": {
+    "command": "IRGS_CATALOG_ROOT=/workspace/IRGS-Catalog/IRGS_Catalog python -B -m unittest discover -s IRGS_Web/tests -p 'test_campaign_portfolio.py' -v",
+    "run": 6,
+    "passed": 6,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "app_commit": "aac20055270cc64ba870061085cd8f6bfe43a93c",
+    "pinned_and_checked_out_engine_commit": "c0777be7e68021bd1bee66437d555390778c0adb",
+    "catalog_source": "This increment selected explicitly through IRGS_CATALOG_ROOT; no App dependency pin changed.",
+    "scope": "Existing 44-preview and launch boundaries, including a temporary synthetic saved-world HTTP fixture; not Historical Details browser or multipart integration qualification."
+  },
+  "integrity_checks": {
+    "catalog": "passed; 44 concepts; Historical Details explicitly blocked_missing_source",
+    "component_wrapper": "passed",
+    "import_by_file_path_without_catalog_sys_path": "passed",
+    "campaign_data_and_original_design_diff": "unchanged against base",
+    "intake_manifest_byte_preservation": "passed",
+    "intake_manifest_sha256": "48abac57689a0110ba65f58a7407bd9860161bbc3f2d0185a604d11037adb304",
+    "staged_whitespace_check": "passed with core.whitespace=cr-at-eol; unchanged supplied intake manifest retains CRLF bytes"
+  },
+  "real_source_evidence": {
+    "drive_original_file_id": "1PtEVtU601kapcATfm7pTEl6oIJuXo8KX",
+    "metadata_name": "IRGS_Historical_Grand_Archive_v1_1.zip",
+    "metadata_bytes": 533064680,
+    "payload_sha256_verified": false,
+    "delivery_manifest_fetched": true,
+    "delivery_manifest_declared_files": 5145,
+    "delivery_manifest_declared_bytes_excluding_manifest": 2086978638,
+    "declared_paths_portable": true,
+    "ten_reader_collection_paths_declared": true,
+    "actual_collection_bytes_or_counts_verified": false
+  },
+  "contract_review": {
+    "engine_working_draft_selection_fields": "compatible schema_version/status/archive/part_size_bytes/parts and 1 MiB manifest bound",
+    "reviewed_committed_engine_app_candidate_set": false
+  },
+  "unrun_checks": [
+    "Exact original 533,064,680-byte ZIP hash verification and reassembly.",
+    "Actual full archive member/delivery bindings and actual collection row counts.",
+    "Multipart Engine/App integration and Historical Details browser checks against coordinator-reviewed commits.",
+    "Joined integration and candidate dependency pin publication."
+  ],
+  "open_findings": [
+    "Original ZIP cannot yet be transferred: chat 32 MiB limit, authenticated Drive plugin 256 MiB limit, direct download requires Google sign-in.",
+    "Manifest declarations and synthetic fixtures are not full dataset acceptance evidence."
+  ],
+  "missing_input": "Original ZIP at a worker-accessible streaming download URL or workspace path.",
+  "user_campaign_saves_read_or_migrated": false,
+  "joined_or_other_component_source_modified": false,
+  "qualified_candidate_pin": false,
+  "coordinator_handoff": "Report is preserved in this repository and final response; no send_message_to_thread tool is available in this chat."
+}

@@ -21,3 +21,13 @@ Preview data cannot grant playable starts, entitlements, live effects or full re
 Active preview data now uses the user-selected v0.5 update for the same 44 concepts, including expanded synopses, perspectives, experiences, systems and design checks. Exact supplied records and readable briefs live in `IRGS_Catalog/design/catalogue_v0_5/`; the original ZIP is preserved under `IRGS_Catalog/design/source_packages/`. `IRGS_Catalog/design/CATALOGUE_V0_5_IMPORT.json` records source verification and reconciliation with existing adoption decisions. Edit the active `data/` view for curated App updates; preserve supplied source files and add new versions separately.
 
 The supplied package's older defaults and Kira notes do not revoke current approved previews, adopted Kira v0.5 canon or the reviewed Century/Rise slices. Existing runtime availability remains authoritative.
+
+## Historical Details and development status
+
+[DEVELOPMENT.md](DEVELOPMENT.md) tracks completed, active, blocked and remaining
+Catalog work. [Historical Details](IRGS_Catalog/historical_details/README.md)
+defines whole-archive preservation and verified 16 MiB parts. Packaging tools and
+synthetic checks are implemented; the original Historical Grand Archive 1.1 ZIP
+is still required. The current manifest reports `blocked_missing_source` and
+contains no payload parts. Extracted Drive intake evidence does not establish a
+completed archive import or campaign release.

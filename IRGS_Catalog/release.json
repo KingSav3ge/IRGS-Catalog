@@ -104,6 +104,11 @@
     "design/catalogue_v0_5/records/SS-17.json": "79078463604daa023144f35c2d35dd22b6c4cba58e278531034d2e8c7e5fde62",
     "design/catalogue_v0_5/records/SS-18.json": "10570e369c0213319c179529187bf84a3952a5f3f6ea12ac933434f3b2e7c802",
     "design/source_packages/IRGS_Campaign_Catalogue_44_Records_v0_5.zip": "90e90bb87085f1fbaaa3569401ebbd824b0fdf2060482a59571991c76cfd44c8",
-    "verify_catalog.py": "32992da8c3c88461b766d0b25388035f5895fc43fab984bf3f8b592f7dcca237"
+    "historical_details/README.md": "a1d94d5b74f93aed9c5d16cad9a08454a5284020143ccb1f3246164735aa9379",
+    "historical_details/intake/README.md": "4a13ff092bc6111e62cfa8b51db7a3e838ac4696376f9f58a122b4e574aea749",
+    "historical_details/intake/drive_delivery_manifest.json": "48abac57689a0110ba65f58a7407bd9860161bbc3f2d0185a604d11037adb304",
+    "historical_details/manifest.json": "99a06956d1c110547663201f72370bcd9aa8445cedfcf2fe8d63a2cc689339f6",
+    "historical_details_package.py": "fde004848caab9ea3c8e7c6ea4a1dffefab6758d0e653b49b6479fe81428f665",
+    "verify_catalog.py": "7d0cc0b156ba247e23c2d0a1dec58fa0f3aaf76541589dee22f2564fa8862b62"
   }
 }

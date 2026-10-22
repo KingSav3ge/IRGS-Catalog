@@ -1,5 +1,6 @@
 """Check campaign catalogue source identity without an Engine or App checkout."""
 import hashlib
+import importlib.util
 import json
 from pathlib import Path, PurePosixPath
 
@@ -48,8 +49,14 @@ def verify_catalog(root=ROOT):
     original = safe_path(root, source['path'][len(prefix):])
     if hashlib.sha256(original.read_bytes()).hexdigest() != source['sha256']:
         raise RuntimeError('Catalogue design source hash differs')
+    spec = importlib.util.spec_from_file_location('catalog_historical_source_check',
+        root / 'historical_details_package.py')
+    checker = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(checker)
+    historical = checker.package_status(root / 'historical_details/manifest.json')
     return {'status': 'verified', 'component': 'IRGS-Catalog', 'files': len(hashes),
-        'concepts': len(portfolio['entries']), 'campaign_release_approved_by_check': False}
+        'concepts': len(portfolio['entries']), 'campaign_release_approved_by_check': False,
+        'historical_details': historical}
 
 
 if __name__ == '__main__':
