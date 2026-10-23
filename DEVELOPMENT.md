@@ -1,5 +1,7 @@
 # Catalog development
 
+Target iteration: **IRGS 3.4.0 — in development**. See the active Solo runtime work order and completion plan. Previously qualified versions and evidence retain their recorded identities.
+
 Updated 2026-10-23. Owner: IRGS Catalog. Push destination:
 `KingSav3ge/IRGS-Catalog/main`. The coordinator in **IRGS Enviroment** owns joined
 integration and review of the exact Engine/App/Catalog dependency set.

@@ -1,5 +1,7 @@
 # IRGS Catalog work order — solo-runtime-01
 
+Target iteration: **IRGS 3.4.0 — in development**. This Catalog deliverable supports the coordinated 3.4.0 release. Preserve independent catalogue/document/content/schema versions and original source filenames; qualify the new fixture and exact dependency combination before release.
+
 Assigned through IRGS Enviroment on 23 October 2026 following the user's direction to complete the systems needed to run IRGS. Owner: **IRGS Catalog**. Push only to `KingSav3ge/IRGS-Catalog/main`.
 
 ## Baseline and priority
