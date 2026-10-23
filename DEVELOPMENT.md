@@ -1,6 +1,6 @@
 # Catalog development
 
-Updated 2026-10-22. Owner: IRGS Catalog. Push destination:
+Updated 2026-10-23. Owner: IRGS Catalog. Push destination:
 `KingSav3ge/IRGS-Catalog/main`. The coordinator in **IRGS Enviroment** owns joined
 integration and review of the exact Engine/App/Catalog dependency set.
 
@@ -17,9 +17,13 @@ integration and review of the exact Engine/App/Catalog dependency set.
 | HD-02 | Retrieve the exact original ZIP and preserve every byte in 32 parts. | Original and reassembled size/SHA-256 verified; original database, books and ancillary files retained. |
 | HD-03 | Verify the actual full dataset, source bindings and reader collection counts. | All 5,146 files hashed, all 5,145 delivery bindings verified; one self-excluded delivery manifest; ten collections counted. |
 
-## Active
+## Active priority — 23 October 2026
 
-`historical-details-01` remains the assigned increment. Full source preservation
+`solo-runtime-01` assigns a small versioned synthetic R00-derived evaluation scenario, with separate actor-visible inputs and evaluator-only oracles, explicit rights/processing labels and actual Engine consumer tests. Follow [the new work order](COORDINATOR_WORK_ORDER.md). This priority update delivers no new fixture or runtime. Historical Details and its compatible App pins are integrated; its source-access and review blockers are resolved.
+
+## Previous-cycle execution record
+
+`historical-details-01` was the preceding increment. Full source preservation
 and byte-level acceptance are complete. The manifest matches committed Engine
 `b3e7d760a2cf3712292b09328566cf1ed0d78c97`. Consumer checks use that reader and
 the App reference service from `e8ef2b0e683a46fab4fe586e86afd26196ab2869`
@@ -30,8 +34,8 @@ Executed acceptance: 39 source/consumer tests passed (30 synthetic, five actual
 complete-delivery checks, four actual Engine/App service checks), plus six
 existing App catalogue tests. Full Catalog integrity verification passed for 140
 source files and all 44 existing campaign concepts. No checks in these runs were
-skipped. The complete multipart set still needs coordinator review and App's
-dependency update before joined qualification.
+skipped. The complete multipart set subsequently passed coordinator review, App pinning
+and joined qualification; these older test identities remain historical evidence.
 
 The campaign portfolio still marks Century, Kira and Rise **In Development** and
 41 other concepts **Planned**. These labels describe concept development; the
@@ -53,25 +57,22 @@ verification. All tests executed with zero skips.
 
 ## Blocked
 
-- **HD-04: candidate dependency selection.** The complete Catalog payload is now
-  available. Coordinator approval of exact commits and App's tested dependency
-  update remain outstanding; this chat cannot publish those changes to another
-  repository. No joined component set is selected by this Catalog increment.
+- **HD-04 resolved:** coordinator review, exact App dependency selection and
+  joined qualification are complete for historical-details-01. The new synthetic
+  runtime fixture and its consumer qualification remain undelivered.
 - The original source-access blocker is resolved. There is no missing source
   input for the Catalog deliverable.
 
 ## Remaining
 
-1. Deliver the full source, manifest pin and actual full-data acceptance evidence
-   to the coordinator for review.
-2. Preserve original rights, sources, uncertainty and disclosed limitations in
-   future indexing or content updates; the ten reader collections are a partial
-   browsing view of the complete preserved archive.
-3. Refresh Catalog source pins and deliver the exact commit and executed checks
-   for coordinator review. App owns pinning and testing the reviewed dependencies.
-4. Continue concept editorial/historical review, artwork and packaging decisions
-   from the existing decision register. Full campaign verification and release
-   remain independent of public previews and archive preservation.
+1. Deliver the versioned synthetic runtime scenario, separated actor/evaluator
+   files, rights/processing labels and fixture validator for solo-runtime-01.
+2. Qualify that fixture against the actual selected Engine handlers, then hand
+   exact source and checks to App and the coordinator for connected acceptance.
+3. Preserve original rights, sources, uncertainty and archive bytes in future
+   indexing; the ten reader collections remain a view of the full archive.
+4. Resume optional catalogue/artwork expansion after the runtime delivery.
+   Campaign release remains independent of previews and archive preservation.
 
 ## Verification record
 
@@ -98,6 +99,7 @@ Review any derivative or creator processing rights independently before use.
 Engine owns provider access, routing and validation; App owns administration and
 presentation. Catalog records do not select models, store credentials/prices or
 authorize transfer. This increment sends no archive content to providers and
-does not adopt generated prose. Additional content changes are unnecessary for
-the first bounded provider step; Historical Details review and App's dependency
-update retain their existing gates.
+does not adopt generated prose. The active work order now requests a small reusable synthetic fixture for
+proving the runnable Solo loop. Historical Details review and App dependency
+selection are complete. Fixture validation, actual Engine compatibility and
+new-cycle component review remain required.
