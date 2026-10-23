@@ -38,3 +38,9 @@ reassembly, all 5,146 files, all 5,145 delivery bindings and ten reader collecti
 counts verified. The manifest reports `complete`. Engine/App compatibility
 evidence and remaining coordinator integration work are recorded separately;
 archive preservation grants no campaign release or new rights.
+
+The [synthetic Solo R00 evaluation fixture](IRGS_Catalog/evaluation/solo_r00_v1/README.md)
+supplies separate actor inputs and evaluator-only expectations for the actual
+Rise operations, finite shelter work, rejection and durable request recovery.
+It is test content outside public campaign discovery. Catalog verification checks
+its schema and source separation; exact Engine/App consumer tests qualify behavior.

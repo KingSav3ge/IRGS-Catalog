@@ -1,82 +1,88 @@
-# Catalog delivery — historical-details-01
+# Catalog delivery — solo-runtime-01
 
-Owner: **IRGS Catalog**. Repository: `KingSav3ge/IRGS-Catalog/main`. This report
-includes the full-payload delivery from
-`58ce55672bdd75076b94882bd8715a1d2a1f383a` and the following Catalog validation
-increment; resolve the latest candidate's exact SHA from Git.
-The preceding tooling-only increment is
-`ab3e127f4a0bc504158fd91617e4f76fef5a2f7d`.
-The updated work order at `02db97383a8a0c785250b98585253d24f3365a9b`
-is included; its AI content/rights dependencies are recorded as future work in
-the development plan after reading all three linked coordinator sources.
+Owner: **IRGS Catalog**. Destination: `KingSav3ge/IRGS-Catalog/main`. Pulled base:
+`f22049396795425838add515960a3e95a5e98189`. Resolve this candidate's exact SHA with
+`git rev-parse HEAD`; the full pushed SHA is reported in the component chat.
+Coordinator update `0a6a754494b2b5c12f47bbd392d215ce81ebf663` was also pulled
+before committing: target iteration **IRGS 3.4.0 — in development**. Fixture and
+schema identities remain independent. Previous-cycle evidence is retained in `COORDINATOR_REPORT_HISTORICAL_DETAILS_01.md`.
 
-## Latest Catalog follow-up — CAT-03
+## Delivered test content and behavior
 
-Catalog source verification now rejects malformed editorial records even after
-their source hashes are refreshed: duplicate/invalid campaign IDs, inconsistent
-type/slate, unknown development status, release/entitlement/readiness claims and
-runtime availability fields in preview input. Discovery IDs and held starting
-references are also checked. Drafts remain valid editorial source records.
+`IRGS_Catalog/evaluation/solo_r00_v1/` supplies fixture
+`irgs-solo-r00-eval-v1`, version 1.0.0, schema 1. Its ten cases include five actual
+legitimate actions: walk to the clearing, establish the camp, reserve shelter
+inputs, advance to the first work boundary and complete shelter. The other cases
+cover denied building at the commons, a deliberately unsupported grain-creation
+proposal, stale revision, exact replay and changed-payload request identity reuse.
+No new mechanic or alternate simulator is added. Engine creates all state from
+its reviewed R00 choices and executes its actual `execute_settlement_action`
+handler. App supplies durable commits, revision checks and result recovery.
 
-Four failures were reproduced against the previous source verifier using small
-temporary fixtures. All 16 new regression tests pass. The complete fresh run
-passes **55 source/consumer tests and six App catalogue tests, zero skips**;
-Catalog verification still passes all 140 source files, 44 concepts and the
-complete archive. Only Catalog source pins changed. Campaign data, designs,
-archive bytes and manifest pin are identical to the full-payload delivery.
-See `CAMPAIGN_RECORD_VALIDATION.json` for commands and tested dependency commits.
-App pins and joined integration remain coordinator-owned work.
+Actor documents and evaluator setup/oracle are physically separate. The
+hash/schema-checked `export_actor_input` API reads only the manifest and selected
+actor file, rejects evaluator paths and extra fields, and never opens evaluator
+files. Full intake validation and strict actor export both reject reserved hidden
+markers even after hashes are refreshed. Every canned actor context is checked
+against the actual App actor-filtered view at its point in the sequence.
 
-## Delivered source
+The manifest records stable fixture/case/source/intent identities, explicit
+synthetic authorship and processing rights limited to authored fixture text.
+Unknown imported rights gain no permission. Engine authorization remains required
+for actual transfer; content selects no provider/model/key/price/route. Setup,
+full templates, raw saves and Historical Details do not enter actor exports.
 
-`IRGS_Catalog/historical_details/` now preserves the complete original Historical
-Grand Archive 1.1 ZIP in 32 ordered 16 MiB byte parts. The original and exact
-reassembly match 533,064,680 bytes and SHA-256
-`51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773`.
-The last part is 12,970,984 bytes; every file is below the 100 MiB import limit.
+At every accepted step, existing stock plus accepted consumption equals opening
+stock. NPC repair consumes one NPC timber at elapsed 1,800; founder shelter
+consumes three founder timber at 3,900 and creates two shelter places. Axes and
+grain remain unchanged. Action requests return at material work boundaries;
+causal clock, elapsed time and storage revision are checked separately.
 
-Manifest path: `IRGS_Catalog/historical_details/manifest.json`.
-Manifest SHA-256:
-`1543cd65b5c4b3ed6f160565b4e4bf01d09dd44a392d53c7036efcd5c0dcf21f`.
-Its status is `complete`; its exact size is 10,581 bytes, below the Engine's
-1 MiB manifest limit. The separate member index is pinned by that manifest.
+The fixture is outside public campaign discovery, canon, playable starts and
+release approval. All 44 previews, supplied packages and original archive bytes
+remain unchanged. Catalog source verification now also checks fixture intake.
 
-All 5,146 archive files were read and hashed. All 5,145 declared delivery
-bindings match; the delivery manifest is the sole self-excluded unbound file.
-The database, books, source assets, rights records and ancillary files are
-preserved. All ten reader collections were parsed and counted; these are a
-partial browsing view of the complete archive, not a substitute payload.
+## Exact selected consumers and executed evidence
 
-## Consumer contract and executed checks
+- Engine `723627e629231b5e90f38b9d52b65c9a3967b92a`.
+- App `d8dc35ed653e516ccd0cacf91ee9693258491032`.
+- That App's committed Engine pin matches the selected Engine. Its Catalog pin
+  remains `3e898acb2179f18a41d7967817bedf429df29d3f`; tests explicitly select this
+  Catalog candidate through `IRGS_CATALOG_ROOT`. No pointer is changed here.
 
-The Engine manifest contract and API match committed Engine
-`b3e7d760a2cf3712292b09328566cf1ed0d78c97`. Actual consumer checks select its
-two reader modules and App reference-service modules from
-`e8ef2b0e683a46fab4fe586e86afd26196ab2869` in isolated temporary snapshots.
-All four module bytes were checked against their committed Git blob identities.
+Both dependency snapshots are isolated and unedited. Consumer tests check full
+Git identities and imported module paths. All saves are temporary synthetic
+state. Fresh results, with **zero skips**:
 
-- **Original archive delivery: 39 source/consumer tests passed, zero skips:** 30 synthetic tests, five
-  complete-delivery checks and four actual Engine/App service checks. This
-  includes exact real-data reassembly, every member/binding, missing, corrupt,
-  duplicate and reordered parts, real collection reads and App repair/retry.
-- **Six existing App catalogue tests passed, zero skips:** all 44 previews,
-  proposal/launch boundaries and temporary synthetic-world HTTP continuity.
-  That regression run used App `aac20055270cc64ba870061085cd8f6bfe43a93c`
-  with its pinned Engine `c0777be7e68021bd1bee66437d555390778c0adb` and this
-  Catalog selected explicitly. It does not qualify new dependency pointers.
-- Catalog verification passed for 140 source files; only Catalog source pins
-  were refreshed. Existing campaign data and original design packages are
-  unchanged. No user campaign save was read or migrated.
+- **73 Catalog/source/consumer tests passed**, including twelve new schema and
+  six new actual Engine/App consumer checks, all existing record tests and full
+  Historical Details source/reader checks.
+- **11 existing App Rise HTTP tests passed**, including request recovery,
+  persistence, finite work, authorization and filtered views.
+- **Six existing App catalogue tests passed**, preserving all 44 previews,
+  discovery boundaries and temporary-world continuity.
+- Catalog integrity passed **155 source files**, ten fixture cases, 32 historical
+  parts, all 5,146 archive files and all 5,145 delivery bindings. Only Catalog
+  release hashes were refreshed. `git diff --check` passed.
 
-## Remaining coordinator work
+New consumer checks also prove restart-safe result lookup, an exact duplicate
+under concurrency applying once, and failed persistence leaving save bytes
+unchanged before a single successful retry. Schema checks exercise incorrect
+rights, hidden-field/marker contamination, wrong audience, path traversal,
+symlinks, tampering, duplicate JSON fields/case IDs and broken source/replay refs.
+See `SOLO_FIXTURE_VALIDATION.json` for commands, dependencies and the resolved
+initial combined-test environment omission.
 
-There is no missing source input. The initial download blocker is resolved.
-Review this exact Catalog commit and the exact Engine/App candidates; App owns
-its dependency pointer update and full HTTP/interface qualification of that set.
-Only the coordinator selects and tests the isolated joined candidate. No other
-repository or dependency pointer is changed by this delivery.
+## Pending integration and live prerequisites
 
-Archive integrity establishes source preservation, not historical truth, new
-rights, campaign adoption or release approval. See
-`HISTORICAL_DETAILS_VALIDATION.json` for collection counts, commands, module
-identities and the remaining unrun integration checks.
+Catalog's assigned fixture content and baseline qualification are complete for
+review. This does not finish the Solo AI runtime. App-owned production fixture
+loading and its exact Catalog pin update, the next Engine/App proposal/provider
+contracts, requalification against those contracts, and isolated joined acceptance
+remain pending. The coordinator selects and reviews that exact component set;
+no earlier-cycle approval applies to this candidate.
+
+No live provider call was made. Any live smoke test needs configured approved
+access, route and credentials under Engine policy. The fixture does not supply
+those settings or authorize private/history payload transfer. No other repository
+was edited or pushed. There is no missing archive input or Catalog source blocker.

@@ -18,10 +18,26 @@ integration and review of the exact Engine/App/Catalog dependency set.
 | HD-01c | Inspect supplied extracted Drive folder and preserve its unchanged delivery manifest as intake evidence. | `IRGS_Catalog/historical_details/intake/`; no claim of full payload verification. |
 | HD-02 | Retrieve the exact original ZIP and preserve every byte in 32 parts. | Original and reassembled size/SHA-256 verified; original database, books and ancillary files retained. |
 | HD-03 | Verify the actual full dataset, source bindings and reader collection counts. | All 5,146 files hashed, all 5,145 delivery bindings verified; one self-excluded delivery manifest; ten collections counted. |
+| SOLO-CAT-01 | Versioned synthetic R00 evaluation content, actor/oracle separation, explicit rights and schema validation. | Ten cases and five legitimate actions; `IRGS_Catalog/evaluation/solo_r00_v1/`; `solo_evaluation.py`. |
+| SOLO-CAT-02 | Actual selected Engine/App consumer qualification using temporary synthetic state. | 18 new schema/consumer tests; finite materials, hidden boundary, denial, unsupported action, stale/replayed requests, restart, concurrent duplicate and failed-save recovery. See `SOLO_FIXTURE_VALIDATION.json`. |
 
 ## Active priority — 23 October 2026
 
-`solo-runtime-01` assigns a small versioned synthetic R00-derived evaluation scenario, with separate actor-visible inputs and evaluator-only oracles, explicit rights/processing labels and actual Engine consumer tests. Follow [the new work order](COORDINATOR_WORK_ORDER.md). This priority update delivers no new fixture or runtime. Historical Details and its compatible App pins are integrated; its source-access and review blockers are resolved.
+`solo-runtime-01` Catalog test content is delivered for component review. The
+versioned R00 fixture has separate actor-visible inputs and evaluator-only
+setup/oracles, explicit processing rights, strict schema/hash validation and
+actual Engine/App consumer checks. Engine owns all initialization and execution;
+Catalog adds no simulator or public campaign entry. Five legitimate operations
+move, found, reserve materials and complete shelter work, consuming four existing
+timber bundles across the two households. Rejection and replay preserve state.
+
+Qualification selects Engine `723627e629231b5e90f38b9d52b65c9a3967b92a` and App
+`d8dc35ed653e516ccd0cacf91ee9693258491032` in isolated, unedited snapshots. Its
+Catalog dependency is explicitly overridden to this candidate for tests; the
+App's committed Catalog pin remains `3e898acb2179f18a41d7967817bedf429df29d3f`.
+New runtime/provider contracts and production App fixture loading need separate
+component work and qualification. The coordinator owns exact App pin updates,
+joined acceptance and live prerequisites. Historical Details remains integrated.
 
 ## Previous-cycle execution record
 
@@ -60,17 +76,19 @@ verification. All tests executed with zero skips.
 ## Blocked
 
 - **HD-04 resolved:** coordinator review, exact App dependency selection and
-  joined qualification are complete for historical-details-01. The new synthetic
-  runtime fixture and its consumer qualification remain undelivered.
+  joined qualification are complete for historical-details-01.
 - The original source-access blocker is resolved. There is no missing source
   input for the Catalog deliverable.
+- No Catalog source blocker remains for solo-runtime-01. New-cycle review and
+  exact App/joined selection are pending; baseline consumer qualification does
+  not approve a new provider runtime or claim live execution.
 
 ## Remaining
 
-1. Deliver the versioned synthetic runtime scenario, separated actor/evaluator
-   files, rights/processing labels and fixture validator for solo-runtime-01.
-2. Qualify that fixture against the actual selected Engine handlers, then hand
-   exact source and checks to App and the coordinator for connected acceptance.
+1. Coordinator review of the exact new Catalog commit and App dependency pinning.
+2. Requalify this synthetic content against the next selected Engine/App Solo
+   proposal/provider contract and joined candidate. Production App fixture
+   integration and configured live-provider smoke tests remain unrun.
 3. Preserve original rights, sources, uncertainty and archive bytes in future
    indexing; the ten reader collections remain a view of the full archive.
 4. Resume optional catalogue/artwork expansion after the runtime delivery.
@@ -78,9 +96,11 @@ verification. All tests executed with zero skips.
 
 ## Verification record
 
-See `HISTORICAL_DETAILS_VALIDATION.json` for commands, counts, dependency scope,
-unrun acceptance checks and source-access findings. All behavioral fixtures are
-synthetic and temporary; no user campaign saves are read or migrated.
+See `SOLO_FIXTURE_VALIDATION.json` for current commands, results and exact
+dependencies. `HISTORICAL_DETAILS_VALIDATION.json`,
+`CAMPAIGN_RECORD_VALIDATION.json` and `COORDINATOR_REPORT_HISTORICAL_DETAILS_01.md`
+retain labelled previous-cycle evidence. All behavioral fixtures are synthetic
+and temporary; no user campaign saves are read or migrated.
 
 ## AI evaluation content and rights backlog
 
@@ -101,7 +121,8 @@ Review any derivative or creator processing rights independently before use.
 Engine owns provider access, routing and validation; App owns administration and
 presentation. Catalog records do not select models, store credentials/prices or
 authorize transfer. This increment sends no archive content to providers and
-does not adopt generated prose. The active work order now requests a small reusable synthetic fixture for
-proving the runnable Solo loop. Historical Details review and App dependency
-selection are complete. Fixture validation, actual Engine compatibility and
-new-cycle component review remain required.
+does not adopt generated prose. The current R00 fixture supplies validated
+synthetic inputs and actual baseline consumer compatibility for the active work
+order. It does not run the earlier 16 proposed provider evaluation cases or
+complete new provider runtime contracts. New-cycle component review and exact
+App/joined dependency selection remain required.
