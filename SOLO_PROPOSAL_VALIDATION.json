@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-10-24",
+  "target_iteration": "IRGS 3.4.0 \u2014 development",
+  "increment": "Catalog proposal compatibility follow-up",
+  "status": "passed_offline_with_conditional_narration_dependency",
+  "repository": "KingSav3ge/IRGS-Catalog",
+  "branch": "main",
+  "pulled_base_commit": "401df26a1f16be864dd15d7c5250da5d75f8ccca",
+  "candidate_commit": "Resolve this record from its containing Git commit; exact pushed commit is reported in the component chat.",
+  "coordinator_baseline": {
+    "review_url": "https://github.com/KingSav3ge/IRGS/blob/main/provenance/qa/primary_update_3_4_0_review.json",
+    "review_blob_sha": "ccb6638bec203cef82f29c333faa24ef29fd7886",
+    "reviewed_at_utc": "2026-10-24T13:11:49.647084+00:00",
+    "scope": "Previously integrated original fixture, App pinning, joined/browser/package evidence. These are coordinator results, not fresh Catalog checks."
+  },
+  "dependencies": {
+    "engine_commit": "8234044c089131314019ecaf6799a2f08028a3f8",
+    "integrated_app_commit": "277554aac21a092b8a55562309da274bbe74a3af",
+    "component_followup_app_commit": "4f45f5ab8473a2bddb500fe3a49122575b6483e1",
+    "both_app_catalog_pins": "401df26a1f16be864dd15d7c5250da5d75f8ccca",
+    "original_contract_engine_commit": "723627e629231b5e90f38b9d52b65c9a3967b92a",
+    "original_contract_app_commit": "d8dc35ed653e516ccd0cacf91ee9693258491032",
+    "sources_unedited": true,
+    "candidate_catalog_selected_by_environment_only": true
+  },
+  "source_sha256": {
+    "IRGS_Catalog/solo_proposal_compatibility.py": "d83a591a5e070bd3f602898fa1f16e477ac580b62e2d9f39ce48ed8c3d158dce",
+    "IRGS_Catalog/verify_catalog.py": "9f9e132948fe858f4fc383df8d64fb4418c3f320d3cfca5bd979dd59b22c8492",
+    "IRGS_Catalog/evaluation/solo_r00_proposals_v1/compatibility.json": "a1d3e638180b1a5f1f968bb0057aecda9cdea604c23306fbbd58e1166405f0f2",
+    "tools/tests/test_solo_proposal_consumers.py": "ceb61cc5eff5a5cf83d8b922cdd94b882a3c989092d677a6decb2a3e394f6aa8",
+    "tools/tests/test_solo_proposal_contract.py": "d087773009b1adaec9a1e54e504c82f7712959d290c4da98fc4715c92239ca9f"
+  },
+  "checks": [
+    {
+      "name": "source_schema_and_actual_archive_readers",
+      "tests": 73,
+      "skipped": 0,
+      "environment": {
+        "IRGS_ENGINE_ROOT": "/tmp/irgs-catalog-followup-engine/IRGS_3_3",
+        "IRGS_CATALOG_ROOT": "/workspace/IRGS-Catalog/IRGS_Catalog",
+        "IRGS_HISTORICAL_ENGINE_RUNTIME": "/tmp/irgs-catalog-followup-engine/IRGS_3_3/runtime",
+        "IRGS_HISTORICAL_APP_SOURCE": "/tmp/irgs-catalog-followup-app-current/IRGS_Web"
+      },
+      "cwd": "/workspace/IRGS-Catalog",
+      "command": "python -B -m unittest tools.tests.test_campaign_records tools.tests.test_historical_details tools.tests.test_historical_details_delivery tools.tests.test_solo_evaluation tools.tests.test_solo_proposal_contract -v",
+      "result": "passed"
+    },
+    {
+      "name": "original_exact_consumer_contract",
+      "tests": 6,
+      "skipped": 0,
+      "environment": {
+        "IRGS_SOLO_ENGINE_SOURCE": "/tmp/irgs-catalog-original-engine",
+        "IRGS_SOLO_APP_SOURCE": "/tmp/irgs-catalog-original-app"
+      },
+      "cwd": "/workspace/IRGS-Catalog",
+      "command": "python -B -m unittest tools.tests.test_solo_evaluation_consumers -v",
+      "result": "passed"
+    },
+    {
+      "name": "proposal_http_integrated_development",
+      "app_commit": "277554aac21a092b8a55562309da274bbe74a3af",
+      "tests": 8,
+      "skipped": 0,
+      "environment": {
+        "IRGS_PROPOSAL_ENGINE_SOURCE": "/tmp/irgs-catalog-followup-engine",
+        "IRGS_PROPOSAL_APP_SOURCE": "/tmp/irgs-catalog-followup-app"
+      },
+      "cwd": "/workspace/IRGS-Catalog",
+      "command": "python -B -m unittest tools.tests.test_solo_proposal_consumers -v",
+      "result": "passed"
+    },
+    {
+      "name": "proposal_http_component_followup",
+      "app_commit": "4f45f5ab8473a2bddb500fe3a49122575b6483e1",
+      "tests": 8,
+      "skipped": 0,
+      "environment": {
+        "IRGS_PROPOSAL_ENGINE_SOURCE": "/tmp/irgs-catalog-followup-engine",
+        "IRGS_PROPOSAL_APP_SOURCE": "/tmp/irgs-catalog-followup-app-current"
+      },
+      "cwd": "/workspace/IRGS-Catalog",
+      "command": "python -B -m unittest tools.tests.test_solo_proposal_consumers -v",
+      "result": "passed"
+    },
+    {
+      "name": "existing_app_proposal_bridges",
+      "tests": 13,
+      "skipped": 0,
+      "environment": {
+        "IRGS_ENGINE_ROOT": "/tmp/irgs-catalog-followup-engine/IRGS_3_3",
+        "IRGS_CATALOG_ROOT": "/workspace/IRGS-Catalog/IRGS_Catalog"
+      },
+      "cwd": "/tmp/irgs-catalog-followup-app-current",
+      "command": "python -B -m unittest discover -s IRGS_Web/tests -p 'test_solo*.py' -v",
+      "result": "passed"
+    },
+    {
+      "name": "existing_app_campaign_portfolio",
+      "tests": 6,
+      "skipped": 0,
+      "environment": {
+        "IRGS_ENGINE_ROOT": "/tmp/irgs-catalog-followup-engine/IRGS_3_3",
+        "IRGS_CATALOG_ROOT": "/workspace/IRGS-Catalog/IRGS_Catalog"
+      },
+      "cwd": "/tmp/irgs-catalog-followup-app-current",
+      "command": "python -B -m unittest discover -s IRGS_Web/tests -p 'test_campaign_portfolio.py' -v",
+      "result": "passed"
+    },
+    {
+      "name": "catalog_integrity",
+      "cwd": "/workspace/IRGS-Catalog",
+      "command": "python -B IRGS_Catalog/verify_catalog.py",
+      "result": "passed",
+      "source_files": 158,
+      "concepts": 44,
+      "historical_parts": 32,
+      "historical_files_verified": 5146,
+      "historical_bindings_verified": 5145
+    },
+    {
+      "name": "patch_whitespace",
+      "command": "git diff --check",
+      "result": "passed"
+    }
+  ],
+  "test_executions": 114,
+  "skipped": 0,
+  "proposal_scenario": {
+    "fixture_id": "irgs-solo-r00-eval-v1",
+    "manifest_sha256": "2d30e863c4f769f0e2039469807ca0c6eeef3f30edd17d96778cebcba65bdbe5",
+    "cases_per_app": 10,
+    "actual_core_commits_per_app": 5,
+    "synthetic_transport_dispatches_in_main_sequence_per_app": 7,
+    "elapsed_seconds": 3900,
+    "shelter_worked_seconds": 3600,
+    "shelter_places": 2,
+    "material_consumption": {
+      "grain": 0,
+      "timber": 4,
+      "axe": 0
+    },
+    "restarted_after_every_commit": true,
+    "concurrent_retries_per_committed_action": 2,
+    "proposal_save_bytes_unchanged": true,
+    "outcomes_equal_actual_core_receipts": true,
+    "narrative": null,
+    "actor_received_assertions_sources_times_checked": true,
+    "hidden_oracle_absent_from_model_inputs_and_public_results": true,
+    "legitimate_http_requests_exclude_context_oracle_world": true
+  },
+  "additional_behavior_verified": [
+    "Exact whitespace intention and explicit acceptance/digest binding",
+    "Foreign actor and forged browser context rejected before dispatch",
+    "Denied, malformed, changed-intent and unknown-source output retain exact intention and finite reservation, retry without dispatch",
+    "Identical-byte Trash restore fences draft, preserves accepted receipt",
+    "Failed save is atomic; retry commits once without another attempt",
+    "State change fences late output; cancellation survives host restart",
+    "Unconfigured host leaves state and intention unchanged without dispatch"
+  ],
+  "preservation": {
+    "original_fixture_directory_and_loader_byte_identical": true,
+    "original_qualification_records_unchanged": true,
+    "baseline_source_files_unchanged_except_verify_catalog_py": true,
+    "only_changed_original_catalog_source": [
+      "verify_catalog.py"
+    ],
+    "previews": 44,
+    "original_archives_and_historical_records_unchanged": true
+  },
+  "scope": {
+    "external_provider_calls": 0,
+    "user_saves_read_or_migrated": false,
+    "engine_app_sources_or_pins_changed": false,
+    "browser_tests_executed_in_this_followup": false,
+    "new_joined_integration_claimed": false,
+    "model_semantic_voice_quality_evaluated": false
+  },
+  "conditional_followup": {
+    "id": "NARRATION-CAT-01",
+    "status": "awaiting_engine_app_contract",
+    "evidence": "Selected Engine API exposes only propose_local_action and selected App returns narrative:null. Coordinator plan says general narration/dialogue and semantic/voice review remain unfinished.",
+    "completion_trigger": "Owners publish supported request/result/actor/source/validation contracts; then add separately versioned synthetic content and actual consumer checks."
+  },
+  "remaining_integration": [
+    "Coordinator review of this exact follow-up commit",
+    "App-owned candidate dependency selection and joined qualification if adopted",
+    "Configured and authorized live-provider smoke remains outside this offline Catalog check"
+  ]
+}

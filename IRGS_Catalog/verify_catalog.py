@@ -122,10 +122,15 @@ def verify_catalog(root=ROOT):
     checker = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(checker)
     solo = checker.validate_fixture(root / 'evaluation/solo_r00_v1')
+    spec = importlib.util.spec_from_file_location('catalog_proposal_compatibility_check',
+        root / 'solo_proposal_compatibility.py')
+    checker = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(checker)
+    proposals = checker.validate_compatibility(root)
     return {'status': 'verified', 'component': 'IRGS-Catalog', 'files': len(hashes),
         'concepts': len(portfolio['entries']), 'campaign_release_approved_by_check': False,
         'campaign_records': campaign_records, 'historical_details': historical,
-        'solo_evaluation': solo}
+        'solo_evaluation': solo, 'solo_proposal_compatibility': proposals}
 
 
 if __name__ == '__main__':

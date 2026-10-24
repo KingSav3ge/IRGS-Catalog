@@ -44,3 +44,9 @@ supplies separate actor inputs and evaluator-only expectations for the actual
 Rise operations, finite shelter work, rejection and durable request recovery.
 It is test content outside public campaign discovery. Catalog verification checks
 its schema and source separation; exact Engine/App consumer tests qualify behavior.
+
+The original fixture is integrated in the 3.4.0 development build. Separate
+[proposal compatibility checks](IRGS_Catalog/evaluation/solo_r00_proposals_v1/README.md)
+run its ten cases through the current Engine/App proposal HTTP flow while
+preserving the original fixture and dependency evidence. General narration and
+dialogue evaluation awaits a supported Engine/App contract.

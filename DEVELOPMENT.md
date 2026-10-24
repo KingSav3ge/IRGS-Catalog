@@ -2,7 +2,7 @@
 
 Target iteration: **IRGS 3.4.0 — in development**. See the active Solo runtime work order and completion plan. Previously qualified versions and evidence retain their recorded identities.
 
-Updated 2026-10-23. Owner: IRGS Catalog. Push destination:
+Updated 2026-10-24. Owner: IRGS Catalog. Push destination:
 `KingSav3ge/IRGS-Catalog/main`. The coordinator in **IRGS Enviroment** owns joined
 integration and review of the exact Engine/App/Catalog dependency set.
 
@@ -20,24 +20,45 @@ integration and review of the exact Engine/App/Catalog dependency set.
 | HD-03 | Verify the actual full dataset, source bindings and reader collection counts. | All 5,146 files hashed, all 5,145 delivery bindings verified; one self-excluded delivery manifest; ten collections counted. |
 | SOLO-CAT-01 | Versioned synthetic R00 evaluation content, actor/oracle separation, explicit rights and schema validation. | Ten cases and five legitimate actions; `IRGS_Catalog/evaluation/solo_r00_v1/`; `solo_evaluation.py`. |
 | SOLO-CAT-02 | Actual selected Engine/App consumer qualification using temporary synthetic state. | 18 new schema/consumer tests; finite materials, hidden boundary, denial, unsupported action, stale/replayed requests, restart, concurrent duplicate and failed-save recovery. See `SOLO_FIXTURE_VALIDATION.json`. |
+| SOLO-CAT-03 | R00 content integrated into the coordinated 3.4.0 development build. | [Coordinator source/evidence review](https://github.com/KingSav3ge/IRGS/blob/main/provenance/qa/primary_update_3_4_0_review.json); current App pins the delivered Catalog. |
+| SOLO-CAT-04 | Reproducible Catalog-owned qualification of the actual proposal HTTP flow. | Six compatibility schema checks and eight consumer tests for each selected App commit; `SOLO_PROPOSAL_VALIDATION.json`. Original fixture and baseline qualification preserved. |
 
-## Active priority — 23 October 2026
+## Current follow-up — 24 October 2026
 
-`solo-runtime-01` Catalog test content is delivered for component review. The
-versioned R00 fixture has separate actor-visible inputs and evaluator-only
-setup/oracles, explicit processing rights, strict schema/hash validation and
-actual Engine/App consumer checks. Engine owns all initialization and execution;
-Catalog adds no simulator or public campaign entry. Five legitimate operations
-move, found, reserve materials and complete shelter work, consuming four existing
-timber bundles across the two households. Rejection and replay preserve state.
+The original `solo-runtime-01` content, App pinning and joined development
+qualification are complete. The coordinator integrated Catalog
+`401df26a1f16be864dd15d7c5250da5d75f8ccca`, Engine
+`8234044c089131314019ecaf6799a2f08028a3f8` and App
+`277554aac21a092b8a55562309da274bbe74a3af`. Its independent browser and clean-package
+checks exercised five Rise actions through shelter completion at elapsed 3,900.
+These are attributed coordinator results, not fresh tests run by Catalog.
 
-Qualification selects Engine `723627e629231b5e90f38b9d52b65c9a3967b92a` and App
-`d8dc35ed653e516ccd0cacf91ee9693258491032` in isolated, unedited snapshots. Its
-Catalog dependency is explicitly overridden to this candidate for tests; the
-App's committed Catalog pin remains `3e898acb2179f18a41d7967817bedf429df29d3f`.
-New runtime/provider contracts and production App fixture loading need separate
-component work and qualification. The coordinator owns exact App pin updates,
-joined acceptance and live prerequisites. Historical Details remains integrated.
+This follow-up updates that status and adds a separate compatibility contract and
+actual proposal/acceptance HTTP tests. It qualifies the integrated Engine with
+both the integrated App above and component follow-up App
+`4f45f5ab8473a2bddb500fe3a49122575b6483e1`. Both Apps commit the selected Engine
+and original Catalog `401df26`. Tests select this Catalog candidate explicitly;
+the new follow-up and subsequent App are not thereby approved for joined release.
+
+All ten original cases now run through the actual Engine broker/validator/ledger
+and App host with offline synthetic transport. Five accepted actions retain
+finite resources, committed summaries and exact intent across restart and
+concurrent retries. Other cases reject at their actual boundary. Extra checks
+cover foreign actors, forged context, provider output failures, acceptance,
+identical restore, cancellation, late output, failed saves and unconfigured use.
+No provider call, user save, alternate simulator or new playable content is added.
+
+Fresh qualification passed 114 test executions with zero skips: 73
+source/schema/archive-reader checks, six original consumer checks, eight proposal
+HTTP checks for each of the two Apps, 13 existing App proposal bridge tests and
+six App catalogue tests. Integrity passed 158 Catalog source files and the full
+original archive. Each exact dependency selection runs in a separate process.
+
+The original fixture, manifest and loader remain byte-identical. Its initial
+contract still selects Engine `723627e629231b5e90f38b9d52b65c9a3967b92a` and App
+`d8dc35ed653e516ccd0cacf91ee9693258491032`; those six consumer checks run separately
+from the new dependency selections. `SOLO_FIXTURE_VALIDATION.json` remains
+historical evidence rather than being relabelled as current proposal testing.
 
 ## Previous-cycle execution record
 
@@ -79,16 +100,20 @@ verification. All tests executed with zero skips.
   joined qualification are complete for historical-details-01.
 - The original source-access blocker is resolved. There is no missing source
   input for the Catalog deliverable.
-- No Catalog source blocker remains for solo-runtime-01. New-cycle review and
-  exact App/joined selection are pending; baseline consumer qualification does
-  not approve a new provider runtime or claim live execution.
+- No Catalog source blocker remains for the completed R00/proposal follow-up.
+- **NARRATION-CAT-01 awaiting Engine/App contract:** the current API only proposes
+  existing actions; App returns Core summaries with `narrative: null`. The
+  coordinator lists general narration/dialogue and semantic/voice review as
+  unfinished. New synthetic narration/dialogue inputs need a supported request,
+  result, actor/source and validation contract before actual qualification.
 
 ## Remaining
 
-1. Coordinator review of the exact new Catalog commit and App dependency pinning.
-2. Requalify this synthetic content against the next selected Engine/App Solo
-   proposal/provider contract and joined candidate. Production App fixture
-   integration and configured live-provider smoke tests remain unrun.
+1. Coordinator review of this follow-up's exact Catalog commit and any new
+   App/joined dependency selection. Original 3.4.0 integration is already complete.
+2. When Engine/App publish general narration/dialogue contracts, add separately
+   versioned actor-safe evaluation inputs/oracles and actual consumer checks;
+   retain explicit synthetic rights and report human semantic review separately.
 3. Preserve original rights, sources, uncertainty and archive bytes in future
    indexing; the ten reader collections remain a view of the full archive.
 4. Resume optional catalogue/artwork expansion after the runtime delivery.
@@ -96,10 +121,11 @@ verification. All tests executed with zero skips.
 
 ## Verification record
 
-See `SOLO_FIXTURE_VALIDATION.json` for current commands, results and exact
-dependencies. `HISTORICAL_DETAILS_VALIDATION.json`,
+See `SOLO_PROPOSAL_VALIDATION.json` for fresh commands, dependency selections and
+scope. `SOLO_FIXTURE_VALIDATION.json`, `HISTORICAL_DETAILS_VALIDATION.json`,
 `CAMPAIGN_RECORD_VALIDATION.json` and `COORDINATOR_REPORT_HISTORICAL_DETAILS_01.md`
-retain labelled previous-cycle evidence. All behavioral fixtures are synthetic
+retain labelled previous-cycle evidence; `COORDINATOR_REPORT_SOLO_RUNTIME_01.md`
+preserves the initial R00 delivery report. All behavioral fixtures are synthetic
 and temporary; no user campaign saves are read or migrated.
 
 ## AI evaluation content and rights backlog
@@ -123,6 +149,9 @@ presentation. Catalog records do not select models, store credentials/prices or
 authorize transfer. This increment sends no archive content to providers and
 does not adopt generated prose. The current R00 fixture supplies validated
 synthetic inputs and actual baseline consumer compatibility for the active work
-order. It does not run the earlier 16 proposed provider evaluation cases or
-complete new provider runtime contracts. New-cycle component review and exact
-App/joined dependency selection remain required.
+order, with current proposal HTTP compatibility now qualified separately. It
+does not run the earlier 16 proposed model-quality evaluations or complete
+general narration/dialogue. Live smoke still requires configured authorized
+access, an eligible workload and finite limits through Engine/App; none is
+dispatched by this content increment. Each new component/joined set needs its
+own review, separate from the already integrated original 3.4.0 baseline.

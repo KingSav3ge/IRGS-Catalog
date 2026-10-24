@@ -1,88 +1,106 @@
-# Catalog delivery — solo-runtime-01
+# Catalog follow-up — current proposal consumer qualification
 
 Owner: **IRGS Catalog**. Destination: `KingSav3ge/IRGS-Catalog/main`. Pulled base:
-`f22049396795425838add515960a3e95a5e98189`. Resolve this candidate's exact SHA with
-`git rev-parse HEAD`; the full pushed SHA is reported in the component chat.
-Coordinator update `0a6a754494b2b5c12f47bbd392d215ce81ebf663` was also pulled
-before committing: target iteration **IRGS 3.4.0 — in development**. Fixture and
-schema identities remain independent. Previous-cycle evidence is retained in `COORDINATOR_REPORT_HISTORICAL_DETAILS_01.md`.
+`401df26a1f16be864dd15d7c5250da5d75f8ccca`. Resolve this report's containing Git
+commit with `git rev-parse HEAD`; the exact pushed SHA is returned in chat.
+Target iteration remains **IRGS 3.4.0 — development**.
 
-## Delivered test content and behavior
+## Status corrected
 
-`IRGS_Catalog/evaluation/solo_r00_v1/` supplies fixture
-`irgs-solo-r00-eval-v1`, version 1.0.0, schema 1. Its ten cases include five actual
-legitimate actions: walk to the clearing, establish the camp, reserve shelter
-inputs, advance to the first work boundary and complete shelter. The other cases
-cover denied building at the commons, a deliberately unsupported grain-creation
-proposal, stale revision, exact replay and changed-payload request identity reuse.
-No new mechanic or alternate simulator is added. Engine creates all state from
-its reviewed R00 choices and executes its actual `execute_settlement_action`
-handler. App supplies durable commits, revision checks and result recovery.
+The initial R00 fixture, App pinning and joined development integration are
+complete. The coordinator's [24 October source/evidence review](https://github.com/KingSav3ge/IRGS/blob/main/provenance/qa/primary_update_3_4_0_review.json)
+records Engine `8234044c089131314019ecaf6799a2f08028a3f8`, App
+`277554aac21a092b8a55562309da274bbe74a3af` and Catalog
+`401df26a1f16be864dd15d7c5250da5d75f8ccca`, with independently executed joined,
+package and browser evidence. Those are coordinator results; this follow-up
+adds fresh Catalog-owned HTTP checks. The old delivery report is preserved in
+`COORDINATOR_REPORT_SOLO_RUNTIME_01.md`, with its outdated pending notes labelled.
+The development plan now reflects completed integration and current dependencies.
 
-Actor documents and evaluator setup/oracle are physically separate. The
-hash/schema-checked `export_actor_input` API reads only the manifest and selected
-actor file, rejects evaluator paths and extra fields, and never opens evaluator
-files. Full intake validation and strict actor export both reject reserved hidden
-markers even after hashes are refreshed. Every canned actor context is checked
-against the actual App actor-filtered view at its point in the sequence.
+## Delivered executable checks
 
-The manifest records stable fixture/case/source/intent identities, explicit
-synthetic authorship and processing rights limited to authored fixture text.
-Unknown imported rights gain no permission. Engine authorization remains required
-for actual transfer; content selects no provider/model/key/price/route. Setup,
-full templates, raw saves and Historical Details do not enter actor exports.
+`IRGS_Catalog/evaluation/solo_r00_proposals_v1/compatibility.json` selects the
+actual `solo-proposal-1` / `execute_settlement_action` contract and exact consumer
+commits. `solo_proposal_compatibility.py` validates this record and its binding to
+the original fixture. Catalog verification includes it. Provider configuration
+is excluded from the content schema, and narration completion cannot be claimed
+by changing metadata.
 
-At every accepted step, existing stock plus accepted consumption equals opening
-stock. NPC repair consumes one NPC timber at elapsed 1,800; founder shelter
-consumes three founder timber at 3,900 and creates two shelter places. Axes and
-grain remain unchanged. Action requests return at material work boundaries;
-causal clock, elapsed time and storage revision are checked separately.
+The new consumer suite loads the existing ten-case fixture and starts an actual
+App HTTP host with the selected real Engine. It injects only an offline synthetic
+transport. Engine/App retain request construction, authorization, proposal
+validation, finite attempt reservations, Core effects and durable persistence.
+Original actor exports contribute exact intention; the host derives current
+received context. Canned fixture context, evaluator answers and raw worlds do
+not enter legitimate HTTP requests or model inputs. An adversarial forged-context
+check deliberately submits a synthetic canary and proves rejection before dispatch.
 
-The fixture is outside public campaign discovery, canon, playable starts and
-release approval. All 44 previews, supplied packages and original archive bytes
-remain unchanged. Catalog source verification now also checks fixture intake.
+All ten cases run through the actual proposal/acceptance boundary. Proposals
+change no save bytes. Five explicit actions execute actual Core handlers and
+complete shelter at elapsed 3,900, conserving opening grain 16, timber 9 and axes
+2 against remaining stocks and four consumed timber bundles. Primary outcome
+summaries equal actual actor receipts; generated narration remains absent.
 
-## Exact selected consumers and executed evidence
+Each accepted action survives restart, lost acknowledgment recovery and concurrent
+retry without another effect or attempt. Extra checks cover exact whitespace
+intention and acceptance/digest binding, foreign actors, forged context, denied/
+malformed/changed-intent/unknown-source output, identical-byte Trash restore,
+failed-save retry, cancellation, late state changes and unconfigured hosting.
+Every received model assertion/source/time is compared with the founder's actual
+Core receipt. Hidden NPC accounts, oracle markers and private scope/dependency
+fields are absent from model inputs and public results.
 
-- Engine `723627e629231b5e90f38b9d52b65c9a3967b92a`.
-- App `d8dc35ed653e516ccd0cacf91ee9693258491032`.
-- That App's committed Engine pin matches the selected Engine. Its Catalog pin
-  remains `3e898acb2179f18a41d7967817bedf429df29d3f`; tests explicitly select this
-  Catalog candidate through `IRGS_CATALOG_ROOT`. No pointer is changed here.
+## Selected consumers and fresh results
 
-Both dependency snapshots are isolated and unedited. Consumer tests check full
-Git identities and imported module paths. All saves are temporary synthetic
-state. Fresh results, with **zero skips**:
+Engine: `8234044c089131314019ecaf6799a2f08028a3f8`.
 
-- **73 Catalog/source/consumer tests passed**, including twelve new schema and
-  six new actual Engine/App consumer checks, all existing record tests and full
-  Historical Details source/reader checks.
-- **11 existing App Rise HTTP tests passed**, including request recovery,
-  persistence, finite work, authorization and filtered views.
-- **Six existing App catalogue tests passed**, preserving all 44 previews,
-  discovery boundaries and temporary-world continuity.
-- Catalog integrity passed **155 source files**, ten fixture cases, 32 historical
-  parts, all 5,146 archive files and all 5,145 delivery bindings. Only Catalog
-  release hashes were refreshed. `git diff --check` passed.
+| App selection | Exact commit | Catalog proposal checks |
+| --- | --- | --- |
+| Integrated development | `277554aac21a092b8a55562309da274bbe74a3af` | Eight passed, zero skips. |
+| Subsequent component follow-up | `4f45f5ab8473a2bddb500fe3a49122575b6483e1` | Eight passed, zero skips. |
 
-New consumer checks also prove restart-safe result lookup, an exact duplicate
-under concurrency applying once, and failed persistence leaving save bytes
-unchanged before a single successful retry. Schema checks exercise incorrect
-rights, hidden-field/marker contamination, wrong audience, path traversal,
-symlinks, tampering, duplicate JSON fields/case IDs and broken source/replay refs.
-See `SOLO_FIXTURE_VALIDATION.json` for commands, dependencies and the resolved
-initial combined-test environment omission.
+Both Apps' committed Engine pins match the selected Engine and their Catalog
+pins remain `401df26a1f16be864dd15d7c5250da5d75f8ccca`. Tests check exact clean Git
+identities, committed pins and imported module paths. The Catalog candidate is
+selected explicitly through environment for qualification; no pointer changes.
+The newer App's component qualification does not claim joined integration.
 
-## Pending integration and live prerequisites
+Fresh execution passed **114 test executions, zero skips**:
 
-Catalog's assigned fixture content and baseline qualification are complete for
-review. This does not finish the Solo AI runtime. App-owned production fixture
-loading and its exact Catalog pin update, the next Engine/App proposal/provider
-contracts, requalification against those contracts, and isolated joined acceptance
-remain pending. The coordinator selects and reviews that exact component set;
-no earlier-cycle approval applies to this candidate.
+- 73 source/schema/actual-archive-reader checks, including six new compatibility
+  schema tests. Historical Details is still fully verified.
+- Six original consumer checks with original Engine
+  `723627e629231b5e90f38b9d52b65c9a3967b92a` and App
+  `d8dc35ed653e516ccd0cacf91ee9693258491032`, in a separate process.
+- Eight new proposal HTTP tests for each of the two App selections above: 16
+  executions. Each sequence runs all ten original cases.
+- 13 existing App proposal bridge tests and six existing App catalogue tests
+  using subsequent App `4f45f5a` and the selected Engine.
 
-No live provider call was made. Any live smoke test needs configured approved
-access, route and credentials under Engine policy. The fixture does not supply
-those settings or authorize private/history payload transfer. No other repository
-was edited or pushed. There is no missing archive input or Catalog source blocker.
+Catalog integrity passed 158 source files, all 44 previews, all 32 archive parts,
+5,146 archive files and 5,145 delivery bindings. `git diff --check` passed.
+Only Catalog source hashes were refreshed. Every original Catalog source hash
+except the intentionally extended `verify_catalog.py` is unchanged; the original
+fixture directory, manifest, loader, source archives and prior validation records
+remain byte-identical. All state/ledgers are temporary synthetic fixtures.
+See `SOLO_PROPOSAL_VALIDATION.json` for commands, full dependency selections,
+executed-test source hashes and explicit scope.
+
+## Conditional follow-up and remaining review
+
+**NARRATION-CAT-01 awaits an Engine/App contract.** The selected Engine exposes
+only `propose_local_action`; the App returns committed summaries with
+`narrative: null`. The coordinator still lists general narration/dialogue and
+semantic/voice review as unfinished. No supported generation/validation interface
+exists against which a new Catalog narration/dialogue fixture could be qualified.
+The plan records the exact dependency and trigger: once those owners publish
+request/result/actor/source/validation contracts, add separately versioned
+synthetic inputs/oracles and actual consumer checks. No new speech mechanic or
+model-quality result is invented to close that dependency.
+
+The two actionable follow-ups are complete. This exact new Catalog commit still
+needs coordinator review and any App-owned dependency update/joined qualification
+if adopted. The original 3.4.0 integration is already complete. No Engine/App
+source or pin was edited, no other repository was pushed, no user campaign was
+read or migrated, and no external provider call was made. Configured authorized
+live smoke and human semantic/voice review remain separate work.
