@@ -22,8 +22,40 @@ integration and review of the exact Engine/App/Catalog dependency set.
 | SOLO-CAT-02 | Actual selected Engine/App consumer qualification using temporary synthetic state. | 18 new schema/consumer tests; finite materials, hidden boundary, denial, unsupported action, stale/replayed requests, restart, concurrent duplicate and failed-save recovery. See `SOLO_FIXTURE_VALIDATION.json`. |
 | SOLO-CAT-03 | R00 content integrated into the coordinated 3.4.0 development build. | [Coordinator source/evidence review](https://github.com/KingSav3ge/IRGS/blob/main/provenance/qa/primary_update_3_4_0_review.json); current App pins the delivered Catalog. |
 | SOLO-CAT-04 | Reproducible Catalog-owned qualification of the actual proposal HTTP flow. | Six compatibility schema checks and eight consumer tests for each selected App commit; `SOLO_PROPOSAL_VALIDATION.json`. Original fixture and baseline qualification preserved. |
+| SCR-CAT-01 | Authored routine response library for the user's API token reduction request. | 325 variants, 82 families, 12 recipes; `IRGS_Catalog/responses/routine_v1/`. |
+| SCR-CAT-02 | Deterministic typed formatting, actor/snapshot/source/state checks and exact receipt anchoring. | `scripted_responses.py`; 13 content/composition tests render every variant. No provider imports or dispatch. |
+| SCR-CAT-03 | Qualify text against actual Engine/App receipts, projections and supported editable drafts. | Five synthetic consumer tests assert no provider dispatch or save mutation during rendering. `SCRIPTED_RESPONSES_VALIDATION.json`. |
 
-## Current follow-up — 24 October 2026
+## Current increment — 24 October 2026
+
+The user directly requested a large reusable scripted response library to reduce
+Player and System API token usage, leaving demanding responses to AI. Catalog
+now supplies versioned complete clauses/sentences, typed placeholders and
+composition recipes for routine status/recovery, received information, inventory,
+elapsed time, work and camp facts. Four editable draft variants cover each of
+Rise's 13 supported actions. Rendering commits no decision or game effect.
+
+Committed-result recipes preserve the actual receipt exactly. Assembly rejects
+missing/extra fields, incompatible states, conflicting shared facts, mixed actors
+or snapshots, and mixtures of player intentions with system responses. Source
+filtering/authentication and all world mechanics remain with Engine/App. This
+does not complete the separate generated narration/dialogue contract.
+
+Catalog delivery includes the content, formatter, validation and actual consumer
+checks. Engine/App must adopt the local routine-first path before production API
+usage changes. Their handoff should use approved actor-safe event mappings,
+snapshot-scoped caching and normal explicit player confirmation, with AI only
+for demanding supported tasks under existing policy/limits. Missing templates
+or rules do not authorize a paid fallback or fabricated result. Do not send the
+whole response library in provider prompts.
+
+Fresh acceptance passed 132 test executions with zero skips, including every
+stored variant and five new actual consumer checks. Rendering the actual R00
+receipts/projections made zero provider dispatches and left save bytes unchanged.
+Catalog integrity passed 161 source files, all 44 previews and the full original
+archive. See `SCRIPTED_RESPONSES_VALIDATION.json` for exact scope and dependencies.
+
+## Previous increment — proposal compatibility
 
 The original `solo-runtime-01` content, App pinning and joined development
 qualification are complete. The coordinator integrated Catalog
@@ -101,6 +133,9 @@ verification. All tests executed with zero skips.
 - The original source-access blocker is resolved. There is no missing source
   input for the Catalog deliverable.
 - No Catalog source blocker remains for the completed R00/proposal follow-up.
+- No Catalog source blocker remains for the scripted response library. Consumer
+  adoption of this new Catalog commit is pending; the current App does not yet
+  select this formatter for routine presentation, so live token savings are unmeasured.
 - **NARRATION-CAT-01 awaiting Engine/App contract:** the current API only proposes
   existing actions; App returns Core summaries with `narrative: null`. The
   coordinator lists general narration/dialogue and semantic/voice review as
@@ -109,8 +144,10 @@ verification. All tests executed with zero skips.
 
 ## Remaining
 
-1. Coordinator review of this follow-up's exact Catalog commit and any new
-   App/joined dependency selection. Original 3.4.0 integration is already complete.
+1. Engine/App adopt the authored library for eligible routine presentation and
+   editable drafts, preserving source/actor scope and explicit decisions. Select
+   this Catalog commit through their reviewed dependency pins and qualify the
+   actual call-avoidance/cache/fallback behavior. Coordinator owns joined review.
 2. When Engine/App publish general narration/dialogue contracts, add separately
    versioned actor-safe evaluation inputs/oracles and actual consumer checks;
    retain explicit synthetic rights and report human semantic review separately.
@@ -121,8 +158,10 @@ verification. All tests executed with zero skips.
 
 ## Verification record
 
-See `SOLO_PROPOSAL_VALIDATION.json` for fresh commands, dependency selections and
-scope. `SOLO_FIXTURE_VALIDATION.json`, `HISTORICAL_DETAILS_VALIDATION.json`,
+See `SCRIPTED_RESPONSES_VALIDATION.json` for this increment's commands, selected
+consumer sources and scope. `SOLO_PROPOSAL_VALIDATION.json` and
+`COORDINATOR_REPORT_PROPOSAL_FOLLOWUP.md` retain the proposal follow-up evidence.
+`SOLO_FIXTURE_VALIDATION.json`, `HISTORICAL_DETAILS_VALIDATION.json`,
 `CAMPAIGN_RECORD_VALIDATION.json` and `COORDINATOR_REPORT_HISTORICAL_DETAILS_01.md`
 retain labelled previous-cycle evidence; `COORDINATOR_REPORT_SOLO_RUNTIME_01.md`
 preserves the initial R00 delivery report. All behavioral fixtures are synthetic

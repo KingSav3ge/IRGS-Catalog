@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-10-24",
+  "increment": "authored routine responses for local composition",
+  "status": "passed_catalog_content_and_reference_formatter_with_pending_runtime_adoption",
+  "repository": "KingSav3ge/IRGS-Catalog",
+  "branch": "main",
+  "pulled_base_commit": "f391dfd535c4562e8d2a230bf36f4d2ded508837",
+  "candidate_commit": "Resolve the containing Git commit; exact pushed SHA is reported in the component chat.",
+  "user_direction": "Reduce Player/System API token usage using reusable scripted responses; reserve AI for demanding responses.",
+  "library": {
+    "id": "irgs-routine-responses-v1",
+    "version": "1.0.0",
+    "families": 82,
+    "variants": 325,
+    "system_variants": 273,
+    "player_draft_variants": 52,
+    "recipes": 12,
+    "imported_material": "none"
+  },
+  "dependencies": {
+    "engine": "8234044c089131314019ecaf6799a2f08028a3f8",
+    "integrated_app": "277554aac21a092b8a55562309da274bbe74a3af",
+    "component_app": "4f45f5ab8473a2bddb500fe3a49122575b6483e1",
+    "both_app_catalog_pins": "401df26a1f16be864dd15d7c5250da5d75f8ccca",
+    "original_engine": "723627e629231b5e90f38b9d52b65c9a3967b92a",
+    "original_app": "d8dc35ed653e516ccd0cacf91ee9693258491032"
+  },
+  "source_sha256": {
+    "IRGS_Catalog/scripted_responses.py": "421d79341484cded83f99685bb31660725dbb39a539df1c7eb4717451796a285",
+    "IRGS_Catalog/responses/routine_v1/library.json": "4f0c629a6c2c11ee79a305fc5910b3f0caa7290f52d141aa3f867ed4facb361a",
+    "IRGS_Catalog/responses/routine_v1/README.md": "3143f15d4aa031440129372070b17745d043d0ce499b7bbfdd162ef2236be81c",
+    "IRGS_Catalog/verify_catalog.py": "7f9635be24694f0e645b2647f5e42355cf8bc0aa1b656e3ee64901008910dda9",
+    "tools/tests/test_scripted_responses.py": "2da2dfd601c7a531a2e5fda9d0669c80d1946a0b5367f0d6bb43434f131bef59",
+    "tools/tests/test_scripted_response_consumers.py": "e04e8cf82e64bbad623ddbca2df4a2bd7437d53e4617c70f42dd5c69553dd547"
+  },
+  "checks": [
+    {
+      "name": "source_schema_reader_and_response_checks",
+      "tests": 86,
+      "skipped": 0,
+      "cwd": "/workspace/IRGS-Catalog",
+      "environment": {
+        "IRGS_ENGINE_ROOT": "/tmp/irgs-catalog-followup-engine/IRGS_3_3",
+        "IRGS_CATALOG_ROOT": "/workspace/IRGS-Catalog/IRGS_Catalog",
+        "IRGS_HISTORICAL_ENGINE_RUNTIME": "/tmp/irgs-catalog-followup-engine/IRGS_3_3/runtime",
+        "IRGS_HISTORICAL_APP_SOURCE": "/tmp/irgs-catalog-followup-app-current/IRGS_Web"
+      },
+      "command": "python -B -m unittest tools.tests.test_campaign_records tools.tests.test_historical_details tools.tests.test_historical_details_delivery tools.tests.test_solo_evaluation tools.tests.test_solo_proposal_contract tools.tests.test_scripted_responses -v",
+      "result": "passed"
+    },
+    {
+      "name": "current_proposal_and_scripted_consumers",
+      "tests": 13,
+      "skipped": 0,
+      "cwd": "/workspace/IRGS-Catalog",
+      "environment": {
+        "IRGS_PROPOSAL_ENGINE_SOURCE": "/tmp/irgs-catalog-followup-engine",
+        "IRGS_PROPOSAL_APP_SOURCE": "/tmp/irgs-catalog-followup-app-current",
+        "IRGS_SCRIPT_ENGINE_SOURCE": "/tmp/irgs-catalog-followup-engine",
+        "IRGS_SCRIPT_APP_SOURCE": "/tmp/irgs-catalog-followup-app-current"
+      },
+      "command": "python -B -m unittest tools.tests.test_solo_proposal_consumers tools.tests.test_scripted_response_consumers -v",
+      "result": "passed"
+    },
+    {
+      "name": "integrated_proposal_consumers",
+      "tests": 8,
+      "skipped": 0,
+      "cwd": "/workspace/IRGS-Catalog",
+      "environment": {
+        "IRGS_PROPOSAL_ENGINE_SOURCE": "/tmp/irgs-catalog-followup-engine",
+        "IRGS_PROPOSAL_APP_SOURCE": "/tmp/irgs-catalog-followup-app"
+      },
+      "command": "python -B -m unittest tools.tests.test_solo_proposal_consumers -v",
+      "result": "passed"
+    },
+    {
+      "name": "original_consumer_contract",
+      "tests": 6,
+      "skipped": 0,
+      "cwd": "/workspace/IRGS-Catalog",
+      "environment": {
+        "IRGS_SOLO_ENGINE_SOURCE": "/tmp/irgs-catalog-original-engine",
+        "IRGS_SOLO_APP_SOURCE": "/tmp/irgs-catalog-original-app"
+      },
+      "command": "python -B -m unittest tools.tests.test_solo_evaluation_consumers -v",
+      "result": "passed"
+    },
+    {
+      "name": "existing_app_bridges",
+      "tests": 13,
+      "skipped": 0,
+      "cwd": "/tmp/irgs-catalog-followup-app-current",
+      "environment": {
+        "IRGS_ENGINE_ROOT": "/tmp/irgs-catalog-followup-engine/IRGS_3_3",
+        "IRGS_CATALOG_ROOT": "/workspace/IRGS-Catalog/IRGS_Catalog"
+      },
+      "command": "python -B -m unittest discover -s IRGS_Web/tests -p 'test_solo*.py' -v",
+      "result": "passed"
+    },
+    {
+      "name": "existing_app_portfolio",
+      "tests": 6,
+      "skipped": 0,
+      "cwd": "/tmp/irgs-catalog-followup-app-current",
+      "environment": {
+        "IRGS_ENGINE_ROOT": "/tmp/irgs-catalog-followup-engine/IRGS_3_3",
+        "IRGS_CATALOG_ROOT": "/workspace/IRGS-Catalog/IRGS_Catalog"
+      },
+      "command": "python -B -m unittest discover -s IRGS_Web/tests -p 'test_campaign_portfolio.py' -v",
+      "result": "passed"
+    },
+    {
+      "name": "catalog_integrity",
+      "command": "python -B IRGS_Catalog/verify_catalog.py",
+      "source_files": 161,
+      "concepts": 44,
+      "historical_parts": 32,
+      "historical_members": 5146,
+      "historical_bindings": 5145,
+      "result": "passed"
+    },
+    {
+      "name": "patch_whitespace",
+      "command": "git diff --check",
+      "result": "passed"
+    }
+  ],
+  "test_executions": 132,
+  "skipped": 0,
+  "response_evidence": {
+    "standalone_tests": 13,
+    "all_variants_rendered": 325,
+    "actual_consumer_tests": 5,
+    "core_actions_used_for_receipts": 5,
+    "elapsed_seconds_after_actual_actions": 3900,
+    "provider_dispatches_during_rendering": 0,
+    "save_bytes_unchanged_by_rendering": true,
+    "source_receipt_text_exact_including_negation": true,
+    "actor_view_inventory_project_camp_values_used": true,
+    "all_13_drafts_match_actual_supported_action_ids": true,
+    "player_draft_rendering_submits_nothing": true
+  },
+  "guarded_boundaries": [
+    "Trusted host builds actor/snapshot/source/state context; Catalog does not authenticate or inspect the world",
+    "Missing/extra values, mixed actors/snapshots, conflicting state/shared facts and clause order rejected",
+    "Committed output requires exact primary receipt; no freeform rewrite or invented success",
+    "Player drafts remain editable and separate from system claims or automatic decisions",
+    "Unknown coverage returns ValueError to host without automatic paid fallback",
+    "Source text remains plain data; App must escape output; no expression evaluation",
+    "Imported rights, full archives, private saves and hidden oracles never become prompt inputs"
+  ],
+  "preservation": {
+    "previous_catalog_sources_unchanged_except_verify_catalog_py": true,
+    "changed_original_source": [
+      "verify_catalog.py"
+    ],
+    "original_fixture_loaders_manifests_and_prior_records_unchanged": true,
+    "previews": 44,
+    "original_archive_bytes_unchanged": true
+  },
+  "scope": {
+    "external_provider_calls": 0,
+    "production_api_token_savings_measured": false,
+    "engine_app_sources_or_pins_changed": false,
+    "user_saves_opened_or_migrated": false,
+    "provider_routing_implemented": false,
+    "new_mechanics_or_player_decisions": false,
+    "general_narration_dialogue_contract_completed": false
+  },
+  "pending": [
+    "Engine/App select the local library for routine actor-safe presentation and editable drafts",
+    "Owner-reviewed event/status mapping and cache identity including actor/branch/restore/revision/library/language",
+    "Approved AI only for demanding supported tasks; no whole-library prompts or automatic fallback from missing facts/rules",
+    "Exact Catalog pin update and coordinator joined qualification",
+    "Measure production call/token reduction after adoption; no percentage/currency savings claimed here"
+  ]
+}

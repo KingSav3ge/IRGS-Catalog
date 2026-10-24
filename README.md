@@ -50,3 +50,11 @@ The original fixture is integrated in the 3.4.0 development build. Separate
 run its ten cases through the current Engine/App proposal HTTP flow while
 preserving the original fixture and dependency evidence. General narration and
 dialogue evaluation awaits a supported Engine/App contract.
+
+The [routine response library](IRGS_Catalog/responses/routine_v1/README.md) contains
+325 authored variants across 82 families and 12 composition recipes. Its local
+formatter joins typed actor-scoped facts without a provider request, preserves
+exact committed receipts and supplies editable player drafts. It is intended
+for Engine/App routine-first presentation so AI can be reserved for demanding
+supported responses. Production selection and dependency integration remain with
+those consumers; no measured live API saving is claimed before they adopt it.
