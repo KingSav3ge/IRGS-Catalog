@@ -158,11 +158,13 @@
     "historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0031": "148b990b1641571f756a8f63e086d18531514f45fb279dba1e608bdcd7a284af",
     "historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0032": "f94eaedd0792cbc44d5113751fac6187c4bcd22c1f834f095753c7b09289bfd7",
     "historical_details_package.py": "fde004848caab9ea3c8e7c6ea4a1dffefab6758d0e653b49b6479fe81428f665",
+    "responses/depot_v1/README.md": "168889fc96cc306f4c4ff9f18c0364df87d1e3554392eda4d4b7dde76590cebd",
+    "responses/depot_v1/library.json": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4",
     "responses/routine_v1/README.md": "3143f15d4aa031440129372070b17745d043d0ce499b7bbfdd162ef2236be81c",
     "responses/routine_v1/library.json": "4f0c629a6c2c11ee79a305fc5910b3f0caa7290f52d141aa3f867ed4facb361a",
-    "scripted_responses.py": "421d79341484cded83f99685bb31660725dbb39a539df1c7eb4717451796a285",
+    "scripted_responses.py": "7584bf10e29b8077ed84c7c4581d006327de3fd850a5e33b099577437b44f313",
     "solo_evaluation.py": "444fb338b7ade0e78fbd2f014c15bd90546cee4e203966ed6284ba73cfdecc97",
     "solo_proposal_compatibility.py": "d83a591a5e070bd3f602898fa1f16e477ac580b62e2d9f39ce48ed8c3d158dce",
-    "verify_catalog.py": "7f9635be24694f0e645b2647f5e42355cf8bc0aa1b656e3ee64901008910dda9"
+    "verify_catalog.py": "d87759ffe5906a7f826299f355ba0e22b1d35e2d48a5ce13ef3ff579be086b97"
   }
 }

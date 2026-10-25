@@ -20,7 +20,7 @@ def part(family, facts, variant=0):
 
 class ScriptedResponseTests(unittest.TestCase):
     def setUp(self):
-        self.library = responses.load_library()
+        self.library = responses.load_library(Path(responses.__file__).parent / 'responses/routine_v1/library.json')
 
     def family(self, identity):
         return next(f for f in self.library['families'] if f['id'] == identity)

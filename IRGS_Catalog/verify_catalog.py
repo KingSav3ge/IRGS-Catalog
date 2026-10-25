@@ -131,12 +131,13 @@ def verify_catalog(root=ROOT):
         root / 'scripted_responses.py')
     checker = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(checker)
-    responses = checker.validate_library(checker.load_library(root / 'responses/routine_v1/library.json'))
+    responses = checker.validate_library(checker.load_library(root / 'responses/depot_v1/library.json'))
+    original_responses = checker.validate_library(checker.load_library(root / 'responses/routine_v1/library.json'))
     return {'status': 'verified', 'component': 'IRGS-Catalog', 'files': len(hashes),
         'concepts': len(portfolio['entries']), 'campaign_release_approved_by_check': False,
         'campaign_records': campaign_records, 'historical_details': historical,
         'solo_evaluation': solo, 'solo_proposal_compatibility': proposals,
-        'scripted_responses': responses}
+        'scripted_responses': responses, 'original_scripted_responses': original_responses}
 
 
 if __name__ == '__main__':

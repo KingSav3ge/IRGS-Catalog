@@ -9,7 +9,7 @@ from pathlib import Path
 import re
 from string import Formatter
 
-DEFAULT_LIBRARY = Path(__file__).resolve().parent / 'responses/routine_v1/library.json'
+DEFAULT_LIBRARY = Path(__file__).resolve().parent / 'responses/depot_v1/library.json'
 SOURCES = {'host_status', 'actor_view', 'received_record', 'committed_receipt', 'player_request'}
 ROLES = {'lead': 0, 'body': 1, 'detail': 2, 'prompt': 3}
 TYPES = {'label', 'integer', 'source_text'}
@@ -48,10 +48,12 @@ def load_library(path=DEFAULT_LIBRARY):
 
 def validate_library(library):
     keys(library, 'schema_version library_id version language source_ref rights authority families recipes')
-    require(type(library['schema_version']) is int and library['schema_version'] == 1
-            and library['library_id'] == 'irgs-routine-responses-v1'
+    depot = library['library_id'] == 'irgs-response-depot-v1'
+    require(type(library['schema_version']) is int and library['schema_version'] == (2 if depot else 1)
+            and library['library_id'] in ('irgs-routine-responses-v1', 'irgs-response-depot-v1')
             and library['version'] == '1.0.0' and library['language'] == 'en'
-            and library['source_ref'] == 'authored:irgs-catalog:routine-responses:v1',
+            and library['source_ref'] == ('authored:irgs-catalog:response-depot:v1' if depot
+                                        else 'authored:irgs-catalog:routine-responses:v1'),
             'Unsupported response library identity')
     require(library['rights'] == {'authorship': 'original-authored-presentation-text',
         'permitted_use': ['local-presentation', 'synthetic-evaluation'],
@@ -64,12 +66,12 @@ def validate_library(library):
     families, seen, count = library['families'], {}, 0
     require(isinstance(families, list) and len(families) >= 75, 'Large authored response library required')
     for family in families:
-        keys(family, 'id domain channel source_kind state role slots variants')
+        keys(family, 'id domain channel source_kind state role slots variants' + (' intent_tag' if depot else ''))
         identity = family['id']
         require(isinstance(identity, str) and re.fullmatch(r'[a-z][a-z0-9_]*(\.[a-z][a-z0-9_]*)+', identity)
                 and identity not in seen, 'Invalid or duplicate response family ID')
         require(isinstance(family['domain'], str) and family['domain'] in {'request', 'recovery', 'knowledge', 'inventory', 'work',
-                'settlement', 'time', 'navigation', 'player'}, 'Unknown response domain')
+                'settlement', 'place', 'time', 'navigation', 'player'}, 'Unknown response domain')
         require(isinstance(family['source_kind'], str) and family['source_kind'] in SOURCES
                 and family['channel'] in ('system', 'player_draft')
                 and isinstance(family['role'], str) and family['role'] in ROLES,
@@ -78,6 +80,13 @@ def validate_library(library):
                 'Explicit response state required')
         require((family['channel'] == 'player_draft') == (family['source_kind'] == 'player_request'),
                 'Player drafts must remain separate from system facts')
+        if depot:
+            if family['channel'] == 'player_draft':
+                require(family['state'] == 'draft' and isinstance(family['intent_tag'], str)
+                        and re.fullmatch(r'[a-z][a-z0-9_]*', family['intent_tag']),
+                        'Depot drafts require a semantic intent tag, not an operation binding')
+            else:
+                require(family['intent_tag'] is None, 'System responses cannot select a player intention')
         require(isinstance(family['slots'], dict) and all(isinstance(k, str)
                 and re.fullmatch(r'[a-z][a-z0-9_]*', k) and v in TYPES
                 for k, v in family['slots'].items()), 'Invalid response slots')
@@ -119,7 +128,7 @@ def validate_library(library):
         if any(seen[f]['source_kind'] == 'committed_receipt' for f in recipe['families']):
             require('receipt.exact' in recipe['required'], 'Result recipe cannot omit exact receipt')
         recipes.add(recipe['id'])
-    return {'status': 'verified', 'library_id': library['library_id'], 'families': len(families),
+    return {'status': 'verified', 'library_id': library['library_id'], 'version': library['version'], 'families': len(families),
             'variants': count, 'recipes': len(recipes), 'provider_dispatch': False,
             'runtime_integration_verified_by_schema': False}
 

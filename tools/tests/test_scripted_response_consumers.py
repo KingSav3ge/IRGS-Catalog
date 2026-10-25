@@ -50,7 +50,7 @@ class ScriptedConsumerTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory(prefix='irgs-scripted-response-consumer-')
         self.addCleanup(self.temp.cleanup)
         self.store = self.server.Store(self.temp.name)
-        self.library = responses.load_library()
+        self.library = responses.load_library(CATALOG / 'responses/routine_v1/library.json')
         self.evaluator = evaluation.load_evaluator_data()
         choices = self.evaluator['setup']['choices']
         review = self.setup.preview(choices)
@@ -141,7 +141,7 @@ class ScriptedConsumerTests(unittest.TestCase):
         self.assertEqual({f['state'] for f in drafts}, {key for key, _, _ in self.runtime.ACTIONS})
         with self.no_dispatch_or_mutation():
             for family in drafts:
-                for variant in range(4):
+                for variant in range(len(family['variants'])):
                     output = responses.render_fragment(self.library, family['id'],
                         self.context('player_request', family['state']), variant=variant)
                     self.assertTrue(output.startswith('I would like to'))
