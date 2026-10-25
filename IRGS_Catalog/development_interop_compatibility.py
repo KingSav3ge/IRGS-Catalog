@@ -1,11 +1,18 @@
 """Current development interoperability, separate from pinned historical evidence."""
 import hashlib
+import importlib.util
 from pathlib import Path
 import re
 
-import integrated_response_compatibility as baseline
-
 ROOT = Path(__file__).resolve().parent
+# Resolve only this Catalog's checked sibling, without changing sys.path or
+# accepting a same-named module from another checkout or import cache.
+_dependency = ROOT / 'integrated_response_compatibility.py'
+if any(path.is_symlink() for path in (_dependency, *_dependency.parents)):
+    raise ValueError('Linked compatibility code')
+_spec = importlib.util.spec_from_file_location('catalog_owned_integrated_response_compatibility', _dependency)
+baseline = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(baseline)
 CONTRACT = 'evaluation/development_interop_v1/compatibility.json'
 SOURCE = 'evaluation/integrated_responses_v1/compatibility.json'
 SOURCE_SHA256 = 'daf1afc0f3dd9c60aaf3da0f69e7477cf5ae7b78e7233c529a7abb307d8da78c'

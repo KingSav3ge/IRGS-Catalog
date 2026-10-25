@@ -1,3 +1,17 @@
+# Coordinator 3.4.1 compatibility patch
+
+Joined qualification reproduced a standalone import failure: the two new
+compatibility modules used bare sibling imports, so an isolated Catalog verifier
+could fail or bind a same-named module from another checkout. Both now load their
+own sibling files by exact path without changing sys.path or accepting cached
+foreign modules. Linked compatibility paths are rejected. Original fixtures,
+consumer IDs, depot bytes and archives remain unchanged.
+
+The new isolated Python regression and 14 existing compatibility contract checks
+pass (15 tests, no skips). Full fresh joined qualification is recorded separately
+by the coordinator after the App pins this source. The prior owner report below
+retains its original exact inputs and results.
+
 # Catalog interoperability — all three development repositories pulled
 
 Pulled main from all three development repositories as requested. Catalog was

@@ -1,11 +1,18 @@
 """Separate exact-consumer follow-up; original fixture identities stay intact."""
 import hashlib
+import importlib.util
 from pathlib import Path
 import re
 
-import response_depot_compatibility as original
-
 ROOT = Path(__file__).resolve().parent
+# Resolve only this Catalog's checked sibling, without changing sys.path or
+# accepting a same-named module from another checkout or import cache.
+_dependency = ROOT / 'response_depot_compatibility.py'
+if any(path.is_symlink() for path in (_dependency, *_dependency.parents)):
+    raise ValueError('Linked compatibility code')
+_spec = importlib.util.spec_from_file_location('catalog_owned_response_depot_compatibility', _dependency)
+original = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(original)
 CONTRACT = 'evaluation/integrated_responses_v1/compatibility.json'
 SOURCE = 'evaluation/shared_responses_v1/manifest.json'
 SOURCE_SHA256 = 'fc45e92af7c869924695450f4e995621779e4d4dae6058c72ebe416310ceded1'
