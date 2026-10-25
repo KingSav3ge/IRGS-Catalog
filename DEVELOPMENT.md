@@ -1,260 +1,139 @@
-# Catalog development
+# IRGS Catalog development guide
 
-## Current priority — shared IRGS systems
+Current guide: 25 October 2026. Owner: `KingSav3ge/IRGS-Catalog/main`.
+Start with [CHAT_CONTINUATION.md](CHAT_CONTINUATION.md).
 
-The user's current direction is development across campaigns and themes.
-Read [the shared scope](IRGS_SYSTEMS_SCOPE.md) and
-[the current work order](COORDINATOR_WORK_ORDER.md) before selecting work.
-Rise R00 remains one regression fixture. Shared-system completion requires
-supported non-Rise evidence; campaign-specific mechanics retain their own scope.
-The records below preserve previously delivered work and historical evidence.
+## Qualified baseline and scope
 
-Target iteration: **IRGS 3.4.0 — in development**. Follow the active shared-systems work order and scope. Previously qualified versions and evidence retain their recorded identities.
+IRGS **3.4.0 development**, Core compatibility **3.3**. Develop shared systems
+across campaigns and themes. Rise R00 and the existing non-Rise authored opening
+are actual supported regression contexts. Synthetic theme/profile checks prove
+their recorded formatting/declaration behavior, not new campaign mechanics.
 
-Updated 2026-10-25. Owner: IRGS Catalog. Push destination:
-`KingSav3ge/IRGS-Catalog/main`. The coordinator in **IRGS Enviroment** owns joined
-integration and review of the exact Engine/App/Catalog dependency set.
+The [coordinator integration](https://github.com/KingSav3ge/IRGS/blob/65351ebcfe2538d880f576a3ce4aa2230537e08d/provenance/qa/shared_response_integration_3_4_0_review.json) qualified joined `65351ebcfe2538d880f576a3ce4aa2230537e08d`:
 
-## Completed
+| Component source | Qualified commit |
+| --- | --- |
+| Engine | `2f9476c6090878257d17cab3ad3a83a7ce18a5dc` |
+| App/Web | `aae8a25656c890181e0aa569df2c716968ec3642` |
+| Catalog | `27fff8385d1c01fdfe9ad7254b7647e6bc12a01e` |
 
-| ID | Increment | Evidence |
-| --- | --- | --- |
-| CAT-01 | Independent Catalog data and preserved original campaign designs. | `b6c1362`; component instructions and source verifier. |
-| CAT-02 | Expanded v0.5 previews for all 44 concepts, preserving prior adoption and runtime boundaries. | `c70dc16`; import reconciliation and pinned original package. |
-| CAT-03 | Validate editorial campaign records before App handoff, independently of refreshed source hashes. | `verify_catalog.py`; `tools/tests/test_campaign_records.py`; `CAMPAIGN_RECORD_VALIDATION.json`. |
-| HD-01a | Deterministic 16 MiB whole-ZIP packaging and verified reconstruction tools. | `IRGS_Catalog/historical_details_package.py`; synthetic multipart round-trip and rejection tests. |
-| HD-01b | Manifest/member-index contract and explicit unavailable state in Catalog verification. | `IRGS_Catalog/historical_details/README.md`; `verify_catalog.py`; missing-source checks. |
-| HD-01c | Inspect supplied extracted Drive folder and preserve its unchanged delivery manifest as intake evidence. | `IRGS_Catalog/historical_details/intake/`; no claim of full payload verification. |
-| HD-02 | Retrieve the exact original ZIP and preserve every byte in 32 parts. | Original and reassembled size/SHA-256 verified; original database, books and ancillary files retained. |
-| HD-03 | Verify the actual full dataset, source bindings and reader collection counts. | All 5,146 files hashed, all 5,145 delivery bindings verified; one self-excluded delivery manifest; ten collections counted. |
-| SOLO-CAT-01 | Versioned synthetic R00 evaluation content, actor/oracle separation, explicit rights and schema validation. | Ten cases and five legitimate actions; `IRGS_Catalog/evaluation/solo_r00_v1/`; `solo_evaluation.py`. |
-| SOLO-CAT-02 | Actual selected Engine/App consumer qualification using temporary synthetic state. | 18 new schema/consumer tests; finite materials, hidden boundary, denial, unsupported action, stale/replayed requests, restart, concurrent duplicate and failed-save recovery. See `SOLO_FIXTURE_VALIDATION.json`. |
-| SOLO-CAT-03 | R00 content integrated into the coordinated 3.4.0 development build. | [Coordinator source/evidence review](https://github.com/KingSav3ge/IRGS/blob/main/provenance/qa/primary_update_3_4_0_review.json); current App pins the delivered Catalog. |
-| SOLO-CAT-04 | Reproducible Catalog-owned qualification of the actual proposal HTTP flow. | Six compatibility schema checks and eight consumer tests for each selected App commit; `SOLO_PROPOSAL_VALIDATION.json`. Original fixture and baseline qualification preserved. |
-| SCR-CAT-01 | Initial authored routine response library for the user's API token reduction request. | Preserved 1.0.0: 325 variants, 82 families, 12 recipes; `IRGS_Catalog/responses/routine_v1/`. |
-| SCR-CAT-02 | Deterministic typed formatting, actor/snapshot/source/state checks and exact receipt anchoring. | `scripted_responses.py`; 13 content/composition tests render every variant. No provider imports or dispatch. |
-| SCR-CAT-03 | Qualify text against actual Engine/App receipts, projections and supported editable drafts. | Five synthetic consumer tests assert no provider dispatch or save mutation during rendering. `SCRIPTED_RESPONSES_VALIDATION.json`. |
-| SCR-CAT-04 | Campaign-neutral depot with 750 system responses and 250 editable drafts. | Schema 2, depot 1.0.0: 1,000 distinct stored variants, 127 families, 32 recipes; typed campaign facts and unbound semantic intent tags. Original Rise pack preserved separately. `RESPONSE_DEPOT_VALIDATION.json`. |
-| SCR-CAT-05 | Shared response consumer fixtures against supported Rise and non-Rise interfaces. | Nine reference actions through existing App/Core handlers; eight source-contract and eight actual-consumer tests. `evaluation/shared_responses_v1/`; `SHARED_RESPONSE_VALIDATION.json`. |
+Recorded integration results: 680 Core tests run (679 passed, one private-fixture
+policy skip); 201 Web run (194 passed, seven Windows skips); 105 interface checks;
+104 Catalog checks; eight independent HTTP checks. Two-context Chromium and
+clean-package qualification passed with zero live inference. These are attributed
+prior results, not tests newly executed by this guide update.
 
-## Current increment — shared response qualification, 25 October 2026
+Later guide-only commits do not alter this qualified source set. Preserve
+independent content/schema versions and historical evidence. See
+[shared scope](IRGS_SYSTEMS_SCOPE.md), [continuation](CHAT_CONTINUATION.md) and
+[the work order](COORDINATOR_WORK_ORDER.md).
 
-The new shared-systems work order is read and implemented for the next Catalog
-increment. The unchanged depot now has reproducible actual consumer evidence in
-two independently initialized contexts: synthetic Rise R00 and the existing
-optional fictional quay opening in Hundred Years’ War 1415. Setup and execution
-use owner-published interfaces; no new campaign adapter, rule or start is created.
+## Ownership and completed content
 
-Nine reference actions exercise real movement/observation, a blocked attempt,
-conserved delivery, a second unsuccessful delivery and a zero-second inspection.
-The same receipt recipe preserves actual summaries/observations and action spans.
-Fresh Store instances and concurrent retries retain one committed result; stale
-and foreign requests fail without save changes. Editable drafts submit nothing;
-an unbound submitted intention remains a declaration without physical effects.
-Provider dispatch, direct transport and network connection are forbidden in the
-routine consumer checks. Rendering leaves saves unchanged.
+Own `IRGS_Catalog/` campaign listings/previews/design, response content/schema,
+provenance and synthetic evaluation material. App owns the viewer; Engine owns
+rules/initializers and its independently bundled runtime. Keep Catalog formatter
+code a reference implementation, with authentication and execution in its hosts.
 
-Fresh acceptance: 148 tests passed, zero skips, comprising 104 Catalog checks,
-eight new consumer checks, 17 existing Engine offline-response tests, 13 existing
-App scene-play tests and six portfolio tests. Catalog integrity verifies 169
-source files, 44 previews and the complete original archive. Engine integrity
-and the selected App's 49 source files also verify. Exact evidence is in
-`SHARED_RESPONSE_VALIDATION.json`.
+- Depot `irgs-response-depot-v1@1.0.0`, schema 2: 750 system variants, 250 editable
+  drafts, 127 families and 32 separately counted recipes. Preserve original packs.
+- Shared nine-case non-Rise/Rise fixture and actor/oracle separation; current App
+  now consumes selected depot drafts and exact receipt composition in production
+  code. Engine independently bundles the exact same neutral depot bytes.
+- All 44 previews, supplied packages, adopted canon references and complete
+  Historical Details delivery remain preserved. The archive has 32 parts,
+  5,146 files and 5,145 bindings; no acquisition or split-work remains.
 
-Selected Engine `9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443` and App
-`e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f` are clean isolated snapshots. That App
-pins this Engine and Catalog `94b8ca6d976da48b3c6ca65e014b28c6d9a120c2`;
-`IRGS_CATALOG_ROOT` explicitly selects the new Catalog candidate for testing.
-Engine's independent runtime uses its own 338-variant pack, retaining 325 initial
-Catalog variants; App retains its UI pack. Direct production adoption of the
-1,000-variant depot and measured token savings remain separate consumer work.
-Broader shared systems, other contexts and generated dialogue retain their limits.
+Read [depot](IRGS_Catalog/responses/depot_v1/README.md),
+[shared fixture](IRGS_Catalog/evaluation/shared_responses_v1/README.md) and
+[campaign records](IRGS_Catalog/design/campaign_catalogue/README.md).
+Earlier records describing consumer adoption as pending retain their original date.
 
-## Previous increment — campaign-neutral depot
+## Next bounded increment
 
-The user's final scope is a response depot for any campaign/theme, containing
-750 system responses and 250 editable player drafts. The schema-2 depot 1.0.0
-supplies exactly 1,000 distinct stored variants in 127 families and 32 recipes.
-Recipes, substitutions and possible combinations do not inflate that count.
-Typed placeholders carry the active campaign's known people, places, resources,
-tasks and received records. All 250 drafts use semantic intent tags and the
-state `draft`; Engine/App adapters map explicit submissions to supported
-operations or retain unresolved declarations. Text adds no mechanic, automatic
-player decision or NPC agreement. Campaigns expose only applicable families.
+Add a separately versioned compatibility follow-up for the currently integrated
+Engine/App pair, with actual local_responses and saved presentation checks in
+independently initialized non-Rise and Rise contexts. Preserve existing fixture
+manifests, payload hashes and declared consumer commits exactly; do not repin old
+evidence. Select clean exact current consumers and verify App's committed pins.
+Test real outcomes, drafts that submit nothing, actor/oracle separation, zero
+provider calls, stable older receipts, retries and failed/missing-source fallback.
+The current-pair follow-up can proceed now. Extend phase/communication evaluation
+only after owner-published contracts supply supported behavior and known facts.
+Keep the depot at 750 system variants, 250 editable drafts and 32 recipes unless
+the user changes that request. New text alone completes no simulation system.
 
-`responses/depot_v1/` is the default source. The schema-1, 325-variant Rise pack
-in `responses/routine_v1/` remains byte-identical under its original identity.
-Renamed generic families/slots belong to the new depot rather than silently
-changing historical indices. Four synthetic themes exercise portability;
-actual R00 tests provide one real campaign compatibility case.
+## Check Catalog and exact consumers
 
-Committed-result recipes preserve the actual receipt exactly. Assembly rejects
-missing/extra fields, incompatible states, conflicting shared facts, mixed actors
-or snapshots, and mixtures of player intentions with system responses. Source
-filtering/authentication and all world mechanics remain with Engine/App.
+```bash
+python -B IRGS_Catalog/verify_catalog.py
+python -B -m unittest tools.tests.test_scripted_responses tools.tests.test_scripted_response_expansion tools.tests.test_shared_response_contract -v
+```
 
-The user confirms Engine is building its runtime version and App its
-implementation layer. Catalog supplies content/schema/reference fixtures; its
-existing reference formatter gains the new identity/schema and default source.
-Rendering makes zero API calls. Production adoption, event mapping, scoped caches
-and live token measurements belong to Engine/App. Missing facts/rules do not
-authorize a paid fallback or fabricated result. Do not send the full depot in
-provider prompts. General narration/dialogue remains separate pending work.
+The 104-check source/archive/contract selection used in current qualification is:
+`tools.tests.test_campaign_records`, `test_historical_details`,
+`test_historical_details_delivery`, `test_solo_evaluation`,
+`test_solo_proposal_contract`, `test_scripted_responses`,
+`test_scripted_response_expansion`, `test_shared_response_contract` (each under
+`tools.tests`). Optional real reader cases require explicit source selectors:
 
-Fresh acceptance passed 150 test executions with zero skips, including all
-1,000 variants, all 32 recipes, four synthetic themes and actual depot consumer
-checks for each selected App. Rendering made zero provider dispatches and left
-save bytes unchanged. Integrity passed 163 source files, all 44 previews and
-the complete original archive. Exact commands and dependencies are recorded in
-`RESPONSE_DEPOT_VALIDATION.json`; the initial
-`SCRIPTED_RESPONSES_VALIDATION.json` remains historical evidence.
+| Selector | Meaning |
+| --- | --- |
+| `IRGS_ENGINE_ROOT` | Selected Engine `IRGS_3_3` directory. |
+| `IRGS_CATALOG_ROOT` | This Catalog `IRGS_Catalog` directory; source-relative manifest tests must select this same root. |
+| `IRGS_HISTORICAL_ENGINE_RUNTIME` | Selected Engine `IRGS_3_3/runtime`. |
+| `IRGS_HISTORICAL_APP_SOURCE` | Selected App `IRGS_Web`. |
 
-## Previous increment — proposal compatibility
+Existing `test_shared_response_consumers` requires clean exact original snapshots
+Engine `9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443`, App
+`e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f`, and its recorded Catalog pin
+`94b8ca6d976da48b3c6ca65e014b28c6d9a120c2`. Select repository roots through
+`IRGS_SHARED_ENGINE_SOURCE` / `IRGS_SHARED_APP_SOURCE`. Run in a fresh process.
+Its eight checks passed against those declared snapshots; current consumers were
+qualified separately. Other legacy suites keep their own manifest selections.
+Never weaken identity guards or replace old fixture IDs to make new heads pass.
 
-The original `solo-runtime-01` content, App pinning and joined development
-qualification are complete. The coordinator integrated Catalog
-`401df26a1f16be864dd15d7c5250da5d75f8ccca`, Engine
-`8234044c089131314019ecaf6799a2f08028a3f8` and App
-`277554aac21a092b8a55562309da274bbe74a3af`. Its independent browser and clean-package
-checks exercised five Rise actions through shelter completion at elapsed 3,900.
-These are attributed coordinator results, not fresh tests run by Catalog.
+After intentional Catalog source/content edits, refresh only
+`python -B tools/refresh_component_releases.py --component catalog`, then verify
+again and execute actual compatible consumer checks. Optional skips are not
+executed compatibility evidence. Root guide edits need no Catalog release refresh.
 
-This follow-up updates that status and adds a separate compatibility contract and
-actual proposal/acceptance HTTP tests. It qualifies the integrated Engine with
-both the integrated App above and component follow-up App
-`4f45f5ab8473a2bddb500fe3a49122575b6483e1`. Both Apps commit the selected Engine
-and original Catalog `401df26`. Tests select this Catalog candidate explicitly;
-the new follow-up and subsequent App are not thereby approved for joined release.
+## Rules for every increment
 
-All ten original cases now run through the actual Engine broker/validator/ledger
-and App host with offline synthetic transport. Five accepted actions retain
-finite resources, committed summaries and exact intent across restart and
-concurrent retries. Other cases reject at their actual boundary. Extra checks
-cover foreign actors, forged context, provider output failures, acceptance,
-identical restore, cancellation, late output, failed saves and unconfigured use.
-No provider call, user save, alternate simulator or new playable content is added.
+Keep one authoritative Core and the nine K-owners; provider work retains the six
+existing Director categories. Distinguish intent, authorization, committed effects,
+received information and presentation. Only actual actor-legitimate records may
+support a response. Testimony and uncertain information retain their status.
+Keep storage revision, causal order, elapsed spans, civil dates and information
+times distinct. Select real rules/adapters; themes and text create no capability.
 
-Fresh qualification passed 114 test executions with zero skips: 73
-source/schema/archive-reader checks, six original consumer checks, eight proposal
-HTTP checks for each of the two Apps, 13 existing App proposal bridge tests and
-six App catalogue tests. Integrity passed 158 Catalog source files and the full
-original archive. Each exact dependency selection runs in a separate process.
+Routine responses require no provider, key or model tokens. Preserve exact
+receipts, negation, actual zero/absent durations, editable intentions and explicit
+submission. Missing text or rules retain a literal/unresolved result and cannot
+authorize paid fallback. Keep pinned code/content intake on the exact verified
+bytes; retain the component-update regression in App.
 
-The original fixture, manifest and loader remain byte-identical. Its initial
-contract still selects Engine `723627e629231b5e90f38b9d52b65c9a3967b92a` and App
-`d8dc35ed653e516ccd0cacf91ee9693258491032`; those six consumer checks run separately
-from the new dependency selections. `SOLO_FIXTURE_VALIDATION.json` remains
-historical evidence rather than being relabelled as current proposal testing.
+Use temporary synthetic saves. Never read/migrate user campaigns or run the
+external private-save fixture. Preserve original archives, source records,
+rights, adopted canon and 44 previews. Historical Details is fully delivered;
+archive reacquisition is complete. Preview/content presence grants no release
+or mechanical authority. General freeform/combat, generated dialogue, sustained
+institutions, full C2, live model quality and wider hosting retain their open
+requirements; Co-op remains deferred.
 
-## Previous-cycle execution record
+## Deliver the increment
 
-`historical-details-01` was the preceding increment. Full source preservation
-and byte-level acceptance are complete. The manifest matches committed Engine
-`b3e7d760a2cf3712292b09328566cf1ed0d78c97`. Consumer checks use that reader and
-the App reference service from `e8ef2b0e683a46fab4fe586e86afd26196ab2869`
-as explicit isolated source snapshots. See the validation record for executed
-results; these checks do not change or approve App dependency pointers.
+Keep completed, active and remaining work current. After an actual source edit,
+refresh only the owning component release, run relevant behavioral checks and
+verify source integrity. Hash refresh and planning alone qualify no feature.
+Use Python 3.12+ without `-O`; interface/browser tooling uses Node 20+.
 
-Executed acceptance: 39 source/consumer tests passed (30 synthetic, five actual
-complete-delivery checks, four actual Engine/App service checks), plus six
-existing App catalogue tests. Full Catalog integrity verification passed for 140
-source files and all 44 existing campaign concepts. No checks in these runs were
-skipped. The complete multipart set subsequently passed coordinator review, App pinning
-and joined qualification; these older test identities remain historical evidence.
+Push only this repository's `main`. Return the full pushed SHA, actual changed
+behavior, APIs/adapters, exact dependencies, commands/results/skips and remaining
+limits to IRGS Enviroment. Coordinator imports product source only after all
+three viable updates, compatible App pins and fresh joined qualification.
+Root guide/work-order edits alone need no component release refresh or invented
+runtime delivery. Preserve local work before pulling; avoid resets and force pushes.
 
-The campaign portfolio still marks Century, Kira and Rise **In Development** and
-41 other concepts **Planned**. These labels describe concept development; the
-Catalog does not implement their Engine mechanics or App viewer.
-
-The Catalog follow-up, `CAT-03`, closes a reproduced authoring gap:
-refreshed source hashes alone previously allowed duplicate catalogue IDs,
-unknown development statuses and release/entitlement claims to pass verification.
-Source verification now checks identity/type/slate consistency, explicit preview
-and readiness flags, discovery IDs and held starting references. It preserves
-Planned, Concept Draft and In Development as separate states; App remains the
-owner of draft filtering and runtime projection. Current campaign descriptions,
-source archives, Historical Details bytes and its manifest pin are unchanged.
-See `CAMPAIGN_RECORD_VALIDATION.json` for this follow-up's executed checks.
-
-Fresh follow-up checks passed: 55 source/consumer tests (including the 16 new
-record-validation tests), six App catalogue tests and complete Catalog integrity
-verification. All tests executed with zero skips.
-
-## Blocked
-
-- **HD-04 resolved:** coordinator review, exact App dependency selection and
-  joined qualification are complete for historical-details-01.
-- The original source-access blocker is resolved. There is no missing source
-  input for the Catalog deliverable.
-- No Catalog source blocker remains for the completed R00/proposal follow-up.
-- No Catalog source blocker remains for the scripted response library. Direct production
-  adoption of the 1,000-variant depot is pending. The selected App pins the depot
-  source, and Engine independently reuses 325 initial variants; neither fact
-  establishes use of all 1,000 variants or measured live token savings.
-- **NARRATION-CAT-01 awaiting Engine/App contract:** Engine now exposes bounded structural
-  speech/offers and offline receipts. A general generated-dialogue contract and
-  matching non-Rise App communication interface remain unpublished. The
-  coordinator lists general narration/dialogue and semantic/voice review as
-  unfinished. New synthetic narration/dialogue inputs need a supported request,
-  result, actor/source and validation contract before actual qualification.
-
-## Remaining
-
-1. Engine/App adopt the complete campaign-neutral depot with campaign-specific intent/event
-   adapters for eligible routine presentation and
-   editable drafts, preserving source/actor scope and explicit decisions. Select
-   this Catalog commit through their reviewed dependency pins and qualify the
-   actual call-avoidance/cache/fallback behavior. Coordinator owns joined review.
-2. Extend consumer fixtures for additional supported contexts and process/communication
-   interfaces as their owners publish matching App contracts. Current shared
-   receipt evidence covers the two selected contexts and handlers only.
-3. When Engine/App publish general narration/dialogue contracts, add separately
-   versioned actor-safe evaluation inputs/oracles and actual consumer checks;
-   retain explicit synthetic rights and report human semantic review separately.
-4. Preserve original rights, sources, uncertainty and archive bytes in future
-   indexing; the ten reader collections remain a view of the full archive.
-5. Resume optional catalogue/artwork expansion after the runtime delivery.
-   Campaign release remains independent of previews and archive preservation.
-
-## Verification record
-
-See `SHARED_RESPONSE_VALIDATION.json` for current shared consumer qualification.
-`RESPONSE_DEPOT_VALIDATION.json` and `COORDINATOR_REPORT_DEPOT_1_0.md` preserve the
-initial campaign-neutral depot delivery's commands,
-selected sources and scope. `SCRIPTED_RESPONSES_VALIDATION.json` and
-`COORDINATOR_REPORT_ROUTINE_1_0.md` retain initial response-library evidence.
-`SOLO_PROPOSAL_VALIDATION.json` and
-`COORDINATOR_REPORT_PROPOSAL_FOLLOWUP.md` retain the proposal follow-up evidence.
-`SOLO_FIXTURE_VALIDATION.json`, `HISTORICAL_DETAILS_VALIDATION.json`,
-`CAMPAIGN_RECORD_VALIDATION.json` and `COORDINATOR_REPORT_HISTORICAL_DETAILS_01.md`
-retain labelled previous-cycle evidence; `COORDINATOR_REPORT_SOLO_RUNTIME_01.md`
-preserves the initial R00 delivery report. All behavioral fixtures are synthetic
-and temporary; no user campaign saves are read or migrated.
-
-## AI evaluation content and rights backlog
-
-The coordinator added this sequenced backlog in work-order commit
-`02db97383a8a0c785250b98585253d24f3365a9b`. The
-[master addendum](https://github.com/KingSav3ge/IRGS/blob/main/AI_PROVIDER_STRATEGY.md),
-[research review](https://github.com/KingSav3ge/IRGS/blob/main/AI_PROVIDER_REVIEW.md)
-and [16 proposed evaluation cases](https://github.com/KingSav3ge/IRGS/blob/main/provenance/qa/ai_provider_strategy/EVALUATION_CASES.json)
-were read; model evaluations remain unrun.
-
-Future Catalog evaluation inputs must preserve source identity, version, rights,
-uncertainty and permitted processing classification. Public access is not
-permission for external processing. Exclude private saves; label synthetic
-characters/situations as evaluation fixtures rather than campaign canon or
-playable content. Keep evaluator-only hidden facts out of actor/model inputs.
-Review any derivative or creator processing rights independently before use.
-
-Engine owns provider access, routing and validation; App owns administration and
-presentation. Catalog records do not select models, store credentials/prices or
-authorize transfer. This increment sends no archive content to providers and
-does not adopt generated prose. The current R00 fixture supplies validated
-synthetic inputs and actual baseline consumer compatibility for the active work
-order, with current proposal HTTP compatibility now qualified separately. It
-does not run the earlier 16 proposed model-quality evaluations or complete
-general narration/dialogue. Live smoke still requires configured authorized
-access, an eligible workload and finite limits through Engine/App; none is
-dispatched by this content increment. Each new component/joined set needs its
-own review, separate from the already integrated original 3.4.0 baseline.
+Previous milestone/status records: [dated history](DEVELOPMENT_HISTORY_2026-10-25.md).
