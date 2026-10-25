@@ -1,5 +1,9 @@
 # IRGS Catalog — 3.4.0 development
 
+Current coordinated edition: **3.4.1**; previous release: **3.3.3**.
+See [version policy](VERSION_POLICY.md). Earlier baseline tables and execution
+records below retain their original tested development identities.
+
 Current development: [guide](DEVELOPMENT.md) · [chat continuation](CHAT_CONTINUATION.md).
 
 Independent campaign catalogue data and design source for [IRGS](https://github.com/KingSav3ge/IRGS). The App viewer remains in [IRGS-APP-WEB](https://github.com/KingSav3ge/IRGS-APP-WEB); technical content libraries, profiles, campaign canon and initializers remain in [IRGS-Engine](https://github.com/KingSav3ge/IRGS-Engine).

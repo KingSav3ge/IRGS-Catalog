@@ -1,5 +1,9 @@
 # IRGS Catalog development guide
 
+Current coordinated edition: **3.4.1**; previous release: **3.3.3**.
+See [version policy](VERSION_POLICY.md). Earlier baseline tables and execution
+records below retain their original tested development identities.
+
 Current guide: 25 October 2026. Owner: `KingSav3ge/IRGS-Catalog/main`.
 Start with [CHAT_CONTINUATION.md](CHAT_CONTINUATION.md).
 
