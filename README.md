@@ -61,3 +61,12 @@ request and retains exact committed receipts. Catalog supplies content and a
 reference validator/formatter; Engine owns its runtime implementation and App
 owns the integration layer. See [validation](RESPONSE_DEPOT_VALIDATION.json) for
 executed checks. Production token savings require consumer adoption.
+
+[Shared response consumer fixtures](IRGS_Catalog/evaluation/shared_responses_v1/README.md)
+qualify the same receipt recipe against real Rise and non-Rise App/Core handlers.
+The non-Rise case selects the existing optional fictional quay opening in the
+1415 campaign; it adds no campaign rules or playable starts. Nine reference
+cases cover actual outcomes and elapsed spans, unsuccessful attempts, conserved
+delivery and recovery. Exact dependencies and fresh test scope are recorded in
+[shared validation](SHARED_RESPONSE_VALIDATION.json). The depot content remains
+unchanged; consumer adoption and measured savings are reported separately.

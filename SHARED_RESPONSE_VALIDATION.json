@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-10-25",
+  "increment": "shared campaign response consumer qualification",
+  "status": "passed_two_supported_contexts_with_catalog_reference_rendering",
+  "repository": "KingSav3ge/IRGS-Catalog",
+  "branch": "main",
+  "pulled_base_commit": "94b8ca6d976da48b3c6ca65e014b28c6d9a120c2",
+  "candidate_commit": "Resolve the containing Git commit; exact pushed SHA is reported in the component chat.",
+  "work_order": "COORDINATOR_WORK_ORDER.md: shared IRGS systems",
+  "fixture": {
+    "id": "irgs-shared-responses-v1",
+    "version": 1,
+    "contexts": 2,
+    "non_rise_contexts": 1,
+    "reference_cases": 9,
+    "actor_inputs_separate_from_evaluator_oracle": true,
+    "rights": "original authored local/offline synthetic evaluation; no external processing authorization"
+  },
+  "library": {
+    "id": "irgs-response-depot-v1",
+    "version": "1.0.0",
+    "system_variants": 750,
+    "editable_player_variants": 250,
+    "stored_variants": 1000,
+    "recipes": 32,
+    "source_unchanged": true
+  },
+  "dependencies": {
+    "engine": "9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443",
+    "app": "e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f",
+    "app_engine_pin": "9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443",
+    "app_catalog_pin": "94b8ca6d976da48b3c6ca65e014b28c6d9a120c2"
+  },
+  "candidate_selection": "IRGS_CATALOG_ROOT explicitly selects this Catalog candidate. Committed App pointers are inspected and unchanged.",
+  "contexts": [
+    {
+      "id": "rise",
+      "initializer": "settlement_setup.initialize via rise_campaigns.create",
+      "operation": "execute_settlement_action",
+      "handler": "settlement_runtime.execute",
+      "cases": 2,
+      "actions": [
+        "walk_clearing",
+        "inspect"
+      ],
+      "elapsed_total_seconds": 300,
+      "zero_second_inspection_retained": true
+    },
+    {
+      "id": "quay",
+      "profile": "military",
+      "scenario": "hundred-years-war",
+      "entry": "hyw-1415",
+      "opening": "quay-delivery-v1",
+      "fictional_authored_opening": true,
+      "initializer": "Store.create via starting_options and scene_setup.initialize_opening",
+      "operation": "execute_player_scene_action",
+      "handler": "scene_actions.execute_scene_action",
+      "cases": 7,
+      "actions": [
+        "look-quay",
+        "quay-shortcut",
+        "quay-passage",
+        "passage-desk",
+        "look-desk",
+        "deliver-dispatch",
+        "deliver-dispatch (new request after depletion)"
+      ],
+      "elapsed_total_seconds": 180,
+      "successful_transfers": 1,
+      "dispatch_quantity_conserved": 1,
+      "unsuccessful_attempts": 2
+    }
+  ],
+  "source_sha256": {
+    "IRGS_Catalog/response_depot_compatibility.py": "b9d1a9019095938fda5abb59903a7c2c245f66c5487e97cf1a070e7f087e0564",
+    "IRGS_Catalog/verify_catalog.py": "aeaac7180eba2d1a9de01791b845d5cc49aa09d19fa30dbc9d9eb47685cd0f02",
+    "IRGS_Catalog/responses/depot_v1/library.json": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4",
+    "IRGS_Catalog/responses/routine_v1/library.json": "4f0c629a6c2c11ee79a305fc5910b3f0caa7290f52d141aa3f867ed4facb361a",
+    "tools/tests/test_shared_response_contract.py": "7c8b0a62a98b9dfb743ec87fec2fe7ff42964cb9a59b653ab201f54865e19fe0",
+    "tools/tests/test_shared_response_consumers.py": "1f10ab8375f425e83aa336ec62d8f9d559b3e0bc8305e75b7d4b720bddf259fb",
+    "IRGS_Catalog/evaluation/shared_responses_v1/README.md": "40408d0bc1074376578305b437b31b0d0a0b63ffa26db7c095d08117505ca494",
+    "IRGS_Catalog/evaluation/shared_responses_v1/actor_inputs/quay.json": "cc88e0d636089134fbe43ed1a3d65d1e547067de3e20b75a7417298d3da3cbec",
+    "IRGS_Catalog/evaluation/shared_responses_v1/actor_inputs/rise.json": "3aab6e9fc26da957f76a567bdeeaa514b33fa1e5ba22fd9cf69ab532403cecfd",
+    "IRGS_Catalog/evaluation/shared_responses_v1/evaluator_only/oracle.json": "9ff55f0f5a5fe9a49f7d3bb0d471ab30d5ba77340e84e428d5084ae22ebd6299",
+    "IRGS_Catalog/evaluation/shared_responses_v1/manifest.json": "fc45e92af7c869924695450f4e995621779e4d4dae6058c72ebe416310ceded1"
+  },
+  "checks": [
+    {
+      "name": "catalog_source_schema_archive_and_depot",
+      "tests": 104,
+      "cwd": "/workspace/IRGS-Catalog",
+      "environment": {
+        "IRGS_ENGINE_ROOT": "/tmp/irgs-catalog-shared-engine/IRGS_3_3",
+        "IRGS_CATALOG_ROOT": "/workspace/IRGS-Catalog/IRGS_Catalog",
+        "IRGS_HISTORICAL_ENGINE_RUNTIME": "/tmp/irgs-catalog-shared-engine/IRGS_3_3/runtime",
+        "IRGS_HISTORICAL_APP_SOURCE": "/tmp/irgs-catalog-shared-app/IRGS_Web"
+      },
+      "command": "python -B -m unittest tools.tests.test_campaign_records tools.tests.test_historical_details tools.tests.test_historical_details_delivery tools.tests.test_solo_evaluation tools.tests.test_solo_proposal_contract tools.tests.test_scripted_responses tools.tests.test_scripted_response_expansion tools.tests.test_shared_response_contract -v",
+      "result": "passed",
+      "skipped": 0
+    },
+    {
+      "name": "shared_response_consumers",
+      "tests": 8,
+      "cwd": "/workspace/IRGS-Catalog",
+      "environment": {
+        "IRGS_SHARED_ENGINE_SOURCE": "/tmp/irgs-catalog-shared-engine",
+        "IRGS_SHARED_APP_SOURCE": "/tmp/irgs-catalog-shared-app"
+      },
+      "command": "python -B -m unittest tools.tests.test_shared_response_consumers -v",
+      "result": "passed",
+      "skipped": 0
+    },
+    {
+      "name": "engine_offline_response_regressions",
+      "tests": 17,
+      "cwd": "/tmp/irgs-catalog-shared-engine",
+      "environment": {},
+      "command": "python -B -m unittest discover -s IRGS_3_3/runtime -p 'test_offline_responses.py' -v",
+      "result": "passed",
+      "skipped": 0
+    },
+    {
+      "name": "app_scene_play_regressions",
+      "tests": 13,
+      "cwd": "/tmp/irgs-catalog-shared-app",
+      "environment": {
+        "IRGS_ENGINE_ROOT": "/tmp/irgs-catalog-shared-engine/IRGS_3_3",
+        "IRGS_CATALOG_ROOT": "/workspace/IRGS-Catalog/IRGS_Catalog"
+      },
+      "command": "python -B -m unittest discover -s IRGS_Web/tests -p 'test_scene_play.py' -v",
+      "result": "passed",
+      "skipped": 0
+    },
+    {
+      "name": "app_portfolio_regressions",
+      "tests": 6,
+      "cwd": "/tmp/irgs-catalog-shared-app",
+      "environment": {
+        "IRGS_ENGINE_ROOT": "/tmp/irgs-catalog-shared-engine/IRGS_3_3",
+        "IRGS_CATALOG_ROOT": "/workspace/IRGS-Catalog/IRGS_Catalog"
+      },
+      "command": "python -B -m unittest discover -s IRGS_Web/tests -p 'test_campaign_portfolio.py' -v",
+      "result": "passed",
+      "skipped": 0
+    },
+    {
+      "name": "catalog_integrity",
+      "command": "python -B IRGS_Catalog/verify_catalog.py",
+      "cwd": "/workspace/IRGS-Catalog",
+      "source_files": 169,
+      "previews": 44,
+      "historical_parts": 32,
+      "historical_members": 5146,
+      "historical_bindings": 5145,
+      "result": "passed"
+    },
+    {
+      "name": "engine_integrity",
+      "command": "python -B IRGS_3_3/runtime/irgs.py verify",
+      "cwd": "/tmp/irgs-catalog-shared-engine",
+      "result": "passed"
+    },
+    {
+      "name": "app_integrity",
+      "command": "python -B IRGS_Web/app_integrity.py",
+      "cwd": "/tmp/irgs-catalog-shared-app",
+      "source_files": 49,
+      "result": "passed"
+    },
+    {
+      "name": "patch_whitespace",
+      "command": "git diff --check; git diff --cached --check",
+      "result": "passed"
+    }
+  ],
+  "test_executions": 148,
+  "skipped": 0,
+  "evidence": {
+    "same_catalog_recipe": "routine.result",
+    "exact_core_summaries_and_observations_retained": true,
+    "actual_action_spans_not_cumulative_time": true,
+    "all_eight_elapsed_variants_checked_for_each_reference_case": true,
+    "civil_campaign_time_unchanged": true,
+    "lost_ack_fresh_store_concurrent_retry_exact_results": true,
+    "stale_and_foreign_requests_leave_save_unchanged": true,
+    "old_receipts_stable_after_more_actions": true,
+    "actor_snapshot_mixtures_rejected": true,
+    "draft_rendering_submits_nothing": true,
+    "unbound_submitted_draft_remains_unresolved_declaration": true,
+    "engine_missing_text_literal_receipt_fallback": true,
+    "provider_broker_dispatches_during_routine_checks": 0,
+    "direct_provider_transports_during_routine_checks": 0,
+    "socket_connections_during_routine_checks": 0,
+    "save_bytes_unchanged_by_rendering": true,
+    "private_evaluator_marker_absent_from_rendered_text": true
+  },
+  "preservation": {
+    "depot_and_original_compatibility_pack_byte_identical": true,
+    "original_r00_fixture_and_loader_unchanged": true,
+    "prior_validation_records_unchanged": true,
+    "previews_and_source_archives_unchanged": true,
+    "engine_app_sources_or_pins_edited": false,
+    "user_saves_opened_or_migrated": false
+  },
+  "scope": {
+    "new_campaign_adapter_or_simulation_rule": false,
+    "live_provider_calls": 0,
+    "production_token_savings_measured": false,
+    "automatic_runtime_adoption_of_1000_variant_depot": false,
+    "engine_owned_pack_variants": 338,
+    "engine_pack_retains_original_catalog_variants": 325,
+    "new_shared_response_tests_are_reference_qualification": true,
+    "joined_release_approved": false,
+    "full_shared_system_completion": false
+  },
+  "remaining": [
+    "Engine/App explicitly adopt compatible depot/event/intent mappings; current independent packs retain their owned runtime scope",
+    "Qualify further contexts and process/communication consumers when matching owner interfaces are published",
+    "Coordinator exact-set joined/browser/package qualification",
+    "Measure actual production call/token reduction after adoption; general generated dialogue and wider C2 remain separate"
+  ]
+}

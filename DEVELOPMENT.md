@@ -9,7 +9,7 @@ Rise R00 remains one regression fixture. Shared-system completion requires
 supported non-Rise evidence; campaign-specific mechanics retain their own scope.
 The records below preserve previously delivered work and historical evidence.
 
-Target iteration: **IRGS 3.4.0 — in development**. See the active Solo runtime work order and completion plan. Previously qualified versions and evidence retain their recorded identities.
+Target iteration: **IRGS 3.4.0 — in development**. Follow the active shared-systems work order and scope. Previously qualified versions and evidence retain their recorded identities.
 
 Updated 2026-10-25. Owner: IRGS Catalog. Push destination:
 `KingSav3ge/IRGS-Catalog/main`. The coordinator in **IRGS Enviroment** owns joined
@@ -35,8 +35,42 @@ integration and review of the exact Engine/App/Catalog dependency set.
 | SCR-CAT-02 | Deterministic typed formatting, actor/snapshot/source/state checks and exact receipt anchoring. | `scripted_responses.py`; 13 content/composition tests render every variant. No provider imports or dispatch. |
 | SCR-CAT-03 | Qualify text against actual Engine/App receipts, projections and supported editable drafts. | Five synthetic consumer tests assert no provider dispatch or save mutation during rendering. `SCRIPTED_RESPONSES_VALIDATION.json`. |
 | SCR-CAT-04 | Campaign-neutral depot with 750 system responses and 250 editable drafts. | Schema 2, depot 1.0.0: 1,000 distinct stored variants, 127 families, 32 recipes; typed campaign facts and unbound semantic intent tags. Original Rise pack preserved separately. `RESPONSE_DEPOT_VALIDATION.json`. |
+| SCR-CAT-05 | Shared response consumer fixtures against supported Rise and non-Rise interfaces. | Nine reference actions through existing App/Core handlers; eight source-contract and eight actual-consumer tests. `evaluation/shared_responses_v1/`; `SHARED_RESPONSE_VALIDATION.json`. |
 
-## Current increment — 25 October 2026
+## Current increment — shared response qualification, 25 October 2026
+
+The new shared-systems work order is read and implemented for the next Catalog
+increment. The unchanged depot now has reproducible actual consumer evidence in
+two independently initialized contexts: synthetic Rise R00 and the existing
+optional fictional quay opening in Hundred Years’ War 1415. Setup and execution
+use owner-published interfaces; no new campaign adapter, rule or start is created.
+
+Nine reference actions exercise real movement/observation, a blocked attempt,
+conserved delivery, a second unsuccessful delivery and a zero-second inspection.
+The same receipt recipe preserves actual summaries/observations and action spans.
+Fresh Store instances and concurrent retries retain one committed result; stale
+and foreign requests fail without save changes. Editable drafts submit nothing;
+an unbound submitted intention remains a declaration without physical effects.
+Provider dispatch, direct transport and network connection are forbidden in the
+routine consumer checks. Rendering leaves saves unchanged.
+
+Fresh acceptance: 148 tests passed, zero skips, comprising 104 Catalog checks,
+eight new consumer checks, 17 existing Engine offline-response tests, 13 existing
+App scene-play tests and six portfolio tests. Catalog integrity verifies 169
+source files, 44 previews and the complete original archive. Engine integrity
+and the selected App's 49 source files also verify. Exact evidence is in
+`SHARED_RESPONSE_VALIDATION.json`.
+
+Selected Engine `9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443` and App
+`e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f` are clean isolated snapshots. That App
+pins this Engine and Catalog `94b8ca6d976da48b3c6ca65e014b28c6d9a120c2`;
+`IRGS_CATALOG_ROOT` explicitly selects the new Catalog candidate for testing.
+Engine's independent runtime uses its own 338-variant pack, retaining 325 initial
+Catalog variants; App retains its UI pack. Direct production adoption of the
+1,000-variant depot and measured token savings remain separate consumer work.
+Broader shared systems, other contexts and generated dialogue retain their limits.
+
+## Previous increment — campaign-neutral depot
 
 The user's final scope is a response depot for any campaign/theme, containing
 750 system responses and 250 editable player drafts. The schema-2 depot 1.0.0
@@ -153,33 +187,40 @@ verification. All tests executed with zero skips.
 - The original source-access blocker is resolved. There is no missing source
   input for the Catalog deliverable.
 - No Catalog source blocker remains for the completed R00/proposal follow-up.
-- No Catalog source blocker remains for the scripted response library. Consumer
-  adoption of this new Catalog commit is pending; the current App does not yet
-  select this formatter for routine presentation, so live token savings are unmeasured.
-- **NARRATION-CAT-01 awaiting Engine/App contract:** the current API only proposes
-  existing actions; App returns Core summaries with `narrative: null`. The
+- No Catalog source blocker remains for the scripted response library. Direct production
+  adoption of the 1,000-variant depot is pending. The selected App pins the depot
+  source, and Engine independently reuses 325 initial variants; neither fact
+  establishes use of all 1,000 variants or measured live token savings.
+- **NARRATION-CAT-01 awaiting Engine/App contract:** Engine now exposes bounded structural
+  speech/offers and offline receipts. A general generated-dialogue contract and
+  matching non-Rise App communication interface remain unpublished. The
   coordinator lists general narration/dialogue and semantic/voice review as
   unfinished. New synthetic narration/dialogue inputs need a supported request,
   result, actor/source and validation contract before actual qualification.
 
 ## Remaining
 
-1. Engine/App adopt the campaign-neutral depot with campaign-specific intent/event
+1. Engine/App adopt the complete campaign-neutral depot with campaign-specific intent/event
    adapters for eligible routine presentation and
    editable drafts, preserving source/actor scope and explicit decisions. Select
    this Catalog commit through their reviewed dependency pins and qualify the
    actual call-avoidance/cache/fallback behavior. Coordinator owns joined review.
-2. When Engine/App publish general narration/dialogue contracts, add separately
+2. Extend consumer fixtures for additional supported contexts and process/communication
+   interfaces as their owners publish matching App contracts. Current shared
+   receipt evidence covers the two selected contexts and handlers only.
+3. When Engine/App publish general narration/dialogue contracts, add separately
    versioned actor-safe evaluation inputs/oracles and actual consumer checks;
    retain explicit synthetic rights and report human semantic review separately.
-3. Preserve original rights, sources, uncertainty and archive bytes in future
+4. Preserve original rights, sources, uncertainty and archive bytes in future
    indexing; the ten reader collections remain a view of the full archive.
-4. Resume optional catalogue/artwork expansion after the runtime delivery.
+5. Resume optional catalogue/artwork expansion after the runtime delivery.
    Campaign release remains independent of previews and archive preservation.
 
 ## Verification record
 
-See `RESPONSE_DEPOT_VALIDATION.json` for the current depot's commands,
+See `SHARED_RESPONSE_VALIDATION.json` for current shared consumer qualification.
+`RESPONSE_DEPOT_VALIDATION.json` and `COORDINATOR_REPORT_DEPOT_1_0.md` preserve the
+initial campaign-neutral depot delivery's commands,
 selected sources and scope. `SCRIPTED_RESPONSES_VALIDATION.json` and
 `COORDINATOR_REPORT_ROUTINE_1_0.md` retain initial response-library evidence.
 `SOLO_PROPOSAL_VALIDATION.json` and
