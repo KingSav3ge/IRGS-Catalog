@@ -1,32 +1,42 @@
-# IRGS Catalog work order — solo-runtime-01
+# IRGS-Catalog work order — shared IRGS systems
 
-Target iteration: **IRGS 3.4.0 — in development**. This Catalog deliverable supports the coordinated 3.4.0 release. Preserve independent catalogue/document/content/schema versions and original source filenames; qualify the new fixture and exact dependency combination before release.
+Assigned by IRGS Enviroment following the user's campaign-wide scope correction.
+Target: **IRGS 3.4.0 development**. Push only `IRGS-Catalog/main` under KingSav3ge.
+Read [IRGS_SYSTEMS_SCOPE.md](IRGS_SYSTEMS_SCOPE.md). This order supersedes the
+first R00 demonstration assignment, preserved byte-for-byte in
+[the prior order](COORDINATOR_WORK_ORDER_SOLO_RUNTIME_01.md).
 
-Assigned through IRGS Enviroment on 23 October 2026 following the user's direction to complete the systems needed to run IRGS. Owner: **IRGS Catalog**. Push only to `KingSav3ge/IRGS-Catalog/main`.
+## Current assignment
 
-## Baseline and priority
+1. Maintain the shared response depot for any campaign/theme: exactly 750 stored
+   system variants and 250 editable drafts; count recipes separately. Retain
+   original versioned compatibility packs and supplied source records unchanged.
+2. Use typed known labels and semantic intent tags across request/status,
+   recovery, information, inventory, time, work and communication. Campaign
+   adapters decide applicability and supported operations; content creates no rules.
+3. Validate every variant and recipe, exact counts, uniqueness, explicit rights,
+   actor/snapshot/source/state boundaries, exact outcome anchoring and player agency.
+   Preserve the delivered four-theme portability checks and separately labelled
+   real consumer evidence. Extend non-Rise consumer fixtures when owners publish
+   their supported interfaces; do not invent an adapter to satisfy a checklist.
+4. Give Engine/App a stable content/schema/reference handoff. Keep credentials,
+   provider routing, authorization and world state out of the depot. Rendering
+   requires zero API calls; demanding AI remains a separate host decision.
+5. Preserve 44 previews, adopted canon, original archives and Historical Details.
+   Publish exact dependencies and distinguish delivered content, runtime adoption
+   and measured token savings. Catalog is not blocked on another Rise expansion.
 
-Reviewed integrated Catalog: `3e898acb2179f18a41d7967817bedf429df29d3f`. Historical Details is complete: all 32 parts, original bytes, 5,146 files and 5,145 bindings were verified and integrated with Engine `723627e629231b5e90f38b9d52b65c9a3967b92a` and App `d8dc35ed653e516ccd0cacf91ee9693258491032`. The previous work order is preserved in `COORDINATOR_WORK_ORDER_HISTORICAL_DETAILS_01.md`. There is no missing archive input or pending historical-details-01 integration.
+## Delivery and review
 
-Read the coordinator's [Solo completion plan](https://github.com/KingSav3ge/IRGS/blob/main/SOLO_COMPLETION_PLAN.md). The immediate Catalog deliverable is a small reusable synthetic scenario for proving the actual runtime loop; optional preview expansion and art are queued behind it.
+Preserve work already developed. Keep the component plan current and report the
+exact pushed commit, supported contexts, actual handlers, executed checks/skips
+and remaining dependencies. Use synthetic temporary state only. Run relevant
+existing component integrity and behavioral checks; hashes alone certify no behavior.
 
-## Deliverable
+The coordinator reviews all three viable updates at exact compatible App pins,
+refreshes actual joined operation evidence and qualifies browser/package behavior
+before importing product source into unified IRGS/main. Prior release approvals
+retain their original scope. This work order does not claim new tests or mechanics.
 
-1. Supply versioned, clearly labelled synthetic evaluation data derived from the already qualified fictional Rise R00 foundation, using its actual supported operation IDs. Include enough established actor/control, finite resources and source/intent references to exercise two legitimate actions, one denied action, one unsupported proposal and a stale/replayed request without inventing new mechanics. Preserve Engine ownership of initialization and execution.
-2. Keep actor-visible/model input physically separate from evaluator-only oracle/hidden facts. Record stable fixture/case IDs, schema/version, provenance and explicit rights/processing classification. Mark synthetic authorship and permitted evaluation processing; unknown imported rights never become presumed external-provider permission.
-3. Add meaningful fixture validation and consumer checks against the selected Engine and App contract. Ensure hidden oracles cannot appear in exported actor inputs. Expected outcomes must reflect real selected handlers and existing conserved resources, not be fabricated by the model or catalogue metadata.
-4. Document how Engine/App load the test material without adding it to public campaign discovery, canon, playable starts or release approvals. Keep provider models, keys, prices and routing configuration out of content records. No historical archive, private save or full template is needed in a provider prompt.
-
-## Required evidence
-
-Run Catalog integrity, fixture/schema checks and actual Engine consumer compatibility. Demonstrate the legitimate sequence, denial, unsupported proposal and hidden-input boundary using temporary synthetic state. Report exact dependencies and pending App integration. Refresh Catalog release pins only after reviewed intentional data/validator edits; source hashes do not establish behavioral acceptance.
-
-This must be validated test content rather than a planning-only update. Preserve all 44 previews, original supplied packages, adopted canon and original historical source records. No new full campaign, artwork set, historical recalibration or separate simulator is required for this increment.
-
-## Delivery and coordinator review
-
-Work in your own component repository on `main`. Preserve existing work and adopted content. Return the exact pushed commit, changed executable behavior or validated test content, tested dependencies, executed checks, skips, remaining requirements and live prerequisites to **IRGS Enviroment**. Update completed, active and remaining work. Documentation and hash-only changes are not a viable runtime delivery.
-
-The coordinator reviews an actual Engine/App/Catalog update set, checks exact App pins and tests an isolated joined candidate before integrating product source. No previous-cycle approval applies to a new commit. Test with temporary synthetic saves only. The original Historical Grand Archive remains exact, and no private campaign or reference payload is sent to a provider by this work order.
-
-The coordinator can read these chats and publish repository work orders but has no direct chat-start/send tool. This file is the assignment; publication does not claim that your chat was resumed. The QA monitor tests pushed source, not development activity.
+Repository publication is the available handoff. There is no direct tool to send
+or restart another development chat; publication alone does not prove its receipt.

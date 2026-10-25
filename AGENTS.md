@@ -1,5 +1,14 @@
 # IRGS-Catalog development
 
+## Current priority — shared IRGS systems
+
+The user's current direction is development across campaigns and themes.
+Read [the shared scope](IRGS_SYSTEMS_SCOPE.md) and
+[the current work order](COORDINATOR_WORK_ORDER.md) before selecting work.
+Rise R00 remains one regression fixture. Shared-system completion requires
+supported non-Rise evidence; campaign-specific mechanics retain their own scope.
+The records below preserve previously delivered work and historical evidence.
+
 Follow the user's current directions. Own campaign listings, preview data and catalogue design documents under `IRGS_Catalog/`, independently on `main`. App projection, filtering, transport and viewer code belong to IRGS-APP-WEB; technical libraries, profiles, Kira canon and campaign initializers belong to IRGS-Engine. Joined IRGS retains a complete copy.
 
 Read README.md and `IRGS_Catalog/design/campaign_catalogue/README.md`. Treat imported designs as source material, not authority to implement mechanics, activate entitlements or approve campaign releases. Preserve original supplied documents byte for byte and add separately versioned designs for revisions. Preserve the explicit Planned, Concept Draft and In Development distinctions. Preview metadata must never grant launch authority or select hidden facts or future outcomes.
