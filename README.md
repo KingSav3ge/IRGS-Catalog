@@ -62,7 +62,8 @@ byte-identical under its separate identity. Reference rendering makes no provide
 request and retains exact committed receipts. Catalog supplies content and a
 reference validator/formatter; Engine owns its runtime implementation and App
 owns the integration layer. See [validation](RESPONSE_DEPOT_VALIDATION.json) for
-executed checks. Production token savings require consumer adoption.
+executed checks. The qualified Engine/App set now consumes the depot through
+its owned layers; measured production token savings remain separate.
 
 [Shared response consumer fixtures](IRGS_Catalog/evaluation/shared_responses_v1/README.md)
 qualify the same receipt recipe against real Rise and non-Rise App/Core handlers.
@@ -72,3 +73,10 @@ cases cover actual outcomes and elapsed spans, unsuccessful attempts, conserved
 delivery and recovery. Exact dependencies and fresh test scope are recorded in
 [shared validation](SHARED_RESPONSE_VALIDATION.json). The depot content remains
 unchanged; consumer adoption and measured savings are reported separately.
+
+The [integrated-pair follow-up](IRGS_Catalog/evaluation/integrated_responses_v1/README.md)
+adds native App HTTP `local_responses` and saved `presentation` qualification for
+the already integrated Engine/App pair. It preserves the original fixture and
+consumer declarations. [Fresh evidence](INTEGRATED_RESPONSE_VALIDATION.json)
+records outcome, draft, restart/retry/restore, failed-save and source-fallback
+checks. Phase/communication extensions await matching owner-published App APIs.

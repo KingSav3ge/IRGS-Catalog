@@ -42,19 +42,36 @@ independent content/schema versions and historical evidence. See
 [shared scope](IRGS_SYSTEMS_SCOPE.md), [continuation](CHAT_CONTINUATION.md) and
 [the work order](COORDINATOR_WORK_ORDER.md).
 
-## Next bounded task
+## Bounded task completed — integrated response follow-up
 
-Add a separately versioned compatibility follow-up for the currently integrated
-Engine/App pair, with actual local_responses and saved presentation checks in
-independently initialized non-Rise and Rise contexts. Preserve existing fixture
-manifests, payload hashes and declared consumer commits exactly; do not repin old
-evidence. Select clean exact current consumers and verify App's committed pins.
-Test real outcomes, drafts that submit nothing, actor/oracle separation, zero
-provider calls, stable older receipts, retries and failed/missing-source fallback.
-The current-pair follow-up can proceed now. Extend phase/communication evaluation
-only after owner-published contracts supply supported behavior and known facts.
-Keep the depot at 750 system variants, 250 editable drafts and 32 recipes unless
-the user changes that request. New text alone completes no simulation system.
+The requested compatibility follow-up is delivered as
+`evaluation/integrated_responses_v1/compatibility.json` and
+`integrated_response_compatibility.py`. Its identity is
+`irgs-integrated-responses-v1`; the original shared fixture manifest, payloads,
+rights and older consumer declarations are unchanged.
+
+Nine actual HTTP tests select the integrated Engine/App pair above and verify
+native `local_responses`, saved `presentation`, nine real outcomes, non-submitting
+drafts, actor/oracle separation, zero provider dispatch/transport, old-receipt
+stability, restart/concurrent retry, failed-save atomicity, identical-byte restore
+and missing/corrupt-source literal fallback. Eight source-contract tests protect
+the separate record and original identity. Fresh complete acceptance is 185 tests
+passed with zero skips, plus Catalog/Engine/App integrity. See
+[INTEGRATED_RESPONSE_VALIDATION.json](INTEGRATED_RESPONSE_VALIDATION.json).
+
+## Next bounded task and dependency
+
+Extend phase/communication evaluation only when the owners publish matching
+supported App contracts and actor-known facts. Add a separately versioned fixture
+or follow-up against a reviewed exact consumer pair; retain all existing manifests
+and evidence unchanged. No matching App contract is part of this tested pair, so
+that extension remains a dependency, not a completed simulation system.
+
+Maintain the completed two-context native presentation regression and the current
+verified-byte intake patch. Use the selectors in DEVELOPMENT.md for the integrated
+follow-up; legacy tests still require their original exact snapshots. Do not
+repin old records to make a new head pass. Keep the depot at 750 system variants,
+250 editable drafts and 32 recipes unless the user changes the request.
 
 ## Preserve and finish
 

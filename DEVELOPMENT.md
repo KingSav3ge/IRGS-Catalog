@@ -50,32 +50,64 @@ Read [depot](IRGS_Catalog/responses/depot_v1/README.md),
 [campaign records](IRGS_Catalog/design/campaign_catalogue/README.md).
 Earlier records describing consumer adoption as pending retain their original date.
 
-## Next bounded increment
+## Completed bounded increment — integrated-pair compatibility
 
-Add a separately versioned compatibility follow-up for the currently integrated
-Engine/App pair, with actual local_responses and saved presentation checks in
-independently initialized non-Rise and Rise contexts. Preserve existing fixture
-manifests, payload hashes and declared consumer commits exactly; do not repin old
-evidence. Select clean exact current consumers and verify App's committed pins.
-Test real outcomes, drafts that submit nothing, actor/oracle separation, zero
-provider calls, stable older receipts, retries and failed/missing-source fallback.
-The current-pair follow-up can proceed now. Extend phase/communication evaluation
-only after owner-published contracts supply supported behavior and known facts.
-Keep the depot at 750 system variants, 250 editable drafts and 32 recipes unless
-the user changes that request. New text alone completes no simulation system.
+Delivered `irgs-integrated-responses-v1`, a separate compatibility follow-up for
+the qualified Engine/App pair above. It binds the original shared fixture's exact
+manifest hash and reuses its actor inputs/oracle without changing any original
+consumer declaration or payload. `integrated_response_compatibility.py` adds
+source/rights/schema checks and Catalog integrity coverage.
+
+Nine actual App HTTP tests now check native `local_responses` and persisted
+`presentation` in independently initialized Rise and non-Rise quay contexts.
+They exercise all nine real cases, exact outcomes, zero-second inspection,
+editable non-submitting drafts, explicit unresolved declarations, stable older
+receipts, restart/concurrent retries, failed-save atomicity and same-identity
+retry, actor/stale/forged-input rejection, identical-byte restore, and missing or
+corrupt text fallback. Restored source availability cannot rewrite saved fallback
+presentations. Provider dispatch and direct transport are forbidden in these
+routine checks. No simulation rule or consumer runtime is implemented in Catalog.
+
+Fresh acceptance: **185 tests passed, zero skips**: 112 Catalog source/archive/
+contract checks, nine new integrated-pair HTTP checks, eight original declared
+consumer checks, 27 Engine offline/depot regressions and 29 App shared/intake,
+scene-play and portfolio regressions. The App verified-byte intake regression
+remains passing. Catalog verifies 172 source files, 44 previews and the full
+original archive; selected Engine integrity and all 51 App source files pass.
+Exact commands, source hashes and scope are in
+[INTEGRATED_RESPONSE_VALIDATION.json](INTEGRATED_RESPONSE_VALIDATION.json).
+
+The depot remains exactly 750 system variants, 250 editable drafts and 32 recipes.
+Earlier manifests and validation records remain unchanged. This follow-up does
+not reopen the original completed integration. Coordinator review of the new
+Catalog compatibility/evidence commit is a separate step.
+
+## Active and remaining
+
+There is no Catalog source blocker for the delivered compatibility follow-up.
+The next evaluation extension is phase/communication coverage **after** owners
+publish matching supported App contracts and actor-known facts. Keep the current
+fixtures unchanged; add separately versioned content and actual consumer checks
+for a reviewed exact pair. Do not invent an adapter to fill this dependency.
+
+Further semantic bindings, contexts, measured production token savings, general
+generated dialogue, live provider/model-quality work, wider DEV/C2 and Windows/
+distributed hosting qualification remain with their owners and existing scope.
+No user save, private external fixture or live inference was used here.
 
 ## Check Catalog and exact consumers
 
 ```bash
 python -B IRGS_Catalog/verify_catalog.py
-python -B -m unittest tools.tests.test_scripted_responses tools.tests.test_scripted_response_expansion tools.tests.test_shared_response_contract -v
+python -B -m unittest tools.tests.test_scripted_responses tools.tests.test_scripted_response_expansion tools.tests.test_shared_response_contract tools.tests.test_integrated_response_contract -v
 ```
 
-The 104-check source/archive/contract selection used in current qualification is:
+The current 112-check source/archive/contract selection is:
 `tools.tests.test_campaign_records`, `test_historical_details`,
 `test_historical_details_delivery`, `test_solo_evaluation`,
 `test_solo_proposal_contract`, `test_scripted_responses`,
-`test_scripted_response_expansion`, `test_shared_response_contract` (each under
+`test_scripted_response_expansion`, `test_shared_response_contract`,
+`test_integrated_response_contract` (each under
 `tools.tests`). Optional real reader cases require explicit source selectors:
 
 | Selector | Meaning |
@@ -93,6 +125,22 @@ Engine `9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443`, App
 Its eight checks passed against those declared snapshots; current consumers were
 qualified separately. Other legacy suites keep their own manifest selections.
 Never weaken identity guards or replace old fixture IDs to make new heads pass.
+
+The new `test_integrated_response_consumers` selects the qualified pair through
+`IRGS_INTEGRATED_ENGINE_SOURCE` / `IRGS_INTEGRATED_APP_SOURCE` (repository roots).
+It checks clean exact commits, App's Engine/Catalog pointers and imported module
+locations. Run its nine HTTP tests in a fresh process:
+
+```bash
+IRGS_INTEGRATED_ENGINE_SOURCE=/path/to/Engine \
+IRGS_INTEGRATED_APP_SOURCE=/path/to/App \
+python -B -m unittest tools.tests.test_integrated_response_consumers -v
+```
+
+See the [integrated follow-up README](IRGS_Catalog/evaluation/integrated_responses_v1/README.md)
+for the separate identity and API scope. Tests explicitly select this Catalog
+candidate with `IRGS_CATALOG_ROOT`; App's committed Catalog pin remains the
+qualified `27fff8385d1c01fdfe9ad7254b7647e6bc12a01e`.
 
 After intentional Catalog source/content edits, refresh only
 `python -B tools/refresh_component_releases.py --component catalog`, then verify

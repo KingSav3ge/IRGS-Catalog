@@ -1,92 +1,93 @@
-# Catalog delivery — shared response consumer qualification
+# Catalog delivery — integrated response compatibility follow-up
 
-Followed the new shared IRGS systems work order after pulling Catalog main at
-`94b8ca6d976da48b3c6ca65e014b28c6d9a120c2`. Catalog now supplies a separately
-versioned nine-case evaluation fixture and actual consumer tests for the same
-response recipe in independently initialized Rise and non-Rise contexts.
+Completed the next bounded task in `CHAT_CONTINUATION.md`, pulled at Catalog
+`d8862247fd4e11e1a4bb584db5d40d098cd57650`. This delivery adds a separately
+versioned compatibility record and native App HTTP tests for the already
+integrated Engine/App pair. It preserves every existing fixture manifest,
+payload hash, consumer declaration, original depot and prior validation record.
 
-## Delivered behavior and content
+## Changed Catalog behavior
 
-`IRGS_Catalog/evaluation/shared_responses_v1/` separates actor case/action/request
-identities from evaluator-only expected outcomes and privacy markers. Its manifest
-binds the unchanged depot, exact consumer commits, App pointers and payload hashes.
-`response_depot_compatibility.py` checks schema, offline synthetic rights, source
-identity and separation. Catalog integrity now includes this fixture. No new
-campaign adapter, playable start, world rule or provider routing was implemented.
+`evaluation/integrated_responses_v1/compatibility.json` introduces
+`irgs-integrated-responses-v1`, schema 1, binding the original shared manifest's
+exact SHA-256. `integrated_response_compatibility.py` validates the separate
+identity, unchanged source, rights, exact consumer identifiers and presentation
+contract. Catalog integrity now includes this follow-up. Actor inputs and the
+oracle are reused through their original separated loaders; no payload is repinned.
 
-Actual initialization and execution use existing owner interfaces:
+Nine new HTTP consumer tests exercise the actual `local_responses` projection and
+saved `presentation` field in independently initialized Rise R00 and the existing
+optional fictional 1415 quay opening. Existing owner initialization and handlers
+execute all nine reference cases. The same receipts retain complete actual
+summaries/observations, unsuccessful outcomes, conserved delivery, real spans and
+a zero-second inspection. Civil campaign time remains unchanged.
 
-| Context | Initialization and actual handler | Cases |
-| --- | --- | ---: |
-| Rise R00 | `rise_campaigns.create` with the original synthetic setup; `settlement_runtime.execute` through App | 2 |
-| Non-Rise 1415 quay | Explicit existing `quay-delivery-v1` selection through `starting_options` and `Store.create`; `scene_actions.execute_scene_action` through App | 7 |
+The tests check editable drafts that submit nothing; explicit unbound submission
+remains an unresolved declaration. Saved presentations stay identical in completed
+actions and older receipt lookups, through host restart, concurrent exact retries
+and identical-byte Trash restore. Failed saves commit neither effects nor public
+presentation, and the same identity can retry once. Missing/corrupt Catalog text
+and unavailable Engine text preserve full authorized literal receipts without
+private diagnostics or paid fallback. Source recovery does not rewrite saved
+fallback presentations. Foreign actors, stale requests and forged browser
+presentation fields change no save.
 
-The quay opening is authored fiction within the historical checkpoint. Its map,
-stock, durations and physical conditions stay Engine-owned. The test selects an
-existing opening; it does not reconstruct history or initialize another campaign.
+Provider broker dispatch and direct provider transport are instrumented to fail
+through routine setup/requests. Both remain at zero. View/receipt reads preserve
+campaign bytes. Tests use synthetic temporary state and loopback HTTP only.
+No App/Engine runtime, provider route, campaign rule or adapter was changed.
 
-The same Catalog `routine.result` recipe retains actual summaries/observations and
-appends real action spans, including Rise's zero-second inspection. It preserves
-the closed-gate failure and the second unsuccessful delivery after the sole
-entrusted dispatch is gone. One dispatch is conserved. The quay sequence reaches
-180 local elapsed seconds and Rise's short regression reaches 300; civil campaign
-time is unchanged.
+## Exact consumers
 
-Further checks cover lost acknowledgement, fresh Store instances, concurrent exact
-retries, stale requests, foreign actors, stable older receipts, mixed scopes,
-editable drafts, unresolved unbound declarations and Engine's literal receipt
-fallback. Routine consumer checks forbid provider broker dispatch, direct provider
-transport and socket connections. Rendering changes no synthetic save bytes.
+| Selection | Commit |
+| --- | --- |
+| Engine | `2f9476c6090878257d17cab3ad3a83a7ce18a5dc` |
+| App | `aae8a25656c890181e0aa569df2c716968ec3642` |
+| App's committed Catalog pin | `27fff8385d1c01fdfe9ad7254b7647e6bc12a01e` |
 
-## Fresh executed evidence — 25 October 2026
+Tests verify clean exact Git identities, App's Engine/Catalog pointers and module
+paths. `IRGS_CATALOG_ROOT` explicitly selects the new Catalog candidate; pointers
+stay unchanged. The original eight shared consumer checks run separately with
+Engine `9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443`, App
+`e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f` and its declared Catalog pin
+`94b8ca6d976da48b3c6ca65e014b28c6d9a120c2`. Their guards and records are unchanged.
 
-**148 tests passed, zero skips:**
+## Executed checks — 25 October 2026
 
-| Suite | Passed |
+**185 test executions passed, zero skips:**
+
+| Fresh checks | Passed |
 | --- | ---: |
-| Catalog source/schema/archive readers, original packs, all 1,000 variants, 32 recipes, four synthetic themes and new fixture contract | 104 |
-| New actual shared-response consumer tests | 8 |
-| Existing Engine offline-response regressions | 17 |
-| Existing App scene-play HTTP regressions | 13 |
-| Existing App portfolio regressions | 6 |
+| Catalog source/archive/content contracts, including eight new follow-up checks | 112 |
+| New integrated-pair native HTTP checks | 9 |
+| Original declared shared-response consumers | 8 |
+| Existing Engine offline/depot regressions | 27 |
+| Existing App shared/intake, scene-play and portfolio regressions | 29 |
 
-Integrity passed for Catalog's **169 source files**, 44 previews, all 32 original
-archive parts, 5,146 files and 5,145 bindings. Selected Engine integrity and all
-49 App source files also passed. Only Catalog source pins were refreshed.
-Exact commands and hashes are in [SHARED_RESPONSE_VALIDATION.json](SHARED_RESPONSE_VALIDATION.json).
+The App's component-update regression still verifies that compiled code and decoded
+text use the exact bytes checked before an update. All 1,000 variants and 32
+recipes retain their existing content/portability checks. Integrity passed Catalog's
+172 source files, 44 previews, all 32 original archive parts, 5,146 files and 5,145
+bindings; selected Engine integrity and all 51 App source files also passed.
+Only Catalog source pins were refreshed. Commands, hashes, results and limits are
+in [INTEGRATED_RESPONSE_VALIDATION.json](INTEGRATED_RESPONSE_VALIDATION.json).
+Development and continuation plans now mark this task complete.
 
-## Exact selections and preservation
+## Remaining dependencies
 
-- Engine: `9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443`.
-- App: `e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f`.
-- App commits that Engine pin and Catalog
-  `94b8ca6d976da48b3c6ca65e014b28c6d9a120c2`. Tests inspect those pointers and use
-  `IRGS_CATALOG_ROOT` to select this new Catalog candidate explicitly.
+The original response integration and verified-byte intake patch are already
+qualified in joined `65351ebcfe2538d880f576a3ce4aa2230537e08d`. Those attributed
+browser/package results are preserved; this delivery does not rerun or reopen
+them. Coordinator review of this new Catalog fixture/evidence commit is separate.
 
-Dependencies were clean isolated snapshots. No Engine/App sources or pins were
-changed. No user saves were inspected, migrated or sent to a provider. The depot,
-original Rise compatibility pack, original R00 fixture, 44 previews, archives and
-prior validation records remain unchanged. The prior 1,000-variant delivery's
-150-test evidence remains in `RESPONSE_DEPOT_VALIDATION.json` and its report is
-preserved in `COORDINATOR_REPORT_DEPOT_1_0.md`.
-
-## Remaining scope
-
-The depot still contains exactly **750 system variants, 250 editable drafts and
-32 separately counted recipes**. Engine currently owns an independent 338-variant
-runtime pack retaining 325 original Catalog variants. App owns its UI pack.
-This increment qualifies real current outcomes through Catalog's reference recipe;
-it does not claim automatic production use of all 1,000 variants or measured
-production token savings.
-
-Engine/App own further compatible intent/event mapping, scoped cache and runtime
-adoption. Extend fixtures as further supported contexts and matching process or
-communication consumers are published. General generated dialogue, wider C2 and
-unsupported campaign mechanics remain unfinished. The coordinator owns exact-set
-joined, browser and package qualification. There is no Catalog source blocker
-for this delivered shared receipt increment.
+Further phase/communication evaluation requires matching owner-published supported
+App contracts and actor-known facts. Other contexts, semantic bindings, measured
+production token savings, live/model-quality work and wider DEV/C2 remain outside
+this bounded follow-up. There is no Catalog source blocker for the delivered task.
+The depot remains exactly 750 system variants, 250 editable drafts and 32 recipes.
 
 Push destination is only `KingSav3ge/IRGS-Catalog/main`. The containing commit
-identifies the exact candidate; the pushed full SHA is reported in the component
-chat. Publication is the coordinator handoff and does not claim that another
-chat was sent a message or resumed.
+identifies this candidate; the component chat reports the full pushed SHA.
+Historical evidence stays in `SHARED_RESPONSE_VALIDATION.json` and its preserved
+report `COORDINATOR_REPORT_SHARED_RESPONSES_01.md`. No user save or private
+external fixture participated; no message was sent to another development chat.
