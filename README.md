@@ -80,3 +80,10 @@ the already integrated Engine/App pair. It preserves the original fixture and
 consumer declarations. [Fresh evidence](INTEGRATED_RESPONSE_VALIDATION.json)
 records outcome, draft, restart/retry/restore, failed-save and source-fallback
 checks. Phase/communication extensions await matching owner-published App APIs.
+
+[Development interoperability](IRGS_Catalog/evaluation/development_interop_v1/README.md)
+checks the pulled Engine/App heads and App's pinned Engine separately from
+Catalog. It includes native responses and received observation/work phases with
+zero routine inference. [Current evidence](DEVELOPMENT_INTEROP_VALIDATION.json)
+records the exact sources and unchanged App pointers; compatibility tests alone
+do not adopt a dependency update or approve joined publication.

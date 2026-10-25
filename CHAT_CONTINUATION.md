@@ -59,19 +59,37 @@ the separate record and original identity. Fresh complete acceptance is 185 test
 passed with zero skips, plus Catalog/Engine/App integrity. See
 [INTEGRATED_RESPONSE_VALIDATION.json](INTEGRATED_RESPONSE_VALIDATION.json).
 
+## Development interoperability completed — all three sources pulled
+
+The user's pull-all request was executed. Catalog-side compatibility now has a
+separate `irgs-development-interop-v1` matrix against Engine
+`0fdfc21f45510e3fd99fd6a8087cd3314d077267`, App
+`67411f8ef5214c8cb51af2b244590751e6ea20df` and this Catalog candidate. App's
+committed Engine/Catalog pointers remain the older reviewed pair. Both its
+pinned Engine and the current development Engine pass 11 Catalog HTTP checks
+in separate processes. Old records and guards are unchanged.
+
+Two new tests qualify published received-process controls for actual non-Rise
+observation and Rise work, including explicit acceptance, exact intention,
+progress, zero-second pause/resume, completion and saved phase presentation.
+Synthetic setup initializes processes through the real Engine API; this is no
+public start flow. Complete fresh acceptance is 237 tests passed, zero skips,
+plus current Catalog/Engine and actual pinned App-set integrity. See
+[DEVELOPMENT_INTEROP_VALIDATION.json](DEVELOPMENT_INTEROP_VALIDATION.json).
+
 ## Next bounded task and dependency
 
-Extend phase/communication evaluation only when the owners publish matching
-supported App contracts and actor-known facts. Add a separately versioned fixture
-or follow-up against a reviewed exact consumer pair; retain all existing manifests
-and evidence unchanged. No matching App contract is part of this tested pair, so
-that extension remains a dependency, not a completed simulation system.
+Current App contracts now support received observation/work and are covered from
+Catalog. Engine now publishes process-start discovery; App still pins the earlier
+Engine and keeps starts unavailable. Further Catalog start-flow evaluation waits
+for App's reviewed adoption and a published player interface. Communication/source
+controls likewise require matching owner interfaces and known facts. Do not
+invent controls or rewrite older evidence to satisfy those dependencies.
 
-Maintain the completed two-context native presentation regression and the current
-verified-byte intake patch. Use the selectors in DEVELOPMENT.md for the integrated
-follow-up; legacy tests still require their original exact snapshots. Do not
-repin old records to make a new head pass. Keep the depot at 750 system variants,
-250 editable drafts and 32 recipes unless the user changes the request.
+Maintain both Engine-role regressions and the verified-byte intake patch. Keep
+all previous fixture manifests, payloads and consumer IDs unchanged. The depot
+remains 750 system variants, 250 editable drafts and 32 recipes. Only Catalog
+implementation/evidence changes are committed by this chat.
 
 ## Preserve and finish
 

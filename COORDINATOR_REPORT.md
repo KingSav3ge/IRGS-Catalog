@@ -1,93 +1,89 @@
-# Catalog delivery — integrated response compatibility follow-up
+# Catalog interoperability — all three development repositories pulled
 
-Completed the next bounded task in `CHAT_CONTINUATION.md`, pulled at Catalog
-`d8862247fd4e11e1a4bb584db5d40d098cd57650`. This delivery adds a separately
-versioned compatibility record and native App HTTP tests for the already
-integrated Engine/App pair. It preserves every existing fixture manifest,
-payload hash, consumer declaration, original depot and prior validation record.
+Pulled main from all three development repositories as requested. Catalog was
+already at `4bd572843cebc94e7d043c3706d1be85249d6c10`; Engine fast-forwarded to
+`0fdfc21f45510e3fd99fd6a8087cd3314d077267` and App to
+`67411f8ef5214c8cb51af2b244590751e6ea20df`. App submodules were checked out at
+its committed pointers. No Engine/App implementation edit, commit or push was made.
 
-## Changed Catalog behavior
+## Exact compatibility matrix
 
-`evaluation/integrated_responses_v1/compatibility.json` introduces
-`irgs-integrated-responses-v1`, schema 1, binding the original shared manifest's
-exact SHA-256. `integrated_response_compatibility.py` validates the separate
-identity, unchanged source, rights, exact consumer identifiers and presentation
-contract. Catalog integrity now includes this follow-up. Actor inputs and the
-oracle are reused through their original separated loaders; no payload is repinned.
+App still pins Engine `2f9476c6090878257d17cab3ad3a83a7ce18a5dc` and Catalog
+`27fff8385d1c01fdfe9ad7254b7647e6bc12a01e`. Catalog-side tests therefore qualify
+two explicit Engine roles against current App and this Catalog candidate:
 
-Nine new HTTP consumer tests exercise the actual `local_responses` projection and
-saved `presentation` field in independently initialized Rise R00 and the existing
-optional fictional 1415 quay opening. Existing owner initialization and handlers
-execute all nine reference cases. The same receipts retain complete actual
-summaries/observations, unsuccessful outcomes, conserved delivery, real spans and
-a zero-second inspection. Civil campaign time remains unchanged.
+| Engine role | Exact source | HTTP checks |
+| --- | --- | ---: |
+| Development | `0fdfc21f45510e3fd99fd6a8087cd3314d077267` | 11 |
+| App-pinned | `2f9476c6090878257d17cab3ad3a83a7ce18a5dc` | 11 |
 
-The tests check editable drafts that submit nothing; explicit unbound submission
-remains an unresolved declaration. Saved presentations stay identical in completed
-actions and older receipt lookups, through host restart, concurrent exact retries
-and identical-byte Trash restore. Failed saves commit neither effects nor public
-presentation, and the same identity can retry once. Missing/corrupt Catalog text
-and unavailable Engine text preserve full authorized literal receipts without
-private diagnostics or paid fallback. Source recovery does not rewrite saved
-fallback presentations. Foreign actors, stale requests and forged browser
-presentation fields change no save.
+`evaluation/development_interop_v1/compatibility.json` records the new matrix
+under `irgs-development-interop-v1`, with exact source and original compatibility
+hashes. The new validator checks role/pin consistency and scope. Historical
+manifests, payloads, guards and evidence remain unchanged. Current overrides are
+reported as tested candidates, not adopted App dependency updates.
 
-Provider broker dispatch and direct provider transport are instrumented to fail
-through routine setup/requests. Both remain at zero. View/receipt reads preserve
-campaign bytes. Tests use synthetic temporary state and loopback HTTP only.
-No App/Engine runtime, provider route, campaign rule or adapter was changed.
+## What passed from Catalog
 
-## Exact consumers
+The new consumer class reuses all nine native HTTP response/recovery checks under
+its own exact matrix guard. Each role independently initializes Rise R00 and the
+existing optional fictional quay opening in the 1415 campaign. Catalog text,
+Engine runtime and App presentation agree on the unchanged depot bytes and public
+contracts. Actual success/failure, zero spans, editable non-submitting drafts,
+explicit declarations, older saved presentations, failed-save retry, source
+fallback, foreign/stale requests and restore remain covered.
 
-| Selection | Commit |
-| --- | --- |
-| Engine | `2f9476c6090878257d17cab3ad3a83a7ce18a5dc` |
-| App | `aae8a25656c890181e0aa569df2c716968ec3642` |
-| App's committed Catalog pin | `27fff8385d1c01fdfe9ad7254b7647e6bc12a01e` |
+Two additional tests use App's now-published received-process controls. Trusted
+synthetic setup establishes an observation or shelter-work process through the
+real typed Engine API while the host is stopped. Public preparation changes no
+campaign bytes and execution requires explicit acceptance. Observation completes
+at its actual 20-second rule boundary and delivers knowledge then; Rise work
+preserves 100 seconds of progress across zero-second pause/resume, respects
+existing material boundaries and completes 3,600 seconds of work. Catalog-backed
+phase presentations survive saved-result lookup, restart and exact retry.
 
-Tests verify clean exact Git identities, App's Engine/Catalog pointers and module
-paths. `IRGS_CATALOG_ROOT` explicitly selects the new Catalog candidate; pointers
-stay unchanged. The original eight shared consumer checks run separately with
-Engine `9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443`, App
-`e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f` and its declared Catalog pin
-`94b8ca6d976da48b3c6ca65e014b28c6d9a120c2`. Their guards and records are unchanged.
+These tests create no App process-start flow, capability discovery rule or
+campaign adapter. Broker dispatch and direct provider transport are forbidden
+throughout the consumer tests. Routine provider calls are zero. Only temporary
+synthetic saves and loopback HTTP are used.
 
-## Executed checks — 25 October 2026
+## Fresh execution — 25 October 2026
 
-**185 test executions passed, zero skips:**
+**237 tests passed, zero skips:**
 
-| Fresh checks | Passed |
+| Scope | Passed |
 | --- | ---: |
-| Catalog source/archive/content contracts, including eight new follow-up checks | 112 |
-| New integrated-pair native HTTP checks | 9 |
-| Original declared shared-response consumers | 8 |
-| Existing Engine offline/depot regressions | 27 |
-| Existing App shared/intake, scene-play and portfolio regressions | 29 |
+| Catalog source/archive/content and compatibility contracts | 118 |
+| Development Engine/current App/Catalog HTTP consumers | 11 |
+| App-pinned Engine/current App/Catalog HTTP consumers | 11 |
+| Original integrated-pair consumers with original selectors | 9 |
+| Current Engine phase/offline/depot regressions | 55 |
+| Current App process/shared/portfolio regressions | 33 |
 
-The App's component-update regression still verifies that compiled code and decoded
-text use the exact bytes checked before an update. All 1,000 variants and 32
-recipes retain their existing content/portability checks. Integrity passed Catalog's
-172 source files, 44 previews, all 32 original archive parts, 5,146 files and 5,145
-bindings; selected Engine integrity and all 51 App source files also passed.
-Only Catalog source pins were refreshed. Commands, hashes, results and limits are
-in [INTEGRATED_RESPONSE_VALIDATION.json](INTEGRATED_RESPONSE_VALIDATION.json).
-Development and continuation plans now mark this task complete.
+Catalog integrity passes 175 files, all 44 previews and the complete original
+archive: 32 parts, 5,146 files and 5,145 bindings. Current Engine integrity passes.
+The App's full component verifier passes against its actual checked-out Engine
+and Catalog pins, including all 55 App files. Its verified-byte Catalog intake
+regression remains passing. Only Catalog source hashes were refreshed.
+
+Exact commands, roots, hashes and results are in
+[DEVELOPMENT_INTEROP_VALIDATION.json](DEVELOPMENT_INTEROP_VALIDATION.json).
+The original 185-test integrated-pair record remains unchanged in
+`INTEGRATED_RESPONSE_VALIDATION.json`; its report is preserved as
+`COORDINATOR_REPORT_INTEGRATED_RESPONSES_01.md`.
 
 ## Remaining dependencies
 
-The original response integration and verified-byte intake patch are already
-qualified in joined `65351ebcfe2538d880f576a3ce4aa2230537e08d`. Those attributed
-browser/package results are preserved; this delivery does not rerun or reopen
-them. Coordinator review of this new Catalog fixture/evidence commit is separate.
+No Catalog-side interoperability blocker was found in the named response and
+received observation/work paths. App/coordinator adoption of current dependency
+pointers and exact-set joined/browser/package qualification remain separate.
+The current Engine now publishes process-start discovery; current App still
+pins its earlier Engine and reports `start_available: false`. Public start-flow
+adoption belongs to App. Communication/source controls and further contexts
+require matching owner interfaces. General dialogue, live/model quality,
+production savings and wider DEV/C2 retain their existing scope.
 
-Further phase/communication evaluation requires matching owner-published supported
-App contracts and actor-known facts. Other contexts, semantic bindings, measured
-production token savings, live/model-quality work and wider DEV/C2 remain outside
-this bounded follow-up. There is no Catalog source blocker for the delivered task.
 The depot remains exactly 750 system variants, 250 editable drafts and 32 recipes.
-
-Push destination is only `KingSav3ge/IRGS-Catalog/main`. The containing commit
-identifies this candidate; the component chat reports the full pushed SHA.
-Historical evidence stays in `SHARED_RESPONSE_VALIDATION.json` and its preserved
-report `COORDINATOR_REPORT_SHARED_RESPONSES_01.md`. No user save or private
-external fixture participated; no message was sent to another development chat.
+No old content, original archives, user saves or private external fixtures were
+changed or transferred. This chat pushes only `IRGS-Catalog/main`; the component
+chat reports the full new SHA. Repository publication is the coordinator handoff.

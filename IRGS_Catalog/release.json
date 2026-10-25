@@ -104,6 +104,9 @@
     "design/catalogue_v0_5/records/SS-17.json": "79078463604daa023144f35c2d35dd22b6c4cba58e278531034d2e8c7e5fde62",
     "design/catalogue_v0_5/records/SS-18.json": "10570e369c0213319c179529187bf84a3952a5f3f6ea12ac933434f3b2e7c802",
     "design/source_packages/IRGS_Campaign_Catalogue_44_Records_v0_5.zip": "90e90bb87085f1fbaaa3569401ebbd824b0fdf2060482a59571991c76cfd44c8",
+    "development_interop_compatibility.py": "edc911eec8711820fb6351f3ebbe6b0d1a7c4f6a2b1e455fedfd0b3349bbf040",
+    "evaluation/development_interop_v1/README.md": "e77b309523b27334bb0e14cc65b6881497aec601dd989ef79773e1898020f79e",
+    "evaluation/development_interop_v1/compatibility.json": "0b6fe6eb24a67e5b3e37d52da5fe38a98f1892ef6a67c495075692ac4e7f3e85",
     "evaluation/integrated_responses_v1/README.md": "d84903473b486c58a443e80aef0403a9d3f8d6f31e81f99d9bd22258c095b258",
     "evaluation/integrated_responses_v1/compatibility.json": "daf1afc0f3dd9c60aaf3da0f69e7477cf5ae7b78e7233c529a7abb307d8da78c",
     "evaluation/shared_responses_v1/README.md": "40408d0bc1074376578305b437b31b0d0a0b63ffa26db7c095d08117505ca494",
@@ -174,6 +177,6 @@
     "scripted_responses.py": "7584bf10e29b8077ed84c7c4581d006327de3fd850a5e33b099577437b44f313",
     "solo_evaluation.py": "444fb338b7ade0e78fbd2f014c15bd90546cee4e203966ed6284ba73cfdecc97",
     "solo_proposal_compatibility.py": "d83a591a5e070bd3f602898fa1f16e477ac580b62e2d9f39ce48ed8c3d158dce",
-    "verify_catalog.py": "3bcdeff0e0a3e9bbed54e2c008d1db4f3f9ffa1ab33a018e48ac3abf225a2fcc"
+    "verify_catalog.py": "2f9740930faa044a0acfb7368ff59d35f0bba0aec1c12c3cec0b5962a195dfe2"
   }
 }

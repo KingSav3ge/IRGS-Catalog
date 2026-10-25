@@ -50,6 +50,40 @@ Read [depot](IRGS_Catalog/responses/depot_v1/README.md),
 [campaign records](IRGS_Catalog/design/campaign_catalogue/README.md).
 Earlier records describing consumer adoption as pending retain their original date.
 
+## Current interoperability — all development repositories pulled
+
+Pulled all three development repositories on 25 October 2026, preserving clean
+Engine/App sources and their committed dependency pointers. The separate
+`irgs-development-interop-v1` record selects:
+
+| Source | Commit |
+| --- | --- |
+| Engine development | `0fdfc21f45510e3fd99fd6a8087cd3314d077267` |
+| App development | `67411f8ef5214c8cb51af2b244590751e6ea20df` |
+| Catalog at pull | `4bd572843cebc94e7d043c3706d1be85249d6c10` |
+
+App still commits Engine `2f9476c6090878257d17cab3ad3a83a7ce18a5dc` and Catalog
+`27fff8385d1c01fdfe9ad7254b7647e6bc12a01e`. Catalog-side HTTP qualification runs
+both Engine roles separately against the current App and this Catalog candidate.
+This distinguishes a tested development override from adopted dependency pins.
+
+Each role passes the nine native response tests plus two received-process tests.
+The new phase cases use the published App preparation/execution controls and
+actual typed Engine observation/work handlers. They preserve exact intentions,
+require explicit acceptance, keep preparation read-only, deliver observation on
+completion and retain Catalog-backed phase presentations across restart/retry.
+Trusted synthetic setup initializes the received processes; no public process
+start or new campaign rule is introduced.
+
+Fresh acceptance: **237 tests passed, zero skips**: 118 Catalog checks, 11 HTTP
+checks for each Engine role, nine original integrated-pair checks, 55 Engine
+phase/response regressions and 33 App process/shared/portfolio checks. Catalog
+integrity passes 175 files, 44 previews and the full original archive. Current
+Engine integrity and App's complete actual pinned component set pass; App has
+55 source files. The original fixtures, selectors and depot remain unchanged.
+See [DEVELOPMENT_INTEROP_VALIDATION.json](DEVELOPMENT_INTEROP_VALIDATION.json)
+and the [matrix README](IRGS_Catalog/evaluation/development_interop_v1/README.md).
+
 ## Completed bounded increment — integrated-pair compatibility
 
 Delivered `irgs-integrated-responses-v1`, a separate compatibility follow-up for
@@ -84,30 +118,35 @@ Catalog compatibility/evidence commit is a separate step.
 
 ## Active and remaining
 
-There is no Catalog source blocker for the delivered compatibility follow-up.
-The next evaluation extension is phase/communication coverage **after** owners
-publish matching supported App contracts and actor-known facts. Keep the current
-fixtures unchanged; add separately versioned content and actual consumer checks
-for a reviewed exact pair. Do not invent an adapter to fill this dependency.
+There is no Catalog source blocker in the tested response and received-process
+paths. Received observation/work App contracts are now published and have
+Catalog-side evidence. Earlier notes that all phase controls await an App
+contract retain their historical scope.
 
-Further semantic bindings, contexts, measured production token savings, general
-generated dialogue, live provider/model-quality work, wider DEV/C2 and Windows/
-distributed hosting qualification remain with their owners and existing scope.
-No user save, private external fixture or live inference was used here.
+The current Engine also publishes process-start discovery. App still pins its
+earlier Engine and explicitly reports `start_available: false`; adopting the
+new API, exposing starts and updating pins belong to App/coordinator review.
+Communication/source controls and further contexts await their matching
+owner-published interfaces. Add separately versioned checks rather than repinning
+older manifests. No Engine/App local source edit or push was made here.
+
+Further semantic bindings, measured production savings, generated dialogue,
+live/model-quality work, wider DEV/C2 and Windows/distributed hosting retain
+separate scope. Coordinator owns exact-set joined/browser/package qualification.
 
 ## Check Catalog and exact consumers
 
 ```bash
 python -B IRGS_Catalog/verify_catalog.py
-python -B -m unittest tools.tests.test_scripted_responses tools.tests.test_scripted_response_expansion tools.tests.test_shared_response_contract tools.tests.test_integrated_response_contract -v
+python -B -m unittest tools.tests.test_scripted_responses tools.tests.test_scripted_response_expansion tools.tests.test_shared_response_contract tools.tests.test_integrated_response_contract tools.tests.test_development_interop_contract -v
 ```
 
-The current 112-check source/archive/contract selection is:
+The current 118-check source/archive/contract selection is:
 `tools.tests.test_campaign_records`, `test_historical_details`,
 `test_historical_details_delivery`, `test_solo_evaluation`,
 `test_solo_proposal_contract`, `test_scripted_responses`,
 `test_scripted_response_expansion`, `test_shared_response_contract`,
-`test_integrated_response_contract` (each under
+`test_integrated_response_contract`, `test_development_interop_contract` (each under
 `tools.tests`). Optional real reader cases require explicit source selectors:
 
 | Selector | Meaning |
@@ -141,6 +180,13 @@ See the [integrated follow-up README](IRGS_Catalog/evaluation/integrated_respons
 for the separate identity and API scope. Tests explicitly select this Catalog
 candidate with `IRGS_CATALOG_ROOT`; App's committed Catalog pin remains the
 qualified `27fff8385d1c01fdfe9ad7254b7647e6bc12a01e`.
+
+For the current development matrix, select `IRGS_INTEROP_ENGINE_SOURCE`,
+`IRGS_INTEROP_APP_SOURCE` and `IRGS_INTEROP_ENGINE_ROLE=development` or
+`app_pinned`, then run `python -B -m unittest
+tools.tests.test_development_interop_consumers -v` in a fresh process. Exact
+matrix commits and App pointers are checked; the original integrated suite and
+its identity guard are unchanged. Use the matrix README for complete commands.
 
 After intentional Catalog source/content edits, refresh only
 `python -B tools/refresh_component_releases.py --component catalog`, then verify
