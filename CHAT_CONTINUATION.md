@@ -1,102 +1,76 @@
 # Continuation instructions — IRGS Catalog
 
 Current coordinated edition: **3.4.2**; previous release: **3.3.3**.
-Updated 26 October 2026 following the coordinator's actual playability evaluation.
-Preserve local work before pulling; fresh user instructions take precedence.
+Updated 26 October 2026 following coordinator review of all three deliveries.
+Preserve local work before pulling. New user directions take precedence.
 
-## Start here
+## Current review and assignment
 
-```bash
-git status --short
-git pull --ff-only origin main
-```
+Pull this repository's `main`, then read `AGENTS.md`,
+[the work order](COORDINATOR_WORK_ORDER.md),
+[the current review](COORDINATOR_START_REVIEW_2026_10_26.md) and
+[its exact evidence](COORDINATOR_START_REVIEW_2026_10_26.json).
+The original `PLAYABILITY_REVIEW_3_4_2.md` remains the dated initial assessment.
 
-Read `AGENTS.md`, [the work order](COORDINATOR_WORK_ORDER.md),
-[the assessment](PLAYABILITY_REVIEW_3_4_2.md),
-[evidence](PLAYABILITY_EVIDENCE_3_4_2.json), `DEVELOPMENT.md` and
-`IRGS_SYSTEMS_SCOPE.md`. Develop only IRGS-Catalog; coordinator owns joined imports.
+The initial requirements/schema, availability wording and seven baseline start
+consumers are accepted within their original scope at `e1778e0`. The coordinator
+reran those seven at Engine `91b2005` and App `00634b1`; all passed. Preserve these
+historical identities, guards and evidence. Do not repin the existing baseline
+to make it appear to qualify the new source.
 
-## Qualified product baseline
+Engine `cc450a6` now publishes `irgs-start-readiness-1` and an optional sourced
+Henry observation start. Read its actual API/source and begin a separately
+versioned requirement/consumer selection now; App adoption is START-INT-002–005.
+Check the cited broad setting and disputed boarding dates without reproducing
+articles or resolving the uncertainty into an exact room, ship, berth or hour.
+Keep John/1415 held for missing legitimate personal context. No invented rank
+authority, dispatch, possessions, introductions, destination or scheduled future.
 
-Unified 3.4.2: `ba551af285a6e1eb0766a9d06f83cbc0e5335b35`.
-Engine: `91b20056e7db651966c9e92925313494917f47b1`.
-App: `00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc`.
-Catalog: `3f921252e50a0976cb88321b6ff8249a5f12466d`.
-These exact product revisions were evaluated. Later instruction commits change
-no runtime source or release pins. Earlier validation remains at its real source.
+Qualify exact published Engine and adopted App revisions through real APIs and
+Core results: explicit Henry supported mode, default Henry and John limited mode,
+new default, authored new character and R00. Require received initial civil day,
+no running civil-clock claim, actual selected local elapsed, explicit accepted
+operation, received result, conservation/authority/privacy, original-result retry
+and save/reload. Include unsupported opening/actor substitution and continuing
+world reads that do not reseed. Keep actor inputs separate from the oracle.
+Publish requirements/schema support while App is pending, label unexecuted
+acceptance honestly, then add executed exact consumers after its adoption commit.
+Preserve original archives/citations, all 44 previews and the 750/250/32 depot.
+Communication consumer expansion follows the actual App communication bridge.
 
-## First bounded increment — starting-context requirements and readiness cases
+## Source and publication rules
 
-Read `PLAYABILITY_REVIEW_3_4_2.md`. Own the cross-component acceptance matrix for
-IRGS-PLAY-001/002/004 and the actual availability descriptions. Separate historical
-reference readiness, character eligibility, declaration-only mode and executable
-slice readiness. Do not mark an existing-character start playable merely because
-its dated snapshot is verified or a new-character fictional opening exists.
+Published unified 3.4.2 remains `ba551af285a6e1eb0766a9d06f83cbc0e5335b35`.
+Received component products: Engine `cc450a6f00a249d2169cdacdfc9c4b1e03f67cc8`,
+App `23184e1e70b6005ad6170edb3843afcaae42e18a`, Catalog `e1778e080385b6ff2bbb93f47f91d0da6e9d6780`.
+Later coordinator guide/patch commits must be read; doc-only descendants do not
+themselves supply another runtime increment. Current App gitlinks still select
+Engine `91b20056e7db651966c9e92925313494917f47b1` and Catalog
+`3f921252e50a0976cb88321b6ff8249a5f12466d`.
 
-Prepare sourced starting-context requirements for the first supported existing
-historical person, including provenance, uncertainty, actor access and any gaps.
-Use adopted source records without modifying originals. Technical initializers and
-rules remain Engine-owned; viewer controls remain App-owned. No catalogue prose
-may fabricate inventory, authority, time, NPC choices or player knowledge.
+Develop shared IRGS systems; Rise is one regression context. Keep one Core and
+nine K-owners, existing six Director categories, actor/source filtering, actual
+authority/resources, reviewed explicit acceptance and atomic original-result
+recovery. Keep declaration, effect, information, outcome and presentation apart.
+Preserve distinctions among causal sequence, storage revision, civil day and
+selected local elapsed time. Do not invent universal timing or NPC decisions.
 
-Create a separately versioned evaluation alongside existing fixtures. Include the
-reported John/1415 path, a new-character default with no authored scene, a working
-authored new-character path, and R00 as a regression. Positive acceptance requires
-actual reviewed initial context, a confirmed Core operation, an actor-received
-result and retained save/reload state. Negative cases must prove honest readiness
-classification, no hidden-state menu oracle and no invented effects or elapsed
-time. The current empty starts are observed gaps, not success expectations to
-freeze into a permanent fixture. Keep actor inputs separate from evaluator truth.
+Use synthetic temporary stores only. Preserve user saves, credentials, personal
+configuration, original archive/source bytes, adopted canon and dated evidence.
+Do not migrate a user campaign. Qualify actual code and exact dependencies;
+refresh only your component hashes after intentional source edits. Update plans,
+push only `IRGS-Catalog` and report full commit, tested selections, failures/skips and
+remaining scope. Do not claim a full system, live AI, Windows or C2 qualification.
 
-Publish requirements/schema work while interfaces are pending, clearly labelled
-as such. Qualify consumers against exact published Engine/App commits once their
-contract exists; planning or source hashes alone are not a viable runtime delivery.
-Maintain all original fixture consumers/manifests, archive bytes, 44 previews and
-the 750 system / 250 draft / 32 recipe depot. Do not reauthor the depot or reimport
-Historical Details. Extend communication evaluation after App publishes its bridge.
-
-## Delivery rules
-
-26 October Catalog delivery: `irgs-player-starts-v1` now contains the four actor
-cases, separate evaluator matrix, sourced John/1415 requirements and an offline
-evidence schema/validator. The active Century description separates dated
-references from executable starts. Seven real HTTP diagnostics at the evaluated
-Engine/App revisions preserve the authored-new/R00 positive loops and identify
-the John/default and historical mode/date gaps honestly. See
-[PLAYER_START_VALIDATION.json](PLAYER_START_VALIDATION.json) and
-[the fixture README](IRGS_Catalog/evaluation/player_starts_v1/README.md).
-
-Next: wait for the owner-published versioned readiness/context interfaces, inspect
-their actual source and add a separate exact consumer selection. Demonstrate the
-new existing-person loop and explicit mode/date behavior without repinning this
-baseline or treating empty starts as acceptable product behavior. Requirements
-and schema are delivered; the runtime fix and coordinator adoption are pending.
-
-Develop shared IRGS systems; Rise is one regression context. Preserve one
-authoritative Core and its nine K-owners, the existing six Director categories,
-actor/source filtering, reviewed creation, explicit acceptance, resource/authority
-checks and exact original-result recovery. Names, themes, narration and drafts
-create no capability or facts. Keep causal, storage, civil and elapsed time apart.
-Do not invent universal timing, dice or an NPC decision to satisfy an example.
-
-Use temporary synthetic stores only. Preserve user saves, credentials, local
-configuration, original source/archive bytes, adopted canon and dated evidence.
-Do not migrate an actual user campaign as a test. Record actual source commits,
-APIs, test commands/results/skips and remaining dependencies. Retain old fixtures
-at their selected identities. No live inference or full C2 claim is implied.
-
-After actual product edits, refresh only the owning component's release hashes
-and run meaningful existing and new checks for changed behavior. Update the
-development plan and push only this assigned component repository. Return the
-full commit and exact compatible dependency selections to the coordinator.
-Current edition stays 3.4.2 until a coordinated versioned publication. Guide-only
-commits are not new product increments. Repository publication proves no dispatch
-or chat resumption; preserve the coordinator's unified integration gate.
+The coordinator holds joined import until App adoption, Catalog qualification,
+exact compatible pins and all-three approval. The next unified publication is
+**3.4.3**, with coordinated versions across all four repos; components remain
+3.4.2 until that publication is prepared. Retain previous release field 3.3.3 and
+Core compatibility 3.3. Repository publication does not resume another chat.
 
 ## Restart message
 
-> Pull IRGS-Catalog/main and read CHAT_CONTINUATION.md,
-> COORDINATOR_WORK_ORDER.md and PLAYABILITY_REVIEW_3_4_2.md. Implement the assigned
-> first increment for supported player starts across IRGS. Preserve existing
-> gameplay/recovery and source boundaries, run actual checks, update the plan,
-> push only this component and report the full commit, dependencies and limits.
+> Pull IRGS-Catalog/main. Follow CHAT_CONTINUATION.md, COORDINATOR_WORK_ORDER.md and
+> COORDINATOR_START_REVIEW_2026_10_26.md. Complete this owner's adoption task,
+> preserve current behavior and information boundaries, execute meaningful
+> checks, publish only this component and report exact source/pins and limits.

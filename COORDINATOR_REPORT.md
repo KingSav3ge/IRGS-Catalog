@@ -1,5 +1,14 @@
 # Catalog delivery — player-start requirements and baseline diagnostics
 
+## Current coordinator review — 26 October 2026
+
+The first readiness/context deliveries have been reviewed. Engine API 1 is
+published; App and Catalog adoption remain open. The coordinator fixed App
+module/test name collisions. Follow [COORDINATOR_WORK_ORDER.md](COORDINATOR_WORK_ORDER.md)
+and [the current review](COORDINATOR_START_REVIEW_2026_10_26.md) before
+selecting work. Earlier records below retain their dated scope. Unified
+3.4.2 remains published; next joined release is 3.4.3 after qualification.
+
 26 October 2026. IRGS 3.4.2 development, previous release 3.3.3.
 Only `KingSav3ge/IRGS-Catalog/main` is published by this chat.
 
