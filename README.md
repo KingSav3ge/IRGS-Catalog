@@ -83,7 +83,7 @@ adds native App HTTP `local_responses` and saved `presentation` qualification fo
 the already integrated Engine/App pair. It preserves the original fixture and
 consumer declarations. [Fresh evidence](INTEGRATED_RESPONSE_VALIDATION.json)
 records outcome, draft, restart/retry/restore, failed-save and source-fallback
-checks. Phase/communication extensions await matching owner-published App APIs.
+checks. Historical consumer selections retain their original scope.
 
 [Development interoperability](IRGS_Catalog/evaluation/development_interop_v1/README.md)
 checks the pulled Engine/App heads and App's pinned Engine separately from
@@ -91,3 +91,11 @@ Catalog. It includes native responses and received observation/work phases with
 zero routine inference. [Current evidence](DEVELOPMENT_INTEROP_VALIDATION.json)
 records the exact sources and unchanged App pointers; compatibility tests alone
 do not adopt a dependency update or approve joined publication.
+
+[Public process response qualification](IRGS_Catalog/evaluation/phase_responses_v1/README.md)
+now covers App's adopted Engine-selected starts and continuations for actual
+non-Rise observation and Rise work. It preserves complete phase receipts, zero
+routine API calls and explicit acceptance through save failure, restart, retry
+and restore. [Fresh evidence](PHASE_RESPONSE_VALIDATION.json) records the exact
+pinned Engine/App pair and Catalog candidate. Communication/source controls and
+coordinator joined qualification remain separate dependencies.

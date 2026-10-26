@@ -4,7 +4,7 @@ Current coordinated edition: **3.4.1**; previous release: **3.3.3**.
 See [version policy](VERSION_POLICY.md). Earlier baseline tables and execution
 records below retain their original tested development identities.
 
-Current guide: 25 October 2026. Owner: `KingSav3ge/IRGS-Catalog/main`.
+Current guide: 26 October 2026. Owner: `KingSav3ge/IRGS-Catalog/main`.
 Start with [CHAT_CONTINUATION.md](CHAT_CONTINUATION.md).
 
 ## Prior qualified baseline and scope
@@ -54,7 +54,41 @@ Read [depot](IRGS_Catalog/responses/depot_v1/README.md),
 [campaign records](IRGS_Catalog/design/campaign_catalogue/README.md).
 Earlier records describing consumer adoption as pending retain their original date.
 
-## Current interoperability — all development repositories pulled
+## Completed bounded increment — public process responses
+
+App has published process starts and adopted Engine's phase capability contract.
+Catalog now supplies the separate `irgs-phase-responses-v1` compatibility record,
+validator and actual HTTP qualification. It selects Engine
+`aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86` and App
+`919427cf16cf72574a581d7e6f712e638740a1df`. App's committed Engine matches that
+selection; its Catalog pin is `526404128830a99fe8ea5c2bce43b6ea7d45fe6f`.
+Tests explicitly override only Catalog with this candidate. No pointer is changed.
+
+Both processes now start through public App preparation/execution controls in
+the existing supported contexts. Seven new HTTP cases cover Engine-selected
+discovery, private feasibility boundaries, non-Rise observation, Rise work,
+explicit zero-span pause/resume/inspect/cancel, failed saves, restart/concurrent
+retry, stale/foreign/forged requests, restore fencing and stable source fallback.
+Nine inherited HTTP cases retain native response/depot and recovery checks.
+Engine's complete actor-visible phase text remains anchored in Catalog's exact
+receipt recipe. Phase Engine presentation identifies the neutral depot; ordinary
+action presentation retains its independently versioned Engine pack.
+
+The old development matrix and both Engine-role regressions remain unchanged.
+The original fixtures, 1,000 variants, 32 recipes, archives and 44 previews are
+preserved. See [phase qualification](IRGS_Catalog/evaluation/phase_responses_v1/README.md)
+and [executed evidence](PHASE_RESPONSE_VALIDATION.json) for fresh results and
+commands. Catalog verification includes this new record and the isolated import
+regression. This is Catalog-side qualification, not a joined/browser release.
+
+Fresh acceptance on 26 October: **268 tests passed, zero skips**: 126 Catalog
+checks, 16 current public-phase/native HTTP checks, both prior 11-check Engine
+roles, nine original integrated-pair checks, 55 Engine and 40 App regressions.
+Catalog integrity verifies 178 files, 44 previews and the complete original
+archive. Engine integrity and App's actual committed component set also pass.
+Routine provider dispatch/transport is zero in the instrumented consumer checks.
+
+## Prior interoperability — all development repositories pulled
 
 Pulled all three development repositories on 25 October 2026, preserving clean
 Engine/App sources and their committed dependency pointers. The separate
@@ -127,12 +161,12 @@ paths. Received observation/work App contracts are now published and have
 Catalog-side evidence. Earlier notes that all phase controls await an App
 contract retain their historical scope.
 
-The current Engine also publishes process-start discovery. App still pins its
-earlier Engine and explicitly reports `start_available: false`; adopting the
-new API, exposing starts and updating pins belong to App/coordinator review.
-Communication/source controls and further contexts await their matching
-owner-published interfaces. Add separately versioned checks rather than repinning
-older manifests. No Engine/App local source edit or push was made here.
+Public process starts are now adopted by App and qualified from Catalog above.
+Next, communication participant/received-source discovery and App controls await
+their matching owner-published interfaces. On publication, add a separate
+compatibility record and real two-context checks of source/uncertainty, explicit
+acceptance, exact receipts and recovery. Do not invent controls or repin older
+manifests. No Engine/App implementation edit or push was made here.
 
 Further semantic bindings, measured production savings, generated dialogue,
 live/model-quality work, wider DEV/C2 and Windows/distributed hosting retain
@@ -143,15 +177,17 @@ separate scope. Coordinator owns exact-set joined/browser/package qualification.
 ```bash
 python -B IRGS_Catalog/verify_catalog.py
 python -B -m unittest tools.tests.test_scripted_responses tools.tests.test_scripted_response_expansion tools.tests.test_shared_response_contract tools.tests.test_integrated_response_contract tools.tests.test_development_interop_contract -v
+python -B -m unittest tools.tests.test_phase_response_contract tools.tests.test_standalone_catalog -v
 ```
 
-The current 118-check source/archive/contract selection is:
+The current 126-check source/archive/contract selection is:
 `tools.tests.test_campaign_records`, `test_historical_details`,
 `test_historical_details_delivery`, `test_solo_evaluation`,
 `test_solo_proposal_contract`, `test_scripted_responses`,
 `test_scripted_response_expansion`, `test_shared_response_contract`,
-`test_integrated_response_contract`, `test_development_interop_contract` (each under
-`tools.tests`). Optional real reader cases require explicit source selectors:
+`test_integrated_response_contract`, `test_development_interop_contract`,
+`test_phase_response_contract`, `test_standalone_catalog` (each under `tools.tests`).
+Optional real reader cases require explicit source selectors:
 
 | Selector | Meaning |
 | --- | --- |
@@ -196,6 +232,18 @@ After intentional Catalog source/content edits, refresh only
 `python -B tools/refresh_component_releases.py --component catalog`, then verify
 again and execute actual compatible consumer checks. Optional skips are not
 executed compatibility evidence. Root guide edits need no Catalog release refresh.
+
+The public-start suite uses `IRGS_PHASE_ENGINE_SOURCE` and
+`IRGS_PHASE_APP_SOURCE`, both repository roots at the exact phase record commits:
+
+```bash
+IRGS_PHASE_ENGINE_SOURCE=/path/to/selected/Engine \
+IRGS_PHASE_APP_SOURCE=/path/to/selected/App \
+python -B -m unittest tools.tests.test_phase_response_consumers -v
+```
+
+Run the previous development roles against their original exact snapshots,
+not the latest heads. The new selection does not relax the older identity guards.
 
 ## Rules for every increment
 

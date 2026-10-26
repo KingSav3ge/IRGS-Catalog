@@ -4,7 +4,13 @@ Current coordinated edition: **3.4.1**; previous release: **3.3.3**.
 See [version policy](VERSION_POLICY.md). Earlier baseline tables and execution
 records below retain their original tested development identities.
 
-## Current continuation — 25 October 2026
+## Current continuation — 26 October 2026
+
+26 October Catalog follow-up: public starts are now published by App and covered
+under the separate `irgs-phase-responses-v1` record. See
+[fresh evidence](PHASE_RESPONSE_VALIDATION.json) and the updated continuation.
+The next communication/source extension requires matching owner contracts;
+older compatibility selections and original validation records stay unchanged.
 
 The delivered shared-response set and verified-byte intake patch are integrated
 in IRGS/main. Follow [CHAT_CONTINUATION.md](CHAT_CONTINUATION.md) and the current

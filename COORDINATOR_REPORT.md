@@ -1,103 +1,89 @@
-# Coordinator 3.4.1 compatibility patch
+# Catalog public process response qualification
 
-Joined qualification reproduced a standalone import failure: the two new
-compatibility modules used bare sibling imports, so an isolated Catalog verifier
-could fail or bind a same-named module from another checkout. Both now load their
-own sibling files by exact path without changing sys.path or accepting cached
-foreign modules. Linked compatibility paths are rejected. Original fixtures,
-consumer IDs, depot bytes and archives remain unchanged.
+Completed 26 October 2026, IRGS 3.4.1 development. Published only to
+`KingSav3ge/IRGS-Catalog/main`. Resolve the containing commit for the exact
+candidate identity; the component chat reports its full pushed SHA.
 
-The new isolated Python regression and 14 existing compatibility contract checks
-pass (15 tests, no skips). Full fresh joined qualification is recorded separately
-by the coordinator after the App pins this source. The prior owner report below
-retains its original exact inputs and results.
+The public-start dependency in the previous continuation is resolved. Catalog
+now supplies `irgs-phase-responses-v1`, a separate compatibility manifest,
+validator and HTTP evaluation of App's published Engine-selected phase controls.
+No Engine/App implementation or dependency pointer was changed here.
 
-# Catalog interoperability — all three development repositories pulled
+## Exact selection
 
-Pulled main from all three development repositories as requested. Catalog was
-already at `4bd572843cebc94e7d043c3706d1be85249d6c10`; Engine fast-forwarded to
-`0fdfc21f45510e3fd99fd6a8087cd3314d077267` and App to
-`67411f8ef5214c8cb51af2b244590751e6ea20df`. App submodules were checked out at
-its committed pointers. No Engine/App implementation edit, commit or push was made.
+| Source | Commit |
+| --- | --- |
+| Engine and App's committed Engine pointer | `aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86` |
+| App | `919427cf16cf72574a581d7e6f712e638740a1df` |
+| App's committed Catalog pointer / Catalog base | `526404128830a99fe8ea5c2bce43b6ea7d45fe6f` |
 
-## Exact compatibility matrix
+The consumer suite uses App's actual pinned Engine and explicitly overrides
+Catalog with this candidate. The original development matrix and both Engine
+roles are rerun against clean historical snapshots, with identity guards intact.
+Their manifests and original reports are unchanged. The preceding report,
+including the coordinator standalone import patch, is preserved in
+[COORDINATOR_REPORT_INTEROP_01.md](COORDINATOR_REPORT_INTEROP_01.md).
 
-App still pins Engine `2f9476c6090878257d17cab3ad3a83a7ce18a5dc` and Catalog
-`27fff8385d1c01fdfe9ad7254b7647e6bc12a01e`. Catalog-side tests therefore qualify
-two explicit Engine roles against current App and this Catalog candidate:
+## Delivered behavior and evidence
 
-| Engine role | Exact source | HTTP checks |
-| --- | --- | ---: |
-| Development | `0fdfc21f45510e3fd99fd6a8087cd3314d077267` | 11 |
-| App-pinned | `2f9476c6090878257d17cab3ad3a83a7ce18a5dc` | 11 |
+Both contexts start through real `/api/process/prepare` and `/execute` controls.
+The original shared fixture independently initializes Rise R00 and the optional
+fictional quay opening in Hundred Years' War 1415. Rise's site is established
+through public walk/found actions. No process is injected during setup.
 
-`evaluation/development_interop_v1/compatibility.json` records the new matrix
-under `irgs-development-interop-v1`, with exact source and original compatibility
-hashes. The new validator checks role/pin consistency and scope. Historical
-manifests, payloads, guards and evidence remain unchanged. Current overrides are
-reported as tested candidates, not adopted App dependency updates.
+Seven new HTTP cases qualify Engine-selected discovery, private feasibility not
+selecting menus, effect-free preparation, exact intentions and explicit acceptance.
+Non-Rise observation receives no new information before its actual 20-second
+boundary. Rise shelter work retains progress across zero-second pause/resume and
+completes 3,600 seconds subject to existing material boundaries. Inspect/cancel
+are checked on observation. Start commits no elapsed work, evidence or stock
+consumption. The smaller Engine three-second fixture remains a distinct context.
 
-## What passed from Catalog
+Complete actor-visible Engine phase text is preserved by Catalog's exact receipt
+composition. Engine phase presentation uses its neutral depot identity, while
+ordinary action receipts retain the older Engine pack. Failed start/advance
+saves commit nothing; durable preparations survive restart; concurrent exact
+retry executes once. Forged/foreign/stale inputs and restored pending commands
+are fenced. Saved results survive identical-byte restore. Missing Catalog source
+retains complete Engine phase text and the original saved fallback after recovery.
+Nine inherited native HTTP cases retain depot, actor/oracle separation and
+ordinary response/recovery coverage. Broker dispatch and direct provider
+transport are forbidden throughout these consumer checks.
 
-The new consumer class reuses all nine native HTTP response/recovery checks under
-its own exact matrix guard. Each role independently initializes Rise R00 and the
-existing optional fictional quay opening in the 1415 campaign. Catalog text,
-Engine runtime and App presentation agree on the unchanged depot bytes and public
-contracts. Actual success/failure, zero spans, editable non-submitting drafts,
-explicit declarations, older saved presentations, failed-save retry, source
-fallback, foreign/stale requests and restore remain covered.
+## Fresh execution
 
-Two additional tests use App's now-published received-process controls. Trusted
-synthetic setup establishes an observation or shelter-work process through the
-real typed Engine API while the host is stopped. Public preparation changes no
-campaign bytes and execution requires explicit acceptance. Observation completes
-at its actual 20-second rule boundary and delivers knowledge then; Rise work
-preserves 100 seconds of progress across zero-second pause/resume, respects
-existing material boundaries and completes 3,600 seconds of work. Catalog-backed
-phase presentations survive saved-result lookup, restart and exact retry.
-
-These tests create no App process-start flow, capability discovery rule or
-campaign adapter. Broker dispatch and direct provider transport are forbidden
-throughout the consumer tests. Routine provider calls are zero. Only temporary
-synthetic saves and loopback HTTP are used.
-
-## Fresh execution — 25 October 2026
-
-**237 tests passed, zero skips:**
+**268 tests passed, zero skips:**
 
 | Scope | Passed |
 | --- | ---: |
-| Catalog source/archive/content and compatibility contracts | 118 |
-| Development Engine/current App/Catalog HTTP consumers | 11 |
-| App-pinned Engine/current App/Catalog HTTP consumers | 11 |
-| Original integrated-pair consumers with original selectors | 9 |
+| Catalog content/archive/contracts and isolated verifier | 126 |
+| Current public phase/native HTTP consumers | 16 |
+| Prior development Engine role | 11 |
+| Prior App-pinned Engine role | 11 |
+| Original integrated-pair HTTP consumers | 9 |
 | Current Engine phase/offline/depot regressions | 55 |
-| Current App process/shared/portfolio regressions | 33 |
+| Current App process/start/shared/portfolio regressions | 40 |
 
-Catalog integrity passes 175 files, all 44 previews and the complete original
-archive: 32 parts, 5,146 files and 5,145 bindings. Current Engine integrity passes.
-The App's full component verifier passes against its actual checked-out Engine
-and Catalog pins, including all 55 App files. Its verified-byte Catalog intake
-regression remains passing. Only Catalog source hashes were refreshed.
+Catalog integrity verifies 178 source files, all 44 previews, 32 original archive
+parts, 5,146 members and 5,145 bindings. Engine integrity passes. App component
+integrity passes against its actual checked-out Engine/Catalog pointers, including
+75 App source files. The verified-byte Catalog intake and isolated exact-path
+import regressions pass. Only Catalog release hashes were refreshed.
 
-Exact commands, roots, hashes and results are in
-[DEVELOPMENT_INTEROP_VALIDATION.json](DEVELOPMENT_INTEROP_VALIDATION.json).
-The original 185-test integrated-pair record remains unchanged in
-`INTEGRATED_RESPONSE_VALIDATION.json`; its report is preserved as
-`COORDINATOR_REPORT_INTEGRATED_RESPONSES_01.md`.
+[PHASE_RESPONSE_VALIDATION.json](PHASE_RESPONSE_VALIDATION.json) records commands,
+source hashes, exact consumers and integrity outputs. Loopback HTTP required
+the execution tool's network permission; an initial restricted-sandbox attempt
+could not create its listener. The permitted rerun passed all 16 cases.
+No user saves, external private fixtures or live inference participated.
 
 ## Remaining dependencies
 
-No Catalog-side interoperability blocker was found in the named response and
-received observation/work paths. App/coordinator adoption of current dependency
-pointers and exact-set joined/browser/package qualification remain separate.
-The current Engine now publishes process-start discovery; current App still
-pins its earlier Engine and reports `start_available: false`. Public start-flow
-adoption belongs to App. Communication/source controls and further contexts
-require matching owner interfaces. General dialogue, live/model quality,
-production savings and wider DEV/C2 retain their existing scope.
+Engine communication participant/received-source discovery and matching App
+controls must be published before the next Catalog consumer extension. Wider
+adapters, general dialogue/model quality and measured production token savings
+retain separate scope. Coordinator owns App adoption of this Catalog candidate
+and exact-set joined/browser/package qualification; none is claimed here.
 
 The depot remains exactly 750 system variants, 250 editable drafts and 32 recipes.
-No old content, original archives, user saves or private external fixtures were
-changed or transferred. This chat pushes only `IRGS-Catalog/main`; the component
-chat reports the full new SHA. Repository publication is the coordinator handoff.
+Original fixture payloads/manifests, validation records, supplied source archives
+and campaign previews are unchanged. Repository publication is the handoff.

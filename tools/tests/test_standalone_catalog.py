@@ -13,7 +13,8 @@ class StandaloneCatalogTests(unittest.TestCase):
         code = """
 import importlib.util, sys, types
 from pathlib import Path
-for name in ('response_depot_compatibility', 'integrated_response_compatibility'):
+for name in ('response_depot_compatibility', 'integrated_response_compatibility',
+             'development_interop_compatibility', 'phase_response_compatibility'):
     sys.modules[name] = types.ModuleType(name)  # Must never supply Catalog code.
 path = Path(sys.argv[1]) / 'IRGS_Catalog/verify_catalog.py'
 spec = importlib.util.spec_from_file_location('isolated_catalog', path)
@@ -23,6 +24,7 @@ result = module.verify_catalog()
 assert result['concepts'] == 44
 assert result['integrated_response_compatibility']['status'] == 'verified'
 assert result['development_interoperability']['status'] == 'verified'
+assert result['phase_response_compatibility']['status'] == 'verified'
 """
         with tempfile.TemporaryDirectory(prefix='irgs-catalog-isolated-') as directory:
             result = subprocess.run([sys.executable, '-I', '-B', '-c', code, str(ROOT)],

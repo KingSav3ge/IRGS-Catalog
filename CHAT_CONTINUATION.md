@@ -4,7 +4,7 @@ Current coordinated edition: **3.4.1**; previous release: **3.3.3**.
 See [version policy](VERSION_POLICY.md). Earlier baseline tables and execution
 records below retain their original tested development identities.
 
-Prepared 25 October 2026 for `KingSav3ge/IRGS-Catalog/main`. Preserve local changes
+Prepared 26 October 2026 for `KingSav3ge/IRGS-Catalog/main`. Preserve local changes
 before pulling. Resume this existing chat's component work; publish only its
 own repository. Read this file after pull; fresh user directions take precedence.
 
@@ -17,7 +17,7 @@ git pull --ff-only origin main
 
 Read `AGENTS.md`, [DEVELOPMENT.md](DEVELOPMENT.md),
 [IRGS_SYSTEMS_SCOPE.md](IRGS_SYSTEMS_SCOPE.md) and
-[COORDINATOR_WORK_ORDER.md](COORDINATOR_WORK_ORDER.md), then the depot/shared-response fixture READMEs and their exact compatibility manifests.
+[COORDINATOR_WORK_ORDER.md](COORDINATOR_WORK_ORDER.md), then the depot/shared/phase-response fixture READMEs and their exact compatibility manifests.
 Inspect the current diff/remote and exact dependencies before editing.
 
 ## Prior qualified baseline and scope
@@ -83,12 +83,23 @@ plus current Catalog/Engine and actual pinned App-set integrity. See
 
 ## Next bounded task and dependency
 
-Current App contracts now support received observation/work and are covered from
-Catalog. Engine now publishes process-start discovery; App still pins the earlier
-Engine and keeps starts unavailable. Further Catalog start-flow evaluation waits
-for App's reviewed adoption and a published player interface. Communication/source
-controls likewise require matching owner interfaces and known facts. Do not
-invent controls or rewrite older evidence to satisfy those dependencies.
+The public-start dependency is resolved. `irgs-phase-responses-v1` now selects
+Engine `aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86` and App
+`919427cf16cf72574a581d7e6f712e638740a1df`, whose committed Catalog pointer is
+`526404128830a99fe8ea5c2bce43b6ea7d45fe6f`. Both actual processes start through
+public HTTP controls; no process is injected during setup. Sixteen native/phase
+HTTP checks and seven new source-contract checks cover exact receipt anchoring,
+explicit acceptance, non-Rise information timing, Rise work boundaries, failed
+saves, retries, restore fencing and source fallback. See
+[PHASE_RESPONSE_VALIDATION.json](PHASE_RESPONSE_VALIDATION.json) for the full
+fresh acceptance and [the fixture README](IRGS_Catalog/evaluation/phase_responses_v1/README.md).
+
+The next bounded extension is communication participant/received-source coverage
+when Engine and App publish matching actor-safe interfaces. Fetch the owner
+heads and inspect their published contracts before selecting that work. Keep
+testimony/uncertainty, source filtering, exact outcomes and explicit acceptance.
+If interfaces remain absent, report the dependency; no invented adapter or
+documentation-only completion claim substitutes for actual consumer evidence.
 
 Maintain both Engine-role regressions and the verified-byte intake patch. Keep
 all previous fixture manifests, payloads and consumer IDs unchanged. The depot
