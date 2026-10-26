@@ -35,6 +35,12 @@ Communication consumer expansion follows the actual App communication bridge.
 
 ## Completion and ownership
 
+Catalog's Engine-qualified requirements/consumer handoff is recorded in
+[START_CONTEXT_VALIDATION.json](START_CONTEXT_VALIDATION.json). The separate
+`irgs-start-context-v1` fixture preserves all old baseline identities. Adopted
+App qualification remains unexecuted until an actual adoption revision and
+compatible pins are published; current-App blocker diagnostics are not approval.
+
 Read `CHAT_CONTINUATION.md` for source selections, rules and checks. Publish only
 this component. A work-order/plan change does not complete implementation or
 qualify the new contract. Report exact published code and compatible dependencies,

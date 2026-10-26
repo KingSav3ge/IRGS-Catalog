@@ -1,0 +1,772 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-26",
+  "timezone": "America/Halifax",
+  "status": "engine_contract_qualified_adopted_app_acceptance_not_executed",
+  "component_edition": "3.4.2",
+  "next_coordinated_unified_version": "3.4.3",
+  "previous_release": "3.3.3",
+  "repository": "KingSav3ge/IRGS-Catalog",
+  "branch": "main",
+  "catalog_base_commit": "43b3e34cf6bd2463c6998b86e4e87aa60afa75b3",
+  "candidate_commit": "Resolve the containing Git commit; full pushed SHA is reported in the component chat.",
+  "fixture_id": "irgs-start-context-v1",
+  "engine_contract": {
+    "commit": "cc450a6f00a249d2169cdacdfc9c4b1e03f67cc8",
+    "schema": "irgs-start-readiness-1",
+    "api_path": "engine/START_READINESS_API.md",
+    "files_sha256": {
+      "engine/START_READINESS_API.md": "34751bc624a81911ce42abeafe3caf43d48bcabbe73febac046369d5ac96e8b3",
+      "IRGS_3_3/runtime/start_readiness.py": "027aa3708d458b11869497cf400273aad66acc8288fd848afd2fd95c863c37f4",
+      "IRGS_3_3/data/henry_1415_observation.json": "445d4a5bb16cec51fc4ccfa9d857df40bb82fe3fd7b8d5960702ef41a1425662",
+      "IRGS_3_3/data/hyw_1415_opening.json": "eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34"
+    }
+  },
+  "app_qualification": {
+    "status": "not_executed_pending_adoption",
+    "qualified_app_commit": null,
+    "adopted_app_tests_executed": 0,
+    "pending_app_diagnostic_commit": "d8e68848454ac7be68ce87fede6d04cc57bda86a",
+    "last_fetched_app_main": "d8e68848454ac7be68ce87fede6d04cc57bda86a",
+    "committed_engine_pin": "91b20056e7db651966c9e92925313494917f47b1",
+    "committed_catalog_pin": "3f921252e50a0976cb88321b6ff8249a5f12466d",
+    "gitlinks_changed": false,
+    "actual_pending_app_diagnostics": {
+      "status": "adopted_app_acceptance_not_executed",
+      "app_commit": "d8e68848454ac7be68ce87fede6d04cc57bda86a",
+      "engine_override": "cc450a6f00a249d2169cdacdfc9c4b1e03f67cc8",
+      "app_pins_updated": false,
+      "henry_preflight_http": 400,
+      "product_acceptance": false,
+      "limited_mode_previews": {
+        "henry-1415-default": {
+          "status": "declaration_only",
+          "engine_context_adopted": false,
+          "campaign_time": {
+            "day": 0,
+            "precision": "unresolved",
+            "time": null
+          }
+        },
+        "john-1415-limited": {
+          "status": "declaration_only",
+          "engine_context_adopted": false,
+          "campaign_time": {
+            "day": 0,
+            "precision": "unresolved",
+            "time": null
+          }
+        },
+        "new-1415-default": {
+          "status": "declaration_only",
+          "engine_context_adopted": false,
+          "campaign_time": {
+            "day": 0,
+            "precision": "unresolved",
+            "time": null
+          }
+        }
+      }
+    }
+  },
+  "source_sha256": {
+    "IRGS_Catalog/evaluation/start_context_v1/manifest.json": "dc215f735f728dbed4ef1281b4428efc4cbb47a6c4f1628c40906fb5978e4670",
+    "IRGS_Catalog/evaluation/start_context_v1/README.md": "d8d6b71966a32e7c44f05dbc178ee12c625cce36d7ed7f6dfac0a731dd7a8112",
+    "IRGS_Catalog/evaluation/start_context_v1/actor_inputs/henry-1415-default.json": "730c4ace36e6af863573671569ec1ddc4d638f793fff0231c6dc1efeb7439055",
+    "IRGS_Catalog/evaluation/start_context_v1/actor_inputs/henry-1415-observation.json": "0e51451e6eaa7dfc0d1251895816b3908edaf41897b97d5aa3dd3259c0e26de2",
+    "IRGS_Catalog/evaluation/start_context_v1/actor_inputs/john-1415-limited.json": "743f9784856ff17b2d249374c4f70166cdbc0939b74afa45dcaa1754f53ebeb8",
+    "IRGS_Catalog/evaluation/start_context_v1/actor_inputs/new-1415-default.json": "4d1a63e16ee87f76725064397413f1df7c8b7370fbed202fcd31a2797e048c20",
+    "IRGS_Catalog/evaluation/start_context_v1/actor_inputs/new-1415-quay.json": "4d2d50560d5d519939f0d73441cd531fb5b5fe7a9c70321440776f639f4a9067",
+    "IRGS_Catalog/evaluation/start_context_v1/actor_inputs/rise-r00.json": "10c9ed846523838ffb979922f9005f4bfed06d5c3b31ed0339c933f4c9feea51",
+    "IRGS_Catalog/evaluation/start_context_v1/app_acceptance.json": "3bab5f5abeab10cc314ac173b12c3b43d3498f9592dfee0f7d2d9a6104d95bbe",
+    "IRGS_Catalog/evaluation/start_context_v1/evaluator_only/oracle.json": "2e9063e17b86b9453f39967f8972cc7d0e2cbee68845eeac905d2d616583c39e",
+    "IRGS_Catalog/evaluation/start_context_v1/source_review.json": "fa32c52c85a5f9afb22ab064cb473285768f2feff5ec1e3ba14d6a801bcd5ae8",
+    "IRGS_Catalog/start_context_evaluation.py": "37b4efb6f86af9695000562f0b45fa55f1b5d3f0d7fdecf58b62844c8c81aa2c",
+    "IRGS_Catalog/verify_catalog.py": "f978eed99cd130b161abcf62ff5ba6c45ffab4f34f41bb94e48ce6df810fe371",
+    "IRGS_Catalog/evaluation/player_starts_v1/manifest.json": "a230fa6e78c8be97d24ec4d7e6fbf01308e1663898c612b86f6903a24d56dbee",
+    "tools/tests/test_start_context_contract.py": "65943201d71226a7d5405a73695bd23368c3c4c7e31c5c14d844fc8c25d7d6de",
+    "tools/tests/test_start_context_engine.py": "9ba99d58fa2afca2199e2a3d90d819ab43a3b0c0e0714f0a63edc23713591ba8",
+    "tools/tests/test_start_context_pending_app.py": "0355204dd34eb7caeae68a10abd6aa4821a67696b0c7f4644e8d2c36c3947922",
+    "tools/tests/test_standalone_catalog.py": "cc87c68037a7fec1c8f9542309c2cc083ec73e70d1493337840bc96786b3068e"
+  },
+  "checks": [
+    {
+      "name": "catalog",
+      "cwd": "/workspace/IRGS-Catalog",
+      "cmd": "IRGS_ENGINE_ROOT=/workspace/IRGS-Engine/IRGS_3_3 IRGS_CATALOG_ROOT=/workspace/IRGS-Catalog/IRGS_Catalog IRGS_HISTORICAL_ENGINE_RUNTIME=/workspace/IRGS-Engine/IRGS_3_3/runtime IRGS_HISTORICAL_APP_SOURCE=/workspace/IRGS-APP-WEB/IRGS_Web python -B -m unittest tools.tests.test_campaign_records tools.tests.test_historical_details tools.tests.test_historical_details_delivery tools.tests.test_solo_evaluation tools.tests.test_solo_proposal_contract tools.tests.test_scripted_responses tools.tests.test_scripted_response_expansion tools.tests.test_shared_response_contract tools.tests.test_integrated_response_contract tools.tests.test_development_interop_contract tools.tests.test_phase_response_contract tools.tests.test_player_start_contract tools.tests.test_start_context_contract tools.tests.test_standalone_catalog -v",
+      "tests": 143,
+      "passed": 143,
+      "skipped": 0,
+      "elapsed_seconds": 46.271,
+      "result": "passed",
+      "loopback_permission": false
+    },
+    {
+      "name": "engine_consumers",
+      "cwd": "/workspace/IRGS-Catalog",
+      "cmd": "IRGS_CONTEXT_ENGINE_SOURCE=/tmp/irgs-start-engine-published IRGS_CONTEXT_EVIDENCE_OUTPUT=/tmp/irgs-start-context-engine.json python -B -m unittest tools.tests.test_start_context_engine -v",
+      "tests": 10,
+      "passed": 10,
+      "skipped": 0,
+      "elapsed_seconds": 5.889,
+      "result": "passed",
+      "loopback_permission": false
+    },
+    {
+      "name": "original_baseline",
+      "cwd": "/workspace/IRGS-Catalog",
+      "cmd": "IRGS_START_ENGINE_SOURCE=/workspace/IRGS-Engine IRGS_START_APP_SOURCE=/workspace/IRGS-APP-WEB IRGS_START_EVIDENCE_OUTPUT=/tmp/irgs-context-original-baseline.json python -B -m unittest tools.tests.test_player_start_consumers -v",
+      "tests": 7,
+      "passed": 7,
+      "skipped": 0,
+      "elapsed_seconds": 17.402,
+      "result": "passed",
+      "loopback_permission": true
+    },
+    {
+      "name": "pending_app_diagnostics",
+      "cwd": "/workspace/IRGS-Catalog",
+      "cmd": "IRGS_CONTEXT_ENGINE_SOURCE=/tmp/irgs-start-engine-published IRGS_CONTEXT_PENDING_APP_SOURCE=/tmp/irgs-start-app-pending IRGS_CONTEXT_APP_DIAGNOSTIC_OUTPUT=/tmp/irgs-start-context-app-gap.json python -B -m unittest tools.tests.test_start_context_pending_app -v",
+      "tests": 2,
+      "passed": 2,
+      "skipped": 0,
+      "elapsed_seconds": 2.633,
+      "result": "passed",
+      "loopback_permission": true
+    },
+    {
+      "name": "engine_regressions",
+      "cwd": "/tmp/irgs-start-engine-published",
+      "cmd": "PYTHONPATH=/tmp/irgs-start-engine-published/IRGS_3_3/runtime python -B -m unittest test_start_readiness -v",
+      "tests": 33,
+      "passed": 33,
+      "skipped": 0,
+      "elapsed_seconds": 6.422,
+      "result": "passed",
+      "loopback_permission": false
+    },
+    {
+      "name": "app_pinned_regressions",
+      "cwd": "/tmp/irgs-start-app-pending",
+      "cmd": "IRGS_ENGINE_ROOT=/workspace/IRGS-Engine/IRGS_3_3 IRGS_CATALOG_ROOT=/workspace/IRGS-Catalog/IRGS_Catalog PYTHONPATH=/tmp/irgs-start-app-pending/IRGS_Web/tests:/tmp/irgs-start-app-pending/IRGS_Web python -B -m unittest test_start_preview test_starting_flow test_campaign_portfolio test_shared_responses -v",
+      "tests": 36,
+      "passed": 36,
+      "skipped": 0,
+      "elapsed_seconds": 28.278,
+      "result": "passed",
+      "loopback_permission": true
+    },
+    {
+      "name": "interface_pinned",
+      "cwd": "/tmp/irgs-start-app-pending",
+      "cmd": "IRGS_ENGINE_ROOT=/workspace/IRGS-Engine/IRGS_3_3 IRGS_CATALOG_ROOT=/workspace/IRGS-Catalog/IRGS_Catalog node IRGS_Web/tests/test_gameplay_ui.js",
+      "frontend_checks": 137,
+      "result": "passed",
+      "skipped": 0,
+      "loopback_permission": true
+    }
+  ],
+  "total": {
+    "python_tests": 231,
+    "python_passed": 231,
+    "skipped": 0,
+    "failed": 0,
+    "errors": 0,
+    "frontend_checks": 137
+  },
+  "integrity": {
+    "catalog": {
+      "cwd": "/workspace/IRGS-Catalog",
+      "command": "python -B IRGS_Catalog/verify_catalog.py",
+      "result": {
+        "status": "verified",
+        "component": "IRGS-Catalog",
+        "files": 200,
+        "concepts": 44,
+        "campaign_release_approved_by_check": false,
+        "campaign_records": {
+          "status": "verified",
+          "unique_concepts": 44,
+          "development_status_counts": {
+            "concept_draft": 0,
+            "planned": 41,
+            "in_development": 3
+          },
+          "runtime_availability_inferred": false
+        },
+        "historical_details": {
+          "status": "verified",
+          "parts": 32,
+          "archive": {
+            "name": "IRGS_Historical_Grand_Archive_v1_1.zip",
+            "bytes": 533064680,
+            "sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773"
+          },
+          "archive_coverage": "complete",
+          "members_verified": 5146,
+          "delivery_bindings_verified": 5145,
+          "collection_bindings_verified": 10,
+          "unbound_members": [
+            "IRGS_Historical_Grand_Archive_v1_1/07_Verification/delivery_manifest.json"
+          ],
+          "historical_truth_verified": false,
+          "campaign_adoption_performed": false
+        },
+        "solo_evaluation": {
+          "status": "verified",
+          "fixture_id": "irgs-solo-r00-eval-v1",
+          "cases": 10,
+          "legitimate_actions": 5,
+          "actor_oracle_separation": true,
+          "runtime_execution_verified_by_schema": false,
+          "public_discovery": false
+        },
+        "solo_proposal_compatibility": {
+          "status": "verified",
+          "compatibility_id": "irgs-solo-r00-proposals-v1",
+          "app_source_selections": 2,
+          "runtime_execution_verified_by_schema": false,
+          "narration_dialogue": "awaiting_engine_app_contract"
+        },
+        "scripted_responses": {
+          "status": "verified",
+          "library_id": "irgs-response-depot-v1",
+          "version": "1.0.0",
+          "families": 127,
+          "variants": 1000,
+          "recipes": 32,
+          "provider_dispatch": false,
+          "runtime_integration_verified_by_schema": false
+        },
+        "original_scripted_responses": {
+          "status": "verified",
+          "library_id": "irgs-routine-responses-v1",
+          "version": "1.0.0",
+          "families": 82,
+          "variants": 325,
+          "recipes": 12,
+          "provider_dispatch": false,
+          "runtime_integration_verified_by_schema": false
+        },
+        "shared_response_compatibility": {
+          "status": "verified",
+          "fixture_id": "irgs-shared-responses-v1",
+          "contexts": 2,
+          "non_rise_contexts": 1,
+          "cases": 9,
+          "actor_oracle_separation": true,
+          "runtime_execution_verified_by_schema": false
+        },
+        "integrated_response_compatibility": {
+          "status": "verified",
+          "compatibility_id": "irgs-integrated-responses-v1",
+          "contexts": 2,
+          "source_cases": 9,
+          "original_manifest_preserved": true,
+          "runtime_execution_verified_by_schema": false
+        },
+        "development_interoperability": {
+          "status": "verified",
+          "compatibility_id": "irgs-development-interop-v1",
+          "engine_roles": 2,
+          "contexts": 2,
+          "public_process_starts": false,
+          "runtime_execution_verified_by_schema": false
+        },
+        "phase_response_compatibility": {
+          "status": "verified",
+          "compatibility_id": "irgs-phase-responses-v1",
+          "contexts": 2,
+          "public_process_starts": true,
+          "runtime_execution_verified_by_schema": false
+        },
+        "player_start_evaluation": {
+          "status": "verified",
+          "fixture_id": "irgs-player-starts-v1",
+          "cases": 4,
+          "delivery_scope": "requirements_and_baseline_diagnostics",
+          "actor_oracle_separation": true,
+          "runtime_start_contract_implemented": false,
+          "runtime_execution_verified_by_schema": false
+        },
+        "start_context_evaluation": {
+          "status": "verified",
+          "fixture_id": "irgs-start-context-v1",
+          "cases": 6,
+          "engine_schema": "irgs-start-readiness-1",
+          "app_adoption": "pending_adopted_app_revision",
+          "actor_oracle_separation": true,
+          "engine_execution_verified_by_schema": false,
+          "app_execution_qualified": false
+        }
+      }
+    },
+    "engine": {
+      "cwd": "/tmp/irgs-start-engine-published",
+      "command": "python -B tools/verify_components.py --component engine",
+      "result": {
+        "status": "verified",
+        "component": "engine",
+        "checks": {
+          "engine": {
+            "release": "IRGS-CORE-3.3-SUITE",
+            "status": "verified",
+            "core": "3.3"
+          }
+        },
+        "behavioral_tests_executed": false
+      }
+    },
+    "app_pinned": {
+      "cwd": "/tmp/irgs-start-app-pending",
+      "command": "env -u IRGS_ENGINE_ROOT -u IRGS_CATALOG_ROOT python -B tools/verify_components.py --component app",
+      "result": {
+        "status": "verified",
+        "component": "app",
+        "checks": {
+          "engine": {
+            "release": "IRGS-CORE-3.3-SUITE",
+            "status": "verified",
+            "core": "3.3"
+          },
+          "app": {
+            "status": "verified",
+            "component": "IRGS-APP-WEB",
+            "files": 77
+          },
+          "catalog": {
+            "status": "verified",
+            "component": "IRGS-Catalog",
+            "files": 178,
+            "concepts": 44,
+            "campaign_release_approved_by_check": false,
+            "campaign_records": {
+              "status": "verified",
+              "unique_concepts": 44,
+              "development_status_counts": {
+                "concept_draft": 0,
+                "planned": 41,
+                "in_development": 3
+              },
+              "runtime_availability_inferred": false
+            },
+            "historical_details": {
+              "status": "verified",
+              "parts": 32,
+              "archive": {
+                "name": "IRGS_Historical_Grand_Archive_v1_1.zip",
+                "bytes": 533064680,
+                "sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773"
+              },
+              "archive_coverage": "complete",
+              "members_verified": 5146,
+              "delivery_bindings_verified": 5145,
+              "collection_bindings_verified": 10,
+              "unbound_members": [
+                "IRGS_Historical_Grand_Archive_v1_1/07_Verification/delivery_manifest.json"
+              ],
+              "historical_truth_verified": false,
+              "campaign_adoption_performed": false
+            },
+            "solo_evaluation": {
+              "status": "verified",
+              "fixture_id": "irgs-solo-r00-eval-v1",
+              "cases": 10,
+              "legitimate_actions": 5,
+              "actor_oracle_separation": true,
+              "runtime_execution_verified_by_schema": false,
+              "public_discovery": false
+            },
+            "solo_proposal_compatibility": {
+              "status": "verified",
+              "compatibility_id": "irgs-solo-r00-proposals-v1",
+              "app_source_selections": 2,
+              "runtime_execution_verified_by_schema": false,
+              "narration_dialogue": "awaiting_engine_app_contract"
+            },
+            "scripted_responses": {
+              "status": "verified",
+              "library_id": "irgs-response-depot-v1",
+              "version": "1.0.0",
+              "families": 127,
+              "variants": 1000,
+              "recipes": 32,
+              "provider_dispatch": false,
+              "runtime_integration_verified_by_schema": false
+            },
+            "original_scripted_responses": {
+              "status": "verified",
+              "library_id": "irgs-routine-responses-v1",
+              "version": "1.0.0",
+              "families": 82,
+              "variants": 325,
+              "recipes": 12,
+              "provider_dispatch": false,
+              "runtime_integration_verified_by_schema": false
+            },
+            "shared_response_compatibility": {
+              "status": "verified",
+              "fixture_id": "irgs-shared-responses-v1",
+              "contexts": 2,
+              "non_rise_contexts": 1,
+              "cases": 9,
+              "actor_oracle_separation": true,
+              "runtime_execution_verified_by_schema": false
+            },
+            "integrated_response_compatibility": {
+              "status": "verified",
+              "compatibility_id": "irgs-integrated-responses-v1",
+              "contexts": 2,
+              "source_cases": 9,
+              "original_manifest_preserved": true,
+              "runtime_execution_verified_by_schema": false
+            },
+            "development_interoperability": {
+              "status": "verified",
+              "compatibility_id": "irgs-development-interop-v1",
+              "engine_roles": 2,
+              "contexts": 2,
+              "public_process_starts": false,
+              "runtime_execution_verified_by_schema": false
+            },
+            "phase_response_compatibility": {
+              "status": "verified",
+              "compatibility_id": "irgs-phase-responses-v1",
+              "contexts": 2,
+              "public_process_starts": true,
+              "runtime_execution_verified_by_schema": false
+            }
+          },
+          "catalog_commit": "3f921252e50a0976cb88321b6ff8249a5f12466d",
+          "engine_commit": "91b20056e7db651966c9e92925313494917f47b1"
+        },
+        "behavioral_tests_executed": false
+      }
+    }
+  },
+  "engine_observations": {
+    "henry-1415-observation": {
+      "mode": "supported_slice",
+      "civil_time": {
+        "date": "1415-08-11",
+        "calendar": "julian",
+        "precision": "day",
+        "time": null,
+        "ordinal": 2238109,
+        "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+        "elapsed_calendar_binding": false,
+        "record_id": "setup:civil-date",
+        "status": "received_initial_checkpoint",
+        "current_calendar_binding": false,
+        "opening_hour": null
+      },
+      "received_record_ids": [
+        "setup:scene-map",
+        "setup:scene-location",
+        "setup:civil-date"
+      ],
+      "app_acceptance": "not_executed_pending_adoption"
+    },
+    "henry-1415-default": {
+      "mode": "declaration_only",
+      "civil_time": {
+        "date": "1415-08-11",
+        "calendar": "julian",
+        "precision": "day",
+        "time": null,
+        "ordinal": 2238109,
+        "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+        "elapsed_calendar_binding": false,
+        "record_id": "setup:civil-date",
+        "status": "received_initial_checkpoint",
+        "current_calendar_binding": false,
+        "opening_hour": null
+      },
+      "received_record_ids": [
+        "setup:civil-date"
+      ],
+      "app_acceptance": "not_executed_pending_adoption"
+    },
+    "john-1415-limited": {
+      "mode": "declaration_only",
+      "civil_time": {
+        "date": "1415-08-11",
+        "calendar": "julian",
+        "precision": "day",
+        "time": null,
+        "ordinal": 2238109,
+        "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+        "elapsed_calendar_binding": false,
+        "record_id": "setup:civil-date",
+        "status": "received_initial_checkpoint",
+        "current_calendar_binding": false,
+        "opening_hour": null
+      },
+      "received_record_ids": [
+        "setup:civil-date"
+      ],
+      "app_acceptance": "not_executed_pending_adoption"
+    },
+    "new-1415-default": {
+      "mode": "declaration_only",
+      "civil_time": {
+        "date": "1415-08-11",
+        "calendar": "julian",
+        "precision": "day",
+        "time": null,
+        "ordinal": 2238109,
+        "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+        "elapsed_calendar_binding": false,
+        "record_id": "setup:civil-date",
+        "status": "received_initial_checkpoint",
+        "current_calendar_binding": false,
+        "opening_hour": null
+      },
+      "received_record_ids": [
+        "setup:civil-date"
+      ],
+      "app_acceptance": "not_executed_pending_adoption"
+    },
+    "new-1415-quay": {
+      "mode": "supported_slice",
+      "civil_time": {
+        "date": "1415-08-11",
+        "calendar": "julian",
+        "precision": "day",
+        "time": null,
+        "ordinal": 2238109,
+        "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+        "elapsed_calendar_binding": false,
+        "record_id": "setup:civil-date",
+        "status": "received_initial_checkpoint",
+        "current_calendar_binding": false,
+        "opening_hour": null
+      },
+      "received_record_ids": [
+        "setup:scene-map",
+        "setup:scene-location",
+        "setup:civil-date"
+      ],
+      "app_acceptance": "not_executed_pending_adoption"
+    },
+    "rise-r00": {
+      "mode": "supported_slice",
+      "civil_time": null,
+      "received_record_ids": [],
+      "app_acceptance": "not_executed_pending_adoption"
+    },
+    "henry_operation": {
+      "status": "completed_successfully",
+      "elapsed_seconds": 20,
+      "operation_id": "execute_player_scene_action",
+      "stocks_created": false,
+      "civil_calendar_advanced": false,
+      "received_result": true
+    }
+  },
+  "original_baseline_observations": {
+    "john-1415-existing": {
+      "evidence": {
+        "schema_version": 1,
+        "case_id": "john-1415-existing",
+        "explicit_mode": "unclassified",
+        "reference_ready": true,
+        "actor_eligible": true,
+        "mode_confirmed": false,
+        "actor_context_reviewed": false,
+        "actor_context_received": false,
+        "supported_operation_listed": false,
+        "operation_confirmed": false,
+        "result_received": false,
+        "save_reload_verified": false,
+        "exact_retry_verified": false,
+        "civil_date_matches_source": false
+      },
+      "assessment": {
+        "loop_verified": false,
+        "mode_review_verified": false,
+        "civil_date_required": true,
+        "civil_date_verified": false,
+        "supported_start_accepted": false,
+        "runtime_authorization_granted": false
+      },
+      "baseline_status": "observed_gap",
+      "future_acceptance": "all positive loop gates plus explicit mode and sourced civil date"
+    },
+    "new-1415-default": {
+      "evidence": {
+        "schema_version": 1,
+        "case_id": "new-1415-default",
+        "explicit_mode": "unclassified",
+        "reference_ready": true,
+        "actor_eligible": true,
+        "mode_confirmed": false,
+        "actor_context_reviewed": false,
+        "actor_context_received": false,
+        "supported_operation_listed": false,
+        "operation_confirmed": false,
+        "result_received": false,
+        "save_reload_verified": false,
+        "exact_retry_verified": false,
+        "civil_date_matches_source": false
+      },
+      "assessment": {
+        "loop_verified": false,
+        "mode_review_verified": false,
+        "civil_date_required": true,
+        "civil_date_verified": false,
+        "supported_start_accepted": false,
+        "runtime_authorization_granted": false
+      },
+      "baseline_status": "observed_gap",
+      "future_acceptance": "confirmed accurate mode classification; require every loop gate if advertised executable"
+    },
+    "new-1415-quay": {
+      "evidence": {
+        "schema_version": 1,
+        "case_id": "new-1415-quay",
+        "explicit_mode": "unclassified",
+        "reference_ready": true,
+        "actor_eligible": true,
+        "mode_confirmed": false,
+        "actor_context_reviewed": true,
+        "actor_context_received": true,
+        "supported_operation_listed": true,
+        "operation_confirmed": true,
+        "result_received": true,
+        "save_reload_verified": true,
+        "exact_retry_verified": true,
+        "civil_date_matches_source": false
+      },
+      "assessment": {
+        "loop_verified": true,
+        "mode_review_verified": false,
+        "civil_date_required": true,
+        "civil_date_verified": false,
+        "supported_start_accepted": false,
+        "runtime_authorization_granted": false
+      },
+      "baseline_status": "observed_gap",
+      "future_acceptance": "all loop gates; conserve one dispatch; distinguish unsuccessful shortcut and actual local spans"
+    },
+    "rise-r00": {
+      "evidence": {
+        "schema_version": 1,
+        "case_id": "rise-r00",
+        "explicit_mode": "executable_slice",
+        "reference_ready": true,
+        "actor_eligible": true,
+        "mode_confirmed": true,
+        "actor_context_reviewed": true,
+        "actor_context_received": true,
+        "supported_operation_listed": true,
+        "operation_confirmed": true,
+        "result_received": true,
+        "save_reload_verified": true,
+        "exact_retry_verified": true,
+        "civil_date_matches_source": false
+      },
+      "assessment": {
+        "loop_verified": true,
+        "mode_review_verified": true,
+        "civil_date_required": false,
+        "civil_date_verified": false,
+        "supported_start_accepted": true,
+        "runtime_authorization_granted": false
+      },
+      "baseline_status": "reviewed_regression_loop",
+      "future_acceptance": "all loop gates; finite material and 3600 work seconds; actual elapsed 3900"
+    }
+  },
+  "actual_engine_interfaces": [
+    "starting_selection.options_for_world",
+    "start_readiness.review_start",
+    "starting_selection.initialize_player",
+    "start_readiness.actor_view",
+    "shared_runtime.capabilities",
+    "shared_runtime.prepare_intent",
+    "shared_runtime.execute_intent",
+    "CoreWorld.save/load",
+    "execute_player_scene_action",
+    "execute_settlement_action",
+    "record_player_action"
+  ],
+  "execution_scope": [
+    "six independently initialized modes including optional Henry and held John",
+    "received initial Julian day/ordinal/source/precision; no known hour or current-calendar binding",
+    "actual accepted Henry observation, 20 selected local seconds, exact received result, no stock/order/mandate",
+    "complete real quay and R00 arcs with conserved dispatch and finite work/materials",
+    "durable synthetic CAS saves Core state and result together; original retries after later actions/reload",
+    "false acceptance, failed persistence, changed/stale requests, concurrent request and restore fences",
+    "wrong actor/opening/snapshot, control revocation and private-state menu/view boundaries",
+    "continuing reads require legitimate receipt and never initialize or consult/reapply historical templates"
+  ],
+  "source_review": {
+    "file": "IRGS_Catalog/evaluation/start_context_v1/source_review.json",
+    "method": "Opened and independently read the two research summaries cited by the Engine pack; original short paraphrases and locators only.",
+    "checked_on": "2026-10-26",
+    "accepted_precision": "broad_embarkation_region_only",
+    "boarding_date_resolution": "unresolved",
+    "opening_hour": null,
+    "john_personal_context": "not_established",
+    "articles_or_images_copied": false,
+    "primary_editions_and_rolls_independently_collated": false,
+    "simulation_duration_seconds": 20,
+    "historical_or_universal_duration_claimed": false
+  },
+  "preservation": {
+    "previous_catalog_files": 188,
+    "unchanged_previous_catalog_files": 187,
+    "changed_previous_catalog_files": [
+      "verify_catalog.py"
+    ],
+    "new_catalog_files": [
+      "evaluation/start_context_v1/README.md",
+      "evaluation/start_context_v1/actor_inputs/henry-1415-default.json",
+      "evaluation/start_context_v1/actor_inputs/henry-1415-observation.json",
+      "evaluation/start_context_v1/actor_inputs/john-1415-limited.json",
+      "evaluation/start_context_v1/actor_inputs/new-1415-default.json",
+      "evaluation/start_context_v1/actor_inputs/new-1415-quay.json",
+      "evaluation/start_context_v1/actor_inputs/rise-r00.json",
+      "evaluation/start_context_v1/app_acceptance.json",
+      "evaluation/start_context_v1/evaluator_only/oracle.json",
+      "evaluation/start_context_v1/manifest.json",
+      "evaluation/start_context_v1/source_review.json",
+      "start_context_evaluation.py"
+    ],
+    "old_manifests_payloads_consumer_ids_and_guards": "unchanged",
+    "old_validation_records": "unchanged",
+    "original_baseline_engine": "91b20056e7db651966c9e92925313494917f47b1",
+    "original_baseline_app": "00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc",
+    "preview_records": 44,
+    "preview_data_and_statuses": "unchanged",
+    "system_variants": 750,
+    "editable_player_drafts": 250,
+    "mixing_recipes": 32,
+    "depot_sha256": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4",
+    "archive_bytes": 533064680,
+    "archive_sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773",
+    "archive_parts": 32,
+    "archive_members": 5146,
+    "archive_bindings": 5145
+  },
+  "inference": {
+    "engine_consumer_provider_dispatch_calls": 0,
+    "engine_consumer_direct_transport_calls": 0,
+    "engine_consumer_socket_connections": 0,
+    "pending_app_diagnostic_provider_calls": 0,
+    "instrumentation": "Calls raise throughout each consumer setup and execution."
+  },
+  "remaining_dependencies": [
+    "App START-INT-002 through START-INT-005 adoption and exact compatible pins",
+    "Separate Catalog adopted-App selection/consumer for all six cases; do not repin historical fixtures",
+    "Coordinator all-three approval, fresh joined execution capture and browser/package qualification before 3.4.3",
+    "Actual App communication bridge before further communication evaluation"
+  ],
+  "limits": [
+    "Passing old-App blocker diagnostics are not successful App product acceptance.",
+    "App regression/frontend checks use its old committed Engine, not the published new Engine.",
+    "No user save, migration, live AI, new browser/package release, native Windows, general historical playability or full C2 claim.",
+    "Only Catalog is published; version stays 3.4.2; original source/archives and old evidence retain their identities."
+  ]
+}

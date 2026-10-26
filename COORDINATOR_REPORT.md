@@ -1,113 +1,108 @@
-# Catalog delivery — player-start requirements and baseline diagnostics
+# Catalog handoff — published Engine start context
 
-## Current coordinator review — 26 October 2026
+26 October 2026. Current component edition 3.4.2; next coordinated unified
+publication is 3.4.3, with previous release field 3.3.3. No version is changed here.
 
-The first readiness/context deliveries have been reviewed. Engine API 1 is
-published; App and Catalog adoption remain open. The coordinator fixed App
-module/test name collisions. Follow [COORDINATOR_WORK_ORDER.md](COORDINATOR_WORK_ORDER.md)
-and [the current review](COORDINATOR_START_REVIEW_2026_10_26.md) before
-selecting work. Earlier records below retain their dated scope. Unified
-3.4.2 remains published; next joined release is 3.4.3 after qualification.
+Delivered `irgs-start-context-v1`: separate published Engine selection, six
+actor instruction documents, evaluator-only oracle, original citation review,
+independent Engine consumers and an explicitly unexecuted adopted-App acceptance
+list. The accepted `player_starts_v1` baseline and every older consumer identity
+remain unchanged.
 
-26 October 2026. IRGS 3.4.2 development, previous release 3.3.3.
-Only `KingSav3ge/IRGS-Catalog/main` is published by this chat.
+## Exact executed selections
 
-The assigned Catalog increment is delivered as `irgs-player-starts-v1`: four
-independent actor instruction documents, evaluator-only criteria, a source-bound
-John/1415 requirements dossier, acceptance matrix and offline evidence schema/
-validator. This is requirements/evaluation delivery while owner interfaces are
-pending. It is not an implemented Engine/App start contract or a viable completed
-all-three runtime fix.
+| Scope | Engine | App |
+| --- | --- | --- |
+| New Engine contract | `cc450a6f00a249d2169cdacdfc9c4b1e03f67cc8` | No App dependency |
+| Known App-blocker diagnostics | Same published Engine override | `d8e68848454ac7be68ce87fede6d04cc57bda86a` |
+| App regressions/frontend at committed old Engine | `91b20056e7db651966c9e92925313494917f47b1` | Same coordinator-patched App |
+| Original baseline HTTP, original guards | `91b20056e7db651966c9e92925313494917f47b1` | `00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc` |
 
-## Source and ownership
+The pending App still commits Engine `91b2005` and Catalog
+`3f921252e50a0976cb88321b6ff8249a5f12466d`. The last remote fetch confirms no
+adoption revision is published. Regression/diagnostic suites explicitly select
+this Catalog candidate; component integrity separately uses actual checked-out
+App pins. No Engine/App product edit, commit or pointer change is made.
 
-The baseline is unified `ba551af285a6e1eb0766a9d06f83cbc0e5335b35`:
+## Source and information boundaries
 
-| Source | Exact commit |
-| --- | --- |
-| Engine | `91b20056e7db651966c9e92925313494917f47b1` |
-| App | `00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc` |
-| App's committed Catalog pin | `3f921252e50a0976cb88321b6ff8249a5f12466d` |
+Catalog independently checked the two research summaries cited by the Engine
+pack. The [review and citations](IRGS_Catalog/evaluation/start_context_v1/source_review.json)
+retain only a broad embarkation setting and unresolved boarding chronology.
+No particular room, berth, occupied ship or hour is established. The cited primary
+editions and rolls were not independently collated; no article or image is copied.
 
-Tests use the actual App-pinned Engine and explicitly select this Catalog
-candidate. No Engine/App implementation or pointer is edited. The fetched owner
-main heads at assignment inspection contained only the new work orders;
-requirements do not assume an unpublished endpoint or initializer.
+Engine's 20-second observation remains an explicitly selected simulation rule,
+not a historical measurement or universal duration. Citation/precreation reference
+material does not become actor knowledge. No stock, rank authority, introduction,
+order, destination disclosure or historical future is fabricated. John stays held
+for missing legitimate personal context and cannot borrow Henry/courier setup.
 
-The dossier references adopted Engine snapshot
-`IRGS_3_3/data/hyw_1415_opening.json` by exact SHA-256 and JSON pointers.
-John is `HYW-JOHN-BEDFORD`, distinct from John the Fearless. His dated identity/
-role reference derives from the April-council source; individual eligibility
-derives from the separate authored Solo policy. Neither supplies personal
-placement, current possessions, operational authority or actor knowledge.
-The Julian 11 August 1415 boundary has day precision and no known hour. Unknown
-resources are not zero resources. The fictional courier setup is not assigned
-to this historical person. Original supplied records and archive bytes are intact.
+## Executed Engine qualification
 
-Century's active preview now describes 37 dated reference checkpoints and
-explicitly distinguishes verified references/eligibility from executable starts.
-The corrected period/readiness copy reaches App's existing portfolio projection.
-Catalog prose does not change its runtime capability flags or viewer controls.
+Ten independent Catalog tests use actual `irgs-start-readiness-1` review,
+initialization and actor view, shared capability/intent APIs and Core handlers.
+The six paths are optional Henry, default Henry, held John, default new human,
+explicit authored new human and R00. Historical actors receive a legitimate
+initial Julian day with unknown hour and no current-calendar/elapsed binding.
+Read-only continuing views use actual receipts and never reseed from templates.
 
-## Acceptance and observed gaps
+The explicit Henry operation commits the real `execute_player_scene_action`
+observation, actor-received result and 20 selected local seconds, with no free
+stock, order, mandate or civil advance. Quay and R00 full positive arcs preserve
+the conserved dispatch and finite work/material boundaries. The independent
+test-only CAS envelope saves Core state and public result together. Old results
+survive later actions, serialized retry and reload; failed saves, concurrency,
+changed/stale requests and restore identity fences retain their actual boundaries.
+Privacy/control and incompatible opening/actor/snapshot cases pass.
+Broker dispatch, direct transport and sockets are forbidden in Engine consumers.
 
-The evaluation separates reference readiness, actor eligibility, reviewed actor
-context, legitimate received context, listed/confirmed operation, received result,
-save/reload, exact retry, explicit mode review and civil-date reconciliation.
-Its schema accepts evaluator reports, not browser authorization packets.
-`runtime_authorization_granted` is always false. Schema-valid reports are not
-executed product evidence.
+## App acceptance remains unexecuted
 
-Seven real HTTP tests use fresh temporary stores and actual public reviewed
-creation. They exercise John/1415, default new human, explicit fictional quay
-opening and R00 independently. Baseline diagnostics record the missing John/
-default loops as open gaps, not desired success expectations. All four cases
-retain future acceptance goals rather than freezing empty starts as completed.
+Two real HTTP diagnostics reproduce the old patched App's Henry preflight
+HTTP 400 despite the published Engine option, and limited-mode previews without
+Engine context adoption. These are named blockers, not desired future behavior,
+adopted-App qualification or successful START-INT-006 integration.
+`app_acceptance.json` explicitly names no qualified App commit and remains
+`not_executed_pending_adoption`.
 
-The authored new-character loop executes five real actions, including an
-unsuccessful shortcut, 150 local seconds and one conserved dispatch delivered.
-It retains its unresolved historical civil-date and selected-mode gaps. R00
-executes walk/found/build/two actual `wait_hour` requests, completing 3,600 work
-seconds at 3,900 elapsed seconds, founder timber 6 to 3. Results and exact retries
-survive host restart; no current facts rewrite old receipts.
+After App publishes adoption and compatible pins, Catalog must add a separate
+exact App compatibility selection and execute all six paths through actual
+review/controls, received context/day and selected elapsed presentation, explicit
+Core result, privacy/conservation/authority, creation/action retry, reload/restore
+and continuing reads. Keep both the accepted old baseline and this intermediate
+Engine-qualified/pending-App record at their real identities.
 
-Negative tests retain unsupported intent/withdrawal without physical effects or
-invented elapsed time. Synthetic private stock/permission changes do not select
-winning menus or leak evaluator truth. Existing-person creation rejects fictional
-new-person circumstances atomically. Source-pointer assertions verify the adopted
-provenance. Provider broker dispatch and direct transport are forbidden throughout.
+## Fresh checks
 
-## Fresh validation
-
-**199 Python tests passed, zero skips; 128 frontend checks passed:**
+**231 Python tests passed, zero skips; 137 frontend checks passed:**
 
 | Scope | Passed |
 | --- | ---: |
-| Catalog content/archive/contracts and isolated verifier | 135 |
-| New baseline start HTTP diagnostics/regressions | 7 |
-| Engine starting selection/historical snapshots/scene setup | 26 |
-| App starting flow/portfolio/shared responses | 31 |
-| Frontend checks (separate from Python test total) | 128 |
+| Catalog source/archive/contracts and isolated verifier | 143 |
+| New independent Engine consumers | 10 |
+| Original baseline HTTP consumers at original selections | 7 |
+| Pending-App blocker diagnostics | 2 |
+| Engine readiness regressions | 33 |
+| App focused regressions at its committed old Engine | 36 |
+| Frontend checks, also at the old Engine selection | 137 |
 
-Catalog integrity verifies 188 source files, all 44 previews, 32 archive parts,
-5,146 members and 5,145 bindings. Engine integrity and App's actual committed
-component set pass, including all 75 App files. Only Catalog release hashes were
-refreshed. [PLAYER_START_VALIDATION.json](PLAYER_START_VALIDATION.json) records
-commands, source identities, the four diagnostic reports and exact unmet gates.
+The frontend checks are separate from the Python total and qualify no adopted
+App UI. Catalog integrity verifies 200 source files, 44 previews, the complete
+32-part original archive, 5,146 members and 5,145 bindings. Published Engine
+integrity and App integrity at its actual checked-out dependency pins pass;
+App has 77 source files. Only Catalog release hashes were refreshed.
+
+[START_CONTEXT_VALIDATION.json](START_CONTEXT_VALIDATION.json) records exact
+commands, source hashes, executed observations and unexecuted acceptance.
 The preceding report is preserved byte-for-byte as
-[COORDINATOR_REPORT_PHASE_STARTS_01.md](COORDINATOR_REPORT_PHASE_STARTS_01.md).
+`COORDINATOR_REPORT_PLAYER_STARTS_01.md`. Original archive/source/citation bytes,
+all 44 previews, 750 system variants, 250 drafts and 32 recipes are unchanged.
 
-## Remaining dependencies
+## Remaining scope
 
-Engine must publish its reviewed historical-person initializer/operation and
-versioned selected-start readiness/context contract. App must consume the actual
-contract for precreation mode review and sourced civil-date presentation.
-Catalog then needs a separate exact consumer selection proving the new John
-loop and honest new-character modes. Current baseline gaps are not product
-acceptance. Communication coverage follows App's future bridge.
-
-Coordinator owns adoption of this Catalog candidate, a viable all-three source
-set and joined/browser/package qualification. No new historical start, save
-repair, live inference, model benchmark or full C2 approval is claimed.
-The edition stays 3.4.2. All old fixture consumer IDs/manifests, original validation
-records, 750 system variants, 250 drafts and 32 recipes are unchanged.
+App START-INT-002–005 adoption/pins and Catalog's subsequent adopted-App acceptance
+remain required. Coordinator owns viable all-three approval and fresh joined,
+browser/package execution before 3.4.3 publication. Communication extension
+follows App's actual communication bridge. No live AI, Windows, full historical
+campaign playability or C2 qualification is claimed. Only Catalog is pushed.

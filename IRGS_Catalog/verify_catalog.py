@@ -158,6 +158,11 @@ def verify_catalog(root=ROOT):
     checker = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(checker)
     player_starts = checker.validate_fixture(root)
+    spec = importlib.util.spec_from_file_location('catalog_start_context_check',
+        root / 'start_context_evaluation.py')
+    checker = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(checker)
+    start_context = checker.validate_fixture(root)
     return {'status': 'verified', 'component': 'IRGS-Catalog', 'files': len(hashes),
         'concepts': len(portfolio['entries']), 'campaign_release_approved_by_check': False,
         'campaign_records': campaign_records, 'historical_details': historical,
@@ -167,7 +172,8 @@ def verify_catalog(root=ROOT):
         'integrated_response_compatibility': integrated_responses,
         'development_interoperability': development_interop,
         'phase_response_compatibility': phase_responses,
-        'player_start_evaluation': player_starts}
+        'player_start_evaluation': player_starts,
+        'start_context_evaluation': start_context}
 
 
 if __name__ == '__main__':

@@ -40,6 +40,22 @@ Communication consumer expansion follows the actual App communication bridge.
 
 ## Source and publication rules
 
+Catalog handoff now delivered: `irgs-start-context-v1` includes six independent
+actor cases, source uncertainty review, exact published Engine selection and an
+explicitly pending App acceptance list. Ten independent Engine consumers pass;
+the original seven baseline HTTP consumers also pass at their original pins.
+Fresh scope is 231 Python tests with zero skips and 137 frontend checks. See
+[START_CONTEXT_VALIDATION.json](START_CONTEXT_VALIDATION.json) and the
+[fixture README](IRGS_Catalog/evaluation/start_context_v1/README.md).
+
+The most recent App fetch still selected coordinator-patched `d8e6884`, not an
+adoption commit. Two fresh HTTP diagnostics reproduce its rejection of Henry's
+published opening and missing context adoption. No adopted App acceptance was
+executed or claimed. On resume, inspect App main and its actual gitlinks first;
+when adoption is published, add a separate exact compatibility selection for
+the six paths. Keep this Engine-qualified/pending-App record and every older
+baseline identity unchanged. John remains held; do not fabricate his context.
+
 Published unified 3.4.2 remains `ba551af285a6e1eb0766a9d06f83cbc0e5335b35`.
 Received component products: Engine `cc450a6f00a249d2169cdacdfc9c4b1e03f67cc8`,
 App `23184e1e70b6005ad6170edb3843afcaae42e18a`, Catalog `e1778e080385b6ff2bbb93f47f91d0da6e9d6780`.

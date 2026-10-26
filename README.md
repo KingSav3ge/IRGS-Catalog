@@ -14,6 +14,12 @@ separately. [Evidence](PLAYER_START_VALIDATION.json) identifies pending Engine/A
 readiness and civil-date work. A verified snapshot alone does not establish a
 playable existing-person start.
 
+[Published Engine start-context qualification](IRGS_Catalog/evaluation/start_context_v1/README.md)
+adds the optional sourced Henry observation separately from default Henry, held
+John, new-character modes and R00. It preserves source uncertainty, received
+civil-day precision and actual local elapsed results. [Evidence](START_CONTEXT_VALIDATION.json)
+separates executed Engine consumers from pending adopted-App acceptance.
+
 Independent campaign catalogue data and design source for [IRGS](https://github.com/KingSav3ge/IRGS). The App viewer remains in [IRGS-APP-WEB](https://github.com/KingSav3ge/IRGS-APP-WEB); technical content libraries, profiles, campaign canon and initializers remain in [IRGS-Engine](https://github.com/KingSav3ge/IRGS-Engine).
 
 `IRGS_Catalog/data/` contains campaign discovery listings and 44 concept previews: 31 launch targets, 12 future campaigns and one independent simulation system. These are not 44 released games. `IRGS_Catalog/design/campaign_catalogue/` preserves the original v0.4 specification and implementation scope.

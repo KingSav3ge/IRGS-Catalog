@@ -10,6 +10,47 @@ The coordinator fixed App's module/test-name collision. Older task ordering and
 validation below retain their original scope. No unified import or version
 increase is performed by this instruction update.
 
+## Delivered Catalog handoff — published Engine start context
+
+`irgs-start-context-v1` now binds Engine
+`cc450a6f00a249d2169cdacdfc9c4b1e03f67cc8` / `irgs-start-readiness-1`
+separately from the accepted old baseline. Six actor cases cover explicit Henry,
+default Henry, held John, new default, authored new and R00. Original citation
+review retains a broad setting and unresolved boarding chronology, without a
+precise room, berth, occupied vessel or hour. Research references are not actor
+knowledge, and 20 seconds remain a selected Engine simulation rule.
+
+Ten independent Catalog Engine-consumer tests qualify actual reviewed creation,
+actor-received initial Julian day, current-mode/capability boundaries, explicit
+Core action, exact received result and selected elapsed axis. They retain finite
+stock/authority, original-result retry after later actions, durable save/reload,
+failed-save atomicity, concurrency, restore fences, actor substitution rejection,
+privacy and continuing reads that never initialize or reapply templates.
+
+Fresh validation: **231 Python tests passed, zero skips**, plus **137 frontend
+checks**: 143 Catalog source/archive/contracts, ten Engine consumers, seven
+original baseline HTTP consumers at their unchanged selections, two pending-App
+diagnostics, 33 Engine readiness regressions and 36 App regressions at its old
+Engine pin with this Catalog candidate. Frontend checks likewise use that old
+Engine selection; none qualifies adopted App behavior. Catalog integrity covers
+200 files, 44 previews and the complete archive. Only Catalog source hashes change.
+
+App remains at coordinator-patched `d8e68848454ac7be68ce87fede6d04cc57bda86a`
+on the latest fetch, with old Engine `91b2005` / Catalog `3f92125` gitlinks.
+Two actual HTTP diagnostics with an explicit new-Engine override reproduce
+Henry preflight rejection and unadopted context. Those are blockers, not passing
+App product acceptance. `app_acceptance.json` explicitly remains unexecuted and
+names no qualified App revision. This is Engine qualification and requirements
+support while App adoption is pending, not completed START-INT-006 integration.
+
+Read [the new fixture](IRGS_Catalog/evaluation/start_context_v1/README.md) and
+[executed evidence](START_CONTEXT_VALIDATION.json). Next, once App publishes its
+adoption and compatible pins, add a separate exact App selection and qualify all
+six paths through its real controls, presentation and save/reload/retry behavior.
+John stays held for missing personal context; do not repeat the older proposed
+John-loop task below. Coordinator retains joined/browser/package review and the
+next coordinated 3.4.3 publication. This component remains 3.4.2.
+
 Current coordinated edition: **3.4.2**; previous release: **3.3.3**.
 See [version policy](VERSION_POLICY.md). Earlier baseline tables and execution
 records below retain their original tested development identities.
@@ -54,7 +95,7 @@ The John dossier preserves unknown placement/resources/authority/receipts and th
 adopted Julian day with no invented hour. It does not assign a historical person
 the fictional courier's circumstances. No user save or original source is changed.
 
-## Active and next owner dependency
+## Earlier requirements delivery and dependencies at e1778e0
 
 Fresh validation: **199 Python tests passed, zero skips**, plus **128 frontend
 checks**. This comprises 135 Catalog, seven new baseline HTTP, 26 Engine start/
@@ -254,15 +295,17 @@ python -B IRGS_Catalog/verify_catalog.py
 python -B -m unittest tools.tests.test_scripted_responses tools.tests.test_scripted_response_expansion tools.tests.test_shared_response_contract tools.tests.test_integrated_response_contract tools.tests.test_development_interop_contract -v
 python -B -m unittest tools.tests.test_phase_response_contract tools.tests.test_standalone_catalog -v
 python -B -m unittest tools.tests.test_player_start_contract -v
+python -B -m unittest tools.tests.test_start_context_contract -v
 ```
 
-The current 135-check source/archive/contract selection is:
+The current 143-check source/archive/contract selection is:
 `tools.tests.test_campaign_records`, `test_historical_details`,
 `test_historical_details_delivery`, `test_solo_evaluation`,
 `test_solo_proposal_contract`, `test_scripted_responses`,
 `test_scripted_response_expansion`, `test_shared_response_contract`,
 `test_integrated_response_contract`, `test_development_interop_contract`,
-`test_phase_response_contract`, `test_player_start_contract`, `test_standalone_catalog` (each under `tools.tests`).
+`test_phase_response_contract`, `test_player_start_contract`, `test_start_context_contract`,
+`test_standalone_catalog` (each under `tools.tests`).
 Optional real reader cases require explicit source selectors:
 
 | Selector | Meaning |

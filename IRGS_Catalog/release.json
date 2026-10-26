@@ -141,6 +141,17 @@
     "evaluation/solo_r00_v1/evaluator_only/oracle.json": "46535db4b5b6d1502f3d93372d00a7ad9e0bd51be3ed978bed8a9bbe7f37450f",
     "evaluation/solo_r00_v1/evaluator_only/setup.json": "7bc289eb783203d66fa11fbd7ad3132570aebe206bff673ce516fe28c0e953e8",
     "evaluation/solo_r00_v1/manifest.json": "2d30e863c4f769f0e2039469807ca0c6eeef3f30edd17d96778cebcba65bdbe5",
+    "evaluation/start_context_v1/README.md": "d8d6b71966a32e7c44f05dbc178ee12c625cce36d7ed7f6dfac0a731dd7a8112",
+    "evaluation/start_context_v1/actor_inputs/henry-1415-default.json": "730c4ace36e6af863573671569ec1ddc4d638f793fff0231c6dc1efeb7439055",
+    "evaluation/start_context_v1/actor_inputs/henry-1415-observation.json": "0e51451e6eaa7dfc0d1251895816b3908edaf41897b97d5aa3dd3259c0e26de2",
+    "evaluation/start_context_v1/actor_inputs/john-1415-limited.json": "743f9784856ff17b2d249374c4f70166cdbc0939b74afa45dcaa1754f53ebeb8",
+    "evaluation/start_context_v1/actor_inputs/new-1415-default.json": "4d1a63e16ee87f76725064397413f1df7c8b7370fbed202fcd31a2797e048c20",
+    "evaluation/start_context_v1/actor_inputs/new-1415-quay.json": "4d2d50560d5d519939f0d73441cd531fb5b5fe7a9c70321440776f639f4a9067",
+    "evaluation/start_context_v1/actor_inputs/rise-r00.json": "10c9ed846523838ffb979922f9005f4bfed06d5c3b31ed0339c933f4c9feea51",
+    "evaluation/start_context_v1/app_acceptance.json": "3bab5f5abeab10cc314ac173b12c3b43d3498f9592dfee0f7d2d9a6104d95bbe",
+    "evaluation/start_context_v1/evaluator_only/oracle.json": "2e9063e17b86b9453f39967f8972cc7d0e2cbee68845eeac905d2d616583c39e",
+    "evaluation/start_context_v1/manifest.json": "dc215f735f728dbed4ef1281b4428efc4cbb47a6c4f1628c40906fb5978e4670",
+    "evaluation/start_context_v1/source_review.json": "fa32c52c85a5f9afb22ab064cb473285768f2feff5ec1e3ba14d6a801bcd5ae8",
     "historical_details/README.md": "2f2bbe22e998cb233dee564c41d18fd10e7ccbe2ad9e03752e11862c91cb603a",
     "historical_details/intake/README.md": "e39f2b7382290de72c60fb74ac5d81526093740b09c4cdd694478fcd9afd6f15",
     "historical_details/intake/drive_delivery_manifest.json": "48abac57689a0110ba65f58a7407bd9860161bbc3f2d0185a604d11037adb304",
@@ -190,6 +201,7 @@
     "scripted_responses.py": "7584bf10e29b8077ed84c7c4581d006327de3fd850a5e33b099577437b44f313",
     "solo_evaluation.py": "444fb338b7ade0e78fbd2f014c15bd90546cee4e203966ed6284ba73cfdecc97",
     "solo_proposal_compatibility.py": "d83a591a5e070bd3f602898fa1f16e477ac580b62e2d9f39ce48ed8c3d158dce",
-    "verify_catalog.py": "7b7bd7411740ab320441f4f27967e82e2b72faa4f5940121ef7c80167a7c78e7"
+    "start_context_evaluation.py": "37b4efb6f86af9695000562f0b45fa55f1b5d3f0d7fdecf58b62844c8c81aa2c",
+    "verify_catalog.py": "f978eed99cd130b161abcf62ff5ba6c45ffab4f34f41bb94e48ce6df810fe371"
   }
 }
