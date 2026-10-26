@@ -1,60 +1,64 @@
-# IRGS-Catalog work order — shared IRGS systems
+# Catalog work order — supported player starts
 
 Current coordinated edition: **3.4.2**; previous release: **3.3.3**.
-See [version policy](VERSION_POLICY.md). Earlier baseline tables and execution
-records below retain their original tested development identities.
+Assigned 26 October 2026 after the coordinator ran the actual unified build.
+Owner: `KingSav3ge/IRGS-Catalog/main`. This order supersedes older next-task ordering.
+The existing implemented APIs, refined interface and qualified fixtures remain
+completed work. This is a new assignment, not a claim that its fixes exist.
 
-## Current continuation — 26 October 2026
+Read [the assessment](PLAYABILITY_REVIEW_3_4_2.md),
+[executed evidence](PLAYABILITY_EVIDENCE_3_4_2.json), `AGENTS.md`,
+`IRGS_SYSTEMS_SCOPE.md` and `CHAT_CONTINUATION.md` before selecting implementation.
 
-26 October Catalog follow-up: public starts are now published by App and covered
-under the separate `irgs-phase-responses-v1` record. See
-[fresh evidence](PHASE_RESPONSE_VALIDATION.json) and the updated continuation.
-The next communication/source extension requires matching owner contracts;
-older compatibility selections and original validation records stay unchanged.
+## First bounded increment — starting-context requirements and readiness cases
 
-The delivered shared-response set and verified-byte intake patch are integrated
-in IRGS/main. Follow [CHAT_CONTINUATION.md](CHAT_CONTINUATION.md) and the current
-[development guide](DEVELOPMENT.md) for the next bounded assignment. Earlier
-scope requirements below remain applicable; completed foundation work should
-not be repeated as an unimplemented first delivery.
+Read `PLAYABILITY_REVIEW_3_4_2.md`. Own the cross-component acceptance matrix for
+IRGS-PLAY-001/002/004 and the actual availability descriptions. Separate historical
+reference readiness, character eligibility, declaration-only mode and executable
+slice readiness. Do not mark an existing-character start playable merely because
+its dated snapshot is verified or a new-character fictional opening exists.
 
-Assigned by IRGS Enviroment following the user's campaign-wide scope correction.
-Target: **IRGS 3.4.2 development**. Push only `IRGS-Catalog/main` under KingSav3ge.
-Read [IRGS_SYSTEMS_SCOPE.md](IRGS_SYSTEMS_SCOPE.md). This order supersedes the
-first R00 demonstration assignment, preserved byte-for-byte in
-[the prior order](COORDINATOR_WORK_ORDER_SOLO_RUNTIME_01.md).
+Prepare sourced starting-context requirements for the first supported existing
+historical person, including provenance, uncertainty, actor access and any gaps.
+Use adopted source records without modifying originals. Technical initializers and
+rules remain Engine-owned; viewer controls remain App-owned. No catalogue prose
+may fabricate inventory, authority, time, NPC choices or player knowledge.
 
-## Current assignment
+Create a separately versioned evaluation alongside existing fixtures. Include the
+reported John/1415 path, a new-character default with no authored scene, a working
+authored new-character path, and R00 as a regression. Positive acceptance requires
+actual reviewed initial context, a confirmed Core operation, an actor-received
+result and retained save/reload state. Negative cases must prove honest readiness
+classification, no hidden-state menu oracle and no invented effects or elapsed
+time. The current empty starts are observed gaps, not success expectations to
+freeze into a permanent fixture. Keep actor inputs separate from evaluator truth.
 
-1. Maintain the shared response depot for any campaign/theme: exactly 750 stored
-   system variants and 250 editable drafts; count recipes separately. Retain
-   original versioned compatibility packs and supplied source records unchanged.
-2. Use typed known labels and semantic intent tags across request/status,
-   recovery, information, inventory, time, work and communication. Campaign
-   adapters decide applicability and supported operations; content creates no rules.
-3. Validate every variant and recipe, exact counts, uniqueness, explicit rights,
-   actor/snapshot/source/state boundaries, exact outcome anchoring and player agency.
-   Preserve the delivered four-theme portability checks and separately labelled
-   real consumer evidence. Extend non-Rise consumer fixtures when owners publish
-   their supported interfaces; do not invent an adapter to satisfy a checklist.
-4. Give Engine/App a stable content/schema/reference handoff. Keep credentials,
-   provider routing, authorization and world state out of the depot. Rendering
-   requires zero API calls; demanding AI remains a separate host decision.
-5. Preserve 44 previews, adopted canon, original archives and Historical Details.
-   Publish exact dependencies and distinguish delivered content, runtime adoption
-   and measured token savings. Catalog is not blocked on another Rise expansion.
+Publish requirements/schema work while interfaces are pending, clearly labelled
+as such. Qualify consumers against exact published Engine/App commits once their
+contract exists; planning or source hashes alone are not a viable runtime delivery.
+Maintain all original fixture consumers/manifests, archive bytes, 44 previews and
+the 750 system / 250 draft / 32 recipe depot. Do not reauthor the depot or reimport
+Historical Details. Extend communication evaluation after App publishes its bridge.
 
-## Delivery and review
+## Delivery rules
 
-Preserve work already developed. Keep the component plan current and report the
-exact pushed commit, supported contexts, actual handlers, executed checks/skips
-and remaining dependencies. Use synthetic temporary state only. Run relevant
-existing component integrity and behavioral checks; hashes alone certify no behavior.
+Develop shared IRGS systems; Rise is one regression context. Preserve one
+authoritative Core and its nine K-owners, the existing six Director categories,
+actor/source filtering, reviewed creation, explicit acceptance, resource/authority
+checks and exact original-result recovery. Names, themes, narration and drafts
+create no capability or facts. Keep causal, storage, civil and elapsed time apart.
+Do not invent universal timing, dice or an NPC decision to satisfy an example.
 
-The coordinator reviews all three viable updates at exact compatible App pins,
-refreshes actual joined operation evidence and qualifies browser/package behavior
-before importing product source into unified IRGS/main. Prior release approvals
-retain their original scope. This work order does not claim new tests or mechanics.
+Use temporary synthetic stores only. Preserve user saves, credentials, local
+configuration, original source/archive bytes, adopted canon and dated evidence.
+Do not migrate an actual user campaign as a test. Record actual source commits,
+APIs, test commands/results/skips and remaining dependencies. Retain old fixtures
+at their selected identities. No live inference or full C2 claim is implied.
 
-Repository publication is the available handoff. There is no direct tool to send
-or restart another development chat; publication alone does not prove its receipt.
+After actual product edits, refresh only the owning component's release hashes
+and run meaningful existing and new checks for changed behavior. Update the
+development plan and push only this assigned component repository. Return the
+full commit and exact compatible dependency selections to the coordinator.
+Current edition stays 3.4.2 until a coordinated versioned publication. Guide-only
+commits are not new product increments. Repository publication proves no dispatch
+or chat resumption; preserve the coordinator's unified integration gate.
