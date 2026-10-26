@@ -51,7 +51,7 @@ John stays held for missing personal context; do not repeat the older proposed
 John-loop task below. Coordinator retains joined/browser/package review and the
 next coordinated 3.4.3 publication. This component remains 3.4.2.
 
-Current coordinated edition: **3.4.2**; previous release: **3.3.3**.
+Current coordinated edition: **3.4.3**; previous release: **3.3.3**.
 See [version policy](VERSION_POLICY.md). Earlier baseline tables and execution
 records below retain their original tested development identities.
 
