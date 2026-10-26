@@ -1,12 +1,17 @@
 # Continuation instructions — IRGS Catalog
 
-Current coordinated edition: **3.4.1**; previous release: **3.3.3**.
+Current coordinated edition: **3.4.2**; previous release: **3.3.3**.
 See [version policy](VERSION_POLICY.md). Earlier baseline tables and execution
 records below retain their original tested development identities.
 
 Prepared 26 October 2026 for `KingSav3ge/IRGS-Catalog/main`. Preserve local changes
 before pulling. Resume this existing chat's component work; publish only its
 own repository. Read this file after pull; fresh user directions take precedence.
+
+## Coordinated 3.4.2 preparation
+
+Read [the coordinator selection](COORDINATED_3_4_2.md). Current edition headings
+supersede dated delivery identities below; preserve their original source and tests.
 
 ## Start here
 
