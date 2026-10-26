@@ -57,6 +57,21 @@ Historical Details. Extend communication evaluation after App publishes its brid
 
 ## Delivery rules
 
+26 October Catalog delivery: `irgs-player-starts-v1` now contains the four actor
+cases, separate evaluator matrix, sourced John/1415 requirements and an offline
+evidence schema/validator. The active Century description separates dated
+references from executable starts. Seven real HTTP diagnostics at the evaluated
+Engine/App revisions preserve the authored-new/R00 positive loops and identify
+the John/default and historical mode/date gaps honestly. See
+[PLAYER_START_VALIDATION.json](PLAYER_START_VALIDATION.json) and
+[the fixture README](IRGS_Catalog/evaluation/player_starts_v1/README.md).
+
+Next: wait for the owner-published versioned readiness/context interfaces, inspect
+their actual source and add a separate exact consumer selection. Demonstrate the
+new existing-person loop and explicit mode/date behavior without repinning this
+baseline or treating empty starts as acceptable product behavior. Requirements
+and schema are delivered; the runtime fix and coordinator adoption are pending.
+
 Develop shared IRGS systems; Rise is one regression context. Preserve one
 authoritative Core and its nine K-owners, the existing six Director categories,
 actor/source filtering, reviewed creation, explicit acceptance, resource/authority

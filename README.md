@@ -6,6 +6,14 @@ records below retain their original tested development identities.
 
 Current development: [guide](DEVELOPMENT.md) · [chat continuation](CHAT_CONTINUATION.md).
 
+[Player-start requirements and baseline diagnostics](IRGS_Catalog/evaluation/player_starts_v1/README.md)
+separate verified historical references, eligible characters, explicit limited
+modes and actual executable slices. The John/1415 requirements retain source and
+actor-access gaps; the working fictional new-character and R00 loops are tested
+separately. [Evidence](PLAYER_START_VALIDATION.json) identifies pending Engine/App
+readiness and civil-date work. A verified snapshot alone does not establish a
+playable existing-person start.
+
 Independent campaign catalogue data and design source for [IRGS](https://github.com/KingSav3ge/IRGS). The App viewer remains in [IRGS-APP-WEB](https://github.com/KingSav3ge/IRGS-APP-WEB); technical content libraries, profiles, campaign canon and initializers remain in [IRGS-Engine](https://github.com/KingSav3ge/IRGS-Engine).
 
 `IRGS_Catalog/data/` contains campaign discovery listings and 44 concept previews: 31 launch targets, 12 future campaigns and one independent simulation system. These are not 44 released games. `IRGS_Catalog/design/campaign_catalogue/` preserves the original v0.4 specification and implementation scope.

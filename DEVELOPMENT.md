@@ -16,6 +16,57 @@ It supersedes older next-task ordering below. Earlier delivery identities,
 executed results and stable DEV/C2 requirements retain their original scope.
 Do not report the empty historical-character starts as a completed gameplay loop.
 
+## Completed Catalog increment — player-start requirements and diagnostics
+
+Delivered `irgs-player-starts-v1`: a separately versioned four-case evaluation,
+source-bound John/1415 dossier, actor/evaluator separation, acceptance matrix and
+offline evidence schema/validator. Reference readiness, character eligibility,
+explicit mode review, actual executable loop and sourced civil-date presentation
+are independent checks. Schema validation authorizes nothing and certifies no
+runtime fix. The Century preview now describes 37 dated reference checkpoints
+and explicitly distinguishes verified references from an executable start.
+The original supplied designs and 44 preview statuses are unchanged.
+
+The baseline diagnostic consumer selects the evaluated 3.4.2 Engine
+`91b20056e7db651966c9e92925313494917f47b1` and App
+`00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc`, whose Catalog pin remains
+`3f921252e50a0976cb88321b6ff8249a5f12466d`. Only this Catalog candidate is
+overridden for checks. Seven actual HTTP cases distinguish John/default gaps
+from working authored-new-character/R00 loops, with reviewed creation, confirmed
+operations, actor receipts and save/reload/exact retry. They also check honest
+unsupported intent, no invented physical effects/time, hidden-state menu
+boundaries, rejected fictional circumstances for John and Catalog copy reaching App.
+
+See [the acceptance matrix and provenance](IRGS_Catalog/evaluation/player_starts_v1/README.md)
+and [fresh results](PLAYER_START_VALIDATION.json). Empty baseline starts are
+recorded as unmet product requirements, never desired success expectations.
+The John dossier preserves unknown placement/resources/authority/receipts and the
+adopted Julian day with no invented hour. It does not assign a historical person
+the fictional courier's circumstances. No user save or original source is changed.
+
+## Active and next owner dependency
+
+Fresh validation: **199 Python tests passed, zero skips**, plus **128 frontend
+checks**. This comprises 135 Catalog, seven new baseline HTTP, 26 Engine start/
+historical/scene and 31 App start/portfolio/shared checks. Catalog integrity
+verifies 188 source files, 44 previews and the whole original archive. Engine and
+App's actual pinned component set also pass; routine provider calls are zero.
+These results qualify the named requirements/evaluator and regressions, not the
+unimplemented John start or historical mode/date fixes.
+
+Catalog's requirements/evaluation increment is delivered; the missing executable
+existing-person path, selected-mode review and civil-date presentation are still
+Engine/App product work. Their fetched main heads at assignment inspection were
+instruction-only `e283c57` / `7368262`; tests use the exact evaluated product
+commits above. Once the owners publish the versioned contract, qualify it with a
+new exact consumer selection and demonstrate an actual John loop plus the two
+new-character modes and R00 regression. Retain this baseline and all old guards.
+Do not invent an endpoint, context, authority grant, NPC choice or migration.
+
+Communication evaluation follows App's future bridge. Coordinator owns adoption
+of the Catalog candidate, a viable all-three set and joined/browser/package review.
+The edition stays 3.4.2; a requirements delivery is not a completed runtime fix.
+
 ## Coordinated 3.4.2 preparation
 
 Read [the coordinator selection](COORDINATED_3_4_2.md). Current edition headings
@@ -168,7 +219,7 @@ Earlier manifests and validation records remain unchanged. This follow-up does
 not reopen the original completed integration. Coordinator review of the new
 Catalog compatibility/evidence commit is a separate step.
 
-## Active and remaining
+## Earlier response-development dependencies
 
 There is no Catalog source blocker in the tested response and received-process
 paths. Received observation/work App contracts are now published and have
@@ -192,15 +243,16 @@ separate scope. Coordinator owns exact-set joined/browser/package qualification.
 python -B IRGS_Catalog/verify_catalog.py
 python -B -m unittest tools.tests.test_scripted_responses tools.tests.test_scripted_response_expansion tools.tests.test_shared_response_contract tools.tests.test_integrated_response_contract tools.tests.test_development_interop_contract -v
 python -B -m unittest tools.tests.test_phase_response_contract tools.tests.test_standalone_catalog -v
+python -B -m unittest tools.tests.test_player_start_contract -v
 ```
 
-The current 126-check source/archive/contract selection is:
+The current 135-check source/archive/contract selection is:
 `tools.tests.test_campaign_records`, `test_historical_details`,
 `test_historical_details_delivery`, `test_solo_evaluation`,
 `test_solo_proposal_contract`, `test_scripted_responses`,
 `test_scripted_response_expansion`, `test_shared_response_contract`,
 `test_integrated_response_contract`, `test_development_interop_contract`,
-`test_phase_response_contract`, `test_standalone_catalog` (each under `tools.tests`).
+`test_phase_response_contract`, `test_player_start_contract`, `test_standalone_catalog` (each under `tools.tests`).
 Optional real reader cases require explicit source selectors:
 
 | Selector | Meaning |

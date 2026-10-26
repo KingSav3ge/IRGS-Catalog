@@ -42,6 +42,12 @@ Historical Details. Extend communication evaluation after App publishes its brid
 
 ## Delivery rules
 
+Catalog requirements/evaluation delivery is recorded in
+[PLAYER_START_VALIDATION.json](PLAYER_START_VALIDATION.json). The separate
+`irgs-player-starts-v1` matrix and dossier do not claim an implemented Engine/App
+start contract. The next acceptance step requires those published owner interfaces;
+the first bounded runtime delivery and joined review remain open.
+
 Develop shared IRGS systems; Rise is one regression context. Preserve one
 authoritative Core and its nine K-owners, the existing six Director categories,
 actor/source filtering, reviewed creation, explicit acceptance, resource/authority
