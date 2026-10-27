@@ -1,49 +1,93 @@
-# Coordinator work order — IRGS Catalog
+# Alpha 4.0 work order — IRGS-Catalog
 
-Active cycle: shared start-context adoption, candidate next unified **3.4.3**.
-Current published unified edition remains **3.4.2**. Previous release: **3.3.3**.
+Current product: **3.4.3 Pre-Alpha**. Target: **functional 4.0.0 Alpha**.
+The coordinator has already qualified and published the adopted start-context
+set. Original fixtures that record pending App adoption retain their historical
+identities; those records do not make current 3.4.3 adoption pending again.
 
-Read [the coordinator review](COORDINATOR_START_REVIEW_2026_10_26.md) and
-[the exact evidence](COORDINATOR_START_REVIEW_2026_10_26.json). These instructions replace older
-next-task ordering; historical delivery records retain their tested scope.
+## Ownership and first delivery
 
-The initial requirements/schema, availability wording and seven baseline start
-consumers are accepted within their original scope at `e1778e0`. The coordinator
-reran those seven at Engine `91b2005` and App `00634b1`; all passed. Preserve these
-historical identities, guards and evidence. Do not repin the existing baseline
-to make it appear to qualify the new source.
+Own IRGS_Catalog/ listings, previews, design/source dossiers and independent
+evaluation. App owns the viewer/host; Engine owns technical initializers/rules,
+profiles and Kira canon. Describe required behavior and independently test it;
+do not implement a second runtime or write privileged setup into ordinary actor
+instructions.
 
-Engine `cc450a6` now publishes `irgs-start-readiness-1` and an optional sourced
-Henry observation start. Read its actual API/source and begin a separately
-versioned requirement/consumer selection now; App adoption is START-INT-002–005.
-Check the cited broad setting and disputed boarding dates without reproducing
-articles or resolving the uncertainty into an exact room, ship, berth or hour.
-Keep John/1415 held for missing legitimate personal context. No invented rank
-authority, dispatch, possessions, introductions, destination or scheduled future.
+**Start A4-CAT-01 and A4-CAT-02 now:** qualify the existing communication bridge
+at exact published sources in a separate consumer selection, and select the two
+Alpha contexts with an explicit gameplay/source/rule gap matrix. Do not spend
+the next cycle expanding concept counts. Shared systems and sustained ordinary
+play take priority over more preview copy.
 
-Qualify exact published Engine and adopted App revisions through real APIs and
-Core results: explicit Henry supported mode, default Henry and John limited mode,
-new default, authored new character and R00. Require received initial civil day,
-no running civil-clock claim, actual selected local elapsed, explicit accepted
-operation, received result, conservation/authority/privacy, original-result retry
-and save/reload. Include unsupported opening/actor substitution and continuing
-world reads that do not reseed. Keep actor inputs separate from the oracle.
-Publish requirements/schema support while App is pending, label unexecuted
-acceptance honestly, then add executed exact consumers after its adoption commit.
-Preserve original archives/citations, all 44 previews and the 750/250/32 depot.
-Communication consumer expansion follows the actual App communication bridge.
+## Implementation queue
 
-## Completion and ownership
+| Task | Work and completion evidence | Dependencies; gates |
+| --- | --- | --- |
+| A4-CAT-01 | Create a separately versioned consumer selection for the published communication/source/offer bridge and adopted starts. Preserve old baseline pins, guards, IDs and pending-at-the-time records. Through real HTTP/browser behavior test actor-safe participants, exact testimony, offer status/terms, refusal/consent, fulfillment, unauthorized/competing attempts, retry and save/reload. Distinguish absent ordinary-start content from bridge capability. | Published 3.4.3 Engine/App; Engine 01 enables broader ordinary contexts; G05 |
+| A4-CAT-02 | Select at least two independently initialized ordinary Alpha contexts in distinct campaign families, including non-Rise personal/adventure play. Publish sourced/fictional start dossiers and a required gameplay matrix: actor/control, location, received information, participants, actual resources/capacity, movement/perception, dialogue/obligations, work/needs/recovery, NPC/local institution and selected risk/conflict. Mark each rule/fact adopted, missing, uncertain or proposed with owner/dependency. Never invent historical assets/authority to fill a gap. | Independent assessment now; Engine 01/06 designs; G02/G07/G10 |
+| A4-CAT-03 | Build independent multi-step actor instructions, evaluator-only oracle and evidence schema for the shared plan's acceptance journeys. Require consequences to constrain later decisions, failures and alternate choices, NPC/institution reactions, time/resource continuity, restart and restore. Execute actual consumers only at exact implemented Engine/App sets; mark pending paths unexecuted and unmet requirements honestly. Include actor substitution/private information, lost replies and duplicated acceptance. | 02 for requirements; Engine/App contracts for execution; G07/G09/G10 |
+| A4-CAT-04 | Define and apply an AI grounding/quality rubric for the selected provider route: exact legitimate inputs, proposed intent vs actual effect, received testimony/source uncertainty, no hidden-state hints, meaningful NPC responses and grounded narration. Separate actor material from evaluator truth. Fake-transport checks and live synthetic evaluation have distinct evidence; no model quality or cost winner without measured authorized runs. | Requirements now; Engine 07/App 05 for real execution; G08 |
+| A4-CAT-05 | Maintain honest readiness and release notes based on executed product evidence. A concept, verified dated reference, eligible actor and playable start are different states. Verify all 44 records, original Historical Details parts/citations, adopted source links and response depot. Publish final exact-set independent consumers and gate findings without claiming completed general warfare, all concepts, all Rise families or full C2. | All chosen implementations; G10/G12 |
 
-Catalog's Engine-qualified requirements/consumer handoff is recorded in
-[START_CONTEXT_VALIDATION.json](START_CONTEXT_VALIDATION.json). The separate
-`irgs-start-context-v1` fixture preserves all old baseline identities. Adopted
-App qualification remains unexecuted until an actual adoption revision and
-compatible pins are published; current-App blocker diagnostics are not approval.
+Use the existing historical 1415 material and fictional examples as foundations
+where appropriate, not permission to assert unsupported personal circumstances.
+John's held start and Kira's guide remain limited until separately implemented.
+37 verified reference checkpoints are not 37 playable games. Existing R00 work
+and Henry's bounded observation keep their real, limited scope.
 
-Read `CHAT_CONTINUATION.md` for source selections, rules and checks. Publish only
-this component. A work-order/plan change does not complete implementation or
-qualify the new contract. Report exact published code and compatible dependencies,
-actual passes/failures/skips and remaining work. Coordinator owns joined import,
-fresh execution capture, joined/browser/package qualification and versioned
-publication after all three viable updates are approved. No dispatch is implied.
+## Contract and QA handoff
+
+Keep new Alpha requirements/evaluation separately versioned under
+IRGS_Catalog/evaluation/ and designs under the existing design structure.
+A source dossier or schema certifies no Engine/App implementation. Publish
+requirements early; add exact consumer selections and executed evidence after
+the actual product contracts exist. Do not weaken original identity guards or
+repin an old fixture to pass new code. Technical initialization belongs to Engine.
+
+Use Python 3.12+ without -O. Independent source checks require no App/provider:
+
+~~~bash
+python -B IRGS_Catalog/verify_catalog.py
+python -B -m unittest tools.tests.test_campaign_records tools.tests.test_historical_details tools.tests.test_historical_details_delivery tools.tests.test_standalone_catalog -v
+python -B -m unittest tools.tests.test_player_start_contract tools.tests.test_start_context_contract tools.tests.test_phase_response_contract -v
+~~~
+
+Run the relevant response/depot/design contracts and new exact Engine/App
+consumers too. Select the specific repository roots and imported runtime paths
+declared by each fixture README; legacy suites intentionally bind different
+historical sets. A skipped optional consumer is not compatibility evidence.
+For a new selected consumer capture actual creation, review/commit, state,
+received result, retry, save/reload and privacy assertions. Root guide-only
+changes need no Catalog hash refresh. After intentional Catalog source edits:
+
+~~~bash
+python -B tools/refresh_component_releases.py --component catalog
+python -B IRGS_Catalog/verify_catalog.py
+~~~
+
+Preserve all original supplied design/archive bytes. New revisions are separate
+authored IRGS records; the original archive's source names/citations retain
+authentic attribution. Scrub game/Questner branding only from IRGS-authored
+explanations, preserving the adopted concepts and historical source records.
+
+## Required boundaries and delivery
+
+Follow [the shared plan](ALPHA_4_0_PLAN.md), [acceptance register](ALPHA_4_0_ACCEPTANCE.json)
+and [version policy](VERSION_POLICY.md). Keep one Core, nine K-owners, six Director
+categories, actual authority/resources, actor-scoped knowledge and explicit
+review before atomic acceptance. Preserve immutable original results, recovery
+fences and the distinctions between intent, effect, outcome and presentation.
+No guessed universal durations, stock, permissions, dice or historical hours.
+
+Use synthetic temporary stores and exact declared dependencies. Preserve original
+archive bytes/citations, adopted canon, historical evidence and legacy fixture
+identities. Credentials, user saves, personal configuration, caches and runtime
+logs are not test inputs or committed source. Live provider evaluation requires
+a separately authorized finite budget; do not delay independent offline work.
+
+Publish only this repository. Deliver one meaningful implement/test/report
+increment at a time. Report task/gate IDs, full pushed SHA, exact dependencies and
+App pins, commands and actual passes/failures/skips, evidence, capability limits,
+next task and specific blockers. A schema, guide, hash refresh or fixture alone
+does not complete product behavior. Keep 3.4.3 metadata during component
+development; the coordinator controls the next unified edition and Alpha gate.
