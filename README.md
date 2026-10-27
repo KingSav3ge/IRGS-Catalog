@@ -16,9 +16,15 @@ Current development: [guide](DEVELOPMENT.md) · [chat continuation](CHAT_CONTINU
 
 [Alpha candidate contexts and communication evaluation](IRGS_Catalog/evaluation/alpha_contexts_v1/README.md)
 records two provisional campaign contexts, source/rule gaps and independent 3.4.3
-bridge checks. Ordinary starts do not yet expose the synthetic test channels;
+bridge checks. Their original Engine selection exposes no ordinary channels;
 neither candidate is qualified for Alpha. [Executed evidence](ALPHA_CONTEXT_VALIDATION.json)
 separates actual results from remaining owner dependencies.
+
+[Partial multi-session journey evaluation](IRGS_Catalog/evaluation/alpha_journeys_v1/README.md)
+adds actual reviewed fictional quay-contact and R00 journeys at a newer Engine
+candidate and the current selected App. App still pins the earlier Engine;
+candidate testing does not change that pin. [Executed evidence](ALPHA_JOURNEY_VALIDATION.json)
+records restart, retry, identical-byte restore and outstanding Alpha gaps.
 
 [Player-start requirements and baseline diagnostics](IRGS_Catalog/evaluation/player_starts_v1/README.md)
 separate verified historical references, eligible characters, explicit limited

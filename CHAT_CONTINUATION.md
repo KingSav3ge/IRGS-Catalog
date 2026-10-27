@@ -13,7 +13,9 @@ Current edition **3.4.3 Pre-Alpha**; target **4.0.0 Alpha**; previous release fi
    [your work order](COORDINATOR_WORK_ORDER.md). They supersede old next-task
    ordering. The start-context adoption set is already integrated in 3.4.3;
    dated pending-adoption reports are history, not a current blocker.
-3. Start: **A4-CAT-01 separate current communication/start consumers and A4-CAT-02 Alpha context/source/rule assessment, then A4-CAT-03 multi-session journeys.**
+3. Continue **A4-CAT-03** by extending the independent journeys as the missing
+   owner contracts and an adopted compatible App/Engine set become available;
+   develop the independent A4-CAT-04 grounding rubric in parallel.
 4. Publish versioned interface/evaluation handoffs early. Continue independent
    tasks while another owner's implementation is pending. Test real ordinary
    creation/interaction, not only a privileged fixture.
@@ -32,11 +34,18 @@ selected-channel fixtures. Both ordinary candidate communication views currently
 have no channels. The two-context matrix records bounded foundations and missing
 Alpha systems. **184 Python tests passed, zero skips; 150 frontend checks passed.**
 
-Next implement A4-CAT-03 multi-session actor instructions and evaluator-only
-expectations. Ordinary communication requires Engine A4-ENG-01 participant/channel
-selection plus matching App controls. NPC/institution, needs, risk/recovery and
-live-provider paths remain unqualified. Never treat privileged synthetic setup,
-source schemas or a passing bridge as sustained ordinary play or Alpha approval.
+The partial A4-CAT-03 delivery is recorded in
+[ALPHA_JOURNEY_VALIDATION.json](ALPHA_JOURNEY_VALIDATION.json) and its
+[independent fixture](IRGS_Catalog/evaluation/alpha_journeys_v1/README.md).
+Normal reviewed creation and real HTTP consumers run multi-session journeys in
+the fictional quay and R00, with restart, retries and identical-byte restore.
+Engine `ea0631b8fbf94f425fa003d81b6907445a9a43c5` supplies the quay contact;
+App `b3a53cfd11bbd3745253520b4e8ed6718c826ab8` still pins Engine
+`efc84364b86e640f5028bfac2dfd5ae3021695a9`, so testing the newer Engine is an
+explicit override, not adoption. The earlier no-channel observation remains
+valid for the old openings and R00. NPC/institution decisions, needs/recovery,
+conflict, older-branch restore and live-provider evaluation remain unmet. Never
+treat a schema or partial journey as sustained Alpha play or approval.
 
 Own IRGS_Catalog/: listings, previews, design/source documents, independent actor/evaluator fixtures and acceptance. Develop shared IRGS systems, not Rise alone. The target is
 sustained Solo play in two distinct ordinary campaign contexts, at least one

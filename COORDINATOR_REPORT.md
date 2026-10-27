@@ -1,83 +1,45 @@
-# Catalog Alpha context and communication handoff
+# Catalog partial Alpha journey handoff
 
-27 October 2026. Current edition **3.4.3 Pre-Alpha**; target 4.0.0 Alpha
-only after functional qualification. This is a bounded Catalog increment for
-A4-CAT-01 and A4-CAT-02, not Alpha qualification.
+27 October 2026. Edition **3.4.3 Pre-Alpha**; 4.0.0 Alpha remains subject
+to functional qualification. This is a partial A4-CAT-03 increment.
 
-The new `irgs-alpha-contexts-v1` fixture selects two provisional, independently
-created campaign contexts: the explicitly fictional new-human 1415 quay opening
-and the fictional R00 settlement. The source dossier identifies exact Engine
-source hashes and distinguishes sourced historical reference from fictional
-personal circumstances. Twelve gameplay areas record bounded adoption and
-missing rules/facts, named owners and concrete gaps. Actor instructions and
-evaluator-only truth are separate; neither supplies an initializer or authority.
+The separately versioned [journey fixture](IRGS_Catalog/evaluation/alpha_journeys_v1/README.md)
+provides actor instructions, evaluator-only expectations and a bounded evidence
+schema. Actual HTTP consumers create two independently reviewed ordinary worlds:
+a fictional 1415 quay contact and R00. The quay actor supplies exact testimony,
+observes, encounters a failed shortcut, takes an alternative, delivers a real
+dispatch and cannot deliver the same dispatch again. R00 walks, founds and
+finishes finite shelter work. Both continue across host restart, recover original
+results on retries and verify identical-byte Trash restore. Actor substitution
+is rejected and provider dispatch is forbidden. These tests do not establish NPC
+decisions, institutional reactions or broader sustained Alpha play.
 
-## Exact consumer selection
-
-| Source | Commit |
+| Selection | Exact commit |
 | --- | --- |
-| Engine | `efc84364b86e640f5028bfac2dfd5ae3021695a9` |
-| App | `de4e6926f6236f720365d552c69e02756ce18605` |
-| App's committed Catalog pointer | `6f927b00e12a3339861ac353bc38d03c68279662` |
+| Engine candidate | `ea0631b8fbf94f425fa003d81b6907445a9a43c5` |
+| App | `b3a53cfd11bbd3745253520b4e8ed6718c826ab8` |
+| App committed Engine pin | `efc84364b86e640f5028bfac2dfd5ae3021695a9` |
+| App committed Catalog pin | `6f927b00e12a3339861ac353bc38d03c68279662` |
 
-Tests explicitly select this Catalog candidate; App's committed gitlinks remain
-unchanged. Engine/App source checkouts are clean. Old fixture identities and
-validation records remain attributed to their original exact consumers.
+The newer Engine is an explicit test override. The App has not adopted that
+Engine or this Catalog candidate. Its actual committed dependency set passes
+integrity separately. The fictional `quay-contact-v1` participant is ordinary
+Engine content; the old quay opening and R00 do not gain communication channels.
+Existing selected synthetic bridge fixtures remain separate from these worlds.
 
-## Actual behavior and limits
+**191 Python tests passed with zero skips; 150 frontend checks passed.** The
+Python count comprises 108 Catalog checks, six independent HTTP consumers, 49
+Engine tests and 28 App tests. Catalog integrity verified 213 files, 44 previews,
+the complete 32-part archive (5,146 members, 5,145 bindings) and the existing
+response depot. Selected Engine/App source and App's pinned dependency integrity
+also passed. The [validation record](ALPHA_JOURNEY_VALIDATION.json) includes
+exact commands, hashes, synthetic observations and limitations. The previous
+handoff is preserved as [COORDINATOR_REPORT_ALPHA_CONTEXTS_01.md](COORDINATOR_REPORT_ALPHA_CONTEXTS_01.md).
 
-Two candidate worlds were independently created through actual HTTP reviewed
-creation. Both ordinary communication views have no channels; their absence is
-an observed capability boundary, not proof no people exist in the world. Engine
-A4-ENG-01 must provide legitimately received participant/channel selection before
-A4-G05 ordinary-play acceptance.
-
-Separate explicitly selected synthetic fixtures install test-only participants,
-received attributions, channels and custody for bridge testing. Independent HTTP
-cases check actor-scoped participant filtering, exact testimony and zero invented
-elapsed time, reviewed boolean acceptance, distinct offered/declined/fulfilled
-status and exact terms, refusal without transfer, authorized fulfillment with
-grain conservation, unauthorized actor rejection, competing acceptances, duplicate
-retry, restart and immutable original proposal lookup. These fixtures do not
-supply an ordinary start, NPC decision or permission in production.
-
-The adopted Henry path is also checked through actual precreation review,
-creation, actor-received Julian day with unknown hour, selected 20-second Engine
-observation and exact saved-result retry. Catalog checks exact source bytes for
-the 1415 reference, fictional quay configuration and R00 setup/runtime. Provider
-dispatch and direct transport are forbidden throughout these HTTP consumers.
-
-## Fresh checks
-
-**184 Python tests passed, zero skips; 150 frontend checks passed:**
-
-| Scope | Passed |
-| --- | ---: |
-| Catalog source/archive and contract checks | 106 |
-| Independent Catalog HTTP consumers | 5 |
-| Engine communication contract/runtime | 45 |
-| App communication/start/portfolio tests | 28 |
-| Frontend checks, separate from Python total | 150 |
-
-Catalog integrity verifies 206 files, all 44 previews and the original complete
-32-part archive, 5,146 members and 5,145 bindings. Engine and App source
-integrity pass, as does App's actual checked-out Engine/Catalog pinned set
-(84 App files). The historical archive, response depot and prior fixture/consumer
-identities remain unchanged.
-
-[ALPHA_CONTEXT_VALIDATION.json](ALPHA_CONTEXT_VALIDATION.json) records commands,
-exact dependencies, source hashes and remaining gaps. The prior report is preserved
-as `COORDINATOR_REPORT_START_CONTEXT_01.md`.
-
-## Remaining work
-
-A4-CAT-01 is partial until Engine A4-ENG-01 and App expose and qualify ordinary
-participant/channel selection. A4-CAT-02 has delivered provisional independent
-source/rule assessment, while the actual Alpha readiness requirements remain open.
-Next is A4-CAT-03: independent multi-session actor instructions, evaluator-only
-expectations and evidence for consequences, alternatives, recovery and privacy.
-
-Needs/recovery, consequential risk, NPC/local institution decisions, sustained
-ordinary cross-context play and live-provider evaluation require owner work.
-No Alpha gate is marked qualified; no live inference, native Windows, new browser
-qualification or 4.0 release is claimed. Only Catalog is published.
+A4-CAT-01 and A4-CAT-03 remain partial. Engine/App owners need to publish and
+adopt a compatible set and supply NPC/institution decisions, needs/recovery and
+selected consequential conflict; older-branch restore and its receipt fencing
+also need qualification. A4-CAT-04 needs an independent grounding rubric and
+eventually an authorized finite-budget live-provider evaluation. A4-G07/G09/G10
+and the other Alpha gates remain unqualified. No native Windows, new browser or
+live-provider qualification is claimed; no version bump or unified release was made.

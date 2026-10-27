@@ -43,15 +43,25 @@ integrity. See [fixture](IRGS_Catalog/evaluation/alpha_contexts_v1/README.md) an
 [executed evidence](ALPHA_CONTEXT_VALIDATION.json). This is partial A4-CAT-01
 and the A4-CAT-02 context assessment; A4-G02/G05/G07/G10 remain unqualified.
 
-Next: develop A4-CAT-03 independent multi-session journey instructions and
-evaluator-only expectations. Engine A4-ENG-01 must publish participant/channel
-selection for ordinary starts before ordinary communication acceptance can be
-executed; Engine's needs, NPC/institution and selected risk contracts and App
-controls are also needed for sustained play. Continue fixture/rubric design
-without inventing those capabilities. Live AI needs separate authorization and
-finite budget; coordinator owns exact-set Alpha, browser and Windows review.
+### Partial A4-CAT-03 delivery
 
-**A4-CAT-01 separate current communication/start consumers and A4-CAT-02 Alpha context/source/rule assessment, then A4-CAT-03 multi-session journeys.**
+[Independent actor journeys and evaluator expectations](IRGS_Catalog/evaluation/alpha_journeys_v1/README.md)
+now exercise normal reviewed creation in the fictional quay and R00, actual
+multi-step consequences, two host sessions, exact retries and identical-byte
+Trash restore. The new quay contact is real ordinary-start content in Engine
+`ea0631b8fbf94f425fa003d81b6907445a9a43c5`; App
+`b3a53cfd11bbd3745253520b4e8ed6718c826ab8` still pins Engine
+`efc84364b86e640f5028bfac2dfd5ae3021695a9`, and the test explicitly overrides
+that pin. The older context evidence remains unchanged. The new run passes
+191 Python tests without skips and 150 frontend checks; Catalog and selected
+source and pinned-set integrity pass. [Evidence](ALPHA_JOURNEY_VALIDATION.json)
+records precise commands, observations and limitations.
+
+Next extend A4-CAT-03 once Engine/App supply compatible adoption, NPC and
+institution decisions, needs/recovery, risk/conflict and older-branch restore.
+Develop A4-CAT-04's independent grounding rubric now. Live AI needs separate
+authorization and a finite budget; coordinator owns exact-set Alpha, browser
+and Windows review. No Alpha gate is qualified by this increment.
 
 Own IRGS_Catalog/: listings, previews, design/source documents, independent actor/evaluator fixtures and acceptance. Publish only KingSav3ge/IRGS-Catalog/main. The coordinator reviews a
 viable compatible Engine/App/Catalog set and owns unified integration/publication.

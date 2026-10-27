@@ -13,10 +13,9 @@ profiles and Kira canon. Describe required behavior and independently test it;
 do not implement a second runtime or write privileged setup into ordinary actor
 instructions.
 
-**Start A4-CAT-01 and A4-CAT-02 now:** qualify the existing communication bridge
-at exact published sources in a separate consumer selection, and select the two
-Alpha contexts with an explicit gameplay/source/rule gap matrix. Do not spend
-the next cycle expanding concept counts. Shared systems and sustained ordinary
+The first A4-CAT-01/02 assessment and partial A4-CAT-03 journey evaluation are
+delivered. Continue A4-CAT-03 as owner implementations land and develop the
+A4-CAT-04 grounding rubric independently. Shared systems and sustained ordinary
 play take priority over more preview copy.
 
 ## Implementation queue
@@ -40,9 +39,15 @@ and Henry's bounded observation keep their real, limited scope.
 The first A4-CAT-01/02 delivery is in [ALPHA_CONTEXT_VALIDATION.json](ALPHA_CONTEXT_VALIDATION.json).
 It selects two provisional contexts and independently checks the published bridge,
 while distinguishing ordinary starts with no channel from selected synthetic
-fixtures. A4-CAT-01 remains partial until Engine publishes ordinary participant/
-channel selection and the matching App path is qualified. Next: A4-CAT-03; all
-Alpha gates remain unqualified.
+fixtures. [ALPHA_JOURNEY_VALIDATION.json](ALPHA_JOURNEY_VALIDATION.json) adds
+actual two-session quay and R00 consumers, including an ordinary fictional quay
+contact from Engine `ea0631b8fbf94f425fa003d81b6907445a9a43c5`. App
+`b3a53cfd11bbd3745253520b4e8ed6718c826ab8` still pins earlier Engine
+`efc84364b86e640f5028bfac2dfd5ae3021695a9`; the new selection is an override.
+A4-CAT-01/03 remain partial. Extend A4-CAT-03 when NPC/institution decisions,
+needs/recovery, conflict and older-branch recovery exist; advance A4-CAT-04's
+offline rubric without claiming live-provider quality. All Alpha gates remain
+unqualified.
 
 Keep new Alpha requirements/evaluation separately versioned under
 IRGS_Catalog/evaluation/ and designs under the existing design structure.
