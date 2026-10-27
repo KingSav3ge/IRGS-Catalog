@@ -37,6 +37,13 @@ and Henry's bounded observation keep their real, limited scope.
 
 ## Contract and QA handoff
 
+The first A4-CAT-01/02 delivery is in [ALPHA_CONTEXT_VALIDATION.json](ALPHA_CONTEXT_VALIDATION.json).
+It selects two provisional contexts and independently checks the published bridge,
+while distinguishing ordinary starts with no channel from selected synthetic
+fixtures. A4-CAT-01 remains partial until Engine publishes ordinary participant/
+channel selection and the matching App path is qualified. Next: A4-CAT-03; all
+Alpha gates remain unqualified.
+
 Keep new Alpha requirements/evaluation separately versioned under
 IRGS_Catalog/evaluation/ and designs under the existing design structure.
 A source dossier or schema certifies no Engine/App implementation. Publish

@@ -16,6 +16,41 @@ published 3.4.3 integration.
 
 ## Current assignment and ownership
 
+### First Catalog Alpha increment delivered
+
+`irgs-alpha-contexts-v1` selects the fictional 1415 quay opening and R00 as
+provisional candidates in distinct campaign families. Its actor instructions,
+separate evaluator matrix and source-bound dossier assess twelve gameplay areas
+without claiming either context is Alpha-qualified. Missing ordinary participant/
+channel selection, sustained NPC/institution decisions, needs/recovery and a
+consequential risk profile remain explicit owner gaps.
+
+The new independent HTTP consumers select published Engine
+`efc84364b86e640f5028bfac2dfd5ae3021695a9` and App
+`de4e6926f6236f720365d552c69e02756ce18605`; App commits Catalog
+`6f927b00e12a3339861ac353bc38d03c68279662`. They exercise real reviewed HTTP
+creation in both candidate contexts and confirm their ordinary communication
+views expose no channels. Separate, explicitly privileged synthetic fixtures
+qualify actual bridge testimony, refusal/acceptance, conserved fulfillment,
+unauthorized/competing attempts and retry/restart. A separate real Henry start
+checks adopted review, received day and actual observation/recovery. No source
+or test claims the synthetic channels are available in ordinary player starts.
+
+Fresh scope: **184 Python tests passed, zero skips, and 150 frontend checks
+passed**. Catalog integrity verifies 206 source files, 44 previews and the full
+original archive. Engine, App and the App's actual pinned component set pass
+integrity. See [fixture](IRGS_Catalog/evaluation/alpha_contexts_v1/README.md) and
+[executed evidence](ALPHA_CONTEXT_VALIDATION.json). This is partial A4-CAT-01
+and the A4-CAT-02 context assessment; A4-G02/G05/G07/G10 remain unqualified.
+
+Next: develop A4-CAT-03 independent multi-session journey instructions and
+evaluator-only expectations. Engine A4-ENG-01 must publish participant/channel
+selection for ordinary starts before ordinary communication acceptance can be
+executed; Engine's needs, NPC/institution and selected risk contracts and App
+controls are also needed for sustained play. Continue fixture/rubric design
+without inventing those capabilities. Live AI needs separate authorization and
+finite budget; coordinator owns exact-set Alpha, browser and Windows review.
+
 **A4-CAT-01 separate current communication/start consumers and A4-CAT-02 Alpha context/source/rule assessment, then A4-CAT-03 multi-session journeys.**
 
 Own IRGS_Catalog/: listings, previews, design/source documents, independent actor/evaluator fixtures and acceptance. Publish only KingSav3ge/IRGS-Catalog/main. The coordinator reviews a

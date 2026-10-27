@@ -23,6 +23,21 @@ Current edition **3.4.3 Pre-Alpha**; target **4.0.0 Alpha**; previous release fi
 
 ## Scope and stopping condition
 
+The first A4-CAT-01/02 increment is recorded in
+[ALPHA_CONTEXT_VALIDATION.json](ALPHA_CONTEXT_VALIDATION.json) and
+[the separate fixture](IRGS_Catalog/evaluation/alpha_contexts_v1/README.md).
+It checks 3.4.3 adopted starts and the communication bridge at exact published
+sources, including real ordinary creation and separately labelled synthetic
+selected-channel fixtures. Both ordinary candidate communication views currently
+have no channels. The two-context matrix records bounded foundations and missing
+Alpha systems. **184 Python tests passed, zero skips; 150 frontend checks passed.**
+
+Next implement A4-CAT-03 multi-session actor instructions and evaluator-only
+expectations. Ordinary communication requires Engine A4-ENG-01 participant/channel
+selection plus matching App controls. NPC/institution, needs, risk/recovery and
+live-provider paths remain unqualified. Never treat privileged synthetic setup,
+source schemas or a passing bridge as sustained ordinary play or Alpha approval.
+
 Own IRGS_Catalog/: listings, previews, design/source documents, independent actor/evaluator fixtures and acceptance. Develop shared IRGS systems, not Rise alone. The target is
 sustained Solo play in two distinct ordinary campaign contexts, at least one
 non-Rise, with real decisions, consequences, NPC responses, time/resources,

@@ -14,6 +14,12 @@ records below retain their original tested development identities.
 
 Current development: [guide](DEVELOPMENT.md) · [chat continuation](CHAT_CONTINUATION.md).
 
+[Alpha candidate contexts and communication evaluation](IRGS_Catalog/evaluation/alpha_contexts_v1/README.md)
+records two provisional campaign contexts, source/rule gaps and independent 3.4.3
+bridge checks. Ordinary starts do not yet expose the synthetic test channels;
+neither candidate is qualified for Alpha. [Executed evidence](ALPHA_CONTEXT_VALIDATION.json)
+separates actual results from remaining owner dependencies.
+
 [Player-start requirements and baseline diagnostics](IRGS_Catalog/evaluation/player_starts_v1/README.md)
 separate verified historical references, eligible characters, explicit limited
 modes and actual executable slices. The John/1415 requirements retain source and
