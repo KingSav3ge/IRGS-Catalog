@@ -1,5 +1,28 @@
 # Alpha 4.0 work order — IRGS-Catalog
 
+## Coordinator review and world-builder direction — 28 October 2026
+
+Read [the current review](COORDINATOR_REVIEW_2026_10_28.md) and
+[its executed scope](COORDINATOR_REVIEW_2026_10_28.json). This priority supersedes
+older first-task ordering below; existing task IDs and historical evidence remain.
+
+The scoped context assessment and partial journey consumers pass at their
+declared revisions. Add a separately selected current/adopted App+Engine
+consumer, including the new R00 initial participants, without repinning old
+fixtures. Continue A4-CAT-03/04's unmet gameplay/AI evaluation requirements.
+WB-CAT-01/02 authoring fixtures/source preparation can proceed independently.
+
+The user directs a shared development/Creator Workshop world builder:
+[implementation plan and owner tasks](WORLD_BUILDER_PLAN.md).
+The supplied executable is uninspected because it exceeds the attachment tool's
+32 MiB transfer limit. Do not claim recovered code, observed features or a working
+editor. Develop shared data/initialization/editor contracts without creating a
+second simulator or delaying the Alpha gameplay critical path.
+
+Current edition remains 3.4.3 Pre-Alpha. A joined 3.4.4 publication is held for
+the review's fixes, compatible pins, fresh execution capture and final qualification.
+No Alpha gate is closed by this documentation update.
+
 Current product: **3.4.3 Pre-Alpha**. Target: **functional 4.0.0 Alpha**.
 The coordinator has already qualified and published the adopted start-context
 set. Original fixtures that record pending App adoption retain their historical
