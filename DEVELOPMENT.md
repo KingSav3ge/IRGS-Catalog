@@ -1,5 +1,18 @@
 # IRGS Catalog development guide
 
+## Current ordinary communication consumer — 28 October 2026
+
+The separate [current selection](IRGS_Catalog/evaluation/current_ordinary_communication_v1/README.md)
+tests actual reviewed R00 and fictional quay starts, scoped introductions,
+explicit speech, stale reviews, unauthorized actors, departure rejection,
+restart and retry. Engine `f029149cb52721c823e9d416bdf96918d53b92ce` and App
+`42c4cdf62b8bcc571d5524170baced1294aacf55` are selected with explicit Engine
+and Catalog overrides; App has not adopted those source revisions. Prior fixture
+identities remain unchanged. [Evidence and check scope](CURRENT_ORDINARY_VALIDATION.json)
+do not qualify autonomous decisions, ordinary offers or the Alpha gates.
+Next test the compatible adopted pins when available and progress the original
+world-builder example packs and independent AI grounding rubric.
+
 ## Coordinator review and world-builder direction — 28 October 2026
 
 Read [the current review](COORDINATOR_REVIEW_2026_10_28.md) and

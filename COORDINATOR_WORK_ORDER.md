@@ -7,10 +7,14 @@ Read [the current review](COORDINATOR_REVIEW_2026_10_28.md) and
 older first-task ordering below; existing task IDs and historical evidence remain.
 
 The scoped context assessment and partial journey consumers pass at their
-declared revisions. Add a separately selected current/adopted App+Engine
-consumer, including the new R00 initial participants, without repinning old
-fixtures. Continue A4-CAT-03/04's unmet gameplay/AI evaluation requirements.
-WB-CAT-01/02 authoring fixtures/source preparation can proceed independently.
+declared revisions. The separate [current ordinary consumer](IRGS_Catalog/evaluation/current_ordinary_communication_v1/README.md)
+checks the new R00 participants and quay contact against published Engine
+`f029149cb52721c823e9d416bdf96918d53b92ce` and App
+`42c4cdf62b8bcc571d5524170baced1294aacf55` using explicit Engine and Catalog
+overrides; App's committed pins are unchanged. See [actual execution](CURRENT_ORDINARY_VALIDATION.json).
+Qualify a separately selected adopted set when compatible pins are published.
+Continue A4-CAT-03/04's unmet gameplay/AI evaluation requirements; WB-CAT-01/02
+authoring fixtures/source preparation can proceed independently.
 
 The user directs a shared development/Creator Workshop world builder:
 [implementation plan and owner tasks](WORLD_BUILDER_PLAN.md).

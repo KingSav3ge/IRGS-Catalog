@@ -7,10 +7,15 @@ Read [the current review](COORDINATOR_REVIEW_2026_10_28.md) and
 older first-task ordering below; existing task IDs and historical evidence remain.
 
 The scoped context assessment and partial journey consumers pass at their
-declared revisions. Add a separately selected current/adopted App+Engine
-consumer, including the new R00 initial participants, without repinning old
-fixtures. Continue A4-CAT-03/04's unmet gameplay/AI evaluation requirements.
-WB-CAT-01/02 authoring fixtures/source preparation can proceed independently.
+declared revisions. A separate [current ordinary consumer](IRGS_Catalog/evaluation/current_ordinary_communication_v1/README.md)
+now checks the new R00 participants and the quay contact against published
+Engine `f029149cb52721c823e9d416bdf96918d53b92ce` and App
+`42c4cdf62b8bcc571d5524170baced1294aacf55`. App's Engine and Catalog gitlinks
+remain older, so these are explicit overrides, not an adopted set. See
+[executed evidence](CURRENT_ORDINARY_VALIDATION.json); preserve earlier fixtures.
+Next qualify the adopted set when App publishes compatible pins, continue
+A4-CAT-03/04's unmet gameplay/AI evaluation requirements, and advance original
+WB-CAT-01/02 authoring fixtures and provenance independently.
 
 The user directs a shared development/Creator Workshop world builder:
 [implementation plan and owner tasks](WORLD_BUILDER_PLAN.md).
@@ -55,8 +60,8 @@ The first A4-CAT-01/02 increment is recorded in
 [the separate fixture](IRGS_Catalog/evaluation/alpha_contexts_v1/README.md).
 It checks 3.4.3 adopted starts and the communication bridge at exact published
 sources, including real ordinary creation and separately labelled synthetic
-selected-channel fixtures. Both ordinary candidate communication views currently
-have no channels. The two-context matrix records bounded foundations and missing
+selected-channel fixtures. At that historical source selection both ordinary
+candidate communication views had no channels. The two-context matrix records bounded foundations and missing
 Alpha systems. **184 Python tests passed, zero skips; 150 frontend checks passed.**
 
 The partial A4-CAT-03 delivery is recorded in

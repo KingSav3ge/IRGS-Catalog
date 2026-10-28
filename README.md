@@ -14,6 +14,12 @@ records below retain their original tested development identities.
 
 Current development: [guide](DEVELOPMENT.md) · [chat continuation](CHAT_CONTINUATION.md).
 
+[Current ordinary communication consumers](IRGS_Catalog/evaluation/current_ordinary_communication_v1/README.md)
+independently check reviewed R00 introductions and the fictional quay contact
+against exact published App and Engine sources. The Engine and Catalog selections
+are explicit overrides of App's earlier pins; [execution and gaps](CURRENT_ORDINARY_VALIDATION.json)
+do not claim an adopted dependency set or Alpha qualification.
+
 [Alpha candidate contexts and communication evaluation](IRGS_Catalog/evaluation/alpha_contexts_v1/README.md)
 records two provisional campaign contexts, source/rule gaps and independent 3.4.3
 bridge checks. Their original Engine selection exposes no ordinary channels;
