@@ -1,4 +1,19 @@
-# IRGS Catalog — 3.4.3 development
+# IRGS Catalog — 3.4.4 Pre-Alpha
+
+## Coordinated 3.4.4 Pre-Alpha continuation
+
+Current coordinated edition: **3.4.4 Pre-Alpha**; previous release field: **3.3.3**.
+The selected travel and ordinary communication increment preserves one Core,
+explicit acceptance, actor filtering, conserved stock/time and original-result
+recovery. No Alpha gate is closed and live/provider/Windows qualification remains open.
+
+Ordinary communication consumers are delivered within their original selected revisions. Preserve all fixture identities. Next: A4-CAT-04 grounding/quality rubric and WB-CAT-01/02 original world-pack examples/source dossiers; qualify later adopted sets separately.
+
+This current ordering supersedes earlier review and pending-3.4.3/3.4.4 notes below.
+Original tested source identities and older evidence remain unchanged.
+The coordinator owns the exact all-three integration and final package review.
+Every later unified main push increments the edition; next is 3.4.5 Pre-Alpha.
+Continue toward the shared Alpha 4.0 functional gates and World Builder plan.
 
 Current stage: **3.4.3 Pre-Alpha**. Development target: **functional 4.0.0 Alpha**.
 Start with [the Alpha plan](ALPHA_4_0_PLAN.md),
