@@ -16,7 +16,8 @@ from pathlib import Path
 for name in ('response_depot_compatibility', 'integrated_response_compatibility',
              'development_interop_compatibility', 'phase_response_compatibility', 'player_start_evaluation',
              'start_context_evaluation', 'alpha_context_evaluation', 'alpha_journey_evaluation',
-             'grounding_quality', 'world_authoring_examples', 'intent_world_draft_evaluation'):
+             'grounding_quality', 'world_authoring_examples', 'intent_world_draft_evaluation',
+             'adopted_consequences_evaluation'):
     sys.modules[name] = types.ModuleType(name)  # Must never supply Catalog code.
 path = Path(sys.argv[1]) / 'IRGS_Catalog/verify_catalog.py'
 spec = importlib.util.spec_from_file_location('isolated_catalog', path)
@@ -34,6 +35,7 @@ assert result['alpha_journey_evaluation']['runtime_execution_verified_by_schema'
 assert result['grounding_quality']['semantic_inference_performed'] is False
 assert result['world_authoring_examples']['world_creation_performed'] is False
 assert result['intent_world_draft_evaluation']['runtime_execution_verified_by_schema'] is False
+assert result['adopted_consequences_evaluation']['runtime_execution_verified_by_schema'] is False
 """
         with tempfile.TemporaryDirectory(prefix='irgs-catalog-isolated-') as directory:
             result = subprocess.run([sys.executable, '-I', '-B', '-c', code, str(ROOT)],

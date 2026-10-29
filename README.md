@@ -1,5 +1,8 @@
 # WorldWard-Catalog — 3.4.6 Pre-Alpha
 
+[Independent 3.4.6 consequence and draft evaluation](IRGS_Catalog/evaluation/adopted_consequences_v1/README.md)
+records exact selected sources and remaining gameplay/authoring requirements.
+
 ## Current 3.4.6 direction — 29 October 2026
 
 Current edition: **3.4.6 Pre-Alpha**; previous_version: **3.3.3**. Next unified main publication: **3.4.7**. Functional 4.0.0 Alpha remains unqualified.

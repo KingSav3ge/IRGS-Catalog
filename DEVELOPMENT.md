@@ -12,6 +12,12 @@ Preserve one authoritative Core, the existing nine K owners and six Directors, a
 
 **A4-CAT-03/04 and WB-CAT-01/02: independently selected consequences and draft coverage.**
 
+The [separate 3.4.6 evaluation](IRGS_Catalog/evaluation/adopted_consequences_v1/README.md)
+exercises both published bounded draft profiles and actual two-context decisions
+at exact adopted Engine/App pins, with this Catalog candidate selected explicitly.
+[Results](ADOPTED_CONSEQUENCES_VALIDATION.json) do not certify model quality,
+NPC decisions, general world authoring or Alpha readiness.
+
 Grounding rubric, original world-authoring examples and ordinary intent/recovery consumers are delivered. Original fixtures retain their exact source guards. Extend independent journeys to newly selected meaningful consequences and both bounded draft profiles, recording each unsupported requirement and its owner. Separate actor inputs from evaluator truth, actual Core effects from narration, human-supplied semantic judgments from verified claims, and fake transport from live-provider quality.
 
 ## Development and handoff
