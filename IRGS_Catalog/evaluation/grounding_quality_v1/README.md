@@ -20,7 +20,7 @@ unknown, never a pass. Adversarial examples include a valid but semantically wro
 action, testimony represented as fact, a proposal claimed as an effect, leaked
 private information, and a failed action narrated as success.
 
-`grounding_quality.assess` implements a conservative deterministic check for
+`grounding_quality.assess_proposal`, `grounding_quality.assess_receipt` and `grounding_quality.assess_review` implements a conservative deterministic check for
 exact intent, allowed actions and source references, receipt identity, literal
 committed summary and explicit per-dimension reviewer judgments. It cannot infer
 semantics, truth, privacy or quality from free text and never establishes live AI

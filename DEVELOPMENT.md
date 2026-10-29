@@ -1,48 +1,21 @@
-# IRGS-Catalog development guide
+# WorldWard-Catalog development guide
 
-Current edition: **3.4.5 Pre-Alpha**. Previous release field: **3.3.3**. Target: functional **4.0.0 Alpha** under ALPHA_4_0_PLAN.md and ALPHA_4_0_ACCEPTANCE.json. All Alpha gates remain open. Next unified edition: **3.4.6**.
+Current edition: **3.4.6 Pre-Alpha**; previous_version: **3.3.3**. Next unified main publication: **3.4.7**. Functional 4.0.0 Alpha remains unqualified.
 
-This release adopts the user-requested chronological story UI: one reading surface, oldest available entries first, then current choices and the retained response form. Drafts, received statuses, exact result text, source gaps and original request recovery remain. App UI implementation: `7d687616b588b2fda3c4f58d445f82d5a13111e9`; exact release pins are recorded by the coordinator in joined COMPONENTS.json. Engine/Catalog product behavior is the qualified 3.4.4 baseline; their current release changes align guides and edition metadata. This is not a new Alpha or gameplay-resolution claim.
+WorldWard is developed by T!DEMARCH Studios and powered by Fulcrum Engine. IRGS remains the internal initiative; technical paths, schemas, fixture identities, saves and original archives retain their existing names. Public repositories are KingSav3ge/WorldWard, KingSav3ge/Fulcrum-Engine, KingSav3ge/WORLDWARD-APP-WEB and KingSav3ge/WorldWard-Catalog. Catalog/Atlas product naming remains open.
 
-Develop IRGS across campaigns and themes, retaining one authoritative Core, nine K owners and the existing six Director categories. Rise R00 is one fictional regression slice. Ordinary speech remains received testimony; an offer is not consent or fulfillment. Storage revision, causal sequence, elapsed work and civil time remain distinct. Full C2, wider autonomous NPC/institution decisions, needs/recovery, selected conflict and sustained AI play remain unfinished. Historical Details is complete; preserve original archive records and canon.
+This edition joins reviewed intentions, protected server-side POSIX operator setup, bounded communication/offer/world-draft contracts, independent Catalog grounding and recovery consumers, and the public branding. The App preserves one chronological reading surface with choices and the retained response form below the newest entry. Optional offers are explicit attempts, not NPC consent or stock transfer. Draft previews create disposable in-memory candidates, not saved campaigns or a general world editor.
 
-Read AGENTS.md, CHAT_CONTINUATION.md and COORDINATOR_WORK_ORDER.md. The continuation and work order are the current implementation instructions; dated evidence retains its original source selection.
+Preserve one authoritative Core, the existing nine K owners and six Directors, actor-scoped information, conserved resources/capacity, atomic rejection and original-result recovery. Distinguish causal sequence, revision, elapsed work and civil time. Broader NPC/institution behavior, needs/recovery, selected conflict, arbitrary world authoring, live-model quality, native Windows and full Alpha qualification remain open.
 
-## Current task
+## Next implementation
 
-**A4-CAT-04: grounding/quality rubric and independent ordinary-context journeys.**
+**A4-CAT-03/04 and WB-CAT-01/02: independently selected consequences and draft coverage.**
 
-The [first offline rubric](IRGS_Catalog/evaluation/grounding_quality_v1/README.md)
-checks proposal identity/source bounds and actual structured receipts while
-recording reviewer-only semantic judgments as claims. Its separate 3.4.5 exact
-selection exercises ordinary quay and R00 journeys, no-provider local rendering
-and in-process fake proposals; [results and gaps](GROUNDING_QUALITY_VALIDATION.json)
-do not establish live quality. The [world-authoring examples](IRGS_Catalog/evaluation/authoring_examples_v1/README.md)
-are original fictional requirements and source metadata, not Engine DTOs or
-executable worlds. Continue the remaining Alpha systems and qualify those examples
-only after the Engine and App authoring contracts and playtest path exist.
+Grounding rubric, original world-authoring examples and ordinary intent/recovery consumers are delivered. Original fixtures retain their exact source guards. Extend independent journeys to newly selected meaningful consequences and both bounded draft profiles, recording each unsupported requirement and its owner. Separate actor inputs from evaluator truth, actual Core effects from narration, human-supplied semantic judgments from verified claims, and fake transport from live-provider quality.
 
-Engine has since published `irgs-world-draft-1` for fictional R00 choices only.
-The [separately selected candidate](IRGS_Catalog/evaluation/intent_world_draft_v1/README.md)
-tests that actual draft review/initializer and reviewed App intents across R00
-and a fictional non-Rise quay, including failure, retry and older synthetic
-checkpoint restore. The newer Engine and Catalog are explicit overrides of App's
-committed pins. [Evidence](INTENT_WORLD_DRAFT_VALIDATION.json) records scope;
-non-Rise world drafts, arbitrary authored topology/assets, package import/export
-and creator editor integration remain open.
+## Development and handoff
 
-Publish actor-visible inputs separately from evaluator truth and measure grounded narration/intent mapping against actual committed results. Extend independent sustained-play requirements in two ordinary contexts including non-Rise; record each unmet mechanic and owner. Preserve old fixture IDs, source guards and historical claims. Qualify each new adopted component set through a separate exact selection; fake transport and live model quality remain distinct evidence.
+Preserve edits and local commits; fetch the correct origin and fast-forward only clean compatible source. Read AGENTS.md and this current work order. Do not reset, clean or auto-stash over user work. Use temporary synthetic stores; never open private campaign saves for qualification. Refresh only the owning component hashes after intentional changes, then verify and run relevant real HTTP/browser journeys. Report exact commit, pins, actual checks, skips, limitations and remaining work. Historical evidence is not a fresh execution. Push only this owner repository; the coordinator reviews all three compatible deliveries and runs the full versioned joined/package gate. Work orders and watcher reports do not wake chats, implement tasks or qualify a live model/Windows host.
 
-## Verification
-
-Use Python 3.12+ without -O and Node 20+. Start with:
-
-```bash
-python -B IRGS_Catalog/verify_catalog.py
-```
-
-Run relevant runtime/Web tests and real browser/HTTP journeys for changed behavior. The external historical save fixture is excluded; native Windows checks remain unqualified on Linux. No live-provider quality claim follows from synthetic transport. Keep QA logs and packages outside source. Inspect any integrity failure; refreshing hashes is not a test.
-
-App pins Engine/ and Catalog/ explicitly. Initialize absent dependencies and move only clean dependencies to the committed pins, preserving local work. A new pin needs its own compatibility checks. The coordinator imports one exact approved set through the integration gate, captures fresh execution evidence, runs joined and clean-package qualification, and increments every unified main push.
-
-The canonical runtime remains IRGS_3_3/ and the canonical App IRGS_Web/. Preserve saves, personal configuration, Git history, original archives and accurate evidence; superseded generated distributions can be removed after replacement qualification.
+Follow ALPHA_4_0_PLAN.md, ALPHA_4_0_ACCEPTANCE.json and WORLD_BUILDER_PLAN.md. Preserve original supplied archives, accurate historical evidence, saves and personal settings. Remove superseded generated distributions only after their replacements pass.

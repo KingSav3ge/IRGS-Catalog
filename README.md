@@ -1,4 +1,16 @@
-# IRGS Catalog — 3.4.5 Pre-Alpha
+# WorldWard-Catalog — 3.4.6 Pre-Alpha
+
+## Current 3.4.6 direction — 29 October 2026
+
+Current edition: **3.4.6 Pre-Alpha**; previous_version: **3.3.3**. Next unified main publication: **3.4.7**. Functional 4.0.0 Alpha remains unqualified.
+
+WorldWard is developed by T!DEMARCH Studios and powered by Fulcrum Engine. IRGS remains the internal initiative; technical paths, schemas, fixture identities, saves and original archives retain their existing names. Public repositories are KingSav3ge/WorldWard, KingSav3ge/Fulcrum-Engine, KingSav3ge/WORLDWARD-APP-WEB and KingSav3ge/WorldWard-Catalog. Catalog/Atlas product naming remains open.
+
+This edition joins reviewed intentions, protected server-side POSIX operator setup, bounded communication/offer/world-draft contracts, independent Catalog grounding and recovery consumers, and the public branding. The App preserves one chronological reading surface with choices and the retained response form below the newest entry. Optional offers are explicit attempts, not NPC consent or stock transfer. Draft previews create disposable in-memory candidates, not saved campaigns or a general world editor.
+
+Preserve one authoritative Core, the existing nine K owners and six Directors, actor-scoped information, conserved resources/capacity, atomic rejection and original-result recovery. Distinguish causal sequence, revision, elapsed work and civil time. Broader NPC/institution behavior, needs/recovery, selected conflict, arbitrary world authoring, live-model quality, native Windows and full Alpha qualification remain open.
+
+The current CHAT_CONTINUATION.md and COORDINATOR_WORK_ORDER.md supersede older task ordering below. Dated evidence retains its original scope.
 
 The [working brand architecture](BRAND_ARCHITECTURE.md) records the user's
 leading studio, platform and engine names subject to clearance. IRGS remains the
@@ -81,12 +93,12 @@ John, new-character modes and R00. It preserves source uncertainty, received
 civil-day precision and actual local elapsed results. [Evidence](START_CONTEXT_VALIDATION.json)
 separates executed Engine consumers from pending adopted-App acceptance.
 
-Independent campaign catalogue data and design source for [IRGS](https://github.com/KingSav3ge/IRGS). The App viewer remains in [IRGS-APP-WEB](https://github.com/KingSav3ge/IRGS-APP-WEB); technical content libraries, profiles, campaign canon and initializers remain in [IRGS-Engine](https://github.com/KingSav3ge/IRGS-Engine).
+Independent campaign catalogue data and design source for [IRGS](https://github.com/KingSav3ge/WorldWard). The App viewer remains in [IRGS-APP-WEB](https://github.com/KingSav3ge/WORLDWARD-APP-WEB); technical content libraries, profiles, campaign canon and initializers remain in [IRGS-Engine](https://github.com/KingSav3ge/Fulcrum-Engine).
 
 `IRGS_Catalog/data/` contains campaign discovery listings and 44 concept previews: 31 launch targets, 12 future campaigns and one independent simulation system. These are not 44 released games. `IRGS_Catalog/design/campaign_catalogue/` preserves the original v0.4 specification and implementation scope.
 
 ```bash
-git clone https://github.com/KingSav3ge/IRGS-Catalog.git
+git clone https://github.com/KingSav3ge/WorldWard-Catalog.git
 cd IRGS-Catalog
 python -B IRGS_Catalog/verify_catalog.py
 ```
@@ -99,7 +111,7 @@ references. Duplicate IDs and release, entitlement or runtime availability claim
 in preview inputs fail even after source hashes are refreshed. Internal drafts
 remain valid source records; App owns their exclusion from public projection.
 
-The App pins this repository in its `Catalog/` submodule. Qualify a specific Catalog commit with the App and its pinned Engine before committing a dependency update. The joined `IRGS/main` keeps complete sources in `IRGS_Catalog/` and records the exact Catalog commit in `COMPONENTS.json`. See [integration instructions](https://github.com/KingSav3ge/IRGS/blob/main/COMPONENT_REPOSITORIES.md).
+The App pins this repository in its `Catalog/` submodule. Qualify a specific Catalog commit with the App and its pinned Engine before committing a dependency update. The joined `IRGS/main` keeps complete sources in `IRGS_Catalog/` and records the exact Catalog commit in `COMPONENTS.json`. See [integration instructions](https://github.com/KingSav3ge/WorldWard/blob/main/COMPONENT_REPOSITORIES.md).
 
 Preview data cannot grant playable starts, entitlements, live effects or full release approval. Existing campaigns retain their actual committed world and history. Kira v0.5 working canon belongs to the Engine; catalogue descriptions cannot supersede it.
 

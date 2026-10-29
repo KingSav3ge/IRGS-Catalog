@@ -126,7 +126,7 @@
     "evaluation/current_ordinary_communication_v1/evaluator_only/expectations.json": "8647dad291e1c77368bafe86b8a2b74be406f773289995dc87af87f47d5bfd22",
     "evaluation/development_interop_v1/README.md": "e77b309523b27334bb0e14cc65b6881497aec601dd989ef79773e1898020f79e",
     "evaluation/development_interop_v1/compatibility.json": "0b6fe6eb24a67e5b3e37d52da5fe38a98f1892ef6a67c495075692ac4e7f3e85",
-    "evaluation/grounding_quality_v1/README.md": "4f29438cd92e20c347b2bb798430b8f1cc13d7f0b17ae927040e4ee060101c19",
+    "evaluation/grounding_quality_v1/README.md": "4a3a8765ac83b2685774f82f05df7d0d47fd97bd103a92428519a29f5ffacd2d",
     "evaluation/grounding_quality_v1/actor_inputs/cases.json": "6a9b0d0426221804bedc50fba86b16a63c14056f888c981c0640412b71e6afbd",
     "evaluation/grounding_quality_v1/evaluator_only/requirements.json": "0836bd22da709bac8aacc635e6b9f2fe9a74fc749bf656bdc3ad46ab3fd93424",
     "evaluation/integrated_responses_v1/README.md": "d84903473b486c58a443e80aef0403a9d3f8d6f31e81f99d9bd22258c095b258",

@@ -1,46 +1,21 @@
-# Continue IRGS-Catalog development
+# Continue WorldWard-Catalog
 
-Current edition: **3.4.5 Pre-Alpha**. Previous release field: **3.3.3**. Target: functional **4.0.0 Alpha** under ALPHA_4_0_PLAN.md and ALPHA_4_0_ACCEPTANCE.json. All Alpha gates remain open. Next unified edition: **3.4.6**.
+Current edition: **3.4.6 Pre-Alpha**; previous_version: **3.3.3**. Next unified main publication: **3.4.7**. Functional 4.0.0 Alpha remains unqualified.
 
-This release adopts the user-requested chronological story UI: one reading surface, oldest available entries first, then current choices and the retained response form. Drafts, received statuses, exact result text, source gaps and original request recovery remain. App UI implementation: `7d687616b588b2fda3c4f58d445f82d5a13111e9`; exact release pins are recorded by the coordinator in joined COMPONENTS.json. Engine/Catalog product behavior is the qualified 3.4.4 baseline; their current release changes align guides and edition metadata. This is not a new Alpha or gameplay-resolution claim.
+WorldWard is developed by T!DEMARCH Studios and powered by Fulcrum Engine. IRGS remains the internal initiative; technical paths, schemas, fixture identities, saves and original archives retain their existing names. Public repositories are KingSav3ge/WorldWard, KingSav3ge/Fulcrum-Engine, KingSav3ge/WORLDWARD-APP-WEB and KingSav3ge/WorldWard-Catalog. Catalog/Atlas product naming remains open.
 
-Develop IRGS across campaigns and themes, retaining one authoritative Core, nine K owners and the existing six Director categories. Rise R00 is one fictional regression slice. Ordinary speech remains received testimony; an offer is not consent or fulfillment. Storage revision, causal sequence, elapsed work and civil time remain distinct. Full C2, wider autonomous NPC/institution decisions, needs/recovery, selected conflict and sustained AI play remain unfinished. Historical Details is complete; preserve original archive records and canon.
+This edition joins reviewed intentions, protected server-side POSIX operator setup, bounded communication/offer/world-draft contracts, independent Catalog grounding and recovery consumers, and the public branding. The App preserves one chronological reading surface with choices and the retained response form below the newest entry. Optional offers are explicit attempts, not NPC consent or stock transfer. Draft previews create disposable in-memory candidates, not saved campaigns or a general world editor.
 
-## First implementation
+Preserve one authoritative Core, the existing nine K owners and six Directors, actor-scoped information, conserved resources/capacity, atomic rejection and original-result recovery. Distinguish causal sequence, revision, elapsed work and civil time. Broader NPC/institution behavior, needs/recovery, selected conflict, arbitrary world authoring, live-model quality, native Windows and full Alpha qualification remain open.
 
-**A4-CAT-04: grounding/quality rubric and independent ordinary-context journeys.**
+## Next implementation
 
-The [versioned rubric](IRGS_Catalog/evaluation/grounding_quality_v1/README.md)
-now separates exact structural checks from explicit reviewer judgments and
-unassessed semantic quality. New independent consumers select the published 3.4.5
-Engine/App pins and the Catalog candidate; actual ordinary multi-session journeys,
-receipt projection and in-process fake proposals are recorded in
-[GROUNDING_QUALITY_VALIDATION.json](GROUNDING_QUALITY_VALIDATION.json). Live
-quality and all Alpha gates remain unqualified. Continue supported consequences,
-NPC/institution decisions, needs/recovery, conflict and older-branch recovery as
-owner implementations become available.
+**A4-CAT-03/04 and WB-CAT-01/02: independently selected consequences and draft coverage.**
 
-[Original world-authoring examples](IRGS_Catalog/evaluation/authoring_examples_v1/README.md)
-provide two fictional families, provenance and evaluator-only requirements.
-Engine has now published a bounded R00 draft DTO. The separately versioned
-[candidate consumer](IRGS_Catalog/evaluation/intent_world_draft_v1/README.md)
-tests a fictional R00 draft and reviewed intents in both ordinary contexts;
-[evidence](INTENT_WORLD_DRAFT_VALIDATION.json) records exact sources and App's
-older committed pins. Non-Rise draft mapping, general world packs and an App
-editor remain unsupported. The [working brand architecture](BRAND_ARCHITECTURE.md)
-records the user's leading names subject to clearance, while IRGS remains the
-internal initiative and the Catalog/Atlas decision remains open.
+Grounding rubric, original world-authoring examples and ordinary intent/recovery consumers are delivered. Original fixtures retain their exact source guards. Extend independent journeys to newly selected meaningful consequences and both bounded draft profiles, recording each unsupported requirement and its owner. Separate actor inputs from evaluator truth, actual Core effects from narration, human-supplied semantic judgments from verified claims, and fake transport from live-provider quality.
 
-Publish actor-visible inputs separately from evaluator truth and measure grounded narration/intent mapping against actual committed results. Extend independent sustained-play requirements in two ordinary contexts including non-Rise; record each unmet mechanic and owner. Preserve old fixture IDs, source guards and historical claims. Qualify each new adopted component set through a separate exact selection; fake transport and live model quality remain distinct evidence.
+## Development and handoff
 
-## Resume and deliver
+Preserve edits and local commits; fetch the correct origin and fast-forward only clean compatible source. Read AGENTS.md and this current work order. Do not reset, clean or auto-stash over user work. Use temporary synthetic stores; never open private campaign saves for qualification. Refresh only the owning component hashes after intentional changes, then verify and run relevant real HTTP/browser journeys. Report exact commit, pins, actual checks, skips, limitations and remaining work. Historical evidence is not a fresh execution. Push only this owner repository; the coordinator reviews all three compatible deliveries and runs the full versioned joined/package gate. Work orders and watcher reports do not wake chats, implement tasks or qualify a live model/Windows host.
 
-1. Preserve edits and local commits, verify the correct GitHub origin, fetch main and fast-forward only a clean compatible checkout. Read AGENTS.md and the current work order. Do not reset, clean or auto-stash over user work.
-2. Implement the next bounded owner task; publish versioned contracts early when another owner depends on them. Keep unsupported behavior explicit.
-3. Use synthetic stores and relevant actual HTTP/browser checks. Review/cancel must not commit; retry/reload/restore must preserve the original result and effects. Do not open private campaign saves or call a paid model without a configured eligible route and finite authorized budget.
-4. Refresh only the owning component hashes after product edits and verify them. Report actual passed/failed/skipped/unrun checks, complete source SHAs and exact dependency pins. Historical logs are not new execution.
-5. Update task status and push only this owner repository. The coordinator qualifies and packages the compatible set before publishing joined main. Guide-only changes do not complete the broader owner gameplay deliverable.
-
-## Shared World Builder track
-
-Follow WORLD_BUILDER_PLAN.md. Engine owns original world-draft/validation/initialization contracts; App owns the common development/Creator Workshop editor; Catalog owns original world-pack examples and source dossiers. Coordinate through published contracts. No imported vendor code, runtime-qualified binary or implemented editor is implied by the reference assessment. Keep the Alpha gameplay critical path active.
+Follow ALPHA_4_0_PLAN.md, ALPHA_4_0_ACCEPTANCE.json and WORLD_BUILDER_PLAN.md. Preserve original supplied archives, accurate historical evidence, saves and personal settings. Remove superseded generated distributions only after their replacements pass.
