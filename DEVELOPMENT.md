@@ -1,5 +1,9 @@
 # WorldWard-Catalog development guide
 
+
+## Selected invitation consumer — 29 October 2026
+
+[Independent invitation and both-draft selection](IRGS_Catalog/evaluation/invitation_decision_v1/README.md) exercises a bounded R00 refusal and later explicit agreement, alongside the non-Rise delivery and draft profiles. Engine and Catalog are explicit overrides of App's older pins; no joined adoption is claimed. See [fresh evidence](INVITATION_DECISION_VALIDATION.json) for exact source identities, tests and owner gaps. Further NPC/institution decisions, needs, conflict, general authoring and live-provider quality remain open.
 Current edition: **3.4.6 Pre-Alpha**; previous_version: **3.3.3**. Next unified main publication: **3.4.7**. Functional 4.0.0 Alpha remains unqualified.
 
 WorldWard is developed by T!DEMARCH Studios and powered by Fulcrum Engine. IRGS remains the internal initiative; technical paths, schemas, fixture identities, saves and original archives retain their existing names. Public repositories are KingSav3ge/WorldWard, KingSav3ge/Fulcrum-Engine, KingSav3ge/WORLDWARD-APP-WEB and KingSav3ge/WorldWard-Catalog. Catalog/Atlas product naming remains open.
