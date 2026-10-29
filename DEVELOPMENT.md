@@ -1,173 +1,29 @@
-# IRGS Catalog development guide
+# IRGS-Catalog development guide
 
-## Coordinated 3.4.4 Pre-Alpha continuation
+Current edition: **3.4.5 Pre-Alpha**. Previous release field: **3.3.3**. Target: functional **4.0.0 Alpha** under ALPHA_4_0_PLAN.md and ALPHA_4_0_ACCEPTANCE.json. All Alpha gates remain open. Next unified edition: **3.4.6**.
 
-Current coordinated edition: **3.4.4 Pre-Alpha**; previous release field: **3.3.3**.
-The selected travel and ordinary communication increment preserves one Core,
-explicit acceptance, actor filtering, conserved stock/time and original-result
-recovery. No Alpha gate is closed and live/provider/Windows qualification remains open.
+This release adopts the user-requested chronological story UI: one reading surface, oldest available entries first, then current choices and the retained response form. Drafts, received statuses, exact result text, source gaps and original request recovery remain. App UI implementation: `7d687616b588b2fda3c4f58d445f82d5a13111e9`; exact release pins are recorded by the coordinator in joined COMPONENTS.json. Engine/Catalog product behavior is the qualified 3.4.4 baseline; their current release changes align guides and edition metadata. This is not a new Alpha or gameplay-resolution claim.
 
-Ordinary communication consumers are delivered within their original selected revisions. Preserve all fixture identities. Next: A4-CAT-04 grounding/quality rubric and WB-CAT-01/02 original world-pack examples/source dossiers; qualify later adopted sets separately.
+Develop IRGS across campaigns and themes, retaining one authoritative Core, nine K owners and the existing six Director categories. Rise R00 is one fictional regression slice. Ordinary speech remains received testimony; an offer is not consent or fulfillment. Storage revision, causal sequence, elapsed work and civil time remain distinct. Full C2, wider autonomous NPC/institution decisions, needs/recovery, selected conflict and sustained AI play remain unfinished. Historical Details is complete; preserve original archive records and canon.
 
-This current ordering supersedes earlier review and pending-3.4.3/3.4.4 notes below.
-Original tested source identities and older evidence remain unchanged.
-The coordinator owns the exact all-three integration and final package review.
-Every later unified main push increments the edition; next is 3.4.5 Pre-Alpha.
-Continue toward the shared Alpha 4.0 functional gates and World Builder plan.
+Read AGENTS.md, CHAT_CONTINUATION.md and COORDINATOR_WORK_ORDER.md. The continuation and work order are the current implementation instructions; dated evidence retains its original source selection.
 
-## Current ordinary communication consumer — 28 October 2026
+## Current task
 
-The separate [current selection](IRGS_Catalog/evaluation/current_ordinary_communication_v1/README.md)
-tests actual reviewed R00 and fictional quay starts, scoped introductions,
-explicit speech, stale reviews, unauthorized actors, departure rejection,
-restart and retry. Engine `f029149cb52721c823e9d416bdf96918d53b92ce` and App
-`42c4cdf62b8bcc571d5524170baced1294aacf55` are selected with explicit Engine
-and Catalog overrides; App has not adopted those source revisions. Prior fixture
-identities remain unchanged. [Evidence and check scope](CURRENT_ORDINARY_VALIDATION.json)
-do not qualify autonomous decisions, ordinary offers or the Alpha gates.
-Next test the compatible adopted pins when available and progress the original
-world-builder example packs and independent AI grounding rubric.
+**A4-CAT-04: grounding/quality rubric and independent ordinary-context journeys.**
 
-## Coordinator review and world-builder direction — 28 October 2026
+Publish actor-visible inputs separately from evaluator truth and measure grounded narration/intent mapping against actual committed results. Extend independent sustained-play requirements in two ordinary contexts including non-Rise; record each unmet mechanic and owner. Preserve old fixture IDs, source guards and historical claims. Qualify each new adopted component set through a separate exact selection; fake transport and live model quality remain distinct evidence.
 
-Read [the current review](COORDINATOR_REVIEW_2026_10_28.md) and
-[its executed scope](COORDINATOR_REVIEW_2026_10_28.json). This priority supersedes
-older first-task ordering below; existing task IDs and historical evidence remain.
+## Verification
 
-The scoped context assessment and partial journey consumers pass at their
-declared revisions. Add a separately selected current/adopted App+Engine
-consumer, including the new R00 initial participants, without repinning old
-fixtures. Continue A4-CAT-03/04's unmet gameplay/AI evaluation requirements.
-WB-CAT-01/02 authoring fixtures/source preparation can proceed independently.
+Use Python 3.12+ without -O and Node 20+. Start with:
 
-The user directs a shared development/Creator Workshop world builder:
-[implementation plan and owner tasks](WORLD_BUILDER_PLAN.md).
-The uploaded executable remains uninspected/unmatched after the transfer limit,
-but the public v0.35.4 GPL source has now been assessed separately:
-[reference findings](WORLD_BUILDER_REFERENCE_ASSESSMENT.md).
-Do not claim binary equivalence, runtime qualification or an implemented editor.
-Use the observed source workflows to inform original IRGS contracts and UI,
-keeping one Core and the Alpha gameplay critical path.
-
-Current edition remains 3.4.3 Pre-Alpha. A joined 3.4.4 publication is held for
-the review's fixes, compatible pins, fresh execution capture and final qualification.
-No Alpha gate is closed by this documentation update.
-
-## Active target: functional Alpha 4.0
-
-The entire **3.x.x series is Pre-Alpha**. Current published edition is **3.4.3**;
-the next functional milestone is **4.0.0 Alpha**, subject to the shared acceptance
-gates. Previous release remains **3.3.3**. No version metadata is changed by
-this instruction update.
-
-Read in order: [continuation](CHAT_CONTINUATION.md),
-[shared Alpha plan](ALPHA_4_0_PLAN.md), [owner work order](COORDINATOR_WORK_ORDER.md),
-[acceptance register](ALPHA_4_0_ACCEPTANCE.json) and
-[version policy](VERSION_POLICY.md). These are the active instructions.
-Earlier pending-adoption and next-3.4.3 notes have been superseded by the
-published 3.4.3 integration.
-
-## Current assignment and ownership
-
-### First Catalog Alpha increment delivered
-
-`irgs-alpha-contexts-v1` selects the fictional 1415 quay opening and R00 as
-provisional candidates in distinct campaign families. Its actor instructions,
-separate evaluator matrix and source-bound dossier assess twelve gameplay areas
-without claiming either context is Alpha-qualified. Missing ordinary participant/
-channel selection, sustained NPC/institution decisions, needs/recovery and a
-consequential risk profile remain explicit owner gaps.
-
-The new independent HTTP consumers select published Engine
-`efc84364b86e640f5028bfac2dfd5ae3021695a9` and App
-`de4e6926f6236f720365d552c69e02756ce18605`; App commits Catalog
-`6f927b00e12a3339861ac353bc38d03c68279662`. They exercise real reviewed HTTP
-creation in both candidate contexts and confirm their ordinary communication
-views expose no channels. Separate, explicitly privileged synthetic fixtures
-qualify actual bridge testimony, refusal/acceptance, conserved fulfillment,
-unauthorized/competing attempts and retry/restart. A separate real Henry start
-checks adopted review, received day and actual observation/recovery. No source
-or test claims the synthetic channels are available in ordinary player starts.
-
-Fresh scope: **184 Python tests passed, zero skips, and 150 frontend checks
-passed**. Catalog integrity verifies 206 source files, 44 previews and the full
-original archive. Engine, App and the App's actual pinned component set pass
-integrity. See [fixture](IRGS_Catalog/evaluation/alpha_contexts_v1/README.md) and
-[executed evidence](ALPHA_CONTEXT_VALIDATION.json). This is partial A4-CAT-01
-and the A4-CAT-02 context assessment; A4-G02/G05/G07/G10 remain unqualified.
-
-### Partial A4-CAT-03 delivery
-
-[Independent actor journeys and evaluator expectations](IRGS_Catalog/evaluation/alpha_journeys_v1/README.md)
-now exercise normal reviewed creation in the fictional quay and R00, actual
-multi-step consequences, two host sessions, exact retries and identical-byte
-Trash restore. The new quay contact is real ordinary-start content in Engine
-`ea0631b8fbf94f425fa003d81b6907445a9a43c5`; App
-`b3a53cfd11bbd3745253520b4e8ed6718c826ab8` still pins Engine
-`efc84364b86e640f5028bfac2dfd5ae3021695a9`, and the test explicitly overrides
-that pin. The older context evidence remains unchanged. The new run passes
-191 Python tests without skips and 150 frontend checks; Catalog and selected
-source and pinned-set integrity pass. [Evidence](ALPHA_JOURNEY_VALIDATION.json)
-records precise commands, observations and limitations.
-
-Next extend A4-CAT-03 once Engine/App supply compatible adoption, NPC and
-institution decisions, needs/recovery, risk/conflict and older-branch restore.
-Develop A4-CAT-04's independent grounding rubric now. Live AI needs separate
-authorization and a finite budget; coordinator owns exact-set Alpha, browser
-and Windows review. No Alpha gate is qualified by this increment.
-
-Own IRGS_Catalog/: listings, previews, design/source documents, independent actor/evaluator fixtures and acceptance. Publish only KingSav3ge/IRGS-Catalog/main. The coordinator reviews a
-viable compatible Engine/App/Catalog set and owns unified integration/publication.
-Do not add another simulator or edit a dependency's product sources from here.
-
-Complete shared IRGS gameplay across distinct contexts. Rise R00 is one
-regression; two ordinary Alpha contexts with non-Rise evidence are required.
-Do not widen preview counts or add cosmetic sections instead of completing
-consequential supported decisions and continuing play.
-
-## Development loop
-
-1. Preserve local work and fetch/fast-forward this repository safely.
-2. Pick the next work-order task; read the actual contract and implementation,
-   not just older summaries. Record concrete current gaps.
-3. Implement a bounded useful increment and publish an early versioned interface
-   handoff where another owner depends on it.
-4. Exercise actual effects, failed paths, actor filtering and continuation in
-   synthetic temporary state. Review cannot mutate; acceptance is explicit.
-5. Refresh only the owning component hashes after intentional product-source
-   edits, verify and run meaningful checks. Root guide edits need no source hash
-   refresh and no invented runtime test claim.
-6. Update task/evidence status, push only this component and report full SHA,
-   exact tested dependencies/pins, actual results, limits and remaining work.
-
-## Checks
-
-Use Python 3.12+ without -O. The work order defines task-specific behavioral
-checks and final handoff evidence. Starting commands:
-
-~~~bash
+```bash
 python -B IRGS_Catalog/verify_catalog.py
-python -B -m unittest tools.tests.test_player_start_contract tools.tests.test_start_context_contract tools.tests.test_phase_response_contract -v
-~~~
+```
 
-Run relevant source/archive/depot contracts and separately versioned exact
-Engine/App consumers, using each fixture's declared selectors. Preserve old
-identity guards. Refresh only Catalog hashes after intentional content edits.
+Run relevant runtime/Web tests and real browser/HTTP journeys for changed behavior. The external historical save fixture is excluded; native Windows checks remain unqualified on Linux. No live-provider quality claim follows from synthetic transport. Keep QA logs and packages outside source. Inspect any integrity failure; refreshing hashes is not a test.
 
-Do not use a user's save, credentials or personal configuration as a fixture.
-Keep generated test logs/packages outside source. Missing provider credentials
-do not block offline work. Live evaluation requires separately configured
-authorization and a finite budget; synthetic transport is not live quality proof.
+App pins Engine/ and Catalog/ explicitly. Initialize absent dependencies and move only clean dependencies to the committed pins, preserving local work. A new pin needs its own compatibility checks. The coordinator imports one exact approved set through the integration gate, captures fresh execution evidence, runs joined and clean-package qualification, and increments every unified main push.
 
-## Status and historical evidence
-
-[The acceptance register](ALPHA_4_0_ACCEPTANCE.json) is a requirement/status plan,
-not executed evidence; all Alpha gates start unqualified. Attribute every
-qualification to an exact source set and reviewer. Partial coverage does not
-close general DEV/C2 or imply every concept is playable.
-
-The previous guide is preserved byte for byte in
-[the dated development history](DEVELOPMENT_HISTORY_THROUGH_3_4_3.md).
-Its old source identities, skips and pending-at-the-time statements describe
-their original scope. The shared Alpha plan records the reviewed 3.4.3 baseline.
-Preserve original archives/citations and accurately dated evidence.
+The canonical runtime remains IRGS_3_3/ and the canonical App IRGS_Web/. Preserve saves, personal configuration, Git history, original archives and accurate evidence; superseded generated distributions can be removed after replacement qualification.
