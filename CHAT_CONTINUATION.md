@@ -21,9 +21,13 @@ NPC/institution decisions, needs/recovery, conflict and older-branch recovery as
 owner implementations become available.
 
 [Original world-authoring examples](IRGS_Catalog/evaluation/authoring_examples_v1/README.md)
-provide two fictional families, provenance and evaluator-only requirements. Engine
-has not yet published a draft/package DTO; adapt and execute the examples after
-that contract and App playtest path exist. The [working brand architecture](BRAND_ARCHITECTURE.md)
+provide two fictional families, provenance and evaluator-only requirements.
+Engine has now published a bounded R00 draft DTO. The separately versioned
+[candidate consumer](IRGS_Catalog/evaluation/intent_world_draft_v1/README.md)
+tests a fictional R00 draft and reviewed intents in both ordinary contexts;
+[evidence](INTENT_WORLD_DRAFT_VALIDATION.json) records exact sources and App's
+older committed pins. Non-Rise draft mapping, general world packs and an App
+editor remain unsupported. The [working brand architecture](BRAND_ARCHITECTURE.md)
 records the user's leading names subject to clearance, while IRGS remains the
 internal initiative and the Catalog/Atlas decision remains open.
 

@@ -4,6 +4,10 @@ The [working brand architecture](BRAND_ARCHITECTURE.md) records the user's
 leading studio, platform and engine names subject to clearance. IRGS remains the
 internal initiative; Catalog/Atlas naming remains open.
 
+The [candidate intent and R00 world-draft evaluation](IRGS_Catalog/evaluation/intent_world_draft_v1/README.md)
+independently checks the newly published bounded Engine contract and App intent
+journeys against exact selected sources; the App still pins earlier components.
+
 ## Current 3.4.5 guidance — 29 October 2026
 
 Current edition: **3.4.5 Pre-Alpha**. Previous release field: **3.3.3**. Target: functional **4.0.0 Alpha** under ALPHA_4_0_PLAN.md and ALPHA_4_0_ACCEPTANCE.json. All Alpha gates remain open. Next unified edition: **3.4.6**.

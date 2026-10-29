@@ -20,9 +20,12 @@ finite budget; extend A4-CAT-03 against future Engine/App consequences, NPC and
 institution decisions, needs/recovery, conflict and older-branch restore.
 
 WB-CAT-01/02 have original fictional [requirements examples and provenance](IRGS_Catalog/evaluation/authoring_examples_v1/README.md)
-for two families. They do not implement an Engine DTO, validator, initializer or
-playtest. Map and qualify them once WB-ENG-01/02 and WB-APP-01/03 publish their
-actual contracts and working ordinary authoring path.
+for two families. A separate [candidate consumer](IRGS_Catalog/evaluation/intent_world_draft_v1/README.md)
+now checks the published R00 draft DTO and its reviewed initializer, plus actual
+reviewed App intents in both ordinary contexts. [Evidence](INTENT_WORLD_DRAFT_VALIDATION.json)
+identifies explicit Engine/Catalog overrides and old App pins. No generic package,
+non-Rise draft, App creator editor, import/export or host draft save is implied.
+Continue broader mapping and playtest qualification when those owner contracts land.
 
 Publish actor-visible inputs separately from evaluator truth and measure grounded narration/intent mapping against actual committed results. Extend independent sustained-play requirements in two ordinary contexts including non-Rise; record each unmet mechanic and owner. Preserve old fixture IDs, source guards and historical claims. Qualify each new adopted component set through a separate exact selection; fake transport and live model quality remain distinct evidence.
 

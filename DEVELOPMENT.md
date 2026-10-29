@@ -22,6 +22,15 @@ are original fictional requirements and source metadata, not Engine DTOs or
 executable worlds. Continue the remaining Alpha systems and qualify those examples
 only after the Engine and App authoring contracts and playtest path exist.
 
+Engine has since published `irgs-world-draft-1` for fictional R00 choices only.
+The [separately selected candidate](IRGS_Catalog/evaluation/intent_world_draft_v1/README.md)
+tests that actual draft review/initializer and reviewed App intents across R00
+and a fictional non-Rise quay, including failure, retry and older synthetic
+checkpoint restore. The newer Engine and Catalog are explicit overrides of App's
+committed pins. [Evidence](INTENT_WORLD_DRAFT_VALIDATION.json) records scope;
+non-Rise world drafts, arbitrary authored topology/assets, package import/export
+and creator editor integration remain open.
+
 Publish actor-visible inputs separately from evaluator truth and measure grounded narration/intent mapping against actual committed results. Extend independent sustained-play requirements in two ordinary contexts including non-Rise; record each unmet mechanic and owner. Preserve old fixture IDs, source guards and historical claims. Qualify each new adopted component set through a separate exact selection; fake transport and live model quality remain distinct evidence.
 
 ## Verification
