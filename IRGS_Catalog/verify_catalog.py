@@ -171,6 +171,14 @@ def verify_catalog(root=ROOT):
     checker = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(checker)
     alpha_journeys = checker.validate_fixture(root)
+    spec = importlib.util.spec_from_file_location('catalog_grounding_quality_check', root / 'grounding_quality.py')
+    checker = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(checker)
+    grounding_quality = checker.validate_fixture(root)
+    spec = importlib.util.spec_from_file_location('catalog_world_examples_check', root / 'world_authoring_examples.py')
+    checker = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(checker)
+    world_examples = checker.validate_fixture(root)
     return {'status': 'verified', 'component': 'IRGS-Catalog', 'files': len(hashes),
         'concepts': len(portfolio['entries']), 'campaign_release_approved_by_check': False,
         'campaign_records': campaign_records, 'historical_details': historical,
@@ -182,7 +190,8 @@ def verify_catalog(root=ROOT):
         'phase_response_compatibility': phase_responses,
         'player_start_evaluation': player_starts,
         'start_context_evaluation': start_context, 'alpha_context_evaluation': alpha_contexts,
-        'alpha_journey_evaluation': alpha_journeys}
+        'alpha_journey_evaluation': alpha_journeys,
+        'grounding_quality': grounding_quality, 'world_authoring_examples': world_examples}
 
 
 if __name__ == '__main__':

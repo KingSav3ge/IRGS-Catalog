@@ -12,6 +12,16 @@ Read AGENTS.md, CHAT_CONTINUATION.md and COORDINATOR_WORK_ORDER.md. The continua
 
 **A4-CAT-04: grounding/quality rubric and independent ordinary-context journeys.**
 
+The [first offline rubric](IRGS_Catalog/evaluation/grounding_quality_v1/README.md)
+checks proposal identity/source bounds and actual structured receipts while
+recording reviewer-only semantic judgments as claims. Its separate 3.4.5 exact
+selection exercises ordinary quay and R00 journeys, no-provider local rendering
+and in-process fake proposals; [results and gaps](GROUNDING_QUALITY_VALIDATION.json)
+do not establish live quality. The [world-authoring examples](IRGS_Catalog/evaluation/authoring_examples_v1/README.md)
+are original fictional requirements and source metadata, not Engine DTOs or
+executable worlds. Continue the remaining Alpha systems and qualify those examples
+only after the Engine and App authoring contracts and playtest path exist.
+
 Publish actor-visible inputs separately from evaluator truth and measure grounded narration/intent mapping against actual committed results. Extend independent sustained-play requirements in two ordinary contexts including non-Rise; record each unmet mechanic and owner. Preserve old fixture IDs, source guards and historical claims. Qualify each new adopted component set through a separate exact selection; fake transport and live model quality remain distinct evidence.
 
 ## Verification

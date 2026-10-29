@@ -118,11 +118,17 @@
     "evaluation/alpha_journeys_v1/evaluator_only/oracle.json": "e75c1d4d56e68163662a78f2cad48eb45249ce2e2bd5dccba72ca51c0cd88504",
     "evaluation/alpha_journeys_v1/evidence.schema.json": "5e3aa2ae2f5da191aeb446e00aaca9463da3bab509025b5d64e3295080f921e5",
     "evaluation/alpha_journeys_v1/manifest.json": "1e2bfd64c26f242ed89846b26c2ad1a1d9cef51a6b94e038b9562a1df5a8b94f",
+    "evaluation/authoring_examples_v1/README.md": "a389a696b4d9daeaecf38e47a8616bbafbf48d3eb953080b9521605e58d7e8b1",
+    "evaluation/authoring_examples_v1/actor_inputs/examples.json": "bc414257874bc7f811744c2ef98da5baeb28c58d312f8db0d03637faf94d2b37",
+    "evaluation/authoring_examples_v1/evaluator_only/expectations.json": "81ec6f60c720c27512665f18fdbf0ffaeb97c67db48a7be0e041ad6215e4fcd3",
     "evaluation/current_ordinary_communication_v1/README.md": "97875014063ff66ae9d14006e50e9a9d9de24d0f6237551b109967a2e05c6db1",
     "evaluation/current_ordinary_communication_v1/actor_inputs/cases.json": "019ba6feba6fc7cc016c1254da6275ff07fe6b6f9e810611d147a304bf244453",
     "evaluation/current_ordinary_communication_v1/evaluator_only/expectations.json": "8647dad291e1c77368bafe86b8a2b74be406f773289995dc87af87f47d5bfd22",
     "evaluation/development_interop_v1/README.md": "e77b309523b27334bb0e14cc65b6881497aec601dd989ef79773e1898020f79e",
     "evaluation/development_interop_v1/compatibility.json": "0b6fe6eb24a67e5b3e37d52da5fe38a98f1892ef6a67c495075692ac4e7f3e85",
+    "evaluation/grounding_quality_v1/README.md": "4f29438cd92e20c347b2bb798430b8f1cc13d7f0b17ae927040e4ee060101c19",
+    "evaluation/grounding_quality_v1/actor_inputs/cases.json": "6a9b0d0426221804bedc50fba86b16a63c14056f888c981c0640412b71e6afbd",
+    "evaluation/grounding_quality_v1/evaluator_only/requirements.json": "0836bd22da709bac8aacc635e6b9f2fe9a74fc749bf656bdc3ad46ab3fd93424",
     "evaluation/integrated_responses_v1/README.md": "d84903473b486c58a443e80aef0403a9d3f8d6f31e81f99d9bd22258c095b258",
     "evaluation/integrated_responses_v1/compatibility.json": "daf1afc0f3dd9c60aaf3da0f69e7477cf5ae7b78e7233c529a7abb307d8da78c",
     "evaluation/phase_responses_v1/README.md": "ba8c6b68c74a82acaee9d76ffdb3387360286e3d9bfa1ceb4c4c82eaf6dc5e0f",
@@ -168,6 +174,7 @@
     "evaluation/start_context_v1/evaluator_only/oracle.json": "2e9063e17b86b9453f39967f8972cc7d0e2cbee68845eeac905d2d616583c39e",
     "evaluation/start_context_v1/manifest.json": "dc215f735f728dbed4ef1281b4428efc4cbb47a6c4f1628c40906fb5978e4670",
     "evaluation/start_context_v1/source_review.json": "fa32c52c85a5f9afb22ab064cb473285768f2feff5ec1e3ba14d6a801bcd5ae8",
+    "grounding_quality.py": "5df50cc6fe6d52c30a188b4d5e2e4e9a6f597abb25ddc1930c59b5ac3279b7d5",
     "historical_details/README.md": "2f2bbe22e998cb233dee564c41d18fd10e7ccbe2ad9e03752e11862c91cb603a",
     "historical_details/intake/README.md": "e39f2b7382290de72c60fb74ac5d81526093740b09c4cdd694478fcd9afd6f15",
     "historical_details/intake/drive_delivery_manifest.json": "48abac57689a0110ba65f58a7407bd9860161bbc3f2d0185a604d11037adb304",
@@ -218,6 +225,7 @@
     "solo_evaluation.py": "444fb338b7ade0e78fbd2f014c15bd90546cee4e203966ed6284ba73cfdecc97",
     "solo_proposal_compatibility.py": "d83a591a5e070bd3f602898fa1f16e477ac580b62e2d9f39ce48ed8c3d158dce",
     "start_context_evaluation.py": "37b4efb6f86af9695000562f0b45fa55f1b5d3f0d7fdecf58b62844c8c81aa2c",
-    "verify_catalog.py": "28b98e2699a777ef47e9856836a3d796a319c2f406dc3dfe59f45a9152992bd3"
+    "verify_catalog.py": "82ffc6d6ea05fc02bef4d8ed0a3b5df83433487b4820b9d1c6280825b71d6b71",
+    "world_authoring_examples.py": "2b75300c59d78374f032e834fd866b16410c8eb5d52d88b309245a793921a5eb"
   }
 }

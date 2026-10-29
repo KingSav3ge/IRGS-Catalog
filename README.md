@@ -1,4 +1,8 @@
-# IRGS Catalog — 3.4.4 Pre-Alpha
+# IRGS Catalog — 3.4.5 Pre-Alpha
+
+The [working brand architecture](BRAND_ARCHITECTURE.md) records the user's
+leading studio, platform and engine names subject to clearance. IRGS remains the
+internal initiative; Catalog/Atlas naming remains open.
 
 ## Current 3.4.5 guidance — 29 October 2026
 

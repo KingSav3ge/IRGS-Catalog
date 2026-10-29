@@ -1,41 +1,52 @@
-# Catalog current ordinary communication handoff
+# Catalog grounding and world-authoring handoff
 
-28 October 2026. Current edition **3.4.3 Pre-Alpha**. This partial independent
-qualification does not close any Alpha gate or publish a unified release.
+29 October 2026. Current edition **3.4.5 Pre-Alpha**; no Alpha gate is closed.
+This is a partial A4-CAT-03/04 and WB-CAT-01/02 increment.
 
-[The separate current consumer](IRGS_Catalog/evaluation/current_ordinary_communication_v1/README.md)
-uses normal HTTP review and creation in fictional R00 and the 1415 quay contact
-opening. It verifies R00's received Elin/Oren introductions and excludes Mira,
-checks the quay's actual received contact, and exercises explicit exact testimony.
-Stale reviews, unaccepted speech, forged actors and speech after actual departure
-are rejected. Restart and exact retry preserve the original result and saved
-bytes; speech does not transfer stock or invent elapsed time. No provider calls,
-user saves or privileged test setup participate in these ordinary worlds.
+The [grounding rubric](IRGS_Catalog/evaluation/grounding_quality_v1/README.md)
+separates actor inputs from evaluator truth, structural source/intent checks
+from explicit reviewer judgments, and proposal from actual committed effects.
+It rejects changed intentions, unreceived actions/sources and structured receipt
+contradictions; it does not infer free-text semantics, verify reviewer claims or
+qualify live model quality. Independent HTTP consumers create fictional quay and
+R00 worlds normally, evaluate received testimony against actual structured
+receipts, rerun the two-session journeys with consequences and recovery, and
+apply the rubric to in-process fake proposals before actual reviewed acceptance.
+The fake transport and no-provider local rendering are separate evidence.
+
+The [authoring reference examples](IRGS_Catalog/evaluation/authoring_examples_v1/README.md)
+provide two original fictional families, separate actor/evaluator material,
+source and asset provenance, topology, distinct actors, a proposed finite item
+and selected knowledge. Engine has not published its world-draft/package DTO;
+these are requirements data, not executable packs, Engine validation or a tested
+world builder. No vendor assets, user saves or private campaign data are used.
 
 | Selection | Exact commit |
 | --- | --- |
-| Published Engine candidate | `f029149cb52721c823e9d416bdf96918d53b92ce` |
-| Published App | `42c4cdf62b8bcc571d5524170baced1294aacf55` |
-| App committed Engine | `efc84364b86e640f5028bfac2dfd5ae3021695a9` |
-| App committed Catalog | `6f927b00e12a3339861ac353bc38d03c68279662` |
+| Engine / App's Engine pin | `296e46a1beed10d0ebf2841f133bb52fade83697` |
+| App | `7e1a5929b2f30479aa315789f75bfa6c46761438` |
+| App's Catalog pin | `e97d87f0d17a16dbe0ce186badafe663188321a1` |
 
-The candidate Engine and this Catalog were explicit root overrides; App's
-committed pins remain unchanged. Its actual pinned set separately passes integrity.
-Prior fixture identities and [the previous handoff](COORDINATOR_REPORT_ALPHA_JOURNEY_01.md)
-remain unchanged.
+The actual App Engine pin matches the selected Engine; the new Catalog candidate
+is an explicit test override and is not adopted by App. App's committed pinned
+set separately passes integrity. The previous handoff is preserved at
+[COORDINATOR_REPORT_ALPHA_ORDINARY_01.md](COORDINATOR_REPORT_ALPHA_ORDINARY_01.md).
 
-**192 Python tests passed, zero skips; 151 frontend checks passed.** The Python
-counts are 108 Catalog checks, two independent current HTTP consumers, 54 Engine
-communication tests and 28 App tests. Catalog integrity verifies 216 source files,
-44 previews, the complete 32-part historical archive and the response depot;
-Engine, App and App's actual pinned dependency set also pass integrity.
-[CURRENT_ORDINARY_VALIDATION.json](CURRENT_ORDINARY_VALIDATION.json) records the
-commands, exact scope, source hashes and outstanding requirements.
+**168 Python tests passed with zero skips; 153 frontend checks passed.** These
+include 115 Catalog tests, four selected ordinary HTTP tests, two multi-session
+journeys, two fake-transport consumers, 32 Engine tests and 13 App tests. Catalog
+integrity verifies 224 files, all 44 previews and the complete original archive;
+Engine, App and App's pinned dependencies pass integrity. A separate final
+standalone verification reran after the source manifest refresh. Exact commands,
+hashes, synthetic observations and limits are in
+[GROUNDING_QUALITY_VALIDATION.json](GROUNDING_QUALITY_VALIDATION.json).
 
-App must publish compatible Engine/Catalog pins and the coordinator's browser
-harness fixes before a new adopted-set qualification. Its identified offer
-recipient and edition expectation defects were not requalified here. NPC and
-institution decisions, ordinary offer authority, needs/recovery, selected conflict,
-older-branch restoration and live AI remain open. Continue A4-CAT-03/04 and
-independent WB-CAT-01/02 example packs/provenance; no browser, Windows, clean
-package or live-provider qualification is claimed by this increment.
+Further ordinary consequences, autonomous NPC/institution decisions,
+needs/recovery, consequential conflict and older-branch receipt fencing remain
+open. Live provider quality requires a protected eligible route and an authorized
+finite budget. World-authoring import/export, Engine validation/initialization,
+App editor and reviewed playtests remain owner dependencies. No live AI, new
+browser, Windows, clean-package, joined release or Alpha qualification is claimed.
+The [working brand architecture](BRAND_ARCHITECTURE.md) records the user's
+leading studio, platform and engine names subject to clearance and leaves the
+Catalog/Atlas name open.

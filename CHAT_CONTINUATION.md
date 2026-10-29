@@ -10,6 +10,23 @@ Develop IRGS across campaigns and themes, retaining one authoritative Core, nine
 
 **A4-CAT-04: grounding/quality rubric and independent ordinary-context journeys.**
 
+The [versioned rubric](IRGS_Catalog/evaluation/grounding_quality_v1/README.md)
+now separates exact structural checks from explicit reviewer judgments and
+unassessed semantic quality. New independent consumers select the published 3.4.5
+Engine/App pins and the Catalog candidate; actual ordinary multi-session journeys,
+receipt projection and in-process fake proposals are recorded in
+[GROUNDING_QUALITY_VALIDATION.json](GROUNDING_QUALITY_VALIDATION.json). Live
+quality and all Alpha gates remain unqualified. Continue supported consequences,
+NPC/institution decisions, needs/recovery, conflict and older-branch recovery as
+owner implementations become available.
+
+[Original world-authoring examples](IRGS_Catalog/evaluation/authoring_examples_v1/README.md)
+provide two fictional families, provenance and evaluator-only requirements. Engine
+has not yet published a draft/package DTO; adapt and execute the examples after
+that contract and App playtest path exist. The [working brand architecture](BRAND_ARCHITECTURE.md)
+records the user's leading names subject to clearance, while IRGS remains the
+internal initiative and the Catalog/Atlas decision remains open.
+
 Publish actor-visible inputs separately from evaluator truth and measure grounded narration/intent mapping against actual committed results. Extend independent sustained-play requirements in two ordinary contexts including non-Rise; record each unmet mechanic and owner. Preserve old fixture IDs, source guards and historical claims. Qualify each new adopted component set through a separate exact selection; fake transport and live model quality remain distinct evidence.
 
 ## Resume and deliver

@@ -10,6 +10,20 @@ Develop IRGS across campaigns and themes, retaining one authoritative Core, nine
 
 **A4-CAT-04: grounding/quality rubric and independent ordinary-context journeys.**
 
+The first [rubric and two-context consumer](IRGS_Catalog/evaluation/grounding_quality_v1/README.md)
+is delivered with structural and explicitly attributed semantic judgments,
+actual committed receipts, exact 3.4.5 selections, local rendering and separate
+in-process fake transport. [Validation](GROUNDING_QUALITY_VALIDATION.json) is
+partial: model quality, all Alpha gates and broader sustained gameplay remain
+unqualified. Continue A4-CAT-04 live-route qualification only with an authorized
+finite budget; extend A4-CAT-03 against future Engine/App consequences, NPC and
+institution decisions, needs/recovery, conflict and older-branch restore.
+
+WB-CAT-01/02 have original fictional [requirements examples and provenance](IRGS_Catalog/evaluation/authoring_examples_v1/README.md)
+for two families. They do not implement an Engine DTO, validator, initializer or
+playtest. Map and qualify them once WB-ENG-01/02 and WB-APP-01/03 publish their
+actual contracts and working ordinary authoring path.
+
 Publish actor-visible inputs separately from evaluator truth and measure grounded narration/intent mapping against actual committed results. Extend independent sustained-play requirements in two ordinary contexts including non-Rise; record each unmet mechanic and owner. Preserve old fixture IDs, source guards and historical claims. Qualify each new adopted component set through a separate exact selection; fake transport and live model quality remain distinct evidence.
 
 ## Acceptance and handoff
