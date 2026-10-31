@@ -92,7 +92,8 @@ these tests or complete implementation.
 
 ## Publication boundary
 
-These are design/instruction changes only. They do not publish joined WorldWard
-or change its current 3.4.7 edition. The coordinator must review compatible owner
-commits/pins and run the full integration, capture, regression, browser/consumer
-and clean-package gates before the next joined main publication, 3.4.8.
+This requirement is included as design/instructions in WorldWard 3.4.8. It
+does not implement building allowances or expansion decisions. The coordinator
+must review compatible owner commits/pins and run integration, fresh capture,
+regression, browser/independent consumers and a clean extracted package before
+each joined main publication. The following joined edition must be 3.4.9.
